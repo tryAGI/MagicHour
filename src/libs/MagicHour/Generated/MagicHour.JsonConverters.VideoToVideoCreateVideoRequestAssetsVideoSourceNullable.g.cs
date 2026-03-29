@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace MagicHour.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class VideoToVideoCreateVideoRequestAssetsVideoSourceNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::MagicHour.VideoToVideoCreateVideoRequestAssetsVideoSource?>
+    {
+        /// <inheritdoc />
+        public override global::MagicHour.VideoToVideoCreateVideoRequestAssetsVideoSource? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::MagicHour.VideoToVideoCreateVideoRequestAssetsVideoSourceExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::MagicHour.VideoToVideoCreateVideoRequestAssetsVideoSource)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::MagicHour.VideoToVideoCreateVideoRequestAssetsVideoSource?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::MagicHour.VideoToVideoCreateVideoRequestAssetsVideoSource? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::MagicHour.VideoToVideoCreateVideoRequestAssetsVideoSourceExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}
