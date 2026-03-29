@@ -1,6 +1,9 @@
 # Microsoft.Extensions.AI Integration
 
-The MagicHour SDK provides `AIFunction` tools that can be used with any `IChatClient` from [Microsoft.Extensions.AI](https://learn.microsoft.com/en-us/dotnet/ai/ai-extensions).
+!!! tip "Cross-SDK comparison"
+    See the [centralized MEAI documentation](https://tryagi.github.io/docs/meai/) for feature matrices and comparisons across all tryAGI SDKs.
+
+The MagicHour SDK provides `AIFunction` tool wrappers compatible with [Microsoft.Extensions.AI](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai). These tools can be used with any `IChatClient` to give AI models access to Magic Hour's AI video generation, face swap, lip sync, and image generation capabilities.
 
 ## Available Tools
 
