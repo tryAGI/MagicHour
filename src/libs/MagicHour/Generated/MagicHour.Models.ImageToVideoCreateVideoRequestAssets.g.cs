@@ -23,6 +23,7 @@ namespace MagicHour
         /// <summary>
         /// The image to use as the last frame of the video.<br/>
         /// * **`ltx-2`**: Not supported<br/>
+        /// * **`wan-2.2`**: Not supported<br/>
         /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`kling-2.5`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 1080p.<br/>
@@ -55,6 +56,7 @@ namespace MagicHour
         /// <param name="endImageFilePath">
         /// The image to use as the last frame of the video.<br/>
         /// * **`ltx-2`**: Not supported<br/>
+        /// * **`wan-2.2`**: Not supported<br/>
         /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`kling-2.5`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 1080p.<br/>
