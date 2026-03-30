@@ -6,6 +6,7 @@ namespace MagicHour
     /// <summary>
     /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
     /// * **`ltx-2`**: Supports 480p, 720p, 1080p.<br/>
+    /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
     /// * **`kling-3.0`**: Supports 720p, 1080p.<br/>

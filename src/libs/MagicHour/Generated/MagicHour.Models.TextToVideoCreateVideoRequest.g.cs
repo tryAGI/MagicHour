@@ -20,6 +20,7 @@ namespace MagicHour
         /// <summary>
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
         /// * **`ltx-2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
+        /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
         /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
         /// * **`kling-2.5`**: 5, 10<br/>
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
@@ -37,6 +38,7 @@ namespace MagicHour
         /// <summary>
         /// Determines the aspect ratio of the output video.<br/>
         /// * **`ltx-2`**: Supports 9:16, 16:9, 1:1.<br/>
+        /// * **`wan-2.2`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -54,6 +56,7 @@ namespace MagicHour
         /// <summary>
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
         /// * **`ltx-2`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p.<br/>
@@ -70,8 +73,9 @@ namespace MagicHour
 
         /// <summary>
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-2.5`. For free tiers, it defaults to `ltx-2`.<br/>
+        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2`.<br/>
         /// * `ltx-2`: Great for fast iteration with audio, lip-sync, and expressive faces<br/>
+        /// * `wan-2.2`: Fast, medium-quality model with strong visuals and effect support.<br/>
         /// * `seedance`: Great for fast iteration and start/end frame<br/>
         /// * `kling-2.5`: Great for motion, action, and camera control<br/>
         /// * `kling-3.0`: Great for cinematic, multi-scene storytelling with control<br/>
@@ -81,9 +85,9 @@ namespace MagicHour
         /// * `kling-1.6`: Great for dependable clips with smooth motion<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
-        /// Example: kling-2.5-audio
+        /// Example: kling-3.0
         /// </summary>
-        /// <example>kling-2.5-audio</example>
+        /// <example>kling-3.0</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.TextToVideoCreateVideoRequestModelJsonConverter))]
         public global::MagicHour.TextToVideoCreateVideoRequestModel? Model { get; set; }
@@ -92,6 +96,7 @@ namespace MagicHour
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
         /// * **`ltx-2`**: Automatically included with no extra credits<br/>
+        /// * **`wan-2.2`**: Not supported<br/>
         /// * **`seedance`**: Not supported<br/>
         /// * **`kling-2.5`**: Automatically included with no extra credits<br/>
         /// * **`kling-3.0`**: Toggle-able (can enable/disable)<br/>
@@ -124,6 +129,7 @@ namespace MagicHour
         /// <param name="endSeconds">
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
         /// * **`ltx-2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
+        /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
         /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
         /// * **`kling-2.5`**: 5, 10<br/>
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
@@ -142,6 +148,7 @@ namespace MagicHour
         /// <param name="aspectRatio">
         /// Determines the aspect ratio of the output video.<br/>
         /// * **`ltx-2`**: Supports 9:16, 16:9, 1:1.<br/>
+        /// * **`wan-2.2`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -154,6 +161,7 @@ namespace MagicHour
         /// <param name="resolution">
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
         /// * **`ltx-2`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p.<br/>
@@ -165,8 +173,9 @@ namespace MagicHour
         /// </param>
         /// <param name="model">
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-2.5`. For free tiers, it defaults to `ltx-2`.<br/>
+        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2`.<br/>
         /// * `ltx-2`: Great for fast iteration with audio, lip-sync, and expressive faces<br/>
+        /// * `wan-2.2`: Fast, medium-quality model with strong visuals and effect support.<br/>
         /// * `seedance`: Great for fast iteration and start/end frame<br/>
         /// * `kling-2.5`: Great for motion, action, and camera control<br/>
         /// * `kling-3.0`: Great for cinematic, multi-scene storytelling with control<br/>
@@ -176,12 +185,13 @@ namespace MagicHour
         /// * `kling-1.6`: Great for dependable clips with smooth motion<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
-        /// Example: kling-2.5-audio
+        /// Example: kling-3.0
         /// </param>
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
         /// * **`ltx-2`**: Automatically included with no extra credits<br/>
+        /// * **`wan-2.2`**: Not supported<br/>
         /// * **`seedance`**: Not supported<br/>
         /// * **`kling-2.5`**: Automatically included with no extra credits<br/>
         /// * **`kling-3.0`**: Toggle-able (can enable/disable)<br/>

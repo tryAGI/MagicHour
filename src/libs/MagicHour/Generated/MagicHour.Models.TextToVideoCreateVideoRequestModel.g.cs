@@ -5,8 +5,9 @@ namespace MagicHour
 {
     /// <summary>
     /// The AI model to use for video generation.<br/>
-    /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-2.5`. For free tiers, it defaults to `ltx-2`.<br/>
+    /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2`.<br/>
     /// * `ltx-2`: Great for fast iteration with audio, lip-sync, and expressive faces<br/>
+    /// * `wan-2.2`: Fast, medium-quality model with strong visuals and effect support.<br/>
     /// * `seedance`: Great for fast iteration and start/end frame<br/>
     /// * `kling-2.5`: Great for motion, action, and camera control<br/>
     /// * `kling-3.0`: Great for cinematic, multi-scene storytelling with control<br/>
@@ -16,12 +17,12 @@ namespace MagicHour
     /// * `kling-1.6`: Great for dependable clips with smooth motion<br/>
     /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
     /// Default Value: default<br/>
-    /// Example: kling-2.5-audio
+    /// Example: kling-3.0
     /// </summary>
     public enum TextToVideoCreateVideoRequestModel
     {
         /// <summary>
-        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-2.5`. For free tiers, it defaults to `ltx-2`.
+        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2`.
         /// </summary>
         Default,
         /// <summary>
@@ -29,7 +30,7 @@ namespace MagicHour
         /// </summary>
         Kling16,
         /// <summary>
-        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-2.5`. For free tiers, it defaults to `ltx-2`.
+        /// Great for motion, action, and camera control
         /// </summary>
         Kling25,
         /// <summary>
@@ -37,11 +38,11 @@ namespace MagicHour
         /// </summary>
         Kling25Audio,
         /// <summary>
-        /// Great for cinematic, multi-scene storytelling with control
+        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2`.
         /// </summary>
         Kling30,
         /// <summary>
-        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-2.5`. For free tiers, it defaults to `ltx-2`.
+        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2`.
         /// </summary>
         Ltx2,
         /// <summary>
@@ -60,6 +61,10 @@ namespace MagicHour
         /// 
         /// </summary>
         Veo31Audio,
+        /// <summary>
+        /// Fast, medium-quality model with strong visuals and effect support.
+        /// </summary>
+        Wan22,
     }
 
     /// <summary>
@@ -84,6 +89,7 @@ namespace MagicHour
                 TextToVideoCreateVideoRequestModel.Sora2 => "sora-2",
                 TextToVideoCreateVideoRequestModel.Veo31 => "veo3.1",
                 TextToVideoCreateVideoRequestModel.Veo31Audio => "veo3.1-audio",
+                TextToVideoCreateVideoRequestModel.Wan22 => "wan-2.2",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -104,6 +110,7 @@ namespace MagicHour
                 "sora-2" => TextToVideoCreateVideoRequestModel.Sora2,
                 "veo3.1" => TextToVideoCreateVideoRequestModel.Veo31,
                 "veo3.1-audio" => TextToVideoCreateVideoRequestModel.Veo31Audio,
+                "wan-2.2" => TextToVideoCreateVideoRequestModel.Wan22,
                 _ => null,
             };
         }
