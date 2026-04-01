@@ -468,6 +468,7 @@ namespace MagicHour
             global::MagicHour.VideoToVideoCreateVideoRequestFpsResolution? fpsResolution = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::MagicHour.VideoToVideoCreateVideoRequest
             {
                 Name = name,

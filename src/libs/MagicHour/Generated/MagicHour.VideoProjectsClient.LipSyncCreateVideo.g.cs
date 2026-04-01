@@ -464,6 +464,7 @@ namespace MagicHour
             global::MagicHour.LipSyncCreateVideoRequestStyle? style = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::MagicHour.LipSyncCreateVideoRequest
             {
                 Name = name,

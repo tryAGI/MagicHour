@@ -466,6 +466,7 @@ namespace MagicHour
             global::MagicHour.FaceSwapCreateVideoRequestStyle? style = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::MagicHour.FaceSwapCreateVideoRequest
             {
                 Name = name,
