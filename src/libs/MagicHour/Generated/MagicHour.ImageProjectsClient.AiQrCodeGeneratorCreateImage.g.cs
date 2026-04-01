@@ -408,7 +408,6 @@ namespace MagicHour
             string? name = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::MagicHour.AiQrCodeGeneratorCreateImageRequest
             {
                 Name = name,

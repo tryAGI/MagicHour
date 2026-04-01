@@ -409,7 +409,6 @@ namespace MagicHour
             global::MagicHour.AiGifGeneratorCreateImageRequestOutputFormat? outputFormat = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::MagicHour.AiGifGeneratorCreateImageRequest
             {
                 Name = name,
