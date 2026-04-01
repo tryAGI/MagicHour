@@ -431,6 +431,7 @@ namespace MagicHour
             int? maxResolution = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::MagicHour.AiTalkingPhotoCreateTalkingPhotoRequest
             {
                 Name = name,

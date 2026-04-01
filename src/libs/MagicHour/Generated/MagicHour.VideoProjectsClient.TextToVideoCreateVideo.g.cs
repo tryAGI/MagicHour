@@ -513,6 +513,7 @@ namespace MagicHour
             bool? audio = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::MagicHour.TextToVideoCreateVideoRequest
             {
                 Name = name,

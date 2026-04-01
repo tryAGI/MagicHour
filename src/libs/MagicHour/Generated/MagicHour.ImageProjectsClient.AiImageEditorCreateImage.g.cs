@@ -468,6 +468,7 @@ namespace MagicHour
             global::MagicHour.AiImageEditorCreateImageRequestResolution? resolution = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::MagicHour.AiImageEditorCreateImageRequest
             {
                 Name = name,

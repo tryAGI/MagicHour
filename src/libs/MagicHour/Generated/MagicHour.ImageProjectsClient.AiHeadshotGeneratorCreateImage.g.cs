@@ -409,6 +409,7 @@ namespace MagicHour
             global::MagicHour.AiHeadshotGeneratorCreateImageRequestStyle? style = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::MagicHour.AiHeadshotGeneratorCreateImageRequest
             {
                 Name = name,
