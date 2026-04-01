@@ -431,7 +431,6 @@ namespace MagicHour
             global::System.Collections.Generic.IList<global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItem> items,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::MagicHour.VideoAssetsGeneratePresignedUrlRequest
             {
                 Items = items,
