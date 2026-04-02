@@ -54,7 +54,7 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Image To Video video",<br/>
         ///   "end_seconds": 5,<br/>
-        ///   "model": "kling-2.5-audio",<br/>
+        ///   "model": "kling-3.0",<br/>
         ///   "resolution": "720p",<br/>
         ///   "audio": true,<br/>
         ///   "style": {<br/>

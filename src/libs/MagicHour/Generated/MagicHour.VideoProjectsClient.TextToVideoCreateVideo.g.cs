@@ -56,7 +56,7 @@ namespace MagicHour
         ///   "end_seconds": 5,<br/>
         ///   "aspect_ratio": "16:9",<br/>
         ///   "resolution": "720p",<br/>
-        ///   "model": "kling-2.5-audio",<br/>
+        ///   "model": "kling-3.0",<br/>
         ///   "audio": true,<br/>
         ///   "style": {<br/>
         ///     "prompt": "a dog running"<br/>
