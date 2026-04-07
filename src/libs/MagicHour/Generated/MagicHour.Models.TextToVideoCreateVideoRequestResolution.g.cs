@@ -8,10 +8,12 @@ namespace MagicHour
     /// * **`ltx-2`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
+    /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
     /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
     /// * **`kling-3.0`**: Supports 720p, 1080p.<br/>
     /// * **`sora-2`**: Supports 720p.<br/>
     /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
+    /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
     /// Legacy models:<br/>
     /// * **`kling-1.6`**: Supports 720p, 1080p.<br/>
     /// Example: 720p

@@ -45,7 +45,7 @@ namespace MagicHour
         public required int ImageCount { get; set; }
 
         /// <summary>
-        /// The type of the image project. Possible values are AI_HEADSHOT, AI_IMAGE, IMAGE_UPSCALER, FACE_SWAP, PHOTO_EDITOR, QR_CODE, BACKGROUND_REMOVER, CLOTHES_CHANGER, AI_MEME, FACE_EDITOR, PHOTO_COLORIZER, AI_GIF, AI_SELFIE, AI_IMAGE_EDITOR, HEAD_SWAP, STORYBOARD, CHARACTER_SWAP<br/>
+        /// The type of the image project. Possible values are AI_HEADSHOT, AI_IMAGE, IMAGE_UPSCALER, FACE_SWAP, PHOTO_EDITOR, QR_CODE, BACKGROUND_REMOVER, CLOTHES_CHANGER, AI_MEME, FACE_EDITOR, PHOTO_COLORIZER, AI_GIF, AI_SELFIE, AI_IMAGE_EDITOR, HEAD_SWAP, STORYBOARD, BODY_SWAP<br/>
         /// Example: AI_IMAGE
         /// </summary>
         /// <example>AI_IMAGE</example>
@@ -114,7 +114,7 @@ namespace MagicHour
         /// Example: 1
         /// </param>
         /// <param name="type">
-        /// The type of the image project. Possible values are AI_HEADSHOT, AI_IMAGE, IMAGE_UPSCALER, FACE_SWAP, PHOTO_EDITOR, QR_CODE, BACKGROUND_REMOVER, CLOTHES_CHANGER, AI_MEME, FACE_EDITOR, PHOTO_COLORIZER, AI_GIF, AI_SELFIE, AI_IMAGE_EDITOR, HEAD_SWAP, STORYBOARD, CHARACTER_SWAP<br/>
+        /// The type of the image project. Possible values are AI_HEADSHOT, AI_IMAGE, IMAGE_UPSCALER, FACE_SWAP, PHOTO_EDITOR, QR_CODE, BACKGROUND_REMOVER, CLOTHES_CHANGER, AI_MEME, FACE_EDITOR, PHOTO_COLORIZER, AI_GIF, AI_SELFIE, AI_IMAGE_EDITOR, HEAD_SWAP, STORYBOARD, BODY_SWAP<br/>
         /// Example: AI_IMAGE
         /// </param>
         /// <param name="createdAt"></param>
