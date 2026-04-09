@@ -5,6 +5,25 @@ namespace MagicHour
 {
     public partial class VideoProjectsClient
     {
+
+
+        private static readonly global::MagicHour.EndPointSecurityRequirement s_TextToVideoCreateVideoSecurityRequirement0 =
+            new global::MagicHour.EndPointSecurityRequirement
+            {
+                Authorizations = new global::MagicHour.EndPointAuthorizationRequirement[]
+                {                    new global::MagicHour.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::MagicHour.EndPointSecurityRequirement[] s_TextToVideoCreateVideoSecurityRequirements =
+            new global::MagicHour.EndPointSecurityRequirement[]
+            {                s_TextToVideoCreateVideoSecurityRequirement0,
+            };
         partial void PrepareTextToVideoCreateVideoArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::MagicHour.TextToVideoCreateVideoRequest request);
@@ -77,9 +96,15 @@ namespace MagicHour
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::MagicHour.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_TextToVideoCreateVideoSecurityRequirements,
+                operationName: "TextToVideoCreateVideoAsync");
+
             var __pathBuilder = new global::MagicHour.PathBuilder(
                 path: "/v1/text-to-video",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -89,7 +114,7 @@ namespace MagicHour
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
