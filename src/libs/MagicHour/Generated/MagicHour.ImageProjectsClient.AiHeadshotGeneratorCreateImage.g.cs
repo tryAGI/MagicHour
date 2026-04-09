@@ -5,6 +5,25 @@ namespace MagicHour
 {
     public partial class ImageProjectsClient
     {
+
+
+        private static readonly global::MagicHour.EndPointSecurityRequirement s_AiHeadshotGeneratorCreateImageSecurityRequirement0 =
+            new global::MagicHour.EndPointSecurityRequirement
+            {
+                Authorizations = new global::MagicHour.EndPointAuthorizationRequirement[]
+                {                    new global::MagicHour.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::MagicHour.EndPointSecurityRequirement[] s_AiHeadshotGeneratorCreateImageSecurityRequirements =
+            new global::MagicHour.EndPointSecurityRequirement[]
+            {                s_AiHeadshotGeneratorCreateImageSecurityRequirement0,
+            };
         partial void PrepareAiHeadshotGeneratorCreateImageArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::MagicHour.AiHeadshotGeneratorCreateImageRequest request);
@@ -59,9 +78,15 @@ namespace MagicHour
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::MagicHour.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AiHeadshotGeneratorCreateImageSecurityRequirements,
+                operationName: "AiHeadshotGeneratorCreateImageAsync");
+
             var __pathBuilder = new global::MagicHour.PathBuilder(
                 path: "/v1/ai-headshot-generator",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -71,7 +96,7 @@ namespace MagicHour
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

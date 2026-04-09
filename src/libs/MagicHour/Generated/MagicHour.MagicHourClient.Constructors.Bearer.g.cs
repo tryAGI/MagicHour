@@ -6,6 +6,7 @@ namespace MagicHour
     public sealed partial class MagicHourClient
     {
         /// <inheritdoc cref="MagicHourClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::MagicHour.EndPointAuthorization}?, bool)"/>
+
         public MagicHourClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

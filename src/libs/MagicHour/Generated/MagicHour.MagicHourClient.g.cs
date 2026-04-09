@@ -23,7 +23,7 @@ namespace MagicHour
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.magichour.ai";
+        public const string DefaultBaseUrl = "https://api.magichour.ai/";
 
         private bool _disposeHttpClient = true;
 
@@ -48,7 +48,7 @@ namespace MagicHour
 
 
         /// <summary>
-        /// API related to audio projects
+        /// API related to audio projects.
         /// </summary>
         public AudioProjectsClient AudioProjects => new AudioProjectsClient(HttpClient, authorizations: Authorizations)
         {
@@ -57,7 +57,7 @@ namespace MagicHour
         };
 
         /// <summary>
-        /// API related to uploading assets used for video generation
+        /// API related to uploading assets used for video generation.
         /// </summary>
         public FilesClient Files => new FilesClient(HttpClient, authorizations: Authorizations)
         {
@@ -66,7 +66,7 @@ namespace MagicHour
         };
 
         /// <summary>
-        /// API related to image projects
+        /// API related to image projects.
         /// </summary>
         public ImageProjectsClient ImageProjects => new ImageProjectsClient(HttpClient, authorizations: Authorizations)
         {
@@ -75,7 +75,7 @@ namespace MagicHour
         };
 
         /// <summary>
-        /// API related to video projects
+        /// API related to video projects.
         /// </summary>
         public VideoProjectsClient VideoProjects => new VideoProjectsClient(HttpClient, authorizations: Authorizations)
         {

@@ -51,22 +51,22 @@ namespace MagicHour
 
 
         /// <summary>
-        /// API related to audio projects
+        /// API related to audio projects.
         /// </summary>
         public AudioProjectsClient AudioProjects { get; }
 
         /// <summary>
-        /// API related to uploading assets used for video generation
+        /// API related to uploading assets used for video generation.
         /// </summary>
         public FilesClient Files { get; }
 
         /// <summary>
-        /// API related to image projects
+        /// API related to image projects.
         /// </summary>
         public ImageProjectsClient ImageProjects { get; }
 
         /// <summary>
-        /// API related to video projects
+        /// API related to video projects.
         /// </summary>
         public VideoProjectsClient VideoProjects { get; }
 

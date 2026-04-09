@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// API related to uploading assets used for video generation<br/>
+    /// API related to uploading assets used for video generation.<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
@@ -13,7 +13,7 @@ namespace MagicHour
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.magichour.ai";
+        public const string DefaultBaseUrl = "https://api.magichour.ai/";
 
         private bool _disposeHttpClient = true;
 
