@@ -25,6 +25,7 @@ namespace MagicHour
             Authorizations.Add(new global::MagicHour.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "HttpBearer",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,

@@ -25,6 +25,7 @@ namespace MagicHour
         /// For detailed examples, see the [product page](https://magichour.ai/products/image-to-video).
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -53,6 +54,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.ImageToVideoCreateVideoResponse> ImageToVideoCreateVideoAsync(
 
             global::MagicHour.ImageToVideoCreateVideoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Image-to-Video<br/>
@@ -149,6 +151,7 @@ namespace MagicHour
         /// <param name="assets">
         /// Provide the assets for image-to-video. Sora 2 only supports images with an aspect ratio of `9:16` or `16:9`.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.ImageToVideoCreateVideoResponse> ImageToVideoCreateVideoAsync(
@@ -159,6 +162,7 @@ namespace MagicHour
             global::MagicHour.ImageToVideoCreateVideoRequestResolution? resolution = default,
             bool? audio = default,
             global::MagicHour.ImageToVideoCreateVideoRequestStyle? style = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

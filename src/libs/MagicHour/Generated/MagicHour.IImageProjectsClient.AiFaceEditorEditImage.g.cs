@@ -9,6 +9,7 @@ namespace MagicHour
         /// Edit facial features of an image using AI. Each edit costs 1 frame. The height/width of the output image depends on your subscription. Please refer to our [pricing](https://magichour.ai/pricing) page for more details
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -46,6 +47,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AiFaceEditorEditImageResponse> AiFaceEditorEditImageAsync(
 
             global::MagicHour.AiFaceEditorEditImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// AI Face Editor<br/>
@@ -62,12 +64,14 @@ namespace MagicHour
         /// <param name="style">
         /// Face editing parameters
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.AiFaceEditorEditImageResponse> AiFaceEditorEditImageAsync(
             global::MagicHour.AiFaceEditorEditImageRequestAssets assets,
             global::MagicHour.AiFaceEditorEditImageRequestStyle style,
             string? name = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

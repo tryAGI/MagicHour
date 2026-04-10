@@ -25,6 +25,7 @@ namespace MagicHour
         /// For detailed examples, see the [product page](https://magichour.ai/products/text-to-video).
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -50,6 +51,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.TextToVideoCreateVideoResponse> TextToVideoCreateVideoAsync(
 
             global::MagicHour.TextToVideoCreateVideoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Text-to-Video<br/>
@@ -156,6 +158,7 @@ namespace MagicHour
         /// Example: true
         /// </param>
         /// <param name="style"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.TextToVideoCreateVideoResponse> TextToVideoCreateVideoAsync(
@@ -166,6 +169,7 @@ namespace MagicHour
             global::MagicHour.TextToVideoCreateVideoRequestResolution? resolution = default,
             global::MagicHour.TextToVideoCreateVideoRequestModel? model = default,
             bool? audio = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

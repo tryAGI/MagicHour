@@ -9,6 +9,7 @@ namespace MagicHour
         /// Automatically generate subtitles for your video in multiple languages.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -45,6 +46,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSubtitleGeneratorCreateVideoResponse> AutoSubtitleGeneratorCreateVideoAsync(
 
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Auto Subtitle Generator<br/>
@@ -77,6 +79,7 @@ namespace MagicHour
         /// * `.style.custom_config.vertical_position`<br/>
         /// * `.style.custom_config.horizontal_position`
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSubtitleGeneratorCreateVideoResponse> AutoSubtitleGeneratorCreateVideoAsync(
@@ -85,6 +88,7 @@ namespace MagicHour
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestAssets assets,
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyle style,
             string? name = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

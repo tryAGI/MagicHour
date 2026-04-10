@@ -9,6 +9,7 @@ namespace MagicHour
         /// Create an AI image with advanced model selection and quality controls.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -34,6 +35,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AiImageGeneratorCreateImageResponse> AiImageGeneratorCreateImageAsync(
 
             global::MagicHour.AiImageGeneratorCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// AI Image Generator<br/>
@@ -95,6 +97,7 @@ namespace MagicHour
         /// <param name="style">
         /// The art style to use for image generation.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.AiImageGeneratorCreateImageResponse> AiImageGeneratorCreateImageAsync(
@@ -104,6 +107,7 @@ namespace MagicHour
             global::MagicHour.AiImageGeneratorCreateImageRequestModel? model = default,
             global::MagicHour.AiImageGeneratorCreateImageRequestAspectRatio? aspectRatio = default,
             global::MagicHour.AiImageGeneratorCreateImageRequestResolution? resolution = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

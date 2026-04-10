@@ -9,6 +9,7 @@ namespace MagicHour
         /// Edit images with AI.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -39,6 +40,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AiImageEditorCreateImageResponse> AiImageEditorCreateImageAsync(
 
             global::MagicHour.AiImageEditorCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// AI Image Editor<br/>
@@ -101,6 +103,7 @@ namespace MagicHour
         /// <param name="assets">
         /// Provide the assets for image edit
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.AiImageEditorCreateImageResponse> AiImageEditorCreateImageAsync(
@@ -111,6 +114,7 @@ namespace MagicHour
             global::MagicHour.AiImageEditorCreateImageRequestModel? model = default,
             global::MagicHour.AiImageEditorCreateImageRequestAspectRatio? aspectRatio = default,
             global::MagicHour.AiImageEditorCreateImageRequestResolution? resolution = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

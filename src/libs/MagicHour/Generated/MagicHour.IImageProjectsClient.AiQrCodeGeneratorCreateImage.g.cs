@@ -9,6 +9,7 @@ namespace MagicHour
         /// Create an AI QR code. Each QR code costs 0 credits.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -30,6 +31,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AiQrCodeGeneratorCreateImageResponse> AiQrCodeGeneratorCreateImageAsync(
 
             global::MagicHour.AiQrCodeGeneratorCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// AI QR Code Generator<br/>
@@ -45,12 +47,14 @@ namespace MagicHour
         /// Example: https://magichour.ai
         /// </param>
         /// <param name="style"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.AiQrCodeGeneratorCreateImageResponse> AiQrCodeGeneratorCreateImageAsync(
             string content,
             global::MagicHour.AiQrCodeGeneratorCreateImageRequestStyle style,
             string? name = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

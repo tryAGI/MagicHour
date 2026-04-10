@@ -9,6 +9,7 @@ namespace MagicHour
         /// Create a Animation video. The estimated frame cost is calculated based on the `fps` and `end_seconds` input.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -44,6 +45,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AnimationCreateVideoResponse> AnimationCreateVideoAsync(
 
             global::MagicHour.AnimationCreateVideoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Animation<br/>
@@ -76,6 +78,7 @@ namespace MagicHour
         /// <param name="assets">
         /// Provide the assets for animation.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.AnimationCreateVideoResponse> AnimationCreateVideoAsync(
@@ -86,6 +89,7 @@ namespace MagicHour
             global::MagicHour.AnimationCreateVideoRequestStyle style,
             global::MagicHour.AnimationCreateVideoRequestAssets assets,
             string? name = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

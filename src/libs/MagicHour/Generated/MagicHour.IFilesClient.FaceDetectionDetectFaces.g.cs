@@ -12,6 +12,7 @@ namespace MagicHour
         /// Note: Face detection is free to use for the near future. Pricing may change in the future.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -32,6 +33,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.FaceDetectionDetectFacesResponse> FaceDetectionDetectFacesAsync(
 
             global::MagicHour.FaceDetectionDetectFacesRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Face Detection<br/>
@@ -50,11 +52,13 @@ namespace MagicHour
         /// <param name="assets">
         /// Provide the assets for face detection
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.FaceDetectionDetectFacesResponse> FaceDetectionDetectFacesAsync(
             global::MagicHour.FaceDetectionDetectFacesRequestAssets assets,
             double? confidenceScore = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

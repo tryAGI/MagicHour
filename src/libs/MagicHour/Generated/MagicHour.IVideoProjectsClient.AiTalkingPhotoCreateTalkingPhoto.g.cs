@@ -9,6 +9,7 @@ namespace MagicHour
         /// Create a talking photo from an image and audio or text input.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -37,6 +38,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AiTalkingPhotoCreateTalkingPhotoResponse> AiTalkingPhotoCreateTalkingPhotoAsync(
 
             global::MagicHour.AiTalkingPhotoCreateTalkingPhotoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// AI Talking Photo<br/>
@@ -65,6 +67,7 @@ namespace MagicHour
         /// Constrains the larger dimension (height or width) of the output video. Allows you to set a lower resolution than your plan's maximum if desired. The value is capped by your plan's max resolution.<br/>
         /// Example: 1024
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.AiTalkingPhotoCreateTalkingPhotoResponse> AiTalkingPhotoCreateTalkingPhotoAsync(
@@ -74,6 +77,7 @@ namespace MagicHour
             string? name = default,
             global::MagicHour.AiTalkingPhotoCreateTalkingPhotoRequestStyle? style = default,
             int? maxResolution = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

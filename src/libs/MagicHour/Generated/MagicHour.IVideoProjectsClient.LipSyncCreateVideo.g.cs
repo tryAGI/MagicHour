@@ -25,6 +25,7 @@ namespace MagicHour
         /// For detailed examples, see the [product page](https://magichour.ai/products/lip-sync).
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -54,6 +55,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.LipSyncCreateVideoResponse> LipSyncCreateVideoAsync(
 
             global::MagicHour.LipSyncCreateVideoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Lip Sync<br/>
@@ -98,6 +100,7 @@ namespace MagicHour
         /// <param name="style">
         /// Attributes used to dictate the style of the output
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.LipSyncCreateVideoResponse> LipSyncCreateVideoAsync(
@@ -107,6 +110,7 @@ namespace MagicHour
             string? name = default,
             double? maxFpsLimit = default,
             global::MagicHour.LipSyncCreateVideoRequestStyle? style = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
