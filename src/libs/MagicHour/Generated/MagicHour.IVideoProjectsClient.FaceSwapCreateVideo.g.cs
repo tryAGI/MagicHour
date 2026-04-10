@@ -25,6 +25,7 @@ namespace MagicHour
         /// For detailed examples, see the [product page](https://magichour.ai/products/face-swap).
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -60,6 +61,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.FaceSwapCreateVideoResponse> FaceSwapCreateVideoAsync(
 
             global::MagicHour.FaceSwapCreateVideoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Face Swap Video<br/>
@@ -101,6 +103,7 @@ namespace MagicHour
         /// <param name="assets">
         /// Provide the assets for face swap. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.FaceSwapCreateVideoResponse> FaceSwapCreateVideoAsync(
@@ -109,6 +112,7 @@ namespace MagicHour
             global::MagicHour.FaceSwapCreateVideoRequestAssets assets,
             string? name = default,
             global::MagicHour.FaceSwapCreateVideoRequestStyle? style = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

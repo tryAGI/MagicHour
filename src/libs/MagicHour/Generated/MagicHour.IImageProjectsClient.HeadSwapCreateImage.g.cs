@@ -9,6 +9,7 @@ namespace MagicHour
         /// Swap a head onto a body image. Each image costs 10 credits. Output resolution depends on your subscription; you may set `max_resolution` lower than your plan maximum if desired.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -31,6 +32,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.HeadSwapCreateImageResponse> HeadSwapCreateImageAsync(
 
             global::MagicHour.HeadSwapCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Head Swap<br/>
@@ -48,12 +50,14 @@ namespace MagicHour
         /// <param name="assets">
         /// Provide the body and head images for head swap
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.HeadSwapCreateImageResponse> HeadSwapCreateImageAsync(
             global::MagicHour.HeadSwapCreateImageRequestAssets assets,
             string? name = default,
             int? maxResolution = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

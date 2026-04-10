@@ -9,6 +9,7 @@ namespace MagicHour
         /// Create an AI generated meme. Each meme costs 10 credits.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
         /// <remarks>
@@ -31,6 +32,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AiMemeGeneratorCreateImageResponse> AiMemeGeneratorCreateImageAsync(
 
             global::MagicHour.AiMemeGeneratorCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// AI Meme Generator<br/>
@@ -41,11 +43,13 @@ namespace MagicHour
         /// Example: My Funny Meme
         /// </param>
         /// <param name="style"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::MagicHour.AiMemeGeneratorCreateImageResponse> AiMemeGeneratorCreateImageAsync(
             global::MagicHour.AiMemeGeneratorCreateImageRequestStyle style,
             string? name = default,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
