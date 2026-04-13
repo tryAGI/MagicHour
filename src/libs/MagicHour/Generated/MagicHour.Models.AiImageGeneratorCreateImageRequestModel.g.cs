@@ -7,30 +7,32 @@ namespace MagicHour
     /// The AI model to use for image generation. Each model has different capabilities and costs.<br/>
     /// **Models:**<br/>
     /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-    /// - `flux-schnell` - 5 credits/image<br/>
-    ///   - Supported resolutions: auto<br/>
+    /// - `flux-schnell` - from 5 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
-    /// - `z-image-turbo` - 5 credits/image<br/>
-    ///   - Supported resolutions: auto, 2k<br/>
+    /// - `z-image-turbo` - from 5 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
-    /// - `seedream` - 30 credits/image<br/>
-    ///   - Supported resolutions: auto, 2k, 4k<br/>
+    /// - `seedream-v4` - from 40 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
-    /// - `nano-banana` - 50 credits/image<br/>
-    ///   - Supported resolutions: auto<br/>
+    /// - `nano-banana` - from 50 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
-    /// - `nano-banana-2` - 100 credits/image<br/>
-    ///   - Supported resolutions: auto, 2k, 4k<br/>
+    /// - `nano-banana-2` - from 100 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
-    /// - `nano-banana-pro` - 150 credits/image<br/>
-    ///   - Supported resolutions: auto, 2k, 4k<br/>
+    /// - `nano-banana-pro` - from 150 credits/image<br/>
+    ///   - Supported resolutions: 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Image count allowed: 1, 4, 9, 16<br/>
+    /// **Deprecated Enum Values:**<br/>
+    /// - `seedream` - Use `seedream-v4` instead.<br/>
     /// Example: default
     /// </summary>
     public enum AiImageGeneratorCreateImageRequestModel
@@ -62,6 +64,10 @@ namespace MagicHour
         /// <summary>
         /// 
         /// </summary>
+        SeedreamV4,
+        /// <summary>
+        /// 
+        /// </summary>
         ZImageTurbo,
     }
 
@@ -83,6 +89,7 @@ namespace MagicHour
                 AiImageGeneratorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
                 AiImageGeneratorCreateImageRequestModel.NanoBananaPro => "nano-banana-pro",
                 AiImageGeneratorCreateImageRequestModel.Seedream => "seedream",
+                AiImageGeneratorCreateImageRequestModel.SeedreamV4 => "seedream-v4",
                 AiImageGeneratorCreateImageRequestModel.ZImageTurbo => "z-image-turbo",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -100,6 +107,7 @@ namespace MagicHour
                 "nano-banana-2" => AiImageGeneratorCreateImageRequestModel.NanoBanana2,
                 "nano-banana-pro" => AiImageGeneratorCreateImageRequestModel.NanoBananaPro,
                 "seedream" => AiImageGeneratorCreateImageRequestModel.Seedream,
+                "seedream-v4" => AiImageGeneratorCreateImageRequestModel.SeedreamV4,
                 "z-image-turbo" => AiImageGeneratorCreateImageRequestModel.ZImageTurbo,
                 _ => null,
             };

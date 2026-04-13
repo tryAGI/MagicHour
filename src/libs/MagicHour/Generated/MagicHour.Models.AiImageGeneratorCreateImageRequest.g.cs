@@ -30,30 +30,32 @@ namespace MagicHour
         /// The AI model to use for image generation. Each model has different capabilities and costs.<br/>
         /// **Models:**<br/>
         /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `flux-schnell` - 5 credits/image<br/>
-        ///   - Supported resolutions: auto<br/>
+        /// - `flux-schnell` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `z-image-turbo` - 5 credits/image<br/>
-        ///   - Supported resolutions: auto, 2k<br/>
+        /// - `z-image-turbo` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `seedream` - 30 credits/image<br/>
-        ///   - Supported resolutions: auto, 2k, 4k<br/>
+        /// - `seedream-v4` - from 40 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana` - 50 credits/image<br/>
-        ///   - Supported resolutions: auto<br/>
+        /// - `nano-banana` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-2` - 100 credits/image<br/>
-        ///   - Supported resolutions: auto, 2k, 4k<br/>
+        /// - `nano-banana-2` - from 100 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-pro` - 150 credits/image<br/>
-        ///   - Supported resolutions: auto, 2k, 4k<br/>
+        /// - `nano-banana-pro` - from 150 credits/image<br/>
+        ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 4, 9, 16<br/>
+        /// **Deprecated Enum Values:**<br/>
+        /// - `seedream` - Use `seedream-v4` instead.<br/>
         /// Example: default
         /// </summary>
         /// <example>default</example>
@@ -71,12 +73,21 @@ namespace MagicHour
         public global::MagicHour.AiImageGeneratorCreateImageRequestAspectRatio? AspectRatio { get; set; }
 
         /// <summary>
-        /// Maximum resolution for the generated image.<br/>
+        /// Maximum resolution (longest edge) for the output image.<br/>
         /// **Options:**<br/>
-        /// - `auto` - Automatic resolution (all tiers, default)<br/>
-        /// - `2k` - Up to 2048px (requires Pro or Business tier)<br/>
-        /// - `4k` - Up to 4096px (requires Business tier)<br/>
-        /// Note: Resolution availability depends on the model and your subscription tier. See `model` field for which resolutions each model supports. Defaults to `auto` if not specified.<br/>
+        /// - `640px` — up to 640px<br/>
+        /// - `1k` — up to 1024px<br/>
+        /// - `2k` — up to 2048px<br/>
+        /// - `4k` — up to 4096px<br/>
+        /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
+        /// **Per-model support:**<br/>
+        /// - `flux-schnell` - 640px, 1k, 2k<br/>
+        /// - `z-image-turbo` - 640px, 1k, 2k<br/>
+        /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana` - 640px, 1k<br/>
+        /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+        /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
         /// Example: auto
         /// </summary>
@@ -117,30 +128,32 @@ namespace MagicHour
         /// The AI model to use for image generation. Each model has different capabilities and costs.<br/>
         /// **Models:**<br/>
         /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `flux-schnell` - 5 credits/image<br/>
-        ///   - Supported resolutions: auto<br/>
+        /// - `flux-schnell` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `z-image-turbo` - 5 credits/image<br/>
-        ///   - Supported resolutions: auto, 2k<br/>
+        /// - `z-image-turbo` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `seedream` - 30 credits/image<br/>
-        ///   - Supported resolutions: auto, 2k, 4k<br/>
+        /// - `seedream-v4` - from 40 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana` - 50 credits/image<br/>
-        ///   - Supported resolutions: auto<br/>
+        /// - `nano-banana` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-2` - 100 credits/image<br/>
-        ///   - Supported resolutions: auto, 2k, 4k<br/>
+        /// - `nano-banana-2` - from 100 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-pro` - 150 credits/image<br/>
-        ///   - Supported resolutions: auto, 2k, 4k<br/>
+        /// - `nano-banana-pro` - from 150 credits/image<br/>
+        ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 4, 9, 16<br/>
+        /// **Deprecated Enum Values:**<br/>
+        /// - `seedream` - Use `seedream-v4` instead.<br/>
         /// Example: default
         /// </param>
         /// <param name="aspectRatio">
@@ -148,12 +161,21 @@ namespace MagicHour
         /// Example: 1:1
         /// </param>
         /// <param name="resolution">
-        /// Maximum resolution for the generated image.<br/>
+        /// Maximum resolution (longest edge) for the output image.<br/>
         /// **Options:**<br/>
-        /// - `auto` - Automatic resolution (all tiers, default)<br/>
-        /// - `2k` - Up to 2048px (requires Pro or Business tier)<br/>
-        /// - `4k` - Up to 4096px (requires Business tier)<br/>
-        /// Note: Resolution availability depends on the model and your subscription tier. See `model` field for which resolutions each model supports. Defaults to `auto` if not specified.<br/>
+        /// - `640px` — up to 640px<br/>
+        /// - `1k` — up to 1024px<br/>
+        /// - `2k` — up to 2048px<br/>
+        /// - `4k` — up to 4096px<br/>
+        /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
+        /// **Per-model support:**<br/>
+        /// - `flux-schnell` - 640px, 1k, 2k<br/>
+        /// - `z-image-turbo` - 640px, 1k, 2k<br/>
+        /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana` - 640px, 1k<br/>
+        /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+        /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
         /// Example: auto
         /// </param>
