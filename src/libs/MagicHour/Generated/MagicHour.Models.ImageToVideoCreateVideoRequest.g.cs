@@ -19,7 +19,7 @@ namespace MagicHour
 
         /// <summary>
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
-        /// * **`ltx-2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
+        /// * **`ltx-2`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
         /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
         /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
@@ -27,7 +27,7 @@ namespace MagicHour
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
         /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
-        /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
+        /// * **`veo3.1-lite`**: 8, 16, 24, 32, 40, 48, 56<br/>
         /// Legacy models:<br/>
         /// * **`kling-1.6`**: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60<br/>
         /// Example: 5
@@ -91,7 +91,7 @@ namespace MagicHour
         /// * **`kling-3.0`**: Toggle-able (can enable/disable)<br/>
         /// * **`sora-2`**: Automatically included with no extra credits<br/>
         /// * **`veo3.1`**: Toggle-able (can enable/disable)<br/>
-        /// * **`veo3.1-lite`**: Automatically included with no extra credits<br/>
+        /// * **`veo3.1-lite`**: Toggle-able (can enable/disable)<br/>
         /// Legacy models:<br/>
         /// * **`kling-1.6`**: Not supported<br/>
         /// Example: true
@@ -124,7 +124,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="endSeconds">
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
-        /// * **`ltx-2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
+        /// * **`ltx-2`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
         /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
         /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
@@ -132,7 +132,7 @@ namespace MagicHour
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
         /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
-        /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
+        /// * **`veo3.1-lite`**: 8, 16, 24, 32, 40, 48, 56<br/>
         /// Legacy models:<br/>
         /// * **`kling-1.6`**: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60<br/>
         /// Example: 5
@@ -189,7 +189,7 @@ namespace MagicHour
         /// * **`kling-3.0`**: Toggle-able (can enable/disable)<br/>
         /// * **`sora-2`**: Automatically included with no extra credits<br/>
         /// * **`veo3.1`**: Toggle-able (can enable/disable)<br/>
-        /// * **`veo3.1-lite`**: Automatically included with no extra credits<br/>
+        /// * **`veo3.1-lite`**: Toggle-able (can enable/disable)<br/>
         /// Legacy models:<br/>
         /// * **`kling-1.6`**: Not supported<br/>
         /// Example: true

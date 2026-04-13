@@ -7,29 +7,29 @@ namespace MagicHour
     /// The AI model to use for image editing. Each model has different capabilities and costs.<br/>
     /// **Models:**<br/>
     /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-    /// - `qwen-edit` - 10 credits/image<br/>
+    /// - `qwen-edit` - from 10 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
-    ///   - Image count allowed: 1<br/>
     ///   - Max additional input images: 2<br/>
-    /// - `nano-banana` - 50 credits/image<br/>
+    /// - `nano-banana` - from 50 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
-    ///   - Image count allowed: 1<br/>
     ///   - Max additional input images: 9<br/>
-    /// - `nano-banana-2` - 100 credits/image<br/>
+    /// - `nano-banana-2` - from 100 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
-    ///   - Image count allowed: 1<br/>
     ///   - Max additional input images: 9<br/>
-    /// - `seedream-v4` - 50 credits/image<br/>
+    /// - `seedream-v4` - from 40 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
-    ///   - Image count allowed: 1<br/>
     ///   - Max additional input images: 9<br/>
-    /// - `nano-banana-pro` - 150 credits/image<br/>
+    /// - `nano-banana-pro` - from 150 credits/image<br/>
+    ///   - Supported resolutions: 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
-    ///   - Image count allowed: 1, 4, 9, 16<br/>
     ///   - Max additional input images: 9<br/>
-    /// - `seedream-v4.5` - 100 credits/image<br/>
+    /// - `seedream-v4.5` - from 50 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
-    ///   - Image count allowed: 1<br/>
     ///   - Max additional input images: 9<br/>
     /// Example: default
     /// </summary>

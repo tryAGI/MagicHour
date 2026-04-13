@@ -30,29 +30,29 @@ namespace MagicHour
         /// The AI model to use for image editing. Each model has different capabilities and costs.<br/>
         /// **Models:**<br/>
         /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `qwen-edit` - 10 credits/image<br/>
+        /// - `qwen-edit` - from 10 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 2<br/>
-        /// - `nano-banana` - 50 credits/image<br/>
+        /// - `nano-banana` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `nano-banana-2` - 100 credits/image<br/>
+        /// - `nano-banana-2` - from 100 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `seedream-v4` - 50 credits/image<br/>
+        /// - `seedream-v4` - from 40 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `nano-banana-pro` - 150 credits/image<br/>
+        /// - `nano-banana-pro` - from 150 credits/image<br/>
+        ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 4, 9, 16<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `seedream-v4.5` - 100 credits/image<br/>
+        /// - `seedream-v4.5` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 9<br/>
         /// Example: default
         /// </summary>
@@ -71,15 +71,24 @@ namespace MagicHour
         public global::MagicHour.AiImageEditorCreateImageRequestAspectRatio? AspectRatio { get; set; }
 
         /// <summary>
-        /// Maximum resolution for the generated image.<br/>
+        /// Maximum resolution (longest edge) for the output image.<br/>
         /// **Options:**<br/>
-        /// - `auto` - Automatic resolution (all tiers, default)<br/>
-        /// - `2k` - Up to 2048px (requires Pro or Business tier)<br/>
-        /// - `4k` - Up to 4096px (requires Business tier)<br/>
-        /// Note: Resolution availability depends on your subscription tier. Defaults to `auto` if not specified.<br/>
-        /// Example: auto
+        /// - `640px` — up to 640px<br/>
+        /// - `1k` — up to 1024px<br/>
+        /// - `2k` — up to 2048px<br/>
+        /// - `4k` — up to 4096px<br/>
+        /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
+        /// **Per-model support:**<br/>
+        /// - `qwen-edit` - 640px, 1k, 2k<br/>
+        /// - `nano-banana` - 640px, 1k<br/>
+        /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+        /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+        /// Note: Resolution availability depends on the model and your subscription tier.<br/>
+        /// Example: 1k
         /// </summary>
-        /// <example>auto</example>
+        /// <example>1k</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiImageEditorCreateImageRequestResolutionJsonConverter))]
         public global::MagicHour.AiImageEditorCreateImageRequestResolution? Resolution { get; set; }
@@ -125,29 +134,29 @@ namespace MagicHour
         /// The AI model to use for image editing. Each model has different capabilities and costs.<br/>
         /// **Models:**<br/>
         /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `qwen-edit` - 10 credits/image<br/>
+        /// - `qwen-edit` - from 10 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 2<br/>
-        /// - `nano-banana` - 50 credits/image<br/>
+        /// - `nano-banana` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `nano-banana-2` - 100 credits/image<br/>
+        /// - `nano-banana-2` - from 100 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `seedream-v4` - 50 credits/image<br/>
+        /// - `seedream-v4` - from 40 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `nano-banana-pro` - 150 credits/image<br/>
+        /// - `nano-banana-pro` - from 150 credits/image<br/>
+        ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 4, 9, 16<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `seedream-v4.5` - 100 credits/image<br/>
+        /// - `seedream-v4.5` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
         ///   - Max additional input images: 9<br/>
         /// Example: default
         /// </param>
@@ -156,13 +165,22 @@ namespace MagicHour
         /// Example: 1:1
         /// </param>
         /// <param name="resolution">
-        /// Maximum resolution for the generated image.<br/>
+        /// Maximum resolution (longest edge) for the output image.<br/>
         /// **Options:**<br/>
-        /// - `auto` - Automatic resolution (all tiers, default)<br/>
-        /// - `2k` - Up to 2048px (requires Pro or Business tier)<br/>
-        /// - `4k` - Up to 4096px (requires Business tier)<br/>
-        /// Note: Resolution availability depends on your subscription tier. Defaults to `auto` if not specified.<br/>
-        /// Example: auto
+        /// - `640px` — up to 640px<br/>
+        /// - `1k` — up to 1024px<br/>
+        /// - `2k` — up to 2048px<br/>
+        /// - `4k` — up to 4096px<br/>
+        /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
+        /// **Per-model support:**<br/>
+        /// - `qwen-edit` - 640px, 1k, 2k<br/>
+        /// - `nano-banana` - 640px, 1k<br/>
+        /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+        /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+        /// Note: Resolution availability depends on the model and your subscription tier.<br/>
+        /// Example: 1k
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

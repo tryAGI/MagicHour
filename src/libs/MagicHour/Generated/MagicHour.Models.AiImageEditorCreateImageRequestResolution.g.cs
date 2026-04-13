@@ -4,16 +4,29 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Maximum resolution for the generated image.<br/>
+    /// Maximum resolution (longest edge) for the output image.<br/>
     /// **Options:**<br/>
-    /// - `auto` - Automatic resolution (all tiers, default)<br/>
-    /// - `2k` - Up to 2048px (requires Pro or Business tier)<br/>
-    /// - `4k` - Up to 4096px (requires Business tier)<br/>
-    /// Note: Resolution availability depends on your subscription tier. Defaults to `auto` if not specified.<br/>
-    /// Example: auto
+    /// - `640px` — up to 640px<br/>
+    /// - `1k` — up to 1024px<br/>
+    /// - `2k` — up to 2048px<br/>
+    /// - `4k` — up to 4096px<br/>
+    /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
+    /// **Per-model support:**<br/>
+    /// - `qwen-edit` - 640px, 1k, 2k<br/>
+    /// - `nano-banana` - 640px, 1k<br/>
+    /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+    /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
+    /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+    /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+    /// Note: Resolution availability depends on the model and your subscription tier.<br/>
+    /// Example: 1k
     /// </summary>
     public enum AiImageEditorCreateImageRequestResolution
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        x1k,
         /// <summary>
         /// 
         /// </summary>
@@ -23,7 +36,11 @@ namespace MagicHour
         /// </summary>
         x4k,
         /// <summary>
-        /// Resolution availability depends on your subscription tier. Defaults to `auto` if not specified.
+        /// 
+        /// </summary>
+        x640px,
+        /// <summary>
+        /// 
         /// </summary>
         Auto,
     }
@@ -40,8 +57,10 @@ namespace MagicHour
         {
             return value switch
             {
+                AiImageEditorCreateImageRequestResolution.x1k => "1k",
                 AiImageEditorCreateImageRequestResolution.x2k => "2k",
                 AiImageEditorCreateImageRequestResolution.x4k => "4k",
+                AiImageEditorCreateImageRequestResolution.x640px => "640px",
                 AiImageEditorCreateImageRequestResolution.Auto => "auto",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -53,8 +72,10 @@ namespace MagicHour
         {
             return value switch
             {
+                "1k" => AiImageEditorCreateImageRequestResolution.x1k,
                 "2k" => AiImageEditorCreateImageRequestResolution.x2k,
                 "4k" => AiImageEditorCreateImageRequestResolution.x4k,
+                "640px" => AiImageEditorCreateImageRequestResolution.x640px,
                 "auto" => AiImageEditorCreateImageRequestResolution.Auto,
                 _ => null,
             };

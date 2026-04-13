@@ -4,17 +4,30 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Maximum resolution for the generated image.<br/>
+    /// Maximum resolution (longest edge) for the output image.<br/>
     /// **Options:**<br/>
-    /// - `auto` - Automatic resolution (all tiers, default)<br/>
-    /// - `2k` - Up to 2048px (requires Pro or Business tier)<br/>
-    /// - `4k` - Up to 4096px (requires Business tier)<br/>
-    /// Note: Resolution availability depends on the model and your subscription tier. See `model` field for which resolutions each model supports. Defaults to `auto` if not specified.<br/>
+    /// - `640px` — up to 640px<br/>
+    /// - `1k` — up to 1024px<br/>
+    /// - `2k` — up to 2048px<br/>
+    /// - `4k` — up to 4096px<br/>
+    /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
+    /// **Per-model support:**<br/>
+    /// - `flux-schnell` - 640px, 1k, 2k<br/>
+    /// - `z-image-turbo` - 640px, 1k, 2k<br/>
+    /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
+    /// - `nano-banana` - 640px, 1k<br/>
+    /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+    /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+    /// Note: Resolution availability depends on the model and your subscription tier.<br/>
     /// Default Value: auto<br/>
     /// Example: auto
     /// </summary>
     public enum AiImageGeneratorCreateImageRequestResolution
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        x1k,
         /// <summary>
         /// 
         /// </summary>
@@ -24,7 +37,11 @@ namespace MagicHour
         /// </summary>
         x4k,
         /// <summary>
-        /// Resolution availability depends on the model and your subscription tier. See `model` field for which resolutions each model supports. Defaults to `auto` if not specified.
+        /// 
+        /// </summary>
+        x640px,
+        /// <summary>
+        /// 
         /// </summary>
         Auto,
     }
@@ -41,8 +58,10 @@ namespace MagicHour
         {
             return value switch
             {
+                AiImageGeneratorCreateImageRequestResolution.x1k => "1k",
                 AiImageGeneratorCreateImageRequestResolution.x2k => "2k",
                 AiImageGeneratorCreateImageRequestResolution.x4k => "4k",
+                AiImageGeneratorCreateImageRequestResolution.x640px => "640px",
                 AiImageGeneratorCreateImageRequestResolution.Auto => "auto",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -54,8 +73,10 @@ namespace MagicHour
         {
             return value switch
             {
+                "1k" => AiImageGeneratorCreateImageRequestResolution.x1k,
                 "2k" => AiImageGeneratorCreateImageRequestResolution.x2k,
                 "4k" => AiImageGeneratorCreateImageRequestResolution.x4k,
+                "640px" => AiImageGeneratorCreateImageRequestResolution.x640px,
                 "auto" => AiImageGeneratorCreateImageRequestResolution.Auto,
                 _ => null,
             };
