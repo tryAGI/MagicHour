@@ -147,7 +147,7 @@ namespace MagicHour
         /// * **`ltx-2`**: Automatically included with no extra credits<br/>
         /// * **`wan-2.2`**: Not supported<br/>
         /// * **`seedance`**: Not supported<br/>
-        /// * **`seedance-2.0`**: Not supported<br/>
+        /// * **`seedance-2.0`**: Automatically included with no extra credits<br/>
         /// * **`kling-2.5`**: Automatically included with no extra credits<br/>
         /// * **`kling-3.0`**: Toggle-able (can enable/disable)<br/>
         /// * **`sora-2`**: Automatically included with no extra credits<br/>

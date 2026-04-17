@@ -178,6 +178,17 @@
     },
     {
       "Order": 17,
+      "Title": "Body Swap",
+      "Slug": "bodyswap-createimage",
+      "Description": "Swap a person into a scene image using Nano Banana 2. Credits depend on \u0060resolution\u0060 (from 100 credits at 640px upward).",
+      "Language": "http",
+      "Code": "### Body Swap\n# @name bodySwap.createImage\nPOST {{host}}/v1/body-swap\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022name\u0022: \u0022My Body Swap image\u0022,\n  \u0022resolution\u0022: \u00221k\u0022,\n  \u0022assets\u0022: {\n    \u0022person_file_path\u0022: \u0022api-assets/id/1234.png\u0022,\n    \u0022scene_file_path\u0022: \u0022api-assets/id/5678.png\u0022\n  }\n}\n\n## Responses\n# 200\n# Description: Success\n# Content-Type: application/json\n# 400\n# Description: Invalid Request\n# Content-Type: application/json\n# 401\n# Description: Unauthorized\n# Content-Type: application/json\n# 402\n# Description: Payment Required\n# Content-Type: application/json\n# 404\n# Description: Not Found\n# Content-Type: application/json\n# 422\n# Description: Unprocessable Entity\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "bodySwap.createImage",
+      "Setup": null
+    },
+    {
+      "Order": 18,
       "Title": "Face Swap Photo",
       "Slug": "faceswapphoto-createimage",
       "Description": "Create a face swap photo. Each photo costs 10 credits. The height/width of the output image depends on your subscription. Please refer to our [pricing](https://magichour.ai/pricing) page for more details",
@@ -188,7 +199,7 @@
       "Setup": null
     },
     {
-      "Order": 18,
+      "Order": 19,
       "Title": "Head Swap",
       "Slug": "headswap-createimage",
       "Description": "Swap a head onto a body image. Each image costs 10 credits. Output resolution depends on your subscription; you may set \u0060max_resolution\u0060 lower than your plan maximum if desired.",
@@ -199,7 +210,7 @@
       "Setup": null
     },
     {
-      "Order": 19,
+      "Order": 20,
       "Title": "Image Background Remover",
       "Slug": "imagebackgroundremover-createimage",
       "Description": "Remove background from image. Each image costs 5 credits.",
@@ -210,7 +221,7 @@
       "Setup": null
     },
     {
-      "Order": 20,
+      "Order": 21,
       "Title": "Delete image",
       "Slug": "imageprojects-delete",
       "Description": "Permanently delete the rendered image(s). This action is not reversible, please be sure before deleting.",
@@ -221,7 +232,7 @@
       "Setup": null
     },
     {
-      "Order": 21,
+      "Order": 22,
       "Title": "Get image details",
       "Slug": "imageprojects-getdetails",
       "Description": "Check the progress of a image project. The \u0060downloads\u0060 field is populated after a successful render.\n  \n**Statuses**\n- \u0060queued\u0060 \u2014 waiting to start\n- \u0060rendering\u0060 \u2014 in progress\n- \u0060complete\u0060 \u2014 ready; see \u0060downloads\u0060\n- \u0060error\u0060 \u2014 a failure occurred (see \u0060error\u0060)\n- \u0060canceled\u0060 \u2014 user canceled\n- \u0060draft\u0060 \u2014 not used",
@@ -232,7 +243,7 @@
       "Setup": null
     },
     {
-      "Order": 22,
+      "Order": 23,
       "Title": "Photo Colorizer",
       "Slug": "photocolorizer-createimage",
       "Description": "Colorize image. Each image costs 10 credits.",
@@ -243,7 +254,7 @@
       "Setup": null
     },
     {
-      "Order": 23,
+      "Order": 24,
       "Title": "AI Talking Photo",
       "Slug": "aitalkingphoto-createtalkingphoto",
       "Description": "Create a talking photo from an image and audio or text input.",
@@ -254,7 +265,7 @@
       "Setup": null
     },
     {
-      "Order": 24,
+      "Order": 25,
       "Title": "Animation",
       "Slug": "animation-createvideo",
       "Description": "Create a Animation video. The estimated frame cost is calculated based on the \u0060fps\u0060 and \u0060end_seconds\u0060 input.",
@@ -265,7 +276,7 @@
       "Setup": null
     },
     {
-      "Order": 25,
+      "Order": 26,
       "Title": "Auto Subtitle Generator",
       "Slug": "autosubtitlegenerator-createvideo",
       "Description": "Automatically generate subtitles for your video in multiple languages.",
@@ -276,7 +287,7 @@
       "Setup": null
     },
     {
-      "Order": 26,
+      "Order": 27,
       "Title": "Face Swap Video",
       "Slug": "faceswap-createvideo",
       "Description": "**What this API does**\n\nCreate the same Face Swap you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.\n    \n**Good for**\n- Automation and batch processing  \n- Adding face swap into apps, pipelines, or tools  \n\n**How it works (3 steps)**\n1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the \u0060file_path\u0060.  \n2) Send a request to create a face swap job with the basic fields.  \n3) Check the job status until it\u0027s \u0060complete\u0060, then download the result from \u0060downloads\u0060.\n\n**Key options**\n- Inputs: usually a file, sometimes a YouTube link, depending on project type  \n- Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  \n- Extra fields: e.g. \u0060face_swap_mode\u0060, \u0060start_seconds\u0060/\u0060end_seconds\u0060, or a text prompt  \n\n**Cost**  \nCredits are only charged for the frames that actually render. You\u0027ll see an estimate when the job is queued, and the final total after it\u0027s done.\n\nFor detailed examples, see the [product page](https://magichour.ai/products/face-swap).",
@@ -287,7 +298,7 @@
       "Setup": null
     },
     {
-      "Order": 27,
+      "Order": 28,
       "Title": "Image-to-Video",
       "Slug": "imagetovideo-createvideo",
       "Description": "**What this API does**\n\nCreate the same Image To Video you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.\n    \n**Good for**\n- Automation and batch processing  \n- Adding image to video into apps, pipelines, or tools  \n\n**How it works (3 steps)**\n1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the \u0060file_path\u0060.  \n2) Send a request to create a image to video job with the basic fields.  \n3) Check the job status until it\u0027s \u0060complete\u0060, then download the result from \u0060downloads\u0060.\n\n**Key options**\n- Inputs: usually a file, sometimes a YouTube link, depending on project type  \n- Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  \n- Extra fields: e.g. \u0060face_swap_mode\u0060, \u0060start_seconds\u0060/\u0060end_seconds\u0060, or a text prompt  \n\n**Cost**  \nCredits are only charged for the frames that actually render. You\u0027ll see an estimate when the job is queued, and the final total after it\u0027s done.\n\nFor detailed examples, see the [product page](https://magichour.ai/products/image-to-video).",
@@ -298,7 +309,7 @@
       "Setup": null
     },
     {
-      "Order": 28,
+      "Order": 29,
       "Title": "Lip Sync",
       "Slug": "lipsync-createvideo",
       "Description": "**What this API does**\n\nCreate the same Lip Sync you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.\n    \n**Good for**\n- Automation and batch processing  \n- Adding lip sync into apps, pipelines, or tools  \n\n**How it works (3 steps)**\n1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the \u0060file_path\u0060.  \n2) Send a request to create a lip sync job with the basic fields.  \n3) Check the job status until it\u0027s \u0060complete\u0060, then download the result from \u0060downloads\u0060.\n\n**Key options**\n- Inputs: usually a file, sometimes a YouTube link, depending on project type  \n- Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  \n- Extra fields: e.g. \u0060face_swap_mode\u0060, \u0060start_seconds\u0060/\u0060end_seconds\u0060, or a text prompt  \n\n**Cost**  \nCredits are only charged for the frames that actually render. You\u0027ll see an estimate when the job is queued, and the final total after it\u0027s done.\n\nFor detailed examples, see the [product page](https://magichour.ai/products/lip-sync).",
@@ -309,7 +320,7 @@
       "Setup": null
     },
     {
-      "Order": 29,
+      "Order": 30,
       "Title": "Text-to-Video",
       "Slug": "texttovideo-createvideo",
       "Description": "**What this API does**\n\nCreate the same Text To Video you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.\n    \n**Good for**\n- Automation and batch processing  \n- Adding text to video into apps, pipelines, or tools  \n\n**How it works (3 steps)**\n1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the \u0060file_path\u0060.  \n2) Send a request to create a text to video job with the basic fields.  \n3) Check the job status until it\u0027s \u0060complete\u0060, then download the result from \u0060downloads\u0060.\n\n**Key options**\n- Inputs: usually a file, sometimes a YouTube link, depending on project type  \n- Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  \n- Extra fields: e.g. \u0060face_swap_mode\u0060, \u0060start_seconds\u0060/\u0060end_seconds\u0060, or a text prompt  \n\n**Cost**  \nCredits are only charged for the frames that actually render. You\u0027ll see an estimate when the job is queued, and the final total after it\u0027s done.\n\nFor detailed examples, see the [product page](https://magichour.ai/products/text-to-video).",
@@ -320,7 +331,7 @@
       "Setup": null
     },
     {
-      "Order": 30,
+      "Order": 31,
       "Title": "Delete video",
       "Slug": "videoprojects-delete",
       "Description": "Permanently delete the rendered video. This action is not reversible, please be sure before deleting.",
@@ -331,7 +342,7 @@
       "Setup": null
     },
     {
-      "Order": 31,
+      "Order": 32,
       "Title": "Get video details",
       "Slug": "videoprojects-getdetails",
       "Description": "Check the progress of a video project. The \u0060downloads\u0060 field is populated after a successful render.\n  \n**Statuses**\n- \u0060queued\u0060 \u2014 waiting to start\n- \u0060rendering\u0060 \u2014 in progress\n- \u0060complete\u0060 \u2014 ready; see \u0060downloads\u0060\n- \u0060error\u0060 \u2014 a failure occurred (see \u0060error\u0060)\n- \u0060canceled\u0060 \u2014 user canceled\n- \u0060draft\u0060 \u2014 not used",
@@ -342,7 +353,7 @@
       "Setup": null
     },
     {
-      "Order": 32,
+      "Order": 33,
       "Title": "Video-to-Video",
       "Slug": "videotovideo-createvideo",
       "Description": "**What this API does**\n\nCreate the same Video To Video you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.\n    \n**Good for**\n- Automation and batch processing  \n- Adding video to video into apps, pipelines, or tools  \n\n**How it works (3 steps)**\n1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the \u0060file_path\u0060.  \n2) Send a request to create a video to video job with the basic fields.  \n3) Check the job status until it\u0027s \u0060complete\u0060, then download the result from \u0060downloads\u0060.\n\n**Key options**\n- Inputs: usually a file, sometimes a YouTube link, depending on project type  \n- Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  \n- Extra fields: e.g. \u0060face_swap_mode\u0060, \u0060start_seconds\u0060/\u0060end_seconds\u0060, or a text prompt  \n\n**Cost**  \nCredits are only charged for the frames that actually render. You\u0027ll see an estimate when the job is queued, and the final total after it\u0027s done.\n\nFor detailed examples, see the [product page](https://magichour.ai/products/video-to-video).",
