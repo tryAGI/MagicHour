@@ -7,7 +7,7 @@ namespace MagicHour
     {
 
 
-        private static readonly global::MagicHour.EndPointSecurityRequirement s_AiImageGeneratorCreateImageSecurityRequirement0 =
+        private static readonly global::MagicHour.EndPointSecurityRequirement s_BodySwapCreateImageSecurityRequirement0 =
             new global::MagicHour.EndPointSecurityRequirement
             {
                 Authorizations = new global::MagicHour.EndPointAuthorizationRequirement[]
@@ -21,57 +21,37 @@ namespace MagicHour
                     },
                 },
             };
-        private static readonly global::MagicHour.EndPointSecurityRequirement[] s_AiImageGeneratorCreateImageSecurityRequirements =
+        private static readonly global::MagicHour.EndPointSecurityRequirement[] s_BodySwapCreateImageSecurityRequirements =
             new global::MagicHour.EndPointSecurityRequirement[]
-            {                s_AiImageGeneratorCreateImageSecurityRequirement0,
+            {                s_BodySwapCreateImageSecurityRequirement0,
             };
-        partial void PrepareAiImageGeneratorCreateImageArguments(
+        partial void PrepareBodySwapCreateImageArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::MagicHour.AiImageGeneratorCreateImageRequest request);
-        partial void PrepareAiImageGeneratorCreateImageRequest(
+            global::MagicHour.BodySwapCreateImageRequest request);
+        partial void PrepareBodySwapCreateImageRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::MagicHour.AiImageGeneratorCreateImageRequest request);
-        partial void ProcessAiImageGeneratorCreateImageResponse(
+            global::MagicHour.BodySwapCreateImageRequest request);
+        partial void ProcessBodySwapCreateImageResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessAiImageGeneratorCreateImageResponseContent(
+        partial void ProcessBodySwapCreateImageResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// AI Image Generator<br/>
-        /// Create an AI image with advanced model selection and quality controls.
+        /// Body Swap<br/>
+        /// Swap a person into a scene image using Nano Banana 2. Credits depend on `resolution` (from 100 credits at 640px upward).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
-        /// <remarks>
-        /// curl --request POST \<br/>
-        ///      --url https://api.magichour.ai/v1/ai-image-generator \<br/>
-        ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
-        ///      --header 'content-type: application/json' \<br/>
-        ///      --data '<br/>
-        /// {<br/>
-        ///   "name": "My Ai Image image",<br/>
-        ///   "image_count": 1,<br/>
-        ///   "model": "default",<br/>
-        ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "auto",<br/>
-        ///   "style": {<br/>
-        ///     "prompt": "Cool image",<br/>
-        ///     "tool": "ai-anime-generator"<br/>
-        ///   }<br/>
-        /// }<br/>
-        /// '
-        /// </remarks>
-        public async global::System.Threading.Tasks.Task<global::MagicHour.AiImageGeneratorCreateImageResponse> AiImageGeneratorCreateImageAsync(
+        public async global::System.Threading.Tasks.Task<global::MagicHour.BodySwapCreateImageResponse> BodySwapCreateImageAsync(
 
-            global::MagicHour.AiImageGeneratorCreateImageRequest request,
+            global::MagicHour.BodySwapCreateImageRequest request,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -79,15 +59,15 @@ namespace MagicHour
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareAiImageGeneratorCreateImageArguments(
+            PrepareBodySwapCreateImageArguments(
                 httpClient: HttpClient,
                 request: request);
 
 
             var __authorizations = global::MagicHour.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_AiImageGeneratorCreateImageSecurityRequirements,
-                operationName: "AiImageGeneratorCreateImageAsync");
+                securityRequirements: s_BodySwapCreateImageSecurityRequirements,
+                operationName: "BodySwapCreateImageAsync");
 
             using var __timeoutCancellationTokenSource = global::MagicHour.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -106,7 +86,7 @@ namespace MagicHour
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
                             var __pathBuilder = new global::MagicHour.PathBuilder(
-                                path: "/v1/ai-image-generator",
+                                path: "/v1/body-swap",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::MagicHour.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -151,7 +131,7 @@ namespace MagicHour
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareAiImageGeneratorCreateImageRequest(
+                PrepareBodySwapCreateImageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     request: request);
@@ -171,9 +151,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "BodySwapCreateImage",
+                                methodName: "BodySwapCreateImageAsync",
+                                pathTemplate: "\"/v1/body-swap\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -198,9 +178,9 @@ namespace MagicHour
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "BodySwapCreateImage",
+                                methodName: "BodySwapCreateImageAsync",
+                                pathTemplate: "\"/v1/body-swap\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -233,9 +213,9 @@ namespace MagicHour
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "BodySwapCreateImage",
+                                methodName: "BodySwapCreateImageAsync",
+                                pathTemplate: "\"/v1/body-swap\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -272,7 +252,7 @@ namespace MagicHour
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessAiImageGeneratorCreateImageResponse(
+                ProcessBodySwapCreateImageResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -280,9 +260,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "BodySwapCreateImage",
+                                methodName: "BodySwapCreateImageAsync",
+                                pathTemplate: "\"/v1/body-swap\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -300,9 +280,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "BodySwapCreateImage",
+                                methodName: "BodySwapCreateImageAsync",
+                                pathTemplate: "\"/v1/body-swap\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -320,19 +300,19 @@ namespace MagicHour
                             {
                                 string? __content_400 = null;
                                 global::System.Exception? __exception_400 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse2? __value_400 = null;
+                                global::MagicHour.BodySwapCreateImageResponse2? __value_400 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_400 = global::MagicHour.AiImageGeneratorCreateImageResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = global::MagicHour.BodySwapCreateImageResponse2.FromJson(__content_400, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_400 = global::MagicHour.AiImageGeneratorCreateImageResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = global::MagicHour.BodySwapCreateImageResponse2.FromJson(__content_400, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -340,7 +320,7 @@ namespace MagicHour
                                     __exception_400 = __ex;
                                 }
 
-                                throw new global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse2>(
+                                throw new global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse2>(
                                     message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     statusCode: __response.StatusCode)
@@ -358,19 +338,19 @@ namespace MagicHour
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse3? __value_401 = null;
+                                global::MagicHour.BodySwapCreateImageResponse3? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::MagicHour.AiImageGeneratorCreateImageResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::MagicHour.BodySwapCreateImageResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::MagicHour.AiImageGeneratorCreateImageResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::MagicHour.BodySwapCreateImageResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -378,7 +358,7 @@ namespace MagicHour
                                     __exception_401 = __ex;
                                 }
 
-                                throw new global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse3>(
+                                throw new global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse3>(
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     statusCode: __response.StatusCode)
@@ -396,19 +376,19 @@ namespace MagicHour
                             {
                                 string? __content_402 = null;
                                 global::System.Exception? __exception_402 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse4? __value_402 = null;
+                                global::MagicHour.BodySwapCreateImageResponse4? __value_402 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_402 = global::MagicHour.AiImageGeneratorCreateImageResponse4.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = global::MagicHour.BodySwapCreateImageResponse4.FromJson(__content_402, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_402 = global::MagicHour.AiImageGeneratorCreateImageResponse4.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = global::MagicHour.BodySwapCreateImageResponse4.FromJson(__content_402, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -416,7 +396,7 @@ namespace MagicHour
                                     __exception_402 = __ex;
                                 }
 
-                                throw new global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse4>(
+                                throw new global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse4>(
                                     message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_402,
                                     statusCode: __response.StatusCode)
@@ -434,19 +414,19 @@ namespace MagicHour
                             {
                                 string? __content_404 = null;
                                 global::System.Exception? __exception_404 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse5? __value_404 = null;
+                                global::MagicHour.BodySwapCreateImageResponse5? __value_404 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_404 = global::MagicHour.AiImageGeneratorCreateImageResponse5.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = global::MagicHour.BodySwapCreateImageResponse5.FromJson(__content_404, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_404 = global::MagicHour.AiImageGeneratorCreateImageResponse5.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = global::MagicHour.BodySwapCreateImageResponse5.FromJson(__content_404, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -454,7 +434,7 @@ namespace MagicHour
                                     __exception_404 = __ex;
                                 }
 
-                                throw new global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse5>(
+                                throw new global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse5>(
                                     message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     statusCode: __response.StatusCode)
@@ -472,19 +452,19 @@ namespace MagicHour
                             {
                                 string? __content_422 = null;
                                 global::System.Exception? __exception_422 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse6? __value_422 = null;
+                                global::MagicHour.BodySwapCreateImageResponse6? __value_422 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_422 = global::MagicHour.AiImageGeneratorCreateImageResponse6.FromJson(__content_422, JsonSerializerContext);
+                                        __value_422 = global::MagicHour.BodySwapCreateImageResponse6.FromJson(__content_422, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_422 = global::MagicHour.AiImageGeneratorCreateImageResponse6.FromJson(__content_422, JsonSerializerContext);
+                                        __value_422 = global::MagicHour.BodySwapCreateImageResponse6.FromJson(__content_422, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -492,7 +472,7 @@ namespace MagicHour
                                     __exception_422 = __ex;
                                 }
 
-                                throw new global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse6>(
+                                throw new global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse6>(
                                     message: __content_422 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_422,
                                     statusCode: __response.StatusCode)
@@ -518,7 +498,7 @@ namespace MagicHour
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessAiImageGeneratorCreateImageResponseContent(
+                                ProcessBodySwapCreateImageResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -528,7 +508,7 @@ namespace MagicHour
                                     __response.EnsureSuccessStatusCode();
 
                                     return
-                                        global::MagicHour.AiImageGeneratorCreateImageResponse.FromJson(__content, JsonSerializerContext) ??
+                                        global::MagicHour.BodySwapCreateImageResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                                 }
                                 catch (global::System.Exception __ex)
@@ -558,7 +538,7 @@ namespace MagicHour
                                     ).ConfigureAwait(false);
 
                                     return
-                                        await global::MagicHour.AiImageGeneratorCreateImageResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                        await global::MagicHour.BodySwapCreateImageResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                                 }
                                 catch (global::System.Exception __ex)
@@ -598,100 +578,39 @@ namespace MagicHour
             }
         }
         /// <summary>
-        /// AI Image Generator<br/>
-        /// Create an AI image with advanced model selection and quality controls.
+        /// Body Swap<br/>
+        /// Swap a person into a scene image using Nano Banana 2. Credits depend on `resolution` (from 100 credits at 640px upward).
         /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
-        /// Default Value: Ai Image - dateTime<br/>
-        /// Example: My Ai Image image
-        /// </param>
-        /// <param name="imageCount">
-        /// Number of images to generate. Maximum varies by model.<br/>
-        /// Example: 1
-        /// </param>
-        /// <param name="model">
-        /// The AI model to use for image generation. Each model has different capabilities and costs.<br/>
-        /// **Models:**<br/>
-        /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `flux-schnell` - from 5 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `z-image-turbo` - from 5 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `seedream-v4` - from 40 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-2` - from 100 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1, 4, 9, 16<br/>
-        /// - `nano-banana-pro` - from 150 credits/image<br/>
-        ///   - Supported resolutions: 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 4, 9, 16<br/>
-        /// **Deprecated Enum Values:**<br/>
-        /// - `seedream` - Use `seedream-v4` instead.<br/>
-        /// Example: default
-        /// </param>
-        /// <param name="aspectRatio">
-        /// The aspect ratio of the output image(s). If not specified, defaults to `1:1` (square).<br/>
-        /// Example: 1:1
+        /// Default Value: Body Swap - dateTime<br/>
+        /// Example: My Body Swap image
         /// </param>
         /// <param name="resolution">
-        /// Maximum resolution (longest edge) for the output image.<br/>
-        /// **Options:**<br/>
-        /// - `640px` — up to 640px<br/>
-        /// - `1k` — up to 1024px<br/>
-        /// - `2k` — up to 2048px<br/>
-        /// - `4k` — up to 4096px<br/>
-        /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
-        /// **Per-model support:**<br/>
-        /// - `flux-schnell` - 640px, 1k, 2k<br/>
-        /// - `z-image-turbo` - 640px, 1k, 2k<br/>
-        /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
-        /// - `nano-banana` - 640px, 1k<br/>
-        /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
-        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
-        /// Note: Resolution availability depends on the model and your subscription tier.<br/>
-        /// Default Value: auto<br/>
-        /// Example: auto
+        /// Output resolution. Determines credits charged for the run.<br/>
+        /// Example: 1k
         /// </param>
-        /// <param name="style">
-        /// The art style to use for image generation.
+        /// <param name="assets">
+        /// Person image and scene image for body swap
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::MagicHour.AiImageGeneratorCreateImageResponse> AiImageGeneratorCreateImageAsync(
-            int imageCount,
-            global::MagicHour.AiImageGeneratorCreateImageRequestStyle style,
+        public async global::System.Threading.Tasks.Task<global::MagicHour.BodySwapCreateImageResponse> BodySwapCreateImageAsync(
+            global::MagicHour.BodySwapCreateImageRequestResolution resolution,
+            global::MagicHour.BodySwapCreateImageRequestAssets assets,
             string? name = default,
-            global::MagicHour.AiImageGeneratorCreateImageRequestModel? model = default,
-            global::MagicHour.AiImageGeneratorCreateImageRequestAspectRatio? aspectRatio = default,
-            global::MagicHour.AiImageGeneratorCreateImageRequestResolution? resolution = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::MagicHour.AiImageGeneratorCreateImageRequest
+            var __request = new global::MagicHour.BodySwapCreateImageRequest
             {
                 Name = name,
-                ImageCount = imageCount,
-                Model = model,
-                AspectRatio = aspectRatio,
                 Resolution = resolution,
-                Style = style,
+                Assets = assets,
             };
 
-            return await AiImageGeneratorCreateImageAsync(
+            return await BodySwapCreateImageAsync(
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);

@@ -149,6 +149,10 @@ namespace MagicHour
 
             typeof(global::MagicHour.JsonConverters.AiMemeGeneratorCreateImageRequestStyleTemplateNullableJsonConverter),
 
+            typeof(global::MagicHour.JsonConverters.BodySwapCreateImageRequestResolutionJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.BodySwapCreateImageRequestResolutionNullableJsonConverter),
+
             typeof(global::MagicHour.JsonConverters.FaceSwapPhotoCreateImageRequestAssetsFaceSwapModeJsonConverter),
 
             typeof(global::MagicHour.JsonConverters.FaceSwapPhotoCreateImageRequestAssetsFaceSwapModeNullableJsonConverter),
@@ -361,6 +365,14 @@ namespace MagicHour
 
             typeof(global::MagicHour.JsonConverters.AiQrCodeGeneratorCreateImageResponseMessage2NullableJsonConverter),
 
+            typeof(global::MagicHour.JsonConverters.BodySwapCreateImageResponseMessageJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.BodySwapCreateImageResponseMessageNullableJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.BodySwapCreateImageResponseMessage2JsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.BodySwapCreateImageResponseMessage2NullableJsonConverter),
+
             typeof(global::MagicHour.JsonConverters.FaceSwapPhotoCreateImageResponseMessageJsonConverter),
 
             typeof(global::MagicHour.JsonConverters.FaceSwapPhotoCreateImageResponseMessageNullableJsonConverter),
@@ -525,6 +537,9 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageRequestStyleTemplate), TypeInfoPropertyName = "AiMemeGeneratorCreateImageRequestStyleTemplate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiQrCodeGeneratorCreateImageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiQrCodeGeneratorCreateImageRequestStyle))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageRequestResolution), TypeInfoPropertyName = "BodySwapCreateImageRequestResolution2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceSwapPhotoCreateImageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceSwapPhotoCreateImageRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceSwapPhotoCreateImageRequestAssetsFaceSwapMode), TypeInfoPropertyName = "FaceSwapPhotoCreateImageRequestAssetsFaceSwapMode2")]
@@ -743,6 +758,14 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiQrCodeGeneratorCreateImageResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiQrCodeGeneratorCreateImageResponseMessage2), TypeInfoPropertyName = "AiQrCodeGeneratorCreateImageResponseMessage22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiQrCodeGeneratorCreateImageResponse6))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageResponse3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageResponseMessage), TypeInfoPropertyName = "BodySwapCreateImageResponseMessage2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageResponse4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageResponse5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageResponseMessage2), TypeInfoPropertyName = "BodySwapCreateImageResponseMessage22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.BodySwapCreateImageResponse6))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceSwapPhotoCreateImageResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceSwapPhotoCreateImageResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceSwapPhotoCreateImageResponse3))]
