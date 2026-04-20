@@ -144,15 +144,15 @@ namespace MagicHour
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`ltx-2`**: Automatically included with no extra credits<br/>
+        /// * **`ltx-2`**: Toggle-able: no additional credits for audio<br/>
         /// * **`wan-2.2`**: Not supported<br/>
         /// * **`seedance`**: Not supported<br/>
-        /// * **`seedance-2.0`**: Automatically included with no extra credits<br/>
-        /// * **`kling-2.5`**: Automatically included with no extra credits<br/>
-        /// * **`kling-3.0`**: Toggle-able (can enable/disable)<br/>
-        /// * **`sora-2`**: Automatically included with no extra credits<br/>
-        /// * **`veo3.1`**: Toggle-able (can enable/disable)<br/>
-        /// * **`veo3.1-lite`**: Toggle-able (can enable/disable)<br/>
+        /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`kling-2.5`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
+        /// * **`sora-2`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
+        /// * **`veo3.1-lite`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// Legacy models:<br/>
         /// * **`kling-1.6`**: Not supported<br/>
         /// Example: true

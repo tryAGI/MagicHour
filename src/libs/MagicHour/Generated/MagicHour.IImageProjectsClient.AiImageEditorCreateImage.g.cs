@@ -24,7 +24,7 @@ namespace MagicHour
         ///   "image_count": 1,<br/>
         ///   "model": "default",<br/>
         ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "auto",<br/>
+        ///   "resolution": "1k",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Give me sunglasses"<br/>
         ///   },<br/>
