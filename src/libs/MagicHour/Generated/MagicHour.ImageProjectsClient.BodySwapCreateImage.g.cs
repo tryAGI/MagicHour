@@ -49,6 +49,23 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/body-swap \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Body Swap image",<br/>
+        ///   "resolution": "1k",<br/>
+        ///   "assets": {<br/>
+        ///     "person_file_path": "api-assets/id/1234.png",<br/>
+        ///     "scene_file_path": "api-assets/id/5678.png"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.BodySwapCreateImageResponse> BodySwapCreateImageAsync(
 
             global::MagicHour.BodySwapCreateImageRequest request,
