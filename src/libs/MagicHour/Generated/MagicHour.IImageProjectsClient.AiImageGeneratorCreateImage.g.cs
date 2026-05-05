@@ -41,6 +41,39 @@ namespace MagicHour
         /// AI Image Generator<br/>
         /// Create an AI image with advanced model selection and quality controls.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-image-generator \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Ai Image image",<br/>
+        ///   "image_count": 1,<br/>
+        ///   "model": "default",<br/>
+        ///   "aspect_ratio": "1:1",<br/>
+        ///   "resolution": "auto",<br/>
+        ///   "style": {<br/>
+        ///     "prompt": "Cool image",<br/>
+        ///     "tool": "ai-anime-generator"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiImageGeneratorCreateImageResponse>> AiImageGeneratorCreateImageAsResponseAsync(
+
+            global::MagicHour.AiImageGeneratorCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// AI Image Generator<br/>
+        /// Create an AI image with advanced model selection and quality controls.
+        /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
         /// Default Value: Ai Image - dateTime<br/>
