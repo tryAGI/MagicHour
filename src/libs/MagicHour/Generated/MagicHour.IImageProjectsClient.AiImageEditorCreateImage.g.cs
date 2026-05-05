@@ -46,6 +46,44 @@ namespace MagicHour
         /// AI Image Editor<br/>
         /// Edit images with AI.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-image-editor \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Ai Image Editor image",<br/>
+        ///   "image_count": 1,<br/>
+        ///   "model": "default",<br/>
+        ///   "aspect_ratio": "1:1",<br/>
+        ///   "resolution": "1k",<br/>
+        ///   "style": {<br/>
+        ///     "prompt": "Give me sunglasses"<br/>
+        ///   },<br/>
+        ///   "assets": {<br/>
+        ///     "image_file_paths": [<br/>
+        ///       "api-assets/id/1234.png",<br/>
+        ///       "api-assets/id/1235.png"<br/>
+        ///     ]<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiImageEditorCreateImageResponse>> AiImageEditorCreateImageAsResponseAsync(
+
+            global::MagicHour.AiImageEditorCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// AI Image Editor<br/>
+        /// Edit images with AI.
+        /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
         /// Default Value: Ai Image Editor - dateTime<br/>

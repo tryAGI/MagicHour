@@ -52,6 +52,50 @@ namespace MagicHour
         /// Auto Subtitle Generator<br/>
         /// Automatically generate subtitles for your video in multiple languages.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/auto-subtitle-generator \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Auto Subtitle video",<br/>
+        ///   "start_seconds": 0,<br/>
+        ///   "end_seconds": 15,<br/>
+        ///   "assets": {<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
+        ///   },<br/>
+        ///   "style": {<br/>
+        ///     "template": "karaoke",<br/>
+        ///     "custom_config": {<br/>
+        ///       "font": "Noto Sans",<br/>
+        ///       "font_size": 24,<br/>
+        ///       "font_style": "normal",<br/>
+        ///       "text_color": "#FFFFFF",<br/>
+        ///       "highlighted_text_color": "#FFD700",<br/>
+        ///       "stroke_color": "#000000",<br/>
+        ///       "stroke_width": 1,<br/>
+        ///       "vertical_position": "bottom",<br/>
+        ///       "horizontal_position": "center"<br/>
+        ///     }<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AutoSubtitleGeneratorCreateVideoResponse>> AutoSubtitleGeneratorCreateVideoAsResponseAsync(
+
+            global::MagicHour.AutoSubtitleGeneratorCreateVideoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Auto Subtitle Generator<br/>
+        /// Automatically generate subtitles for your video in multiple languages.
+        /// </summary>
         /// <param name="name">
         /// Give your video a custom name for easy identification.<br/>
         /// Default Value: Auto Subtitle - dateTime<br/>

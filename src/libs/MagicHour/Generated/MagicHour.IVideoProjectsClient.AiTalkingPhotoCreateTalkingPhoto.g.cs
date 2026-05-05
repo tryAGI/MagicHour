@@ -44,6 +44,42 @@ namespace MagicHour
         /// AI Talking Photo<br/>
         /// Create a talking photo from an image and audio or text input.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-talking-photo \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Talking Photo image",<br/>
+        ///   "start_seconds": 0,<br/>
+        ///   "end_seconds": 15,<br/>
+        ///   "assets": {<br/>
+        ///     "image_file_path": "api-assets/id/1234.png",<br/>
+        ///     "audio_file_path": "api-assets/id/1234.mp3"<br/>
+        ///   },<br/>
+        ///   "style": {<br/>
+        ///     "generation_mode": "realistic",<br/>
+        ///     "prompt": "string"<br/>
+        ///   },<br/>
+        ///   "max_resolution": 1024<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiTalkingPhotoCreateTalkingPhotoResponse>> AiTalkingPhotoCreateTalkingPhotoAsResponseAsync(
+
+            global::MagicHour.AiTalkingPhotoCreateTalkingPhotoRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// AI Talking Photo<br/>
+        /// Create a talking photo from an image and audio or text input.
+        /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
         /// Default Value: Talking Photo - dateTime<br/>

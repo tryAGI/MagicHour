@@ -24,5 +24,25 @@ namespace MagicHour
             string id,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Delete image<br/>
+        /// Permanently delete the rendered image(s). This action is not reversible, please be sure before deleting.
+        /// </summary>
+        /// <param name="id">
+        /// Example: cuid-example
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request DELETE \<br/>
+        ///      --url https://api.magichour.ai/v1/image-projects/id \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;'
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse> ImageProjectsDeleteAsResponseAsync(
+            string id,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
