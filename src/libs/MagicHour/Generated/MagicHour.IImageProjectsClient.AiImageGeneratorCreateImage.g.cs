@@ -111,6 +111,10 @@ namespace MagicHour
         ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 4, 9, 16<br/>
+        /// - `gpt-image-2` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// **Deprecated Enum Values:**<br/>
         /// - `seedream` - Use `seedream-v4` instead.<br/>
         /// Example: default
@@ -134,6 +138,7 @@ namespace MagicHour
         /// - `nano-banana` - 640px, 1k<br/>
         /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
         /// Example: auto

@@ -22,17 +22,15 @@ namespace MagicHour
 
         /// <summary>
         /// The image to use as the last frame of the video.<br/>
-        /// * **`ltx-2`**: Not supported<br/>
+        /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Not supported<br/>
+        /// * **`kling-2.5`**: Supports 1080p.<br/>
+        /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
+        /// * **`veo3.1-lite`**: Not supported<br/>
+        /// * **`veo3.1`**: Not supported<br/>
         /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
-        /// * **`kling-2.5`**: Supports 1080p.<br/>
-        /// * **`kling-3.0`**: Supports 1080p.<br/>
         /// * **`sora-2`**: Not supported<br/>
-        /// * **`veo3.1`**: Not supported<br/>
-        /// * **`veo3.1-lite`**: Not supported<br/>
-        /// Legacy models:<br/>
-        /// * **`kling-1.6`**: Not supported<br/>
         /// Example: api-assets/id/1234.png
         /// </summary>
         /// <example>api-assets/id/1234.png</example>
@@ -57,17 +55,15 @@ namespace MagicHour
         /// </param>
         /// <param name="endImageFilePath">
         /// The image to use as the last frame of the video.<br/>
-        /// * **`ltx-2`**: Not supported<br/>
+        /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Not supported<br/>
+        /// * **`kling-2.5`**: Supports 1080p.<br/>
+        /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
+        /// * **`veo3.1-lite`**: Not supported<br/>
+        /// * **`veo3.1`**: Not supported<br/>
         /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
-        /// * **`kling-2.5`**: Supports 1080p.<br/>
-        /// * **`kling-3.0`**: Supports 1080p.<br/>
         /// * **`sora-2`**: Not supported<br/>
-        /// * **`veo3.1`**: Not supported<br/>
-        /// * **`veo3.1-lite`**: Not supported<br/>
-        /// Legacy models:<br/>
-        /// * **`kling-1.6`**: Not supported<br/>
         /// Example: api-assets/id/1234.png
         /// </param>
 #if NET7_0_OR_GREATER
