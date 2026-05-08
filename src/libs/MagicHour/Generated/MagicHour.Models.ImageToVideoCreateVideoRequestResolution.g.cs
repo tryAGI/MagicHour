@@ -5,17 +5,15 @@ namespace MagicHour
 {
     /// <summary>
     /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-    /// * **`ltx-2`**: Supports 480p, 720p, 1080p.<br/>
+    /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
+    /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
+    /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
+    /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
+    /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
     /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
-    /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
-    /// * **`kling-3.0`**: Supports 720p, 1080p.<br/>
     /// * **`sora-2`**: Supports 720p.<br/>
-    /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
-    /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
-    /// Legacy models:<br/>
-    /// * **`kling-1.6`**: Supports 720p, 1080p.<br/>
     /// Example: 720p
     /// </summary>
     public enum ImageToVideoCreateVideoRequestResolution
@@ -28,6 +26,10 @@ namespace MagicHour
         /// Supports 480p, 720p, 1080p.
         /// </summary>
         x480p,
+        /// <summary>
+        /// Supports 720p, 1080p, 4k.
+        /// </summary>
+        x4k,
         /// <summary>
         /// Supports 480p, 720p, 1080p.
         /// </summary>
@@ -48,6 +50,7 @@ namespace MagicHour
             {
                 ImageToVideoCreateVideoRequestResolution.x1080p => "1080p",
                 ImageToVideoCreateVideoRequestResolution.x480p => "480p",
+                ImageToVideoCreateVideoRequestResolution.x4k => "4k",
                 ImageToVideoCreateVideoRequestResolution.x720p => "720p",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -61,6 +64,7 @@ namespace MagicHour
             {
                 "1080p" => ImageToVideoCreateVideoRequestResolution.x1080p,
                 "480p" => ImageToVideoCreateVideoRequestResolution.x480p,
+                "4k" => ImageToVideoCreateVideoRequestResolution.x4k,
                 "720p" => ImageToVideoCreateVideoRequestResolution.x720p,
                 _ => null,
             };
