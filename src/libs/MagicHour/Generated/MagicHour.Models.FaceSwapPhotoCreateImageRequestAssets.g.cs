@@ -108,5 +108,6 @@ namespace MagicHour
         public FaceSwapPhotoCreateImageRequestAssets()
         {
         }
+
     }
 }

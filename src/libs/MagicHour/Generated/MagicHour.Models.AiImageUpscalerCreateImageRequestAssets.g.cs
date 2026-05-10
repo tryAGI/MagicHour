@@ -53,5 +53,6 @@ namespace MagicHour
         public AiImageUpscalerCreateImageRequestAssets()
         {
         }
+
     }
 }

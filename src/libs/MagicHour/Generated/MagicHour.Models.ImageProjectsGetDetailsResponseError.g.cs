@@ -61,5 +61,6 @@ namespace MagicHour
         public ImageProjectsGetDetailsResponseError()
         {
         }
+
     }
 }

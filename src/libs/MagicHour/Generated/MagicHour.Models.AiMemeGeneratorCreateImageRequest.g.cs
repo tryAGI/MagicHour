@@ -54,5 +54,6 @@ namespace MagicHour
         public AiMemeGeneratorCreateImageRequest()
         {
         }
+
     }
 }

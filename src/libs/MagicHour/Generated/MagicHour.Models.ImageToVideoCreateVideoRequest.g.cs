@@ -208,5 +208,6 @@ namespace MagicHour
         public ImageToVideoCreateVideoRequest()
         {
         }
+
     }
 }

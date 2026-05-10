@@ -102,5 +102,6 @@ namespace MagicHour
         public FaceSwapCreateVideoRequest()
         {
         }
+
     }
 }

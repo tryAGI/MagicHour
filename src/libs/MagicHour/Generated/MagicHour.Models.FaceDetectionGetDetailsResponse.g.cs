@@ -91,5 +91,6 @@ namespace MagicHour
         public FaceDetectionGetDetailsResponse()
         {
         }
+
     }
 }

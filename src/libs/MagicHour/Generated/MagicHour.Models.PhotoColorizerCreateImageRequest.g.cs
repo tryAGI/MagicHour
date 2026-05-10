@@ -58,5 +58,6 @@ namespace MagicHour
         public PhotoColorizerCreateImageRequest()
         {
         }
+
     }
 }

@@ -51,5 +51,6 @@ namespace MagicHour
         public AiVoiceClonerCreateAudioRequestAssets()
         {
         }
+
     }
 }

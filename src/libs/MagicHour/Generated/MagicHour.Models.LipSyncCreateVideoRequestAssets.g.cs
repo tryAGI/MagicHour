@@ -98,5 +98,6 @@ namespace MagicHour
         public LipSyncCreateVideoRequestAssets()
         {
         }
+
     }
 }

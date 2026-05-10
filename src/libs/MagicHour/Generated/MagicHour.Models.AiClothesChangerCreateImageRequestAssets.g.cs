@@ -95,5 +95,6 @@ namespace MagicHour
         public AiClothesChangerCreateImageRequestAssets()
         {
         }
+
     }
 }

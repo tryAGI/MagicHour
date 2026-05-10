@@ -219,5 +219,6 @@ namespace MagicHour
         public AiImageEditorCreateImageRequest()
         {
         }
+
     }
 }

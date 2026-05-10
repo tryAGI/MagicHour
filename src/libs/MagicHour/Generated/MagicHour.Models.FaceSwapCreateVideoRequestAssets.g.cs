@@ -134,5 +134,6 @@ namespace MagicHour
         public FaceSwapCreateVideoRequestAssets()
         {
         }
+
     }
 }

@@ -41,5 +41,6 @@ namespace MagicHour
         public VideoToVideoCreateVideoResponse5()
         {
         }
+
     }
 }

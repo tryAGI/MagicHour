@@ -62,5 +62,6 @@ namespace MagicHour
         public AiQrCodeGeneratorCreateImageResponse()
         {
         }
+
     }
 }

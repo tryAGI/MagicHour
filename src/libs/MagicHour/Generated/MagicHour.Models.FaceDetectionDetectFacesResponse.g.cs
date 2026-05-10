@@ -57,5 +57,6 @@ namespace MagicHour
         public FaceDetectionDetectFacesResponse()
         {
         }
+
     }
 }

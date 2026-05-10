@@ -270,5 +270,6 @@ namespace MagicHour
         public AiFaceEditorEditImageRequestStyle()
         {
         }
+
     }
 }
