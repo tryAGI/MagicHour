@@ -67,5 +67,6 @@ namespace MagicHour
         public AiHeadshotGeneratorCreateImageRequest()
         {
         }
+
     }
 }

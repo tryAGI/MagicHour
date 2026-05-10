@@ -52,5 +52,6 @@ namespace MagicHour
         public AiImageUpscalerCreateImageRequestStyle()
         {
         }
+
     }
 }

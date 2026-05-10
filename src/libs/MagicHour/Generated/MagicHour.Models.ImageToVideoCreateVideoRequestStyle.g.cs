@@ -44,5 +44,6 @@ namespace MagicHour
         public ImageToVideoCreateVideoRequestStyle()
         {
         }
+
     }
 }

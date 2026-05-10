@@ -168,5 +168,6 @@ namespace MagicHour
         public ImageProjectsGetDetailsResponse()
         {
         }
+
     }
 }

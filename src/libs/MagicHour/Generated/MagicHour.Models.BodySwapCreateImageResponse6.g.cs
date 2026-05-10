@@ -43,5 +43,6 @@ namespace MagicHour
         public BodySwapCreateImageResponse6()
         {
         }
+
     }
 }

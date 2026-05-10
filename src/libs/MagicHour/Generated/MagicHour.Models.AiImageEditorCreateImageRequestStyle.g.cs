@@ -45,5 +45,6 @@ namespace MagicHour
         public AiImageEditorCreateImageRequestStyle()
         {
         }
+
     }
 }

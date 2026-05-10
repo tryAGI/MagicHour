@@ -56,5 +56,6 @@ namespace MagicHour
         public VideoProjectsGetDetailsResponseDownload()
         {
         }
+
     }
 }

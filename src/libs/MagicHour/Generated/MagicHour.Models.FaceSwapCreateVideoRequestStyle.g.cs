@@ -50,5 +50,6 @@ namespace MagicHour
         public FaceSwapCreateVideoRequestStyle()
         {
         }
+
     }
 }

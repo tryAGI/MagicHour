@@ -113,5 +113,6 @@ namespace MagicHour
         public AiTalkingPhotoCreateTalkingPhotoRequest()
         {
         }
+
     }
 }

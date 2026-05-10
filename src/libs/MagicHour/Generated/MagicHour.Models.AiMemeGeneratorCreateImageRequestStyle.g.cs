@@ -77,5 +77,6 @@ namespace MagicHour
         public AiMemeGeneratorCreateImageRequestStyle()
         {
         }
+
     }
 }
