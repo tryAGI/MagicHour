@@ -74,7 +74,7 @@ namespace MagicHour
         /// <summary>
         /// The AI model to use for video generation.<br/>
         /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
-        /// * `ltx-2.3`: Fast iteration with audio, lip-sync, and end frame<br/>
+        /// * `ltx-2.3`: Fast iteration with lip-sync &amp; end frame<br/>
         /// * `wan-2.2`: Fast, strong visuals with effects<br/>
         /// * `kling-2.5`: Motion, action, and camera control<br/>
         /// * `kling-3.0`: Cinematic, multi-scene storytelling<br/>
@@ -174,7 +174,7 @@ namespace MagicHour
         /// <param name="model">
         /// The AI model to use for video generation.<br/>
         /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
-        /// * `ltx-2.3`: Fast iteration with audio, lip-sync, and end frame<br/>
+        /// * `ltx-2.3`: Fast iteration with lip-sync &amp; end frame<br/>
         /// * `wan-2.2`: Fast, strong visuals with effects<br/>
         /// * `kling-2.5`: Motion, action, and camera control<br/>
         /// * `kling-3.0`: Cinematic, multi-scene storytelling<br/>
