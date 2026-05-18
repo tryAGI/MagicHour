@@ -105,7 +105,7 @@ namespace MagicHour
         ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 4, 9, 16<br/>
         /// - `nano-banana-pro` - from 150 credits/image<br/>
         ///   - Supported resolutions: 1k, 2k, 4k<br/>
