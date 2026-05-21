@@ -60,5 +60,6 @@ namespace MagicHour
         public FaceDetectionGetDetailsResponseFace()
         {
         }
+
     }
 }

@@ -73,6 +73,47 @@ namespace MagicHour
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await FaceDetectionDetectFacesAsResponseAsync(
+
+                request: request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Face Detection<br/>
+        /// Detect faces in an image or video. <br/>
+        ///       <br/>
+        /// Use this API to get the list of faces detected in the image or video to use in the [face swap photo](https://docs.magichour.ai/api-reference/image-projects/face-swap-photo) or [face swap video](https://docs.magichour.ai/api-reference/video-projects/face-swap-video) API calls for multi-face swaps.<br/>
+        /// Note: Face detection is free to use for the near future. Pricing may change in the future.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/face-detection \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "confidence_score": 0.5,<br/>
+        ///   "assets": {<br/>
+        ///     "target_file_path": "api-assets/id/1234.png"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
+        public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.FaceDetectionDetectFacesResponse>> FaceDetectionDetectFacesAsResponseAsync(
+
+            global::MagicHour.FaceDetectionDetectFacesRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -103,6 +144,7 @@ namespace MagicHour
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::MagicHour.PathBuilder(
                                 path: "/v1/face-detection",
                                 baseUri: HttpClient.BaseAddress);
@@ -182,6 +224,8 @@ namespace MagicHour
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -192,6 +236,11 @@ namespace MagicHour
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::MagicHour.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -209,6 +258,8 @@ namespace MagicHour
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -218,8 +269,7 @@ namespace MagicHour
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::MagicHour.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -228,6 +278,11 @@ namespace MagicHour
                         __attempt < __maxAttempts &&
                         global::MagicHour.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::MagicHour.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -244,14 +299,15 @@ namespace MagicHour
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::MagicHour.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -291,6 +347,8 @@ namespace MagicHour
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -311,6 +369,8 @@ namespace MagicHour
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Invalid Request
@@ -525,9 +585,13 @@ namespace MagicHour
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::MagicHour.FaceDetectionDetectFacesResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::MagicHour.FaceDetectionDetectFacesResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.FaceDetectionDetectFacesResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::MagicHour.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -555,9 +619,13 @@ namespace MagicHour
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::MagicHour.FaceDetectionDetectFacesResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::MagicHour.FaceDetectionDetectFacesResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.FaceDetectionDetectFacesResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::MagicHour.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

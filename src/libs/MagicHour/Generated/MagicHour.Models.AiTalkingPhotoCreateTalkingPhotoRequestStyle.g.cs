@@ -74,5 +74,6 @@ namespace MagicHour
         public AiTalkingPhotoCreateTalkingPhotoRequestStyle()
         {
         }
+
     }
 }

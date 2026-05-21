@@ -19,17 +19,15 @@ namespace MagicHour
 
         /// <summary>
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
-        /// * **`ltx-2`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
+        /// * **`ltx-2.3`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
-        /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
-        /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
         /// * **`kling-2.5`**: 5, 10<br/>
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
-        /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
-        /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1-lite`**: 8, 16, 24, 32, 40, 48, 56<br/>
-        /// Legacy models:<br/>
-        /// * **`kling-1.6`**: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60<br/>
+        /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
+        /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
+        /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
+        /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// Example: 5
         /// </summary>
         /// <example>5</example>
@@ -39,18 +37,16 @@ namespace MagicHour
 
         /// <summary>
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2`.<br/>
-        /// * `ltx-2`: Fast iteration with audio and lip-sync<br/>
+        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
+        /// * `ltx-2.3`: Fast iteration with lip-sync &amp; end frame<br/>
         /// * `wan-2.2`: Fast, strong visuals with effects<br/>
-        /// * `seedance`: Fast iteration and start/end frames<br/>
-        /// * `seedance-2.0`: State-of-the-art quality and consistency<br/>
         /// * `kling-2.5`: Motion, action, and camera control<br/>
         /// * `kling-3.0`: Cinematic, multi-scene storytelling<br/>
-        /// * `sora-2`: Story-first concepts and creativity<br/>
+        /// * `veo3.1-lite`: Fast, affordable, high-quality<br/>
         /// * `veo3.1`: Realistic visuals and prompt adherence<br/>
-        /// * `veo3.1-lite`: Good for fast, affordable, high-quality daily generation.<br/>
-        /// Legacy models:<br/>
-        /// * `kling-1.6`: Reliable baseline with smooth motion<br/>
+        /// * `seedance`: Fast iteration and start/end frames<br/>
+        /// * `seedance-2.0`: State-of-the-art quality and consistency<br/>
+        /// * `sora-2`: Story-first concepts and creativity<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
         /// Example: kling-3.0
@@ -62,17 +58,15 @@ namespace MagicHour
 
         /// <summary>
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-        /// * **`ltx-2`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
+        /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
+        /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
+        /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
         /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
-        /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
-        /// * **`kling-3.0`**: Supports 720p, 1080p.<br/>
         /// * **`sora-2`**: Supports 720p.<br/>
-        /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
-        /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
-        /// Legacy models:<br/>
-        /// * **`kling-1.6`**: Supports 720p, 1080p.<br/>
         /// Example: 720p
         /// </summary>
         /// <example>720p</example>
@@ -83,17 +77,15 @@ namespace MagicHour
         /// <summary>
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`ltx-2`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`ltx-2.3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`wan-2.2`**: Not supported<br/>
-        /// * **`seedance`**: Not supported<br/>
-        /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
-        /// * **`sora-2`**: Toggle-able: no additional credits for audio<br/>
-        /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1-lite`**: Toggle-able: audio adds extra credits when enabled<br/>
-        /// Legacy models:<br/>
-        /// * **`kling-1.6`**: Not supported<br/>
+        /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
+        /// * **`seedance`**: Not supported<br/>
+        /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`sora-2`**: Toggle-able: no additional credits for audio<br/>
         /// Example: true
         /// </summary>
         /// <example>true</example>
@@ -124,17 +116,15 @@ namespace MagicHour
         /// </summary>
         /// <param name="endSeconds">
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
-        /// * **`ltx-2`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
+        /// * **`ltx-2.3`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
-        /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
-        /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
         /// * **`kling-2.5`**: 5, 10<br/>
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
-        /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
-        /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1-lite`**: 8, 16, 24, 32, 40, 48, 56<br/>
-        /// Legacy models:<br/>
-        /// * **`kling-1.6`**: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60<br/>
+        /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
+        /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
+        /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
+        /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// Example: 5
         /// </param>
         /// <param name="assets">
@@ -147,51 +137,45 @@ namespace MagicHour
         /// </param>
         /// <param name="model">
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2`.<br/>
-        /// * `ltx-2`: Fast iteration with audio and lip-sync<br/>
+        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
+        /// * `ltx-2.3`: Fast iteration with lip-sync &amp; end frame<br/>
         /// * `wan-2.2`: Fast, strong visuals with effects<br/>
-        /// * `seedance`: Fast iteration and start/end frames<br/>
-        /// * `seedance-2.0`: State-of-the-art quality and consistency<br/>
         /// * `kling-2.5`: Motion, action, and camera control<br/>
         /// * `kling-3.0`: Cinematic, multi-scene storytelling<br/>
-        /// * `sora-2`: Story-first concepts and creativity<br/>
+        /// * `veo3.1-lite`: Fast, affordable, high-quality<br/>
         /// * `veo3.1`: Realistic visuals and prompt adherence<br/>
-        /// * `veo3.1-lite`: Good for fast, affordable, high-quality daily generation.<br/>
-        /// Legacy models:<br/>
-        /// * `kling-1.6`: Reliable baseline with smooth motion<br/>
+        /// * `seedance`: Fast iteration and start/end frames<br/>
+        /// * `seedance-2.0`: State-of-the-art quality and consistency<br/>
+        /// * `sora-2`: Story-first concepts and creativity<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
         /// Example: kling-3.0
         /// </param>
         /// <param name="resolution">
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-        /// * **`ltx-2`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
+        /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
+        /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
+        /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
         /// * **`seedance`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
-        /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
-        /// * **`kling-3.0`**: Supports 720p, 1080p.<br/>
         /// * **`sora-2`**: Supports 720p.<br/>
-        /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
-        /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
-        /// Legacy models:<br/>
-        /// * **`kling-1.6`**: Supports 720p, 1080p.<br/>
         /// Example: 720p
         /// </param>
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`ltx-2`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`ltx-2.3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`wan-2.2`**: Not supported<br/>
-        /// * **`seedance`**: Not supported<br/>
-        /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
-        /// * **`sora-2`**: Toggle-able: no additional credits for audio<br/>
-        /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1-lite`**: Toggle-able: audio adds extra credits when enabled<br/>
-        /// Legacy models:<br/>
-        /// * **`kling-1.6`**: Not supported<br/>
+        /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
+        /// * **`seedance`**: Not supported<br/>
+        /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`sora-2`**: Toggle-able: no additional credits for audio<br/>
         /// Example: true
         /// </param>
         /// <param name="style">
@@ -224,5 +208,6 @@ namespace MagicHour
         public ImageToVideoCreateVideoRequest()
         {
         }
+
     }
 }

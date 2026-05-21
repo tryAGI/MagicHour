@@ -40,7 +40,7 @@ namespace MagicHour
         ///   - Max additional input images: 9<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4` - from 40 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
@@ -51,6 +51,10 @@ namespace MagicHour
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4.5` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
+        /// - `gpt-image-2` - from 50 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
@@ -85,6 +89,7 @@ namespace MagicHour
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Example: 1k
         /// </summary>
@@ -144,7 +149,7 @@ namespace MagicHour
         ///   - Max additional input images: 9<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4` - from 40 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
@@ -155,6 +160,10 @@ namespace MagicHour
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4.5` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
+        /// - `gpt-image-2` - from 50 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
@@ -179,6 +188,7 @@ namespace MagicHour
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Example: 1k
         /// </param>
@@ -209,5 +219,6 @@ namespace MagicHour
         public AiImageEditorCreateImageRequest()
         {
         }
+
     }
 }

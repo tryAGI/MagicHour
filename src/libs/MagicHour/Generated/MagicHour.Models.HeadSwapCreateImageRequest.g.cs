@@ -72,5 +72,6 @@ namespace MagicHour
         public HeadSwapCreateImageRequest()
         {
         }
+
     }
 }

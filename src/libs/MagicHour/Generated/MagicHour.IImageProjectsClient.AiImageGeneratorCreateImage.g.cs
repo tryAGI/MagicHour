@@ -41,6 +41,39 @@ namespace MagicHour
         /// AI Image Generator<br/>
         /// Create an AI image with advanced model selection and quality controls.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-image-generator \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Ai Image image",<br/>
+        ///   "image_count": 1,<br/>
+        ///   "model": "default",<br/>
+        ///   "aspect_ratio": "1:1",<br/>
+        ///   "resolution": "auto",<br/>
+        ///   "style": {<br/>
+        ///     "prompt": "Cool image",<br/>
+        ///     "tool": "ai-anime-generator"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiImageGeneratorCreateImageResponse>> AiImageGeneratorCreateImageAsResponseAsync(
+
+            global::MagicHour.AiImageGeneratorCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// AI Image Generator<br/>
+        /// Create an AI image with advanced model selection and quality controls.
+        /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
         /// Default Value: Ai Image - dateTime<br/>
@@ -72,12 +105,16 @@ namespace MagicHour
         ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 4, 9, 16<br/>
         /// - `nano-banana-pro` - from 150 credits/image<br/>
         ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 4, 9, 16<br/>
+        /// - `gpt-image-2` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// **Deprecated Enum Values:**<br/>
         /// - `seedream` - Use `seedream-v4` instead.<br/>
         /// Example: default
@@ -101,6 +138,7 @@ namespace MagicHour
         /// - `nano-banana` - 640px, 1k<br/>
         /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
         /// Example: auto

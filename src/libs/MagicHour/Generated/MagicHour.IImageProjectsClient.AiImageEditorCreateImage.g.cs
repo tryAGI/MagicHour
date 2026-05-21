@@ -46,6 +46,44 @@ namespace MagicHour
         /// AI Image Editor<br/>
         /// Edit images with AI.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-image-editor \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Ai Image Editor image",<br/>
+        ///   "image_count": 1,<br/>
+        ///   "model": "default",<br/>
+        ///   "aspect_ratio": "1:1",<br/>
+        ///   "resolution": "1k",<br/>
+        ///   "style": {<br/>
+        ///     "prompt": "Give me sunglasses"<br/>
+        ///   },<br/>
+        ///   "assets": {<br/>
+        ///     "image_file_paths": [<br/>
+        ///       "api-assets/id/1234.png",<br/>
+        ///       "api-assets/id/1235.png"<br/>
+        ///     ]<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiImageEditorCreateImageResponse>> AiImageEditorCreateImageAsResponseAsync(
+
+            global::MagicHour.AiImageEditorCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// AI Image Editor<br/>
+        /// Edit images with AI.
+        /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
         /// Default Value: Ai Image Editor - dateTime<br/>
@@ -70,7 +108,7 @@ namespace MagicHour
         ///   - Max additional input images: 9<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4` - from 40 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
@@ -81,6 +119,10 @@ namespace MagicHour
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4.5` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
+        /// - `gpt-image-2` - from 50 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
@@ -105,6 +147,7 @@ namespace MagicHour
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Example: 1k
         /// </param>

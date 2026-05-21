@@ -38,6 +38,36 @@ namespace MagicHour
         /// Head Swap<br/>
         /// Swap a head onto a body image. Each image costs 10 credits. Output resolution depends on your subscription; you may set `max_resolution` lower than your plan maximum if desired.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/head-swap \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Head Swap image",<br/>
+        ///   "max_resolution": 1024,<br/>
+        ///   "assets": {<br/>
+        ///     "body_file_path": "api-assets/id/1234.png",<br/>
+        ///     "head_file_path": "api-assets/id/5678.png"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.HeadSwapCreateImageResponse>> HeadSwapCreateImageAsResponseAsync(
+
+            global::MagicHour.HeadSwapCreateImageRequest request,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Head Swap<br/>
+        /// Swap a head onto a body image. Each image costs 10 credits. Output resolution depends on your subscription; you may set `max_resolution` lower than your plan maximum if desired.
+        /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
         /// Default Value: Head Swap - dateTime<br/>

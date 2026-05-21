@@ -126,5 +126,6 @@ namespace MagicHour
         public AnimationCreateVideoRequestStyle()
         {
         }
+
     }
 }

@@ -5,17 +5,15 @@ namespace MagicHour
 {
     /// <summary>
     /// Determines the aspect ratio of the output video.<br/>
-    /// * **`ltx-2`**: Supports 9:16, 16:9, 1:1.<br/>
+    /// * **`ltx-2.3`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`wan-2.2`**: Supports 9:16, 16:9, 1:1.<br/>
-    /// * **`seedance`**: Supports 9:16, 16:9, 1:1.<br/>
-    /// * **`seedance-2.0`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`kling-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
-    /// * **`sora-2`**: Supports 9:16, 16:9.<br/>
-    /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>
     /// * **`veo3.1-lite`**: Supports 9:16, 16:9.<br/>
-    /// Legacy models:<br/>
-    /// * **`kling-1.6`**: Supports 9:16, 16:9, 1:1.<br/>
+    /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>
+    /// * **`seedance`**: Supports 9:16, 16:9, 1:1.<br/>
+    /// * **`seedance-2.0`**: Supports 9:16, 16:9, 1:1.<br/>
+    /// * **`sora-2`**: Supports 9:16, 16:9.<br/>
     /// Example: 16:9
     /// </summary>
     public enum TextToVideoCreateVideoRequestAspectRatio

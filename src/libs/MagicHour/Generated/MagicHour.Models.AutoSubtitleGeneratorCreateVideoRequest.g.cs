@@ -116,5 +116,6 @@ namespace MagicHour
         public AutoSubtitleGeneratorCreateVideoRequest()
         {
         }
+
     }
 }

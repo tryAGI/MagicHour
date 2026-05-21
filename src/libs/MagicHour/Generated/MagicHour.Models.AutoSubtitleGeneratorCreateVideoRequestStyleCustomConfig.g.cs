@@ -158,5 +158,6 @@ namespace MagicHour
         public AutoSubtitleGeneratorCreateVideoRequestStyleCustomConfig()
         {
         }
+
     }
 }

@@ -75,5 +75,6 @@ namespace MagicHour
         public VideoAssetsGeneratePresignedUrlResponseItem()
         {
         }
+
     }
 }

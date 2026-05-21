@@ -18,6 +18,7 @@ namespace MagicHour
     /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
     /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
     /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+    /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
     /// Note: Resolution availability depends on the model and your subscription tier.<br/>
     /// Example: 1k
     /// </summary>

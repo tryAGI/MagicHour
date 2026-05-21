@@ -17,7 +17,7 @@ namespace MagicHour
     ///   - Max additional input images: 9<br/>
     /// - `nano-banana-2` - from 100 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
     /// - `seedream-v4` - from 40 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
@@ -31,6 +31,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
+    /// - `gpt-image-2` - from 50 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
+    ///   - Max additional input images: 9<br/>
     /// Example: default
     /// </summary>
     public enum AiImageEditorCreateImageRequestModel
@@ -39,6 +43,10 @@ namespace MagicHour
         /// 
         /// </summary>
         Default,
+        /// <summary>
+        /// 
+        /// </summary>
+        GptImage2,
         /// <summary>
         /// 
         /// </summary>
@@ -78,6 +86,7 @@ namespace MagicHour
             return value switch
             {
                 AiImageEditorCreateImageRequestModel.Default => "default",
+                AiImageEditorCreateImageRequestModel.GptImage2 => "gpt-image-2",
                 AiImageEditorCreateImageRequestModel.NanoBanana => "nano-banana",
                 AiImageEditorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
                 AiImageEditorCreateImageRequestModel.NanoBananaPro => "nano-banana-pro",
@@ -95,6 +104,7 @@ namespace MagicHour
             return value switch
             {
                 "default" => AiImageEditorCreateImageRequestModel.Default,
+                "gpt-image-2" => AiImageEditorCreateImageRequestModel.GptImage2,
                 "nano-banana" => AiImageEditorCreateImageRequestModel.NanoBanana,
                 "nano-banana-2" => AiImageEditorCreateImageRequestModel.NanoBanana2,
                 "nano-banana-pro" => AiImageEditorCreateImageRequestModel.NanoBananaPro,

@@ -57,6 +57,33 @@ namespace MagicHour
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            await VideoProjectsDeleteAsResponseAsync(
+                id: id,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+        }
+        /// <summary>
+        /// Delete video<br/>
+        /// Permanently delete the rendered video. This action is not reversible, please be sure before deleting.
+        /// </summary>
+        /// <param name="id">
+        /// Example: cuid-example
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request DELETE \<br/>
+        ///      --url https://api.magichour.ai/v1/video-projects/id \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;'
+        /// </remarks>
+        public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse> VideoProjectsDeleteAsResponseAsync(
+            string id,
+            global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareVideoProjectsDeleteArguments(
@@ -85,6 +112,7 @@ namespace MagicHour
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::MagicHour.PathBuilder(
                                 path: $"/v1/video-projects/{id}",
                                 baseUri: HttpClient.BaseAddress);
@@ -158,6 +186,8 @@ namespace MagicHour
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -168,6 +198,11 @@ namespace MagicHour
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::MagicHour.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -185,6 +220,8 @@ namespace MagicHour
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -194,8 +231,7 @@ namespace MagicHour
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::MagicHour.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -204,6 +240,11 @@ namespace MagicHour
                         __attempt < __maxAttempts &&
                         global::MagicHour.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::MagicHour.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -220,14 +261,15 @@ namespace MagicHour
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::MagicHour.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -267,6 +309,8 @@ namespace MagicHour
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -287,6 +331,8 @@ namespace MagicHour
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Invalid Request
@@ -497,6 +543,10 @@ namespace MagicHour
                                 {
                                     __response.EnsureSuccessStatusCode();
 
+                return new global::MagicHour.AutoSDKHttpResponse(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::MagicHour.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -518,6 +568,10 @@ namespace MagicHour
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
+                                    return new global::MagicHour.AutoSDKHttpResponse(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::MagicHour.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
