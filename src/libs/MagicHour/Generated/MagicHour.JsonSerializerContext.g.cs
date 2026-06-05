@@ -37,6 +37,10 @@ namespace MagicHour
 
             typeof(global::MagicHour.JsonConverters.AnimationCreateVideoRequestAssetsAudioSourceNullableJsonConverter),
 
+            typeof(global::MagicHour.JsonConverters.AudioToVideoCreateVideoRequestResolutionJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AudioToVideoCreateVideoRequestResolutionNullableJsonConverter),
+
             typeof(global::MagicHour.JsonConverters.AutoSubtitleGeneratorCreateVideoRequestStyleTemplateJsonConverter),
 
             typeof(global::MagicHour.JsonConverters.AutoSubtitleGeneratorCreateVideoRequestStyleTemplateNullableJsonConverter),
@@ -141,6 +145,10 @@ namespace MagicHour
 
             typeof(global::MagicHour.JsonConverters.AiImageGeneratorCreateImageRequestStyleToolNullableJsonConverter),
 
+            typeof(global::MagicHour.JsonConverters.AiImageUpscalerCreateImageRequestStyleModeJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AiImageUpscalerCreateImageRequestStyleModeNullableJsonConverter),
+
             typeof(global::MagicHour.JsonConverters.AiImageUpscalerCreateImageRequestStyleEnhancementJsonConverter),
 
             typeof(global::MagicHour.JsonConverters.AiImageUpscalerCreateImageRequestStyleEnhancementNullableJsonConverter),
@@ -224,6 +232,14 @@ namespace MagicHour
             typeof(global::MagicHour.JsonConverters.AnimationCreateVideoResponseMessage2JsonConverter),
 
             typeof(global::MagicHour.JsonConverters.AnimationCreateVideoResponseMessage2NullableJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AudioToVideoCreateVideoResponseMessageJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AudioToVideoCreateVideoResponseMessageNullableJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AudioToVideoCreateVideoResponseMessage2JsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AudioToVideoCreateVideoResponseMessage2NullableJsonConverter),
 
             typeof(global::MagicHour.JsonConverters.AutoSubtitleGeneratorCreateVideoResponseMessageJsonConverter),
 
@@ -465,6 +481,10 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AnimationCreateVideoRequestStylePromptType), TypeInfoPropertyName = "AnimationCreateVideoRequestStylePromptType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AnimationCreateVideoRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AnimationCreateVideoRequestAssetsAudioSource), TypeInfoPropertyName = "AnimationCreateVideoRequestAssetsAudioSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoRequestResolution), TypeInfoPropertyName = "AudioToVideoCreateVideoRequestResolution2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoRequestAssets))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoRequestStyle))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyle))]
@@ -530,6 +550,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageGeneratorCreateImageRequestStyleTool), TypeInfoPropertyName = "AiImageGeneratorCreateImageRequestStyleTool2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequestStyle))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequestStyleMode), TypeInfoPropertyName = "AiImageUpscalerCreateImageRequestStyleMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequestStyleEnhancement), TypeInfoPropertyName = "AiImageUpscalerCreateImageRequestStyleEnhancement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageRequest))]
@@ -621,6 +642,14 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AnimationCreateVideoResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AnimationCreateVideoResponseMessage2), TypeInfoPropertyName = "AnimationCreateVideoResponseMessage22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AnimationCreateVideoResponse6))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoResponse3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoResponseMessage), TypeInfoPropertyName = "AudioToVideoCreateVideoResponseMessage2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoResponse4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoResponse5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoResponseMessage2), TypeInfoPropertyName = "AudioToVideoCreateVideoResponseMessage22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoResponse6))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoResponse3))]

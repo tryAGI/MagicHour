@@ -723,7 +723,7 @@ namespace MagicHour
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
         /// * **`veo3.1-lite`**: 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
-        /// * **`seedance`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
+        /// * **`seedance`**: 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
         /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
         /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// Example: 5
@@ -763,7 +763,7 @@ namespace MagicHour
         /// * `kling-3.0`: Cinematic, multi-scene storytelling<br/>
         /// * `veo3.1-lite`: Fast, affordable, high-quality<br/>
         /// * `veo3.1`: Realistic visuals and prompt adherence<br/>
-        /// * `seedance`: Fast iteration and start/end frames<br/>
+        /// * `seedance`: Fast iteration<br/>
         /// * `seedance-2.0`: State-of-the-art quality and consistency<br/>
         /// * `sora-2`: Story-first concepts and creativity<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>

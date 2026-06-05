@@ -11,9 +11,13 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Max additional input images: 2<br/>
+    /// - `flux-2-klein` - from 5 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
+    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Max additional input images: 5<br/>
     /// - `nano-banana` - from 50 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k<br/>
-    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
     /// - `nano-banana-2` - from 100 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
@@ -21,7 +25,7 @@ namespace MagicHour
     ///   - Max additional input images: 9<br/>
     /// - `seedream-v4` - from 40 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
     /// - `nano-banana-pro` - from 150 credits/image<br/>
     ///   - Supported resolutions: 1k, 2k, 4k<br/>
@@ -43,6 +47,10 @@ namespace MagicHour
         /// 
         /// </summary>
         Default,
+        /// <summary>
+        /// 
+        /// </summary>
+        Flux2Klein,
         /// <summary>
         /// 
         /// </summary>
@@ -86,6 +94,7 @@ namespace MagicHour
             return value switch
             {
                 AiImageEditorCreateImageRequestModel.Default => "default",
+                AiImageEditorCreateImageRequestModel.Flux2Klein => "flux-2-klein",
                 AiImageEditorCreateImageRequestModel.GptImage2 => "gpt-image-2",
                 AiImageEditorCreateImageRequestModel.NanoBanana => "nano-banana",
                 AiImageEditorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
@@ -104,6 +113,7 @@ namespace MagicHour
             return value switch
             {
                 "default" => AiImageEditorCreateImageRequestModel.Default,
+                "flux-2-klein" => AiImageEditorCreateImageRequestModel.Flux2Klein,
                 "gpt-image-2" => AiImageEditorCreateImageRequestModel.GptImage2,
                 "nano-banana" => AiImageEditorCreateImageRequestModel.NanoBanana,
                 "nano-banana-2" => AiImageEditorCreateImageRequestModel.NanoBanana2,

@@ -36,7 +36,7 @@ namespace MagicHour
         public required global::MagicHour.AudioProjectsGetDetailsResponseStatus Status { get; set; }
 
         /// <summary>
-        /// The type of the audio project. Possible values are VOICE_GENERATOR, VOICE_CHANGER, VOICE_CLONER, VIDEO_TO_AUDIO<br/>
+        /// The type of the audio project. Possible values are VOICE_GENERATOR, VOICE_CHANGER, VOICE_CLONER, VIDEO_TO_AUDIO, MUSIC_GENERATOR<br/>
         /// Example: VOICE_GENERATOR
         /// </summary>
         /// <example>VOICE_GENERATOR</example>
@@ -101,7 +101,7 @@ namespace MagicHour
         /// Example: complete
         /// </param>
         /// <param name="type">
-        /// The type of the audio project. Possible values are VOICE_GENERATOR, VOICE_CHANGER, VOICE_CLONER, VIDEO_TO_AUDIO<br/>
+        /// The type of the audio project. Possible values are VOICE_GENERATOR, VOICE_CHANGER, VOICE_CLONER, VIDEO_TO_AUDIO, MUSIC_GENERATOR<br/>
         /// Example: VOICE_GENERATOR
         /// </param>
         /// <param name="createdAt"></param>
