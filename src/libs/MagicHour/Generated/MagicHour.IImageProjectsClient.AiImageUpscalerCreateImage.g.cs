@@ -85,7 +85,9 @@ namespace MagicHour
         /// Note: 4x upscale is only available on Creator, Pro, or Business tier.<br/>
         /// Example: 2
         /// </param>
-        /// <param name="style"></param>
+        /// <param name="style">
+        /// Style settings for the upscale. Use `mode` to select between `"pro"` (faster, no enhancement required) and `"creative"` (defaults to `"Balanced"` enhancement). Defaults to `"creative"`.
+        /// </param>
         /// <param name="assets">
         /// Provide the assets for upscaling
         /// </param>
