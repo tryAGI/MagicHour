@@ -12,7 +12,7 @@ namespace MagicHour
     /// * `kling-3.0`: Cinematic, multi-scene storytelling<br/>
     /// * `veo3.1-lite`: Fast, affordable, high-quality<br/>
     /// * `veo3.1`: Realistic visuals and prompt adherence<br/>
-    /// * `seedance`: Fast iteration and start/end frames<br/>
+    /// * `seedance`: Fast iteration<br/>
     /// * `seedance-2.0`: State-of-the-art quality and consistency<br/>
     /// * `sora-2`: Story-first concepts and creativity<br/>
     /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
@@ -50,7 +50,7 @@ namespace MagicHour
         /// </summary>
         Ltx23,
         /// <summary>
-        /// Fast iteration and start/end frames
+        /// Fast iteration
         /// </summary>
         Seedance,
         /// <summary>

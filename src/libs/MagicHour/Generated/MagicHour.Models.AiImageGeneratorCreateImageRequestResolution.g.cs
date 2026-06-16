@@ -13,6 +13,7 @@ namespace MagicHour
     /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
     /// **Per-model support:**<br/>
     /// - `flux-schnell` - 640px, 1k, 2k<br/>
+    /// - `flux-2-klein` - 640px, 1k, 2k<br/>
     /// - `z-image-turbo` - 640px, 1k, 2k<br/>
     /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
     /// - `nano-banana` - 640px, 1k<br/>

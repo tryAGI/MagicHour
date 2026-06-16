@@ -19,7 +19,7 @@ namespace MagicHour
         public required global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItemType Type { get; set; }
 
         /// <summary>
-        /// The extension of the file to upload. Do not include the dot (.) before the extension. Possible extensions are mp4,m4v,mov,webm,mp3,wav,aac,flac,webm,m4a,png,jpg,jpeg,heic,heif,webp,avif,jp2,tiff,bmp,gif,webp,webm<br/>
+        /// The extension of the file to upload. Do not include the dot (.) before the extension. Possible extensions are mp4,m4v,mov,webm,mp3,wav,aac,flac,webm,m4a,opus,ogg,aiff,amr,png,jpg,jpeg,heic,heif,webp,avif,jp2,tiff,bmp,gif,webp,webm<br/>
         /// Example: mp4
         /// </summary>
         /// <example>mp4</example>
@@ -41,7 +41,7 @@ namespace MagicHour
         /// Example: video
         /// </param>
         /// <param name="extension">
-        /// The extension of the file to upload. Do not include the dot (.) before the extension. Possible extensions are mp4,m4v,mov,webm,mp3,wav,aac,flac,webm,m4a,png,jpg,jpeg,heic,heif,webp,avif,jp2,tiff,bmp,gif,webp,webm<br/>
+        /// The extension of the file to upload. Do not include the dot (.) before the extension. Possible extensions are mp4,m4v,mov,webm,mp3,wav,aac,flac,webm,m4a,opus,ogg,aiff,amr,png,jpg,jpeg,heic,heif,webp,avif,jp2,tiff,bmp,gif,webp,webm<br/>
         /// Example: mp4
         /// </param>
 #if NET7_0_OR_GREATER

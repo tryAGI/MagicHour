@@ -690,9 +690,13 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Max additional input images: 2<br/>
+        /// - `flux-2-klein` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Max additional input images: 5<br/>
         /// - `nano-banana` - from 50 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
@@ -700,7 +704,7 @@ namespace MagicHour
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4` - from 40 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `nano-banana-pro` - from 150 credits/image<br/>
         ///   - Supported resolutions: 1k, 2k, 4k<br/>
@@ -730,6 +734,7 @@ namespace MagicHour
         /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
         /// **Per-model support:**<br/>
         /// - `qwen-edit` - 640px, 1k, 2k<br/>
+        /// - `flux-2-klein` - 640px, 1k, 2k<br/>
         /// - `nano-banana` - 640px, 1k<br/>
         /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>

@@ -11,17 +11,21 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
+    /// - `flux-2-klein` - from 5 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
+    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Image count allowed: 1<br/>
     /// - `z-image-turbo` - from 5 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
     /// - `seedream-v4` - from 40 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
     /// - `nano-banana` - from 50 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k<br/>
-    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
     /// - `nano-banana-2` - from 100 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
@@ -45,6 +49,10 @@ namespace MagicHour
         /// 
         /// </summary>
         Default,
+        /// <summary>
+        /// 
+        /// </summary>
+        Flux2Klein,
         /// <summary>
         /// 
         /// </summary>
@@ -92,6 +100,7 @@ namespace MagicHour
             return value switch
             {
                 AiImageGeneratorCreateImageRequestModel.Default => "default",
+                AiImageGeneratorCreateImageRequestModel.Flux2Klein => "flux-2-klein",
                 AiImageGeneratorCreateImageRequestModel.FluxSchnell => "flux-schnell",
                 AiImageGeneratorCreateImageRequestModel.GptImage2 => "gpt-image-2",
                 AiImageGeneratorCreateImageRequestModel.NanoBanana => "nano-banana",
@@ -111,6 +120,7 @@ namespace MagicHour
             return value switch
             {
                 "default" => AiImageGeneratorCreateImageRequestModel.Default,
+                "flux-2-klein" => AiImageGeneratorCreateImageRequestModel.Flux2Klein,
                 "flux-schnell" => AiImageGeneratorCreateImageRequestModel.FluxSchnell,
                 "gpt-image-2" => AiImageGeneratorCreateImageRequestModel.GptImage2,
                 "nano-banana" => AiImageGeneratorCreateImageRequestModel.NanoBanana,
