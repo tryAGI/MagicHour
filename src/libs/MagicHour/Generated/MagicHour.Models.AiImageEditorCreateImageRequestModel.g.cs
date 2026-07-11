@@ -23,6 +23,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
+    /// - `nano-banana-2-lite` - from 50 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
+    ///   - Max additional input images: 9<br/>
     /// - `seedream-v4` - from 40 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -66,6 +70,10 @@ namespace MagicHour
         /// <summary>
         /// 
         /// </summary>
+        NanoBanana2Lite,
+        /// <summary>
+        /// 
+        /// </summary>
         NanoBananaPro,
         /// <summary>
         /// 
@@ -98,6 +106,7 @@ namespace MagicHour
                 AiImageEditorCreateImageRequestModel.GptImage2 => "gpt-image-2",
                 AiImageEditorCreateImageRequestModel.NanoBanana => "nano-banana",
                 AiImageEditorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
+                AiImageEditorCreateImageRequestModel.NanoBanana2Lite => "nano-banana-2-lite",
                 AiImageEditorCreateImageRequestModel.NanoBananaPro => "nano-banana-pro",
                 AiImageEditorCreateImageRequestModel.QwenEdit => "qwen-edit",
                 AiImageEditorCreateImageRequestModel.SeedreamV4 => "seedream-v4",
@@ -117,6 +126,7 @@ namespace MagicHour
                 "gpt-image-2" => AiImageEditorCreateImageRequestModel.GptImage2,
                 "nano-banana" => AiImageEditorCreateImageRequestModel.NanoBanana,
                 "nano-banana-2" => AiImageEditorCreateImageRequestModel.NanoBanana2,
+                "nano-banana-2-lite" => AiImageEditorCreateImageRequestModel.NanoBanana2Lite,
                 "nano-banana-pro" => AiImageEditorCreateImageRequestModel.NanoBananaPro,
                 "qwen-edit" => AiImageEditorCreateImageRequestModel.QwenEdit,
                 "seedream-v4" => AiImageEditorCreateImageRequestModel.SeedreamV4,

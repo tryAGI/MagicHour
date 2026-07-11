@@ -50,6 +50,10 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
+        /// - `nano-banana-2-lite` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
@@ -94,6 +98,7 @@ namespace MagicHour
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana` - 640px, 1k<br/>
+        /// - `nano-banana-2-lite` - 640px, 1k<br/>
         /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
@@ -158,6 +163,10 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
+        /// - `nano-banana-2-lite` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
@@ -192,6 +201,7 @@ namespace MagicHour
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana` - 640px, 1k<br/>
+        /// - `nano-banana-2-lite` - 640px, 1k<br/>
         /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
