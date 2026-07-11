@@ -11,7 +11,7 @@ namespace MagicHour
         /// **Valid file extensions per asset type**:<br/>
         /// - video: mp4, m4v, mov, webm<br/>
         /// - audio: mp3, wav, aac, flac, webm, m4a, opus, ogg, aiff, amr<br/>
-        /// - image: png, jpg, jpeg, heic, heif, webp, avif, jp2, tiff, bmp<br/>
+        /// - image: png, jpg, jpeg, jfif, heic, heif, webp, avif, jp2, tiff, bmp<br/>
         /// - gif: gif, webp, webm<br/>
         /// &gt; Note: `gif` is only supported for face swap API `video_file_path` field.<br/>
         /// Once you receive an upload URL, send a `PUT` request to upload the file directly.<br/>
@@ -58,7 +58,7 @@ namespace MagicHour
         /// **Valid file extensions per asset type**:<br/>
         /// - video: mp4, m4v, mov, webm<br/>
         /// - audio: mp3, wav, aac, flac, webm, m4a, opus, ogg, aiff, amr<br/>
-        /// - image: png, jpg, jpeg, heic, heif, webp, avif, jp2, tiff, bmp<br/>
+        /// - image: png, jpg, jpeg, jfif, heic, heif, webp, avif, jp2, tiff, bmp<br/>
         /// - gif: gif, webp, webm<br/>
         /// &gt; Note: `gif` is only supported for face swap API `video_file_path` field.<br/>
         /// Once you receive an upload URL, send a `PUT` request to upload the file directly.<br/>
@@ -105,7 +105,7 @@ namespace MagicHour
         /// **Valid file extensions per asset type**:<br/>
         /// - video: mp4, m4v, mov, webm<br/>
         /// - audio: mp3, wav, aac, flac, webm, m4a, opus, ogg, aiff, amr<br/>
-        /// - image: png, jpg, jpeg, heic, heif, webp, avif, jp2, tiff, bmp<br/>
+        /// - image: png, jpg, jpeg, jfif, heic, heif, webp, avif, jp2, tiff, bmp<br/>
         /// - gif: gif, webp, webm<br/>
         /// &gt; Note: `gif` is only supported for face swap API `video_file_path` field.<br/>
         /// Once you receive an upload URL, send a `PUT` request to upload the file directly.<br/>

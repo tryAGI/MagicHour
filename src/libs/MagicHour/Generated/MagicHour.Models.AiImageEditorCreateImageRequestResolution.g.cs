@@ -16,6 +16,7 @@ namespace MagicHour
     /// - `flux-2-klein` - 640px, 1k, 2k<br/>
     /// - `nano-banana` - 640px, 1k<br/>
     /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+    /// - `nano-banana-2-lite` - 640px, 1k<br/>
     /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
     /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
     /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>

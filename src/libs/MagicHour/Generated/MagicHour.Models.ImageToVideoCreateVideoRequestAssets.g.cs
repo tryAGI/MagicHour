@@ -28,7 +28,8 @@ namespace MagicHour
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
         /// * **`veo3.1-lite`**: Not supported<br/>
         /// * **`veo3.1`**: Not supported<br/>
-        /// * **`seedance`**: Not supported<br/>
+        /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
         /// * **`sora-2`**: Not supported<br/>
         /// Example: api-assets/id/1234.png
@@ -61,7 +62,8 @@ namespace MagicHour
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
         /// * **`veo3.1-lite`**: Not supported<br/>
         /// * **`veo3.1`**: Not supported<br/>
-        /// * **`seedance`**: Not supported<br/>
+        /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
         /// * **`sora-2`**: Not supported<br/>
         /// Example: api-assets/id/1234.png
