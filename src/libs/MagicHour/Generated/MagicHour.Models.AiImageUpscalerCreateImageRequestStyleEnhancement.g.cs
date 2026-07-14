@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    /// Deprecated. Use `mode` instead. `Resemblance` maps to `preserve`, `Balanced` maps to `balanced`, and `Creative` maps to `creative`.
     /// </summary>
     public enum AiImageUpscalerCreateImageRequestStyleEnhancement
     {

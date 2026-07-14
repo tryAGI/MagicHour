@@ -29,11 +29,10 @@ namespace MagicHour
         public required double ScaleFactor { get; set; }
 
         /// <summary>
-        /// Style settings for the upscale. Use `mode` to select between `"pro"` (faster, no enhancement required) and `"creative"` (defaults to `"Balanced"` enhancement). Defaults to `"creative"`.
+        /// Optional style settings for the upscale. If `style` or `mode` is omitted, `mode` defaults to `balanced`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::MagicHour.AiImageUpscalerCreateImageRequestStyle Style { get; set; }
+        public global::MagicHour.AiImageUpscalerCreateImageRequestStyle? Style { get; set; }
 
         /// <summary>
         /// Provide the assets for upscaling
@@ -57,9 +56,6 @@ namespace MagicHour
         /// Note: 4x upscale is only available on Creator, Pro, or Business tier.<br/>
         /// Example: 2
         /// </param>
-        /// <param name="style">
-        /// Style settings for the upscale. Use `mode` to select between `"pro"` (faster, no enhancement required) and `"creative"` (defaults to `"Balanced"` enhancement). Defaults to `"creative"`.
-        /// </param>
         /// <param name="assets">
         /// Provide the assets for upscaling
         /// </param>
@@ -68,18 +64,21 @@ namespace MagicHour
         /// Default Value: Image Upscaler - dateTime<br/>
         /// Example: My Image Upscaler image
         /// </param>
+        /// <param name="style">
+        /// Optional style settings for the upscale. If `style` or `mode` is omitted, `mode` defaults to `balanced`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AiImageUpscalerCreateImageRequest(
             double scaleFactor,
-            global::MagicHour.AiImageUpscalerCreateImageRequestStyle style,
             global::MagicHour.AiImageUpscalerCreateImageRequestAssets assets,
-            string? name)
+            string? name,
+            global::MagicHour.AiImageUpscalerCreateImageRequestStyle? style)
         {
             this.Name = name;
             this.ScaleFactor = scaleFactor;
-            this.Style = style ?? throw new global::System.ArgumentNullException(nameof(style));
+            this.Style = style;
             this.Assets = assets ?? throw new global::System.ArgumentNullException(nameof(assets));
         }
 
