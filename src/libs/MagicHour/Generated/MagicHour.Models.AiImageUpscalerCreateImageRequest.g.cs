@@ -29,7 +29,8 @@ namespace MagicHour
         public required double ScaleFactor { get; set; }
 
         /// <summary>
-        /// Optional style settings for the upscale. If `style` or `mode` is omitted, `mode` defaults to `balanced`.
+        /// Style settings for the upscale. Use `mode` (`"preserve"`, `"balanced"`, or `"creative"`). Defaults to `"balanced"`.<br/>
+        /// Default Value: {}
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         public global::MagicHour.AiImageUpscalerCreateImageRequestStyle? Style { get; set; }
@@ -65,7 +66,8 @@ namespace MagicHour
         /// Example: My Image Upscaler image
         /// </param>
         /// <param name="style">
-        /// Optional style settings for the upscale. If `style` or `mode` is omitted, `mode` defaults to `balanced`.
+        /// Style settings for the upscale. Use `mode` (`"preserve"`, `"balanced"`, or `"creative"`). Defaults to `"balanced"`.<br/>
+        /// Default Value: {}
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

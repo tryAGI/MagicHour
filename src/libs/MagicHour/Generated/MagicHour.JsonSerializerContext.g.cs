@@ -149,10 +149,6 @@ namespace MagicHour
 
             typeof(global::MagicHour.JsonConverters.AiImageUpscalerCreateImageRequestStyleModeNullableJsonConverter),
 
-            typeof(global::MagicHour.JsonConverters.AiImageUpscalerCreateImageRequestStyleEnhancementJsonConverter),
-
-            typeof(global::MagicHour.JsonConverters.AiImageUpscalerCreateImageRequestStyleEnhancementNullableJsonConverter),
-
             typeof(global::MagicHour.JsonConverters.AiMemeGeneratorCreateImageRequestStyleTemplateJsonConverter),
 
             typeof(global::MagicHour.JsonConverters.AiMemeGeneratorCreateImageRequestStyleTemplateNullableJsonConverter),
@@ -551,7 +547,6 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequestStyle))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequestStyleMode), TypeInfoPropertyName = "AiImageUpscalerCreateImageRequestStyleMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequestStyleEnhancement), TypeInfoPropertyName = "AiImageUpscalerCreateImageRequestStyleEnhancement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageRequestStyle))]

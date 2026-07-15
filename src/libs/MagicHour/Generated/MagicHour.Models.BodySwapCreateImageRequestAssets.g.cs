@@ -21,7 +21,7 @@ namespace MagicHour
         public required string PersonFilePath { get; set; }
 
         /// <summary>
-        /// Target scene image (background). This value is either<br/>
+        /// Original scene image (background). This value is either<br/>
         /// - a direct URL to the video file<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
@@ -49,7 +49,7 @@ namespace MagicHour
         /// Example: api-assets/id/1234.png
         /// </param>
         /// <param name="sceneFilePath">
-        /// Target scene image (background). This value is either<br/>
+        /// Original scene image (background). This value is either<br/>
         /// - a direct URL to the video file<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>

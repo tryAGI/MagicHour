@@ -4,8 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// The upscaling mode. `preserve` keeps the image faithful using the v2 pipeline with a 1x credit multiplier. `balanced` applies natural improvements using the v1 pipeline with creativity set to 0.2 and a 2x credit multiplier. `creative` reimagines details using the v1 pipeline with creativity set to 0.35, accepts `prompt`, and has a 2x credit multiplier. `pro` is deprecated and maps to `preserve`. Defaults to `balanced`.<br/>
-    /// Default Value: balanced<br/>
+    /// The upscaling mode. `"preserve"` uses the fast pro pipeline (1× credit multiplier). `"balanced"` and `"creative"` use the creative pipeline (2× credit multiplier). `"pro"` is deprecated and maps to `"preserve"`. Defaults to `"balanced"`.<br/>
     /// Example: balanced
     /// </summary>
     public enum AiImageUpscalerCreateImageRequestStyleMode

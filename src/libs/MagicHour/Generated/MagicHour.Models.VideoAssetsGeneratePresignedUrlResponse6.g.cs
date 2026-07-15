@@ -9,9 +9,9 @@ namespace MagicHour
     public sealed partial class VideoAssetsGeneratePresignedUrlResponse6
     {
         /// <summary>
-        /// Example: 'mp4' is an invalid audio extension. Possible extensions are 'mp3, wav, aac, flac, webm, m4a, opus, ogg, aiff, amr'
+        /// Example: 'mp4' is an invalid audio extension. Possible extensions are 'mp3, wav, aac, flac, webm, weba, m4a, opus, ogg, oga, aiff, amr'
         /// </summary>
-        /// <example>'mp4' is an invalid audio extension. Possible extensions are 'mp3, wav, aac, flac, webm, m4a, opus, ogg, aiff, amr'</example>
+        /// <example>'mp4' is an invalid audio extension. Possible extensions are 'mp3, wav, aac, flac, webm, weba, m4a, opus, ogg, oga, aiff, amr'</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Message { get; set; }
@@ -26,7 +26,7 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="VideoAssetsGeneratePresignedUrlResponse6" /> class.
         /// </summary>
         /// <param name="message">
-        /// Example: 'mp4' is an invalid audio extension. Possible extensions are 'mp3, wav, aac, flac, webm, m4a, opus, ogg, aiff, amr'
+        /// Example: 'mp4' is an invalid audio extension. Possible extensions are 'mp3, wav, aac, flac, webm, weba, m4a, opus, ogg, oga, aiff, amr'
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
