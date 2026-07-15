@@ -43,20 +43,7 @@ namespace MagicHour
 
         /// <summary>
         /// AI Image Upscaler<br/>
-        /// Upscale your image using AI.<br/>
-        /// ### Modes<br/>
-        /// - `preserve`: Keeps the image faithful using the v2 pipeline with a 1x credit multiplier.<br/>
-        /// - `balanced`: Applies natural improvements using the v1 pipeline with creativity set to 0.2 and a 2x credit multiplier.<br/>
-        /// - `creative`: Reimagines details using the v1 pipeline with creativity set to 0.35, accepts `style.prompt`, and has a 2x credit multiplier.<br/>
-        /// If `style` or `style.mode` is omitted, the mode defaults to `balanced`.<br/>
-        /// ### Costs<br/>
-        /// - 2x `preserve`: 25 credits.<br/>
-        /// - 2x `balanced` or `creative`: 50 credits.<br/>
-        /// - 4x `preserve`: 100 credits.<br/>
-        /// - 4x `balanced` or `creative`: 200 credits.<br/>
-        /// 4x upscaling is available only on Creator, Pro, or Business plans.<br/>
-        /// ### Backward compatibility<br/>
-        /// `style.mode: "pro"` is deprecated and maps to `preserve`. `style.enhancement` is also deprecated: `Resemblance` maps to `preserve`, `Balanced` maps to `balanced`, and `Creative` maps to `creative`. `style.mode: "creative"` without `enhancement` resolves to `creative`.
+        /// Upscale your image using AI. Each 2x upscale costs 50 credits for balanced/creative modes, and 25 credits for preserve. 4x upscale costs 200 and 100 credits respectively.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -70,10 +57,11 @@ namespace MagicHour
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
-        ///   "name": "Upscale",<br/>
+        ///   "name": "My Image Upscaler image",<br/>
         ///   "scale_factor": 2,<br/>
         ///   "style": {<br/>
-        ///     "mode": "balanced"<br/>
+        ///     "enhancement": "Resemblance",<br/>
+        ///     "prompt": "string"<br/>
         ///   },<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
@@ -98,20 +86,7 @@ namespace MagicHour
         }
         /// <summary>
         /// AI Image Upscaler<br/>
-        /// Upscale your image using AI.<br/>
-        /// ### Modes<br/>
-        /// - `preserve`: Keeps the image faithful using the v2 pipeline with a 1x credit multiplier.<br/>
-        /// - `balanced`: Applies natural improvements using the v1 pipeline with creativity set to 0.2 and a 2x credit multiplier.<br/>
-        /// - `creative`: Reimagines details using the v1 pipeline with creativity set to 0.35, accepts `style.prompt`, and has a 2x credit multiplier.<br/>
-        /// If `style` or `style.mode` is omitted, the mode defaults to `balanced`.<br/>
-        /// ### Costs<br/>
-        /// - 2x `preserve`: 25 credits.<br/>
-        /// - 2x `balanced` or `creative`: 50 credits.<br/>
-        /// - 4x `preserve`: 100 credits.<br/>
-        /// - 4x `balanced` or `creative`: 200 credits.<br/>
-        /// 4x upscaling is available only on Creator, Pro, or Business plans.<br/>
-        /// ### Backward compatibility<br/>
-        /// `style.mode: "pro"` is deprecated and maps to `preserve`. `style.enhancement` is also deprecated: `Resemblance` maps to `preserve`, `Balanced` maps to `balanced`, and `Creative` maps to `creative`. `style.mode: "creative"` without `enhancement` resolves to `creative`.
+        /// Upscale your image using AI. Each 2x upscale costs 50 credits for balanced/creative modes, and 25 credits for preserve. 4x upscale costs 200 and 100 credits respectively.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -125,10 +100,11 @@ namespace MagicHour
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
-        ///   "name": "Upscale",<br/>
+        ///   "name": "My Image Upscaler image",<br/>
         ///   "scale_factor": 2,<br/>
         ///   "style": {<br/>
-        ///     "mode": "balanced"<br/>
+        ///     "enhancement": "Resemblance",<br/>
+        ///     "prompt": "string"<br/>
         ///   },<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
@@ -684,20 +660,7 @@ namespace MagicHour
         }
         /// <summary>
         /// AI Image Upscaler<br/>
-        /// Upscale your image using AI.<br/>
-        /// ### Modes<br/>
-        /// - `preserve`: Keeps the image faithful using the v2 pipeline with a 1x credit multiplier.<br/>
-        /// - `balanced`: Applies natural improvements using the v1 pipeline with creativity set to 0.2 and a 2x credit multiplier.<br/>
-        /// - `creative`: Reimagines details using the v1 pipeline with creativity set to 0.35, accepts `style.prompt`, and has a 2x credit multiplier.<br/>
-        /// If `style` or `style.mode` is omitted, the mode defaults to `balanced`.<br/>
-        /// ### Costs<br/>
-        /// - 2x `preserve`: 25 credits.<br/>
-        /// - 2x `balanced` or `creative`: 50 credits.<br/>
-        /// - 4x `preserve`: 100 credits.<br/>
-        /// - 4x `balanced` or `creative`: 200 credits.<br/>
-        /// 4x upscaling is available only on Creator, Pro, or Business plans.<br/>
-        /// ### Backward compatibility<br/>
-        /// `style.mode: "pro"` is deprecated and maps to `preserve`. `style.enhancement` is also deprecated: `Resemblance` maps to `preserve`, `Balanced` maps to `balanced`, and `Creative` maps to `creative`. `style.mode: "creative"` without `enhancement` resolves to `creative`.
+        /// Upscale your image using AI. Each 2x upscale costs 50 credits for balanced/creative modes, and 25 credits for preserve. 4x upscale costs 200 and 100 credits respectively.
         /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
@@ -711,7 +674,8 @@ namespace MagicHour
         /// Example: 2
         /// </param>
         /// <param name="style">
-        /// Optional style settings for the upscale. If `style` or `mode` is omitted, `mode` defaults to `balanced`.
+        /// Style settings for the upscale. Use `mode` (`"preserve"`, `"balanced"`, or `"creative"`). Defaults to `"balanced"`.<br/>
+        /// Default Value: {}
         /// </param>
         /// <param name="assets">
         /// Provide the assets for upscaling
