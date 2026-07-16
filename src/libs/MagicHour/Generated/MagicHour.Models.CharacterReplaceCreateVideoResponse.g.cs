@@ -6,10 +6,10 @@ namespace MagicHour
     /// <summary>
     /// Success
     /// </summary>
-    public sealed partial class BodySwapCreateImageResponse
+    public sealed partial class CharacterReplaceCreateVideoResponse
     {
         /// <summary>
-        /// Unique ID of the image. Use it with the [Get image Project API](https://docs.magichour.ai/api-reference/image-projects/get-image-details) to fetch status and downloads.<br/>
+        /// Unique ID of the video. Use it with the [Get video Project API](https://docs.magichour.ai/api-reference/video-projects/get-video-details) to fetch status and downloads.<br/>
         /// Example: cuid-example
         /// </summary>
         /// <example>cuid-example</example>
@@ -18,11 +18,11 @@ namespace MagicHour
         public required string Id { get; set; }
 
         /// <summary>
-        /// The amount of credits deducted from your account to generate the image. We charge credits right when the request is made. <br/>
-        /// If an error occurred while generating the image(s), credits will be refunded and this field will be updated to include the refund.<br/>
-        /// Example: 50
+        /// The amount of credits deducted from your account to generate the video. If the status is not 'complete', this value is an estimate and may be adjusted upon completion based on the actual FPS of the output video. <br/>
+        /// If video generation fails, credits will be refunded, and this field will be updated to include the refund.<br/>
+        /// Example: 450
         /// </summary>
-        /// <example>50</example>
+        /// <example>450</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("credits_charged")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int CreditsCharged { get; set; }
@@ -34,21 +34,21 @@ namespace MagicHour
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="BodySwapCreateImageResponse" /> class.
+        /// Initializes a new instance of the <see cref="CharacterReplaceCreateVideoResponse" /> class.
         /// </summary>
         /// <param name="id">
-        /// Unique ID of the image. Use it with the [Get image Project API](https://docs.magichour.ai/api-reference/image-projects/get-image-details) to fetch status and downloads.<br/>
+        /// Unique ID of the video. Use it with the [Get video Project API](https://docs.magichour.ai/api-reference/video-projects/get-video-details) to fetch status and downloads.<br/>
         /// Example: cuid-example
         /// </param>
         /// <param name="creditsCharged">
-        /// The amount of credits deducted from your account to generate the image. We charge credits right when the request is made. <br/>
-        /// If an error occurred while generating the image(s), credits will be refunded and this field will be updated to include the refund.<br/>
-        /// Example: 50
+        /// The amount of credits deducted from your account to generate the video. If the status is not 'complete', this value is an estimate and may be adjusted upon completion based on the actual FPS of the output video. <br/>
+        /// If video generation fails, credits will be refunded, and this field will be updated to include the refund.<br/>
+        /// Example: 450
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public BodySwapCreateImageResponse(
+        public CharacterReplaceCreateVideoResponse(
             string id,
             int creditsCharged)
         {
@@ -57,9 +57,9 @@ namespace MagicHour
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="BodySwapCreateImageResponse" /> class.
+        /// Initializes a new instance of the <see cref="CharacterReplaceCreateVideoResponse" /> class.
         /// </summary>
-        public BodySwapCreateImageResponse()
+        public CharacterReplaceCreateVideoResponse()
         {
         }
 
