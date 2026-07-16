@@ -3,11 +3,11 @@
 
 namespace MagicHour
 {
-    public partial class ImageProjectsClient
+    public partial class VideoProjectsClient
     {
 
 
-        private static readonly global::MagicHour.EndPointSecurityRequirement s_BodySwapCreateImageSecurityRequirement0 =
+        private static readonly global::MagicHour.EndPointSecurityRequirement s_AiVideoEditorCreateVideoSecurityRequirement0 =
             new global::MagicHour.EndPointSecurityRequirement
             {
                 Authorizations = new global::MagicHour.EndPointAuthorizationRequirement[]
@@ -21,58 +21,57 @@ namespace MagicHour
                     },
                 },
             };
-        private static readonly global::MagicHour.EndPointSecurityRequirement[] s_BodySwapCreateImageSecurityRequirements =
+        private static readonly global::MagicHour.EndPointSecurityRequirement[] s_AiVideoEditorCreateVideoSecurityRequirements =
             new global::MagicHour.EndPointSecurityRequirement[]
-            {                s_BodySwapCreateImageSecurityRequirement0,
+            {                s_AiVideoEditorCreateVideoSecurityRequirement0,
             };
-        partial void PrepareBodySwapCreateImageArguments(
+        partial void PrepareAiVideoEditorCreateVideoArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::MagicHour.BodySwapCreateImageRequest request);
-        partial void PrepareBodySwapCreateImageRequest(
+            global::MagicHour.AiVideoEditorCreateVideoRequest request);
+        partial void PrepareAiVideoEditorCreateVideoRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::MagicHour.BodySwapCreateImageRequest request);
-        partial void ProcessBodySwapCreateImageResponse(
+            global::MagicHour.AiVideoEditorCreateVideoRequest request);
+        partial void ProcessAiVideoEditorCreateVideoResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessBodySwapCreateImageResponseContent(
+        partial void ProcessAiVideoEditorCreateVideoResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Body Swap<br/>
-        /// Swap a person into a scene image using Nano Banana 2. Credits depend on `resolution` (from 50 credits at 640px upward).
+        /// AI Video Editor<br/>
+        /// **What this API does**<br/>
+        /// Create the same Video Editor you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.<br/>
+        ///     <br/>
+        /// **Good for**<br/>
+        /// - Automation and batch processing  <br/>
+        /// - Adding video editor into apps, pipelines, or tools  <br/>
+        /// **How it works (3 steps)**<br/>
+        /// 1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the `file_path`.  <br/>
+        /// 2) Send a request to create a video editor job with the basic fields.  <br/>
+        /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
+        /// **Key options**<br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// **Cost**  <br/>
+        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// For detailed examples, see the [product page](https://magichour.ai/products/video-editor).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
-        /// <remarks>
-        /// curl --request POST \<br/>
-        ///      --url https://api.magichour.ai/v1/body-swap \<br/>
-        ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
-        ///      --header 'content-type: application/json' \<br/>
-        ///      --data '<br/>
-        /// {<br/>
-        ///   "name": "My Body Swap image",<br/>
-        ///   "resolution": "1k",<br/>
-        ///   "assets": {<br/>
-        ///     "person_file_path": "api-assets/id/1234.png",<br/>
-        ///     "scene_file_path": "api-assets/id/5678.png"<br/>
-        ///   }<br/>
-        /// }<br/>
-        /// '
-        /// </remarks>
-        public async global::System.Threading.Tasks.Task<global::MagicHour.BodySwapCreateImageResponse> BodySwapCreateImageAsync(
+        public async global::System.Threading.Tasks.Task<global::MagicHour.AiVideoEditorCreateVideoResponse> AiVideoEditorCreateVideoAsync(
 
-            global::MagicHour.BodySwapCreateImageRequest request,
+            global::MagicHour.AiVideoEditorCreateVideoRequest request,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await BodySwapCreateImageAsResponseAsync(
+            var __response = await AiVideoEditorCreateVideoAsResponseAsync(
 
                 request: request,
                 requestOptions: requestOptions,
@@ -82,33 +81,32 @@ namespace MagicHour
             return __response.Body;
         }
         /// <summary>
-        /// Body Swap<br/>
-        /// Swap a person into a scene image using Nano Banana 2. Credits depend on `resolution` (from 50 credits at 640px upward).
+        /// AI Video Editor<br/>
+        /// **What this API does**<br/>
+        /// Create the same Video Editor you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.<br/>
+        ///     <br/>
+        /// **Good for**<br/>
+        /// - Automation and batch processing  <br/>
+        /// - Adding video editor into apps, pipelines, or tools  <br/>
+        /// **How it works (3 steps)**<br/>
+        /// 1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the `file_path`.  <br/>
+        /// 2) Send a request to create a video editor job with the basic fields.  <br/>
+        /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
+        /// **Key options**<br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// **Cost**  <br/>
+        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// For detailed examples, see the [product page](https://magichour.ai/products/video-editor).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
-        /// <remarks>
-        /// curl --request POST \<br/>
-        ///      --url https://api.magichour.ai/v1/body-swap \<br/>
-        ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
-        ///      --header 'content-type: application/json' \<br/>
-        ///      --data '<br/>
-        /// {<br/>
-        ///   "name": "My Body Swap image",<br/>
-        ///   "resolution": "1k",<br/>
-        ///   "assets": {<br/>
-        ///     "person_file_path": "api-assets/id/1234.png",<br/>
-        ///     "scene_file_path": "api-assets/id/5678.png"<br/>
-        ///   }<br/>
-        /// }<br/>
-        /// '
-        /// </remarks>
-        public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.BodySwapCreateImageResponse>> BodySwapCreateImageAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiVideoEditorCreateVideoResponse>> AiVideoEditorCreateVideoAsResponseAsync(
 
-            global::MagicHour.BodySwapCreateImageRequest request,
+            global::MagicHour.AiVideoEditorCreateVideoRequest request,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -116,15 +114,15 @@ namespace MagicHour
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareBodySwapCreateImageArguments(
+            PrepareAiVideoEditorCreateVideoArguments(
                 httpClient: HttpClient,
                 request: request);
 
 
             var __authorizations = global::MagicHour.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_BodySwapCreateImageSecurityRequirements,
-                operationName: "BodySwapCreateImageAsync");
+                securityRequirements: s_AiVideoEditorCreateVideoSecurityRequirements,
+                operationName: "AiVideoEditorCreateVideoAsync");
 
             using var __timeoutCancellationTokenSource = global::MagicHour.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -144,7 +142,7 @@ namespace MagicHour
             {
 
                             var __pathBuilder = new global::MagicHour.PathBuilder(
-                                path: "/v1/body-swap",
+                                path: "/v1/ai-video-editor",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::MagicHour.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -189,7 +187,7 @@ namespace MagicHour
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareBodySwapCreateImageRequest(
+                PrepareAiVideoEditorCreateVideoRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     request: request);
@@ -209,9 +207,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "BodySwapCreateImage",
-                                methodName: "BodySwapCreateImageAsync",
-                                pathTemplate: "\"/v1/body-swap\"",
+                                operationId: "AiVideoEditorCreateVideo",
+                                methodName: "AiVideoEditorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-editor\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -243,9 +241,9 @@ namespace MagicHour
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "BodySwapCreateImage",
-                                methodName: "BodySwapCreateImageAsync",
-                                pathTemplate: "\"/v1/body-swap\"",
+                                operationId: "AiVideoEditorCreateVideo",
+                                methodName: "AiVideoEditorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-editor\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -284,9 +282,9 @@ namespace MagicHour
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "BodySwapCreateImage",
-                                methodName: "BodySwapCreateImageAsync",
-                                pathTemplate: "\"/v1/body-swap\"",
+                                operationId: "AiVideoEditorCreateVideo",
+                                methodName: "AiVideoEditorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-editor\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -324,7 +322,7 @@ namespace MagicHour
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessBodySwapCreateImageResponse(
+                ProcessAiVideoEditorCreateVideoResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -332,9 +330,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "BodySwapCreateImage",
-                                methodName: "BodySwapCreateImageAsync",
-                                pathTemplate: "\"/v1/body-swap\"",
+                                operationId: "AiVideoEditorCreateVideo",
+                                methodName: "AiVideoEditorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-editor\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -354,9 +352,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "BodySwapCreateImage",
-                                methodName: "BodySwapCreateImageAsync",
-                                pathTemplate: "\"/v1/body-swap\"",
+                                operationId: "AiVideoEditorCreateVideo",
+                                methodName: "AiVideoEditorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-editor\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -376,19 +374,19 @@ namespace MagicHour
                             {
                                 string? __content_400 = null;
                                 global::System.Exception? __exception_400 = null;
-                                global::MagicHour.BodySwapCreateImageResponse2? __value_400 = null;
+                                global::MagicHour.AiVideoEditorCreateVideoResponse2? __value_400 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_400 = global::MagicHour.BodySwapCreateImageResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = global::MagicHour.AiVideoEditorCreateVideoResponse2.FromJson(__content_400, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_400 = global::MagicHour.BodySwapCreateImageResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = global::MagicHour.AiVideoEditorCreateVideoResponse2.FromJson(__content_400, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -397,7 +395,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse2>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoEditorCreateVideoResponse2>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
@@ -413,19 +411,19 @@ namespace MagicHour
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
-                                global::MagicHour.BodySwapCreateImageResponse3? __value_401 = null;
+                                global::MagicHour.AiVideoEditorCreateVideoResponse3? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::MagicHour.BodySwapCreateImageResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::MagicHour.AiVideoEditorCreateVideoResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::MagicHour.BodySwapCreateImageResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::MagicHour.AiVideoEditorCreateVideoResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -434,7 +432,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse3>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoEditorCreateVideoResponse3>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
@@ -450,19 +448,19 @@ namespace MagicHour
                             {
                                 string? __content_402 = null;
                                 global::System.Exception? __exception_402 = null;
-                                global::MagicHour.BodySwapCreateImageResponse4? __value_402 = null;
+                                global::MagicHour.AiVideoEditorCreateVideoResponse4? __value_402 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_402 = global::MagicHour.BodySwapCreateImageResponse4.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = global::MagicHour.AiVideoEditorCreateVideoResponse4.FromJson(__content_402, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_402 = global::MagicHour.BodySwapCreateImageResponse4.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = global::MagicHour.AiVideoEditorCreateVideoResponse4.FromJson(__content_402, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -471,7 +469,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse4>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoEditorCreateVideoResponse4>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_402,
@@ -487,19 +485,19 @@ namespace MagicHour
                             {
                                 string? __content_404 = null;
                                 global::System.Exception? __exception_404 = null;
-                                global::MagicHour.BodySwapCreateImageResponse5? __value_404 = null;
+                                global::MagicHour.AiVideoEditorCreateVideoResponse5? __value_404 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_404 = global::MagicHour.BodySwapCreateImageResponse5.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = global::MagicHour.AiVideoEditorCreateVideoResponse5.FromJson(__content_404, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_404 = global::MagicHour.BodySwapCreateImageResponse5.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = global::MagicHour.AiVideoEditorCreateVideoResponse5.FromJson(__content_404, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -508,7 +506,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse5>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoEditorCreateVideoResponse5>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
@@ -524,19 +522,19 @@ namespace MagicHour
                             {
                                 string? __content_422 = null;
                                 global::System.Exception? __exception_422 = null;
-                                global::MagicHour.BodySwapCreateImageResponse6? __value_422 = null;
+                                global::MagicHour.AiVideoEditorCreateVideoResponse6? __value_422 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_422 = global::MagicHour.BodySwapCreateImageResponse6.FromJson(__content_422, JsonSerializerContext);
+                                        __value_422 = global::MagicHour.AiVideoEditorCreateVideoResponse6.FromJson(__content_422, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_422 = global::MagicHour.BodySwapCreateImageResponse6.FromJson(__content_422, JsonSerializerContext);
+                                        __value_422 = global::MagicHour.AiVideoEditorCreateVideoResponse6.FromJson(__content_422, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -545,7 +543,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.BodySwapCreateImageResponse6>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoEditorCreateVideoResponse6>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_422 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_422,
@@ -569,7 +567,7 @@ namespace MagicHour
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessBodySwapCreateImageResponseContent(
+                                ProcessAiVideoEditorCreateVideoResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -578,9 +576,9 @@ namespace MagicHour
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::MagicHour.BodySwapCreateImageResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::MagicHour.AiVideoEditorCreateVideoResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.BodySwapCreateImageResponse>(
+                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiVideoEditorCreateVideoResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::MagicHour.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -610,9 +608,9 @@ namespace MagicHour
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::MagicHour.BodySwapCreateImageResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::MagicHour.AiVideoEditorCreateVideoResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.BodySwapCreateImageResponse>(
+                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiVideoEditorCreateVideoResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::MagicHour.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -653,39 +651,65 @@ namespace MagicHour
             }
         }
         /// <summary>
-        /// Body Swap<br/>
-        /// Swap a person into a scene image using Nano Banana 2. Credits depend on `resolution` (from 50 credits at 640px upward).
+        /// AI Video Editor<br/>
+        /// **What this API does**<br/>
+        /// Create the same Video Editor you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.<br/>
+        ///     <br/>
+        /// **Good for**<br/>
+        /// - Automation and batch processing  <br/>
+        /// - Adding video editor into apps, pipelines, or tools  <br/>
+        /// **How it works (3 steps)**<br/>
+        /// 1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the `file_path`.  <br/>
+        /// 2) Send a request to create a video editor job with the basic fields.  <br/>
+        /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
+        /// **Key options**<br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// **Cost**  <br/>
+        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// For detailed examples, see the [product page](https://magichour.ai/products/video-editor).
         /// </summary>
         /// <param name="name">
-        /// Give your image a custom name for easy identification.<br/>
-        /// Default Value: Body Swap - dateTime<br/>
-        /// Example: My Body Swap image
+        /// Give your video a custom name for easy identification.<br/>
+        /// Default Value: Video Editor - dateTime<br/>
+        /// Example: My Video Editor video
         /// </param>
-        /// <param name="resolution">
-        /// Output resolution. Determines credits charged for the run.<br/>
-        /// Example: 1k
+        /// <param name="startSeconds">
+        /// Start time of your clip (seconds). Must be ≥ 0.<br/>
+        /// Default Value: 0<br/>
+        /// Example: 0
         /// </param>
+        /// <param name="endSeconds">
+        /// End time of your clip in seconds. Must be greater than `start_seconds`. Duration must be between 3 and 10 seconds.<br/>
+        /// Example: 5
+        /// </param>
+        /// <param name="style"></param>
         /// <param name="assets">
-        /// Person image and scene image for body swap
+        /// Provide the assets for video editing.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::MagicHour.BodySwapCreateImageResponse> BodySwapCreateImageAsync(
-            global::MagicHour.BodySwapCreateImageRequestResolution resolution,
-            global::MagicHour.BodySwapCreateImageRequestAssets assets,
+        public async global::System.Threading.Tasks.Task<global::MagicHour.AiVideoEditorCreateVideoResponse> AiVideoEditorCreateVideoAsync(
+            float endSeconds,
+            global::MagicHour.AiVideoEditorCreateVideoRequestStyle style,
+            global::MagicHour.AiVideoEditorCreateVideoRequestAssets assets,
             string? name = default,
+            float? startSeconds = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::MagicHour.BodySwapCreateImageRequest
+            var __request = new global::MagicHour.AiVideoEditorCreateVideoRequest
             {
                 Name = name,
-                Resolution = resolution,
+                StartSeconds = startSeconds,
+                EndSeconds = endSeconds,
+                Style = style,
                 Assets = assets,
             };
 
-            return await BodySwapCreateImageAsync(
+            return await AiVideoEditorCreateVideoAsync(
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);
