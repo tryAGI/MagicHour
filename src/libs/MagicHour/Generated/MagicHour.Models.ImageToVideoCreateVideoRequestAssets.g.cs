@@ -26,8 +26,8 @@ namespace MagicHour
         /// * **`wan-2.2`**: Not supported<br/>
         /// * **`kling-2.5`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-        /// * **`veo3.1-lite`**: Not supported<br/>
-        /// * **`veo3.1`**: Not supported<br/>
+        /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
+        /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
@@ -60,8 +60,8 @@ namespace MagicHour
         /// * **`wan-2.2`**: Not supported<br/>
         /// * **`kling-2.5`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-        /// * **`veo3.1-lite`**: Not supported<br/>
-        /// * **`veo3.1`**: Not supported<br/>
+        /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
+        /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>

@@ -28,6 +28,28 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/audio-to-video \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Audio To Video video",<br/>
+        ///   "start_seconds": 0,<br/>
+        ///   "end_seconds": 15,<br/>
+        ///   "resolution": "720p",<br/>
+        ///   "assets": {<br/>
+        ///     "audio_file_path": "api-assets/id/1234.mp3",<br/>
+        ///     "image_file_path": "api-assets/id/1234.png"<br/>
+        ///   },<br/>
+        ///   "style": {<br/>
+        ///     "prompt": "Car driving through a city"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AudioToVideoCreateVideoResponse> AudioToVideoCreateVideoAsync(
 
             global::MagicHour.AudioToVideoCreateVideoRequest request,
@@ -57,6 +79,28 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/audio-to-video \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Audio To Video video",<br/>
+        ///   "start_seconds": 0,<br/>
+        ///   "end_seconds": 15,<br/>
+        ///   "resolution": "720p",<br/>
+        ///   "assets": {<br/>
+        ///     "audio_file_path": "api-assets/id/1234.mp3",<br/>
+        ///     "image_file_path": "api-assets/id/1234.png"<br/>
+        ///   },<br/>
+        ///   "style": {<br/>
+        ///     "prompt": "Car driving through a city"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AudioToVideoCreateVideoResponse>> AudioToVideoCreateVideoAsResponseAsync(
 
             global::MagicHour.AudioToVideoCreateVideoRequest request,
