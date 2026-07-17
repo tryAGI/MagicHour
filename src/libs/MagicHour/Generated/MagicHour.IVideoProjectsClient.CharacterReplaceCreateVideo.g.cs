@@ -28,6 +28,36 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/character-replace \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Character Replace video",<br/>
+        ///   "start_seconds": 0,<br/>
+        ///   "end_seconds": 15,<br/>
+        ///   "resolution": "720p",<br/>
+        ///   "assets": {<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
+        ///     "image_file_path": "api-assets/id/5678.png"<br/>
+        ///   },<br/>
+        ///   "style": {<br/>
+        ///     "mode": "replace",<br/>
+        ///     "selection_mode": "auto",<br/>
+        ///     "points": [<br/>
+        ///       {<br/>
+        ///         "position_x": 320,<br/>
+        ///         "position_y": 180,<br/>
+        ///         "time_seconds": 2.5<br/>
+        ///       }<br/>
+        ///     ]<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.CharacterReplaceCreateVideoResponse> CharacterReplaceCreateVideoAsync(
 
             global::MagicHour.CharacterReplaceCreateVideoRequest request,
@@ -57,6 +87,36 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/character-replace \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Character Replace video",<br/>
+        ///   "start_seconds": 0,<br/>
+        ///   "end_seconds": 15,<br/>
+        ///   "resolution": "720p",<br/>
+        ///   "assets": {<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
+        ///     "image_file_path": "api-assets/id/5678.png"<br/>
+        ///   },<br/>
+        ///   "style": {<br/>
+        ///     "mode": "replace",<br/>
+        ///     "selection_mode": "auto",<br/>
+        ///     "points": [<br/>
+        ///       {<br/>
+        ///         "position_x": 320,<br/>
+        ///         "position_y": 180,<br/>
+        ///         "time_seconds": 2.5<br/>
+        ///       }<br/>
+        ///     ]<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.CharacterReplaceCreateVideoResponse>> CharacterReplaceCreateVideoAsResponseAsync(
 
             global::MagicHour.CharacterReplaceCreateVideoRequest request,

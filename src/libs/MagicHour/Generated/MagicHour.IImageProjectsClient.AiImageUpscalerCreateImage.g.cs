@@ -22,10 +22,7 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Image Upscaler image",<br/>
         ///   "scale_factor": 2,<br/>
-        ///   "style": {<br/>
-        ///     "enhancement": "Resemblance",<br/>
-        ///     "prompt": "string"<br/>
-        ///   },<br/>
+        ///   "style": {},<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
         ///   }<br/>
@@ -55,10 +52,7 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Image Upscaler image",<br/>
         ///   "scale_factor": 2,<br/>
-        ///   "style": {<br/>
-        ///     "enhancement": "Resemblance",<br/>
-        ///     "prompt": "string"<br/>
-        ///   },<br/>
+        ///   "style": {},<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
         ///   }<br/>
