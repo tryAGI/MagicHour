@@ -6,7 +6,7 @@ namespace MagicHour
     {
         /// <summary>
         /// Body Swap<br/>
-        /// Swap a person into a scene image using Nano Banana 2. Credits depend on `resolution` (from 50 credits at 640px upward).
+        /// Swap a person into a scene image using Nano Banana 2 Lite (640px/1k) or Nano Banana 2 (2k/4k). Credits depend on `resolution` (from 50 credits at 640px upward).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -36,7 +36,7 @@ namespace MagicHour
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Body Swap<br/>
-        /// Swap a person into a scene image using Nano Banana 2. Credits depend on `resolution` (from 50 credits at 640px upward).
+        /// Swap a person into a scene image using Nano Banana 2 Lite (640px/1k) or Nano Banana 2 (2k/4k). Credits depend on `resolution` (from 50 credits at 640px upward).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -66,7 +66,7 @@ namespace MagicHour
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Body Swap<br/>
-        /// Swap a person into a scene image using Nano Banana 2. Credits depend on `resolution` (from 50 credits at 640px upward).
+        /// Swap a person into a scene image using Nano Banana 2 Lite (640px/1k) or Nano Banana 2 (2k/4k). Credits depend on `resolution` (from 50 credits at 640px upward).
         /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>

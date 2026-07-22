@@ -22,7 +22,7 @@ namespace MagicHour
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
-        /// For detailed examples, see the [product page](https://magichour.ai/products/video-editor).
+        /// For detailed examples, see the [product page](https://magichour.ai/products/ai-video-editor).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -71,7 +71,7 @@ namespace MagicHour
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
-        /// For detailed examples, see the [product page](https://magichour.ai/products/video-editor).
+        /// For detailed examples, see the [product page](https://magichour.ai/products/ai-video-editor).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -120,7 +120,7 @@ namespace MagicHour
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
-        /// For detailed examples, see the [product page](https://magichour.ai/products/video-editor).
+        /// For detailed examples, see the [product page](https://magichour.ai/products/ai-video-editor).
         /// </summary>
         /// <param name="name">
         /// Give your video a custom name for easy identification.<br/>
@@ -136,6 +136,14 @@ namespace MagicHour
         /// End time of your clip in seconds. Must be greater than `start_seconds`. Duration must be between 3 and 10 seconds.<br/>
         /// Example: 5
         /// </param>
+        /// <param name="model">
+        /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni` for paid. Use `ltx-2.3` for LTX video edit.<br/>
+        /// Example: gemini-omni
+        /// </param>
+        /// <param name="resolution">
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Google Omni supports 720p only; LTX-2.3 supports 480p, 720p, and 1080p.<br/>
+        /// Example: 720p
+        /// </param>
         /// <param name="style"></param>
         /// <param name="assets">
         /// Provide the assets for video editing.
@@ -149,6 +157,8 @@ namespace MagicHour
             global::MagicHour.AiVideoEditorCreateVideoRequestAssets assets,
             string? name = default,
             float? startSeconds = default,
+            global::MagicHour.AiVideoEditorCreateVideoRequestModel? model = default,
+            global::MagicHour.AiVideoEditorCreateVideoRequestResolution? resolution = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

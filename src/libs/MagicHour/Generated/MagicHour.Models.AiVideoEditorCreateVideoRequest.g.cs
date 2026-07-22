@@ -36,6 +36,24 @@ namespace MagicHour
         public required float EndSeconds { get; set; }
 
         /// <summary>
+        /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni` for paid. Use `ltx-2.3` for LTX video edit.<br/>
+        /// Example: gemini-omni
+        /// </summary>
+        /// <example>gemini-omni</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("model")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestModelJsonConverter))]
+        public global::MagicHour.AiVideoEditorCreateVideoRequestModel? Model { get; set; }
+
+        /// <summary>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Google Omni supports 720p only; LTX-2.3 supports 480p, 720p, and 1080p.<br/>
+        /// Example: 720p
+        /// </summary>
+        /// <example>720p</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestResolutionJsonConverter))]
+        public global::MagicHour.AiVideoEditorCreateVideoRequestResolution? Resolution { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
@@ -76,6 +94,14 @@ namespace MagicHour
         /// Default Value: 0<br/>
         /// Example: 0
         /// </param>
+        /// <param name="model">
+        /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni` for paid. Use `ltx-2.3` for LTX video edit.<br/>
+        /// Example: gemini-omni
+        /// </param>
+        /// <param name="resolution">
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Google Omni supports 720p only; LTX-2.3 supports 480p, 720p, and 1080p.<br/>
+        /// Example: 720p
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -84,11 +110,15 @@ namespace MagicHour
             global::MagicHour.AiVideoEditorCreateVideoRequestStyle style,
             global::MagicHour.AiVideoEditorCreateVideoRequestAssets assets,
             string? name,
-            float? startSeconds)
+            float? startSeconds,
+            global::MagicHour.AiVideoEditorCreateVideoRequestModel? model,
+            global::MagicHour.AiVideoEditorCreateVideoRequestResolution? resolution)
         {
             this.Name = name;
             this.StartSeconds = startSeconds;
             this.EndSeconds = endSeconds;
+            this.Model = model;
+            this.Resolution = resolution;
             this.Style = style ?? throw new global::System.ArgumentNullException(nameof(style));
             this.Assets = assets ?? throw new global::System.ArgumentNullException(nameof(assets));
         }
