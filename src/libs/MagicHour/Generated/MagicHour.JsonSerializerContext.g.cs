@@ -21,6 +21,14 @@ namespace MagicHour
 
             typeof(global::MagicHour.JsonConverters.AiTalkingPhotoCreateTalkingPhotoRequestStyleGenerationModeNullableJsonConverter),
 
+            typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestModelJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestModelNullableJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestResolutionJsonConverter),
+
+            typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestResolutionNullableJsonConverter),
+
             typeof(global::MagicHour.JsonConverters.AnimationCreateVideoRequestStyleArtStyleJsonConverter),
 
             typeof(global::MagicHour.JsonConverters.AnimationCreateVideoRequestStyleArtStyleNullableJsonConverter),
@@ -499,6 +507,8 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiTalkingPhotoCreateTalkingPhotoRequestStyleGenerationMode), TypeInfoPropertyName = "AiTalkingPhotoCreateTalkingPhotoRequestStyleGenerationMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVideoEditorCreateVideoRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVideoEditorCreateVideoRequestModel), TypeInfoPropertyName = "AiVideoEditorCreateVideoRequestModel2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVideoEditorCreateVideoRequestResolution), TypeInfoPropertyName = "AiVideoEditorCreateVideoRequestResolution2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVideoEditorCreateVideoRequestStyle))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVideoEditorCreateVideoRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AnimationCreateVideoRequest))]
