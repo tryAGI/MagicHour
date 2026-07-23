@@ -901,12 +901,10 @@
                     "enabled",
                     "start_seconds",
                     "end_seconds",
-                    "total_frame_cost",
                     "credits_charged",
                     "fps",
                     "error",
-                    "downloads",
-                    "download"
+                    "downloads"
                   ],
                   "description": "Success"
                 }
@@ -1341,7 +1339,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -1618,7 +1615,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -2048,7 +2044,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -2318,7 +2313,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -2629,7 +2623,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -2945,7 +2938,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -3265,7 +3257,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -3558,7 +3549,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -3844,7 +3834,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -4130,7 +4119,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -4528,7 +4516,6 @@
                   },
                   "required": [
                     "id",
-                    "estimated_frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -4817,7 +4804,6 @@
                     "type",
                     "created_at",
                     "enabled",
-                    "total_frame_cost",
                     "credits_charged",
                     "downloads",
                     "error"
@@ -5198,7 +5184,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -5564,7 +5549,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -5802,7 +5786,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -6106,7 +6089,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -6342,7 +6324,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -6662,7 +6643,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -6917,7 +6897,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -7170,7 +7149,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -7401,7 +7379,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -7647,7 +7624,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -7920,7 +7896,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -8159,7 +8134,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -8390,7 +8364,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
@@ -8617,7 +8590,6 @@
                   },
                   "required": [
                     "id",
-                    "frame_cost",
                     "credits_charged"
                   ],
                   "description": "Success"
