@@ -4,7 +4,8 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Optional style controls for replace vs animate mode and subject selection.
+    /// Optional style controls for replace vs animate mode and subject selection.<br/>
+    /// Example: {"mode":"replace","selection_mode":"auto"}
     /// </summary>
     public sealed partial class CharacterReplaceCreateVideoRequestStyle
     {
