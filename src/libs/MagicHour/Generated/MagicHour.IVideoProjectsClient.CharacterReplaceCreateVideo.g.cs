@@ -164,7 +164,8 @@ namespace MagicHour
         /// Source video and reference character image for the job.
         /// </param>
         /// <param name="style">
-        /// Optional style controls for replace vs animate mode and subject selection.
+        /// Optional style controls for replace vs animate mode and subject selection.<br/>
+        /// Example: {"mode":"replace","selection_mode":"auto"}
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

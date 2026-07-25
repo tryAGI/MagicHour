@@ -52,8 +52,10 @@ namespace MagicHour
         public required global::MagicHour.CharacterReplaceCreateVideoRequestAssets Assets { get; set; }
 
         /// <summary>
-        /// Optional style controls for replace vs animate mode and subject selection.
+        /// Optional style controls for replace vs animate mode and subject selection.<br/>
+        /// Example: {"mode":"replace","selection_mode":"auto"}
         /// </summary>
+        /// <example>{"mode":"replace","selection_mode":"auto"}</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         public global::MagicHour.CharacterReplaceCreateVideoRequestStyle? Style { get; set; }
 
@@ -88,7 +90,8 @@ namespace MagicHour
         /// Example: 720p
         /// </param>
         /// <param name="style">
-        /// Optional style controls for replace vs animate mode and subject selection.
+        /// Optional style controls for replace vs animate mode and subject selection.<br/>
+        /// Example: {"mode":"replace","selection_mode":"auto"}
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
