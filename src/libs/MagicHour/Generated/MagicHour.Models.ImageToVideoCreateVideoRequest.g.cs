@@ -21,7 +21,6 @@ namespace MagicHour
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
         /// * **`ltx-2.3`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
-        /// * **`kling-2.5`**: 5, 10<br/>
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
         /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
@@ -41,7 +40,6 @@ namespace MagicHour
         /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
         /// * `ltx-2.3`: Fastest output. Best for rapid iteration.<br/>
         /// * `wan-2.2`: Strong physics, camera moves, and motion.<br/>
-        /// * `kling-2.5`: Great for action, motion blur, and camera moves.<br/>
         /// * `kling-3.0`: Best overall quality for cinematic storytelling.<br/>
         /// * `veo3.1-lite`: Veo quality at a more accessible cost.<br/>
         /// * `veo3.1`: Google's model. Highest realism and detail.<br/>
@@ -62,7 +60,6 @@ namespace MagicHour
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
         /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
-        /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
@@ -82,7 +79,6 @@ namespace MagicHour
         /// Audio support varies by model:<br/>
         /// * **`ltx-2.3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`wan-2.2`**: Not supported<br/>
-        /// * **`kling-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1-lite`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
@@ -122,7 +118,6 @@ namespace MagicHour
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
         /// * **`ltx-2.3`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
-        /// * **`kling-2.5`**: 5, 10<br/>
         /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
         /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
@@ -145,7 +140,6 @@ namespace MagicHour
         /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
         /// * `ltx-2.3`: Fastest output. Best for rapid iteration.<br/>
         /// * `wan-2.2`: Strong physics, camera moves, and motion.<br/>
-        /// * `kling-2.5`: Great for action, motion blur, and camera moves.<br/>
         /// * `kling-3.0`: Best overall quality for cinematic storytelling.<br/>
         /// * `veo3.1-lite`: Veo quality at a more accessible cost.<br/>
         /// * `veo3.1`: Google's model. Highest realism and detail.<br/>
@@ -161,7 +155,6 @@ namespace MagicHour
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
         /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
-        /// * **`kling-2.5`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
@@ -176,7 +169,6 @@ namespace MagicHour
         /// Audio support varies by model:<br/>
         /// * **`ltx-2.3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`wan-2.2`**: Not supported<br/>
-        /// * **`kling-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1-lite`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
