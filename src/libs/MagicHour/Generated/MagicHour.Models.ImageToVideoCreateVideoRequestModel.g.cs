@@ -8,12 +8,14 @@ namespace MagicHour
     /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
     /// * `ltx-2.3`: Fastest output. Best for rapid iteration.<br/>
     /// * `wan-2.2`: Strong physics, camera moves, and motion.<br/>
+    /// * `kling-2.6`: Great for action, motion blur, and camera moves.<br/>
     /// * `kling-3.0`: Best overall quality for cinematic storytelling.<br/>
     /// * `veo3.1-lite`: Veo quality at a more accessible cost.<br/>
     /// * `veo3.1`: Google's model. Highest realism and detail.<br/>
     /// * `seedance-1.5`: Smooth, consistent motion with precision.<br/>
     /// * `seedance-2.0-mini`: Fast, consistent video with strong motion quality<br/>
     /// * `seedance-2.0`: Top quality with reference-to-video control.<br/>
+    /// * `seedance-2.5`: Highest quality with superior realism, detail, and motion<br/>
     /// * `sora-2`: Open AI's model. Great for creativity and viral clips.<br/>
     /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
     /// Default Value: default<br/>
@@ -37,6 +39,10 @@ namespace MagicHour
         /// 
         /// </summary>
         Kling25Audio,
+        /// <summary>
+        /// Great for action, motion blur, and camera moves.
+        /// </summary>
+        Kling26,
         /// <summary>
         /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.
         /// </summary>
@@ -65,6 +71,10 @@ namespace MagicHour
         /// Fast, consistent video with strong motion quality
         /// </summary>
         Seedance20Mini,
+        /// <summary>
+        /// Highest quality with superior realism, detail, and motion
+        /// </summary>
+        Seedance25,
         /// <summary>
         /// Open AI's model. Great for creativity and viral clips.
         /// </summary>
@@ -103,6 +113,7 @@ namespace MagicHour
                 ImageToVideoCreateVideoRequestModel.Kling16 => "kling-1.6",
                 ImageToVideoCreateVideoRequestModel.Kling25 => "kling-2.5",
                 ImageToVideoCreateVideoRequestModel.Kling25Audio => "kling-2.5-audio",
+                ImageToVideoCreateVideoRequestModel.Kling26 => "kling-2.6",
                 ImageToVideoCreateVideoRequestModel.Kling30 => "kling-3.0",
                 ImageToVideoCreateVideoRequestModel.Ltx2 => "ltx-2",
                 ImageToVideoCreateVideoRequestModel.Ltx23 => "ltx-2.3",
@@ -110,6 +121,7 @@ namespace MagicHour
                 ImageToVideoCreateVideoRequestModel.Seedance15 => "seedance-1.5",
                 ImageToVideoCreateVideoRequestModel.Seedance20 => "seedance-2.0",
                 ImageToVideoCreateVideoRequestModel.Seedance20Mini => "seedance-2.0-mini",
+                ImageToVideoCreateVideoRequestModel.Seedance25 => "seedance-2.5",
                 ImageToVideoCreateVideoRequestModel.Sora2 => "sora-2",
                 ImageToVideoCreateVideoRequestModel.Veo31 => "veo3.1",
                 ImageToVideoCreateVideoRequestModel.Veo31Audio => "veo3.1-audio",
@@ -129,6 +141,7 @@ namespace MagicHour
                 "kling-1.6" => ImageToVideoCreateVideoRequestModel.Kling16,
                 "kling-2.5" => ImageToVideoCreateVideoRequestModel.Kling25,
                 "kling-2.5-audio" => ImageToVideoCreateVideoRequestModel.Kling25Audio,
+                "kling-2.6" => ImageToVideoCreateVideoRequestModel.Kling26,
                 "kling-3.0" => ImageToVideoCreateVideoRequestModel.Kling30,
                 "ltx-2" => ImageToVideoCreateVideoRequestModel.Ltx2,
                 "ltx-2.3" => ImageToVideoCreateVideoRequestModel.Ltx23,
@@ -136,6 +149,7 @@ namespace MagicHour
                 "seedance-1.5" => ImageToVideoCreateVideoRequestModel.Seedance15,
                 "seedance-2.0" => ImageToVideoCreateVideoRequestModel.Seedance20,
                 "seedance-2.0-mini" => ImageToVideoCreateVideoRequestModel.Seedance20Mini,
+                "seedance-2.5" => ImageToVideoCreateVideoRequestModel.Seedance25,
                 "sora-2" => ImageToVideoCreateVideoRequestModel.Sora2,
                 "veo3.1" => ImageToVideoCreateVideoRequestModel.Veo31,
                 "veo3.1-audio" => ImageToVideoCreateVideoRequestModel.Veo31Audio,
