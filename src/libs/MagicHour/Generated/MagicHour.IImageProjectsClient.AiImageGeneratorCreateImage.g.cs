@@ -87,7 +87,15 @@ namespace MagicHour
         /// The AI model to use for image generation. Each model has different capabilities and costs.<br/>
         /// **Models:**<br/>
         /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `flux-schnell` - from 5 credits/image<br/>
+        /// - `nano-banana-2` - from 100 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Image count allowed: 1, 4, 9, 16<br/>
+        /// - `gpt-image-2` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Image count allowed: 1, 2, 3, 4<br/>
+        /// - `z-image-turbo` - from 5 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
@@ -95,9 +103,9 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1<br/>
-        /// - `z-image-turbo` - from 5 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
+        /// - `nano-banana-2-lite` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// - `seedream-v4` - from 40 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
@@ -111,21 +119,13 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-2-lite` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-2` - from 100 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 4, 9, 16<br/>
         /// - `nano-banana-pro` - from 150 credits/image<br/>
         ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Image count allowed: 1, 4, 9, 16<br/>
-        /// - `gpt-image-2` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
+        /// - `flux-schnell` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// **Deprecated Enum Values:**<br/>
         /// - `seedream` - Use `seedream-v4` instead.<br/>
@@ -144,16 +144,16 @@ namespace MagicHour
         /// - `4k` — up to 4096px<br/>
         /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
         /// **Per-model support:**<br/>
-        /// - `flux-schnell` - 640px, 1k, 2k<br/>
-        /// - `flux-2-klein` - 640px, 1k, 2k<br/>
+        /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
+        /// - `flux-2-klein` - 640px, 1k, 2k<br/>
+        /// - `nano-banana-2-lite` - 640px, 1k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
         /// - `nano-banana` - 640px, 1k<br/>
-        /// - `nano-banana-2-lite` - 640px, 1k<br/>
-        /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
-        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `flux-schnell` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
         /// Example: auto

@@ -30,32 +30,28 @@ namespace MagicHour
         /// The AI model to use for image editing. Each model has different capabilities and costs.<br/>
         /// **Models:**<br/>
         /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `qwen-edit` - from 10 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Max additional input images: 2<br/>
-        /// - `flux-2-klein` - from 5 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Max additional input images: 5<br/>
-        /// - `nano-banana` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Max additional input images: 9<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
+        /// - `gpt-image-2` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
+        /// - `flux-2-klein` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Max additional input images: 5<br/>
         /// - `nano-banana-2-lite` - from 50 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
+        /// - `qwen-edit` - from 10 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Max additional input images: 2<br/>
         /// - `seedream-v4` - from 40 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Max additional input images: 9<br/>
-        /// - `nano-banana-pro` - from 150 credits/image<br/>
-        ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4.5` - from 50 credits/image<br/>
@@ -66,8 +62,12 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `gpt-image-2` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
+        /// - `nano-banana-pro` - from 150 credits/image<br/>
+        ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// Example: default
@@ -95,16 +95,16 @@ namespace MagicHour
         /// - `4k` — up to 4096px<br/>
         /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
         /// **Per-model support:**<br/>
-        /// - `qwen-edit` - 640px, 1k, 2k<br/>
-        /// - `flux-2-klein` - 640px, 1k, 2k<br/>
-        /// - `nano-banana` - 640px, 1k<br/>
         /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `flux-2-klein` - 640px, 1k, 2k<br/>
         /// - `nano-banana-2-lite` - 640px, 1k<br/>
+        /// - `qwen-edit` - 640px, 1k, 2k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
-        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
-        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana` - 640px, 1k<br/>
+        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Example: 1k
         /// </summary>
@@ -154,32 +154,28 @@ namespace MagicHour
         /// The AI model to use for image editing. Each model has different capabilities and costs.<br/>
         /// **Models:**<br/>
         /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `qwen-edit` - from 10 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Max additional input images: 2<br/>
-        /// - `flux-2-klein` - from 5 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Max additional input images: 5<br/>
-        /// - `nano-banana` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Max additional input images: 9<br/>
         /// - `nano-banana-2` - from 100 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
+        /// - `gpt-image-2` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
+        /// - `flux-2-klein` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Max additional input images: 5<br/>
         /// - `nano-banana-2-lite` - from 50 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
+        /// - `qwen-edit` - from 10 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Max additional input images: 2<br/>
         /// - `seedream-v4` - from 40 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Max additional input images: 9<br/>
-        /// - `nano-banana-pro` - from 150 credits/image<br/>
-        ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// - `seedream-v4.5` - from 50 credits/image<br/>
@@ -190,8 +186,12 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
-        /// - `gpt-image-2` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana` - from 50 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
+        /// - `nano-banana-pro` - from 150 credits/image<br/>
+        ///   - Supported resolutions: 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
         /// Example: default
@@ -209,16 +209,16 @@ namespace MagicHour
         /// - `4k` — up to 4096px<br/>
         /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
         /// **Per-model support:**<br/>
-        /// - `qwen-edit` - 640px, 1k, 2k<br/>
-        /// - `flux-2-klein` - 640px, 1k, 2k<br/>
-        /// - `nano-banana` - 640px, 1k<br/>
         /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `flux-2-klein` - 640px, 1k, 2k<br/>
         /// - `nano-banana-2-lite` - 640px, 1k<br/>
+        /// - `qwen-edit` - 640px, 1k, 2k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
-        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
-        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
+        /// - `nano-banana` - 640px, 1k<br/>
+        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Example: 1k
         /// </param>
