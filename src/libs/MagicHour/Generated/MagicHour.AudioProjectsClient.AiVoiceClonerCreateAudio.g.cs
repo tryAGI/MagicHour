@@ -44,7 +44,7 @@ namespace MagicHour
         /// <summary>
         /// AI Voice Cloner<br/>
         /// Clone a voice from an audio sample and generate speech. <br/>
-        /// * Each character costs 0.05 credits. <br/>
+        /// * Each character costs 0.1 credits. <br/>
         /// * The cost is rounded up to the nearest whole number
         /// </summary>
         /// <param name="request"></param>
@@ -87,7 +87,7 @@ namespace MagicHour
         /// <summary>
         /// AI Voice Cloner<br/>
         /// Clone a voice from an audio sample and generate speech. <br/>
-        /// * Each character costs 0.05 credits. <br/>
+        /// * Each character costs 0.1 credits. <br/>
         /// * The cost is rounded up to the nearest whole number
         /// </summary>
         /// <param name="request"></param>
@@ -661,7 +661,7 @@ namespace MagicHour
         /// <summary>
         /// AI Voice Cloner<br/>
         /// Clone a voice from an audio sample and generate speech. <br/>
-        /// * Each character costs 0.05 credits. <br/>
+        /// * Each character costs 0.1 credits. <br/>
         /// * The cost is rounded up to the nearest whole number
         /// </summary>
         /// <param name="name">

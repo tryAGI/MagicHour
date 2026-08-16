@@ -43,7 +43,7 @@ namespace MagicHour
 
         /// <summary>
         /// AI Voice Generator<br/>
-        /// Generate speech from text. Each character costs 0.05 credits. The cost is rounded up to the nearest whole number.
+        /// Generate speech from text. Each character costs 0.1 credits. The cost is rounded up to the nearest whole number.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -82,7 +82,7 @@ namespace MagicHour
         }
         /// <summary>
         /// AI Voice Generator<br/>
-        /// Generate speech from text. Each character costs 0.05 credits. The cost is rounded up to the nearest whole number.
+        /// Generate speech from text. Each character costs 0.1 credits. The cost is rounded up to the nearest whole number.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -652,7 +652,7 @@ namespace MagicHour
         }
         /// <summary>
         /// AI Voice Generator<br/>
-        /// Generate speech from text. Each character costs 0.05 credits. The cost is rounded up to the nearest whole number.
+        /// Generate speech from text. Each character costs 0.1 credits. The cost is rounded up to the nearest whole number.
         /// </summary>
         /// <param name="name">
         /// Give your audio a custom name for easy identification.<br/>
