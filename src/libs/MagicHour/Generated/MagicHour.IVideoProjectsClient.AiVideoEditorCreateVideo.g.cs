@@ -39,6 +39,8 @@ namespace MagicHour
         ///   "name": "My Video Editor video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 5,<br/>
+        ///   "model": "gemini-omni",<br/>
+        ///   "resolution": "720p",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Change the car color to blue"<br/>
         ///   },<br/>
@@ -88,6 +90,8 @@ namespace MagicHour
         ///   "name": "My Video Editor video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 5,<br/>
+        ///   "model": "gemini-omni",<br/>
+        ///   "resolution": "720p",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Change the car color to blue"<br/>
         ///   },<br/>
