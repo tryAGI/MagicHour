@@ -46,14 +46,7 @@ namespace MagicHour
         ///   },<br/>
         ///   "style": {<br/>
         ///     "mode": "replace",<br/>
-        ///     "selection_mode": "auto",<br/>
-        ///     "points": [<br/>
-        ///       {<br/>
-        ///         "position_x": 320,<br/>
-        ///         "position_y": 180,<br/>
-        ///         "time_seconds": 2.5<br/>
-        ///       }<br/>
-        ///     ]<br/>
+        ///     "selection_mode": "auto"<br/>
         ///   }<br/>
         /// }<br/>
         /// '
@@ -105,14 +98,7 @@ namespace MagicHour
         ///   },<br/>
         ///   "style": {<br/>
         ///     "mode": "replace",<br/>
-        ///     "selection_mode": "auto",<br/>
-        ///     "points": [<br/>
-        ///       {<br/>
-        ///         "position_x": 320,<br/>
-        ///         "position_y": 180,<br/>
-        ///         "time_seconds": 2.5<br/>
-        ///       }<br/>
-        ///     ]<br/>
+        ///     "selection_mode": "auto"<br/>
         ///   }<br/>
         /// }<br/>
         /// '
