@@ -12,16 +12,16 @@ namespace MagicHour
     /// - `4k` — up to 4096px<br/>
     /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
     /// **Per-model support:**<br/>
-    /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
-    /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
     /// - `flux-2-klein` - 640px, 1k, 2k<br/>
+    /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
+    /// - `nano-banana` - 640px, 1k<br/>
+    /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
     /// - `nano-banana-2-lite` - 640px, 1k<br/>
+    /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
     /// - `qwen-edit` - 640px, 1k, 2k<br/>
     /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
     /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
     /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
-    /// - `nano-banana` - 640px, 1k<br/>
-    /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
     /// Note: Resolution availability depends on the model and your subscription tier.<br/>
     /// Example: 1k
     /// </summary>

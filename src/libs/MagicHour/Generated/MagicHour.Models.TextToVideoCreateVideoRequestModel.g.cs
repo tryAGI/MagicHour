@@ -6,18 +6,18 @@ namespace MagicHour
     /// <summary>
     /// The AI model to use for video generation.<br/>
     /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
+    /// * `kling-2.6`: Great for action, motion blur, and camera moves.<br/>
     /// * `kling-3.0`: Best overall quality for cinematic storytelling.<br/>
-    /// * `seedance-2.0`: Top quality with reference-to-video control.<br/>
     /// * `ltx-2.3`: Fastest output. Best for rapid iteration.<br/>
     /// * `minimax-h3`: Reference-driven video with native audio.<br/>
-    /// * `wan-2.2`: Strong physics, camera moves, and motion.<br/>
     /// * `seedance-1.5`: Smooth, consistent motion with precision.<br/>
+    /// * `seedance-2.0`: Top quality with reference-to-video control.<br/>
     /// * `seedance-2.0-mini`: Fast, consistent video with strong motion quality<br/>
     /// * `seedance-2.5`: Highest quality with superior realism, detail, and motion<br/>
-    /// * `kling-2.6`: Great for action, motion blur, and camera moves.<br/>
-    /// * `veo3.1-lite`: Veo quality at a more accessible cost.<br/>
-    /// * `veo3.1`: Google's model. Highest realism and detail.<br/>
     /// * `sora-2`: Open AI's model. Great for creativity and viral clips.<br/>
+    /// * `veo3.1`: Google's model. Highest realism and detail.<br/>
+    /// * `veo3.1-lite`: Veo quality at a more accessible cost.<br/>
+    /// * `wan-2.2`: Strong physics, camera moves, and motion.<br/>
     /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
     /// Default Value: default<br/>
     /// Example: kling-3.0
@@ -61,7 +61,7 @@ namespace MagicHour
         /// </summary>
         MinimaxH3,
         /// <summary>
-        /// Top quality with reference-to-video control.
+        /// Smooth, consistent motion with precision.
         /// </summary>
         Seedance,
         /// <summary>
@@ -85,7 +85,7 @@ namespace MagicHour
         /// </summary>
         Sora2,
         /// <summary>
-        /// Veo quality at a more accessible cost.
+        /// Google's model. Highest realism and detail.
         /// </summary>
         Veo31,
         /// <summary>
