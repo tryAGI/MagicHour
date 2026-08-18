@@ -5,28 +5,28 @@ namespace MagicHour
 {
     /// <summary>
     /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
+    /// * **`kling-2.6`**: Supports 720p, 1080p.<br/>
     /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-    /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
     /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
-    /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
+    /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
     /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
     /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
-    /// * **`kling-2.6`**: Supports 720p, 1080p.<br/>
-    /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
-    /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
     /// * **`sora-2`**: Supports 720p.<br/>
+    /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
+    /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
+    /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
     /// Example: 720p
     /// </summary>
     public enum TextToVideoCreateVideoRequestResolution
     {
         /// <summary>
-        /// Supports 720p, 1080p, 4k.
+        /// Supports 720p, 1080p.
         /// </summary>
         x1080p,
         /// <summary>
-        /// Supports 480p, 720p.
+        /// Supports 480p, 720p, 1080p.
         /// </summary>
         x480p,
         /// <summary>
@@ -34,7 +34,7 @@ namespace MagicHour
         /// </summary>
         x4k,
         /// <summary>
-        /// Supports 720p, 1080p, 4k.
+        /// Supports 720p, 1080p.
         /// </summary>
         x720p,
     }

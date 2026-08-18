@@ -22,18 +22,18 @@ namespace MagicHour
 
         /// <summary>
         /// The image to use as the last frame of the video.<br/>
+        /// * **`kling-2.6`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-        /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
         /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Not supported<br/>
-        /// * **`wan-2.2`**: Not supported<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
-        /// * **`kling-2.6`**: Supports 1080p.<br/>
-        /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
-        /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`sora-2`**: Not supported<br/>
+        /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
+        /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
+        /// * **`wan-2.2`**: Not supported<br/>
         /// Example: api-assets/id/1234.png
         /// </summary>
         /// <example>api-assets/id/1234.png</example>
@@ -58,18 +58,18 @@ namespace MagicHour
         /// </param>
         /// <param name="endImageFilePath">
         /// The image to use as the last frame of the video.<br/>
+        /// * **`kling-2.6`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-        /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
         /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Not supported<br/>
-        /// * **`wan-2.2`**: Not supported<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
-        /// * **`kling-2.6`**: Supports 1080p.<br/>
-        /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
-        /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`sora-2`**: Not supported<br/>
+        /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
+        /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
+        /// * **`wan-2.2`**: Not supported<br/>
         /// Example: api-assets/id/1234.png
         /// </param>
 #if NET7_0_OR_GREATER
