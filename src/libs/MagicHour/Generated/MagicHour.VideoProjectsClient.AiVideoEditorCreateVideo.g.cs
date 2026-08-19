@@ -725,7 +725,7 @@ namespace MagicHour
         /// Example: 0
         /// </param>
         /// <param name="endSeconds">
-        /// End time of your clip in seconds. Must be greater than `start_seconds`. Minimum duration is 3 seconds. Maximum duration depends on model: `gemini-omni`: 10s, `ltx-2.3`: 45s.<br/>
+        /// End time of your clip in seconds. Must be greater than `start_seconds`. Minimum duration depends on model: `gemini-omni`: 3s, `ltx-2.3`: 0.5s. Maximum duration depends on model: `gemini-omni`: 10s, `ltx-2.3`: 45s.<br/>
         /// Example: 5
         /// </param>
         /// <param name="model">
