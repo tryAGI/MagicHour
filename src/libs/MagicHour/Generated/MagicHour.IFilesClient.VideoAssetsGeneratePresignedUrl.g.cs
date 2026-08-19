@@ -6,7 +6,7 @@ namespace MagicHour
     {
         /// <summary>
         /// Generate asset upload urls<br/>
-        /// Generates a list of pre-signed upload URLs for the assets required. This API is only necessary if you want to upload to Magic Hour's storage. Refer to the [Input Files Guide](/integration/inputs-and-outputs) for more details.<br/>
+        /// Generates a list of pre-signed upload URLs for the assets required. This API is only necessary if you want to upload to Magic Hour's storage. Refer to the [Input Files Guide](https://docs.magichour.ai/integration/inputs-and-outputs) for more details.<br/>
         /// The response array will match the order of items in the request body.<br/>
         /// **Valid file extensions per asset type**:<br/>
         /// - video: mp4, m4v, mov, webm<br/>
@@ -53,7 +53,7 @@ namespace MagicHour
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Generate asset upload urls<br/>
-        /// Generates a list of pre-signed upload URLs for the assets required. This API is only necessary if you want to upload to Magic Hour's storage. Refer to the [Input Files Guide](/integration/inputs-and-outputs) for more details.<br/>
+        /// Generates a list of pre-signed upload URLs for the assets required. This API is only necessary if you want to upload to Magic Hour's storage. Refer to the [Input Files Guide](https://docs.magichour.ai/integration/inputs-and-outputs) for more details.<br/>
         /// The response array will match the order of items in the request body.<br/>
         /// **Valid file extensions per asset type**:<br/>
         /// - video: mp4, m4v, mov, webm<br/>
@@ -100,7 +100,7 @@ namespace MagicHour
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Generate asset upload urls<br/>
-        /// Generates a list of pre-signed upload URLs for the assets required. This API is only necessary if you want to upload to Magic Hour's storage. Refer to the [Input Files Guide](/integration/inputs-and-outputs) for more details.<br/>
+        /// Generates a list of pre-signed upload URLs for the assets required. This API is only necessary if you want to upload to Magic Hour's storage. Refer to the [Input Files Guide](https://docs.magichour.ai/integration/inputs-and-outputs) for more details.<br/>
         /// The response array will match the order of items in the request body.<br/>
         /// **Valid file extensions per asset type**:<br/>
         /// - video: mp4, m4v, mov, webm<br/>
