@@ -5,11 +5,11 @@ namespace MagicHour
 {
     /// <summary>
     /// Magic Hour provides an API (beta) that can be integrated into your own application to generate videos and images using AI. <br/>
-    /// Webhook documentation can be found [here](https://magichour.ai/docs/webhook).<br/>
+    /// Webhook documentation can be found [here](https://docs.magichour.ai/webhook-reference).<br/>
     /// If you have any questions, please reach out to us via [discord](https://discord.gg/JX5rgsZaJp).<br/>
     /// # Authentication<br/>
     /// Every request requires an API key.<br/>
-    /// To get started, first generate your API key [here](https://magichour.ai/settings/developer).<br/>
+    /// To get started, first generate your API key [here](https://magichour.ai/developer?tab=api-keys&amp;utm_source=docs&amp;utm_medium=referral&amp;utm_campaign=api-reference).<br/>
     /// Then, add the `Authorization` header to the request.<br/>
     /// | Key | Value |<br/>
     /// |-|-|<br/>
