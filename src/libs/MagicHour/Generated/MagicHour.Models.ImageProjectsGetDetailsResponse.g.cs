@@ -27,6 +27,13 @@ namespace MagicHour
 
         /// <summary>
         /// The status of the image.<br/>
+        /// - `draft` - the project was created but has not been submitted for rendering<br/>
+        /// - `queued` - the job is waiting for an available server<br/>
+        /// - `rendering` - the job is being processed; the `image.started` webhook event fires when rendering begins<br/>
+        /// - `complete` - the job finished successfully; fires `image.completed`<br/>
+        /// - `error` - the job failed during processing; fires `image.errored`<br/>
+        /// - `canceled` - the job was manually canceled (for example from the Magic Hour web app)<br/>
+        /// **Note:** `rendering`, `complete`, and `error` have matching webhook events; `canceled` does not - a canceled job emits no webhook event, so poll this endpoint to detect cancellation.<br/>
         /// Example: complete
         /// </summary>
         /// <example>complete</example>
@@ -107,6 +114,13 @@ namespace MagicHour
         /// </param>
         /// <param name="status">
         /// The status of the image.<br/>
+        /// - `draft` - the project was created but has not been submitted for rendering<br/>
+        /// - `queued` - the job is waiting for an available server<br/>
+        /// - `rendering` - the job is being processed; the `image.started` webhook event fires when rendering begins<br/>
+        /// - `complete` - the job finished successfully; fires `image.completed`<br/>
+        /// - `error` - the job failed during processing; fires `image.errored`<br/>
+        /// - `canceled` - the job was manually canceled (for example from the Magic Hour web app)<br/>
+        /// **Note:** `rendering`, `complete`, and `error` have matching webhook events; `canceled` does not - a canceled job emits no webhook event, so poll this endpoint to detect cancellation.<br/>
         /// Example: complete
         /// </param>
         /// <param name="imageCount">
