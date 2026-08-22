@@ -54,9 +54,9 @@ namespace MagicHour
         /// 2) Send a request to create a audio to video job with the basic fields.  <br/>
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
-        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
-        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
-        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// - Inputs: see the request schema for endpoint-specific assets  <br/>
+        /// - Resolution: free users default to 480p; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: see the request schema for endpoint-specific options  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/audio-to-video).
@@ -115,9 +115,9 @@ namespace MagicHour
         /// 2) Send a request to create a audio to video job with the basic fields.  <br/>
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
-        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
-        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
-        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// - Inputs: see the request schema for endpoint-specific assets  <br/>
+        /// - Resolution: free users default to 480p; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: see the request schema for endpoint-specific options  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/audio-to-video).
@@ -707,9 +707,9 @@ namespace MagicHour
         /// 2) Send a request to create a audio to video job with the basic fields.  <br/>
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
-        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
-        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
-        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// - Inputs: see the request schema for endpoint-specific assets  <br/>
+        /// - Resolution: free users default to 480p; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: see the request schema for endpoint-specific options  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/audio-to-video).
