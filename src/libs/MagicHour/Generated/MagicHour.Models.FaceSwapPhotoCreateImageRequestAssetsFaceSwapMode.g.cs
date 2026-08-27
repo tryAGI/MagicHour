@@ -13,11 +13,11 @@ namespace MagicHour
     public enum FaceSwapPhotoCreateImageRequestAssetsFaceSwapMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllFaces,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IndividualFaces,
     }

@@ -4,308 +4,308 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum VideoToVideoCreateVideoRequestStyleArtStyle
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3dRender,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Airbender,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Android,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimeWarrior,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ArmoredKnight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssassinsCreed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Avatar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlackSpiderman,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BobaFett,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BoldAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CelestialSkin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChineseSwordsmen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clay,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Comic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cyberpunk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cypher,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DarkFantasy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DragonballZ,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FutureBot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FuturisticFantasy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gta,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GhibliAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ghost,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gundam,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hologram,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Illustration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Impressionism,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ink,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InkPoster,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jinx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Knight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lego,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Link,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Marble,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mario,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MasterChief,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mech,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minecraft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mystique,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Naruto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NeonDream,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoArtStyle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OilPainting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OnFire,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Origami,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PainterlyAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pixar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pixel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PowerArmor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PowerRanger,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RadiantAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealisticAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RealisticPixar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RetroAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RetroSciFi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Samurai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SamuraiBot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SharpAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SoftAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SolidSnake,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spartan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Starfield,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StreetFighter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StudioGhibli,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubZero,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TheVoid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TombRaider,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Underwater,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VanGogh,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Viking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Watercolor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WesternAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WuKong,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WuxiaAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zelda,
     }

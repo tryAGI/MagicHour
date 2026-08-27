@@ -10,7 +10,7 @@ namespace MagicHour
     public sealed partial class TextToVideoCreateVideoResponse3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.TextToVideoCreateVideoResponseMessageJsonConverter))]

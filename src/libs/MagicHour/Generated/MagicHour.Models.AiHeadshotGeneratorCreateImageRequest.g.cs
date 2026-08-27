@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AiHeadshotGeneratorCreateImageRequest
     {
@@ -18,7 +18,7 @@ namespace MagicHour
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         public global::MagicHour.AiHeadshotGeneratorCreateImageRequestStyle? Style { get; set; }

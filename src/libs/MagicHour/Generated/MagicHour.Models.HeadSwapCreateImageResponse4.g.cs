@@ -10,7 +10,7 @@ namespace MagicHour
     public sealed partial class HeadSwapCreateImageResponse4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]

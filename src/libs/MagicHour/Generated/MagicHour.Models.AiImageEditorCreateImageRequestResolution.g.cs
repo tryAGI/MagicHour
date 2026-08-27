@@ -28,23 +28,23 @@ namespace MagicHour
     public enum AiImageEditorCreateImageRequestResolution
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1k,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2k,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x4k,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x640px,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
     }

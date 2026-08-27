@@ -29,15 +29,15 @@ namespace MagicHour
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kling16,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kling25,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kling25Audio,
         /// <summary>
@@ -89,7 +89,7 @@ namespace MagicHour
         /// </summary>
         Veo31,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Veo31Audio,
         /// <summary>

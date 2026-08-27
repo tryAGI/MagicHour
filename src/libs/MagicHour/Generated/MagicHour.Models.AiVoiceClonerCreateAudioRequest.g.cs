@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AiVoiceClonerCreateAudioRequest
     {
@@ -25,7 +25,7 @@ namespace MagicHour
         public required global::MagicHour.AiVoiceClonerCreateAudioRequestAssets Assets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         [global::System.Text.Json.Serialization.JsonRequired]

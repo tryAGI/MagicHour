@@ -25,7 +25,7 @@ namespace MagicHour
         /// </summary>
         Complete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Draft,
         /// <summary>
@@ -33,7 +33,7 @@ namespace MagicHour
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Queued,
         /// <summary>

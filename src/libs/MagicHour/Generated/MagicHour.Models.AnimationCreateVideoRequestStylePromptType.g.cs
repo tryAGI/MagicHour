@@ -12,15 +12,15 @@ namespace MagicHour
     public enum AnimationCreateVideoRequestStylePromptType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiChoose,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UseLyrics,
     }

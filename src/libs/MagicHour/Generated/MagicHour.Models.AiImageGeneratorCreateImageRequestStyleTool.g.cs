@@ -11,143 +11,143 @@ namespace MagicHour
     public enum AiImageGeneratorCreateImageRequestStyleTool
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiAnimeGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiArtGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiBackgroundGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiCharacterGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiFaceGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiFashionGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiIconGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiIllustrationGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiInteriorDesignGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiLandscapeGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiLogoGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiMangaGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiOutfitGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiPatternGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiPhotoGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiSketchGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiTattooGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlbumCoverGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimatedCharactersGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ArchitectureGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BookCoverGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComicBookGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DarkFantasyAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisneyAiGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DndAiArtGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EmojiGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FantasyMapGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         General,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GraffitiGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoviePosterGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpticalIllusionGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PokemonGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SouthParkCharacterGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SuperheroGenerator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThumbnailMaker,
     }

@@ -16,7 +16,7 @@ namespace MagicHour
     public enum LipSyncCreateVideoRequestStyleGenerationMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lite,
         /// <summary>

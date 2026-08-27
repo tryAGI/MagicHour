@@ -10,11 +10,11 @@ namespace MagicHour
     public enum CharacterReplaceCreateVideoRequestStyleMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Animate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Replace,
     }

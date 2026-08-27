@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoToVideoCreateVideoRequest
     {
@@ -48,7 +48,7 @@ namespace MagicHour
         public global::MagicHour.VideoToVideoCreateVideoRequestFpsResolution? FpsResolution { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -14,35 +14,35 @@ namespace MagicHour
     public enum VideoToVideoCreateVideoRequestStyleModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3dAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AbsoluteReality,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dreamshaper,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flat2dAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kaywaii,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SoftAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WesternAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
     }

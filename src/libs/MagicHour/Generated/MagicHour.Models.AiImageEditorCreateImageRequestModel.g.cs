@@ -52,47 +52,47 @@ namespace MagicHour
     public enum AiImageEditorCreateImageRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flux2Klein,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GptImage2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBanana,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBanana2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBanana2Lite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBananaPro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         QwenEdit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SeedreamV4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SeedreamV45,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SeedreamV5Pro,
     }

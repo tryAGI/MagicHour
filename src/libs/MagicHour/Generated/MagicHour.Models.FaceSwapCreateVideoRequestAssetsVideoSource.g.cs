@@ -10,11 +10,11 @@ namespace MagicHour
     public enum FaceSwapCreateVideoRequestAssetsVideoSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         File,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Youtube,
     }

@@ -54,51 +54,51 @@ namespace MagicHour
     public enum AiImageGeneratorCreateImageRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flux2Klein,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FluxSchnell,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GptImage2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBanana,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBanana2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBanana2Lite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBananaPro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Seedream,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SeedreamV4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SeedreamV5Pro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZImageTurbo,
     }

@@ -10,7 +10,7 @@ namespace MagicHour
     public enum AiImageGeneratorCreateImageRequestAspectRatio
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x16_9,
         /// <summary>
@@ -18,7 +18,7 @@ namespace MagicHour
         /// </summary>
         x1_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x9_16,
     }

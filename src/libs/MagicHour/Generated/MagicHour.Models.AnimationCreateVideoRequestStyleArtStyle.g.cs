@@ -10,191 +10,191 @@ namespace MagicHour
     public enum AnimationCreateVideoRequestStyleArtStyle
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3dRender,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x90sStreets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AbstractMinimalist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arcane,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ArtDeco,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BoldColoredIllustration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CinematicLandscape,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CinematicMiyazaki,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cosmic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cubist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cyberpunk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DarkGraphicIllustration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DarkWatercolor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DirectedByAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DoubleExposure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FadedIllustration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fantasy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FuturisticAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Impressionism,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InkAndWatercolorPortrait,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inkpunk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntricateAbstractLinesPortrait,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         JacksonPollock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LandscapePainting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LowPoly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Miniatures,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinimalColdFuturism,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OilPainting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OldSchoolComic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Overgrown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PaintedCityscape,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PainterlyIllustration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Photograph,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pixar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PixelArt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Postapocalyptic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SinCity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SoftDelicateMattePortrait,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spooky,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StudioGhibliFilmStill,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Synthwave,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TraditionalWatercolor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VanGogh,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VibrantMatteIllustration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VintageJapaneseAnime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Woodcut,
     }

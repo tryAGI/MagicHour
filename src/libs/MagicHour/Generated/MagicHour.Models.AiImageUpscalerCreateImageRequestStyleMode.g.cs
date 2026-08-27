@@ -10,19 +10,19 @@ namespace MagicHour
     public enum AiImageUpscalerCreateImageRequestStyleMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Balanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Creative,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preserve,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pro,
     }

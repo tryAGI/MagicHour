@@ -13,15 +13,15 @@ namespace MagicHour
     public enum VideoToVideoCreateVideoRequestStyleVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V2,
     }

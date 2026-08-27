@@ -10,11 +10,11 @@ namespace MagicHour
     public enum AiVideoEditorCreateVideoRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GeminiOmni,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ltx23,
     }

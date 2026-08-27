@@ -14,19 +14,19 @@ namespace MagicHour
     public enum AiClothesChangerCreateImageRequestAssetsGarmentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dresses,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EntireOutfit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LowerBody,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UpperBody,
     }
