@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AiImageEditorCreateImageRequest
     {
@@ -114,7 +114,7 @@ namespace MagicHour
         public global::MagicHour.AiImageEditorCreateImageRequestResolution? Resolution { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,12 +4,12 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FaceSwapPhotoCreateImageResponseMessage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unauthorized,
     }

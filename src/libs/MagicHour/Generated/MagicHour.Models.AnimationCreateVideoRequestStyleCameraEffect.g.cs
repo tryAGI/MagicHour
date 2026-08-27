@@ -10,211 +10,211 @@ namespace MagicHour
     public enum AnimationCreateVideoRequestStyleCameraEffect
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accelerate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AggressiveZoomInAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AggressiveZoomOutAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BoostZoomIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BoostZoomOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BounceInAndOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BounceOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BounceOutAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BounceAndSpinAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BounceInPlace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CogInTheMachine,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DevolveAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DirectedByAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DramaticZoomIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DramaticZoomOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DriftSpin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EarthquakeBounce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EarthquakeBounceAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EvolveAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Heartbeat,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HesitateIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jump,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PanLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PanRight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PulseAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pusher,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PusherAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Quadrant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RiseAndClimb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoadTrip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rodeo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RollIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RollInAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RollingBounces,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RubberBand,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SimpleZoomIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SimpleZoomOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SliceBounce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slideshow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpeedOfLight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpinBounce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SwayOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SwayOutAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TiltDown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TiltUp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Traverse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tron,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vertigo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VertigoAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZoomInAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZoomInAndSpinAudioSync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZoomOutAudioSync,
     }

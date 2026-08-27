@@ -4,12 +4,12 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AudioToVideoCreateVideoResponseMessage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unauthorized,
     }

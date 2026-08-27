@@ -52,7 +52,7 @@ namespace MagicHour
         public required string Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -76,7 +76,7 @@ namespace MagicHour
         public required int CreditsCharged { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("downloads")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -10,55 +10,55 @@ namespace MagicHour
     public enum AiMemeGeneratorCreateImageRequestStyleTemplate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BikeFall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChangeMyMind,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisappointedGuy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DrakeHotlineBling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GalaxyBrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GrusPlan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsThisAPigeon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PanikKalmPanik,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Random,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SideEyeingChloe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TuxedoWinnieThePooh,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwoButtons,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingSkeleton,
     }

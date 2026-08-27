@@ -10,15 +10,15 @@ namespace MagicHour
     public enum VideoAssetsGeneratePresignedUrlRequestItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Image,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Video,
     }

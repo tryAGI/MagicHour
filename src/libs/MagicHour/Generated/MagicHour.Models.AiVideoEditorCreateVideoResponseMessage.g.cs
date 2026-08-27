@@ -4,12 +4,12 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AiVideoEditorCreateVideoResponseMessage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unauthorized,
     }

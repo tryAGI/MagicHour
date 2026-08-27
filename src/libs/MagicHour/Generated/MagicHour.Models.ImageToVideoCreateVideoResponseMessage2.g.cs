@@ -4,12 +4,12 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ImageToVideoCreateVideoResponseMessage2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotFound,
     }

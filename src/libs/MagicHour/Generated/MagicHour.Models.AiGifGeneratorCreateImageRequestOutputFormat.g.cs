@@ -11,15 +11,15 @@ namespace MagicHour
     public enum AiGifGeneratorCreateImageRequestOutputFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gif,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webm,
     }

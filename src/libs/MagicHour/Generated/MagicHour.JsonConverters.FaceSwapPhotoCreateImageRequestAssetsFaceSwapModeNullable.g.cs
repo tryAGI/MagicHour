@@ -20,7 +20,7 @@ namespace MagicHour.JsonConverters
                     {
                         return global::MagicHour.FaceSwapPhotoCreateImageRequestAssetsFaceSwapModeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

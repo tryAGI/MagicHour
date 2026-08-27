@@ -13,11 +13,11 @@ namespace MagicHour
     public enum FaceSwapCreateVideoRequestAssetsFaceSwapMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllFaces,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IndividualFaces,
     }

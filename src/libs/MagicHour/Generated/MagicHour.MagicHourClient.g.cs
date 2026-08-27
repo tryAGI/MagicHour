@@ -21,7 +21,7 @@ namespace MagicHour
     public sealed partial class MagicHourClient : global::MagicHour.IMagicHourClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.magichour.ai/";
 
@@ -48,7 +48,7 @@ namespace MagicHour
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::MagicHour.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {

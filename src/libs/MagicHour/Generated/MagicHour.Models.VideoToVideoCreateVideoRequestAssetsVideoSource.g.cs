@@ -10,11 +10,11 @@ namespace MagicHour
     public enum VideoToVideoCreateVideoRequestAssetsVideoSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         File,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Youtube,
     }

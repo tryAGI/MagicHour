@@ -4,12 +4,12 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FaceDetectionGetDetailsResponseMessage2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotFound,
     }

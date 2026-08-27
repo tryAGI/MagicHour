@@ -4,12 +4,12 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LipSyncCreateVideoResponseMessage2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotFound,
     }

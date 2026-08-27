@@ -13,11 +13,11 @@ namespace MagicHour
     public enum VideoToVideoCreateVideoRequestFpsResolution
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Full,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Half,
     }

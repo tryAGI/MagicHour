@@ -10,15 +10,15 @@ namespace MagicHour
     public enum AnimationCreateVideoRequestAssetsAudioSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         File,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Youtube,
     }

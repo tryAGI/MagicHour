@@ -13,7 +13,7 @@ namespace MagicHour
     public enum VideoToVideoCreateVideoRequestStylePromptType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppendDefault,
         /// <summary>
@@ -21,7 +21,7 @@ namespace MagicHour
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
     }

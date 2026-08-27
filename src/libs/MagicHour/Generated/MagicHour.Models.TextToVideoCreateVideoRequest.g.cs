@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TextToVideoCreateVideoRequest
     {
@@ -126,7 +126,7 @@ namespace MagicHour
         public bool? Audio { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         [global::System.Text.Json.Serialization.JsonRequired]

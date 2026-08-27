@@ -10,11 +10,11 @@ namespace MagicHour
     public enum LipSyncCreateVideoRequestAssetsVideoSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         File,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Youtube,
     }

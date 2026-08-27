@@ -9,19 +9,19 @@ namespace MagicHour
     public enum AutoSubtitleGeneratorCreateVideoRequestStyleTemplate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cinematic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Highlight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Karaoke,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minimalist,
     }

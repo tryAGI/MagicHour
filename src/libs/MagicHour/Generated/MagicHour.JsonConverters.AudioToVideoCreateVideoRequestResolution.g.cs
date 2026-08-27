@@ -20,7 +20,7 @@ namespace MagicHour.JsonConverters
                     {
                         return global::MagicHour.AudioToVideoCreateVideoRequestResolutionExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

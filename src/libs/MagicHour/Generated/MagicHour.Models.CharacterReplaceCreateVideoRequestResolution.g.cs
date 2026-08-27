@@ -10,11 +10,11 @@ namespace MagicHour
     public enum CharacterReplaceCreateVideoRequestResolution
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x480p,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x720p,
     }
