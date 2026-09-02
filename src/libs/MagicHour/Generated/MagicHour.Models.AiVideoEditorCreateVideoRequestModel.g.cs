@@ -4,8 +4,8 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni` for paid. Use `ltx-2.3` for LTX video edit.<br/>
-    /// Example: gemini-omni
+    /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
+    /// Example: gemini-omni-1.1
     /// </summary>
     public enum AiVideoEditorCreateVideoRequestModel
     {
@@ -13,6 +13,10 @@ namespace MagicHour
         ///
         /// </summary>
         GeminiOmni,
+        /// <summary>
+        ///
+        /// </summary>
+        GeminiOmni11,
         /// <summary>
         ///
         /// </summary>
@@ -32,6 +36,7 @@ namespace MagicHour
             return value switch
             {
                 AiVideoEditorCreateVideoRequestModel.GeminiOmni => "gemini-omni",
+                AiVideoEditorCreateVideoRequestModel.GeminiOmni11 => "gemini-omni-1.1",
                 AiVideoEditorCreateVideoRequestModel.Ltx23 => "ltx-2.3",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -44,6 +49,7 @@ namespace MagicHour
             return value switch
             {
                 "gemini-omni" => AiVideoEditorCreateVideoRequestModel.GeminiOmni,
+                "gemini-omni-1.1" => AiVideoEditorCreateVideoRequestModel.GeminiOmni11,
                 "ltx-2.3" => AiVideoEditorCreateVideoRequestModel.Ltx23,
                 _ => null,
             };

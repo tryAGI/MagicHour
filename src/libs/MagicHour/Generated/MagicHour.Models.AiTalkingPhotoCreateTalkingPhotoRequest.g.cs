@@ -18,7 +18,7 @@ namespace MagicHour
         public string? Name { get; set; }
 
         /// <summary>
-        /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 180s, prompted 45s.<br/>
+        /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
         /// Example: 0
         /// </summary>
         /// <example>0</example>
@@ -27,7 +27,7 @@ namespace MagicHour
         public required float StartSeconds { get; set; }
 
         /// <summary>
-        /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 180s, prompted 45s.<br/>
+        /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
         /// Example: 15
         /// </summary>
         /// <example>15</example>
@@ -66,11 +66,11 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="AiTalkingPhotoCreateTalkingPhotoRequest" /> class.
         /// </summary>
         /// <param name="startSeconds">
-        /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 180s, prompted 45s.<br/>
+        /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
         /// Example: 0
         /// </param>
         /// <param name="endSeconds">
-        /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 180s, prompted 45s.<br/>
+        /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
         /// Example: 15
         /// </param>
         /// <param name="assets">

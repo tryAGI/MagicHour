@@ -5,9 +5,11 @@ namespace MagicHour
 {
     /// <summary>
     /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
+    /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
     /// * **`kling-2.6`**: Supports 720p, 1080p.<br/>
     /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
     /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
+    /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
@@ -22,7 +24,7 @@ namespace MagicHour
     public enum TextToVideoCreateVideoRequestResolution
     {
         /// <summary>
-        /// Supports 720p, 1080p.
+        /// Supports 360p, 720p, 1080p, 4k.
         /// </summary>
         x1080p,
         /// <summary>
@@ -30,11 +32,11 @@ namespace MagicHour
         /// </summary>
         x480p,
         /// <summary>
-        /// Supports 720p, 1080p, 4k.
+        /// Supports 360p, 720p, 1080p, 4k.
         /// </summary>
         x4k,
         /// <summary>
-        /// Supports 720p, 1080p.
+        /// Supports 360p, 720p, 1080p, 4k.
         /// </summary>
         x720p,
     }

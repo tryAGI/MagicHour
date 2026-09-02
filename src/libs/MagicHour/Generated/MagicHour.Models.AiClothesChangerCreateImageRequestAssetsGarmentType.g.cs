@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Type of garment to swap. If not provided, swaps the entire outfit. <br/>
+    /// Type of clothing item to swap. If not provided, swaps the entire outfit. <br/>
     /// * `upper_body` - for shirts/jackets <br/>
     /// * `lower_body` - for pants/skirts <br/>
     /// * `dresses` - for entire outfit (deprecated, use `entire_outfit` instead) <br/>

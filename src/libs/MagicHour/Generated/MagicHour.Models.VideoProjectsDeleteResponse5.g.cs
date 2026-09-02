@@ -4,13 +4,20 @@
 namespace MagicHour
 {
     /// <summary>
-    /// When a request fails validations<br/>
-    /// Example: {"message":"video is a template and cannot be deleted. Please reach out to our support team."}
+    ///
     /// </summary>
     public sealed partial class VideoProjectsDeleteResponse5
     {
         /// <summary>
-        ///
+        /// Machine-readable error code.<br/>
+        /// - `unprocessable_entity`: Change the request values before retrying.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.VideoProjectsDeleteResponseCode5JsonConverter))]
+        public global::MagicHour.VideoProjectsDeleteResponseCode5 Code { get; set; }
+
+        /// <summary>
+        /// Human-readable error message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,13 +32,21 @@ namespace MagicHour
         /// <summary>
         /// Initializes a new instance of the <see cref="VideoProjectsDeleteResponse5" /> class.
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">
+        /// Human-readable error message.
+        /// </param>
+        /// <param name="code">
+        /// Machine-readable error code.<br/>
+        /// - `unprocessable_entity`: Change the request values before retrying.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideoProjectsDeleteResponse5(
-            string message)
+            string message,
+            global::MagicHour.VideoProjectsDeleteResponseCode5 code)
         {
+            this.Code = code;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 

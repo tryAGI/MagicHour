@@ -6,18 +6,20 @@ namespace MagicHour
     /// <summary>
     /// The AI model to use for video generation.<br/>
     /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.<br/>
-    /// * `kling-2.6`: Great for action, motion blur, and camera moves.<br/>
-    /// * `kling-3.0`: Best overall quality for cinematic storytelling.<br/>
-    /// * `ltx-2.3`: Fastest output. Best for rapid iteration.<br/>
-    /// * `minimax-h3`: Reference-driven video with native audio.<br/>
-    /// * `seedance-1.5`: Smooth, consistent motion with precision.<br/>
-    /// * `seedance-2.0`: Top quality with reference-to-video control.<br/>
-    /// * `seedance-2.0-mini`: Fast, consistent video with strong motion quality<br/>
-    /// * `seedance-2.5`: Highest quality with superior realism, detail, and motion<br/>
-    /// * `sora-2`: Open AI's model. Great for creativity and viral clips.<br/>
-    /// * `veo3.1`: Google's model. Highest realism and detail.<br/>
-    /// * `veo3.1-lite`: Veo quality at a more accessible cost.<br/>
-    /// * `wan-2.2`: Strong physics, camera moves, and motion.<br/>
+    /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
+    /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
+    /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
+    /// * `ltx-2.3`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
+    /// * `ltx-2.5`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
+    /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
+    /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
+    /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
+    /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
+    /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
+    /// * `sora-2`: Best for creative concepts and longer clips with audio.<br/>
+    /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
+    /// * `veo3.1-lite`: Balanced realism and audio at a lower cost than Veo 3.1.<br/>
+    /// * `wan-2.2`: Best for physical motion, action, and camera movement.<br/>
     /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
     /// Default Value: default<br/>
     /// Example: kling-3.0
@@ -28,6 +30,10 @@ namespace MagicHour
         /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.3`.
         /// </summary>
         Default,
+        /// <summary>
+        /// Best for precise short clips, first/last frames, and high-resolution output.
+        /// </summary>
+        GeminiOmni11,
         /// <summary>
         ///
         /// </summary>
@@ -41,7 +47,7 @@ namespace MagicHour
         /// </summary>
         Kling25Audio,
         /// <summary>
-        /// Great for action, motion blur, and camera moves.
+        /// Best for action, motion blur, and controlled camera moves.
         /// </summary>
         Kling26,
         /// <summary>
@@ -57,35 +63,39 @@ namespace MagicHour
         /// </summary>
         Ltx23,
         /// <summary>
-        /// Reference-driven video with native audio.
+        /// Fastest for general scenes, long clips, audio, and rapid iteration.
+        /// </summary>
+        Ltx25,
+        /// <summary>
+        /// Great for reference-driven clips with native audio and longer durations.
         /// </summary>
         MinimaxH3,
         /// <summary>
-        /// Smooth, consistent motion with precision.
+        /// Best for smooth, consistent motion with an end frame.
         /// </summary>
         Seedance,
         /// <summary>
-        /// Smooth, consistent motion with precision.
+        /// Best for smooth, consistent motion with an end frame.
         /// </summary>
         Seedance15,
         /// <summary>
-        /// Top quality with reference-to-video control.
+        /// Best for reference-led clips with precise subject control.
         /// </summary>
         Seedance20,
         /// <summary>
-        /// Fast, consistent video with strong motion quality
+        /// Faster reference-led clips with consistent motion and audio.
         /// </summary>
         Seedance20Mini,
         /// <summary>
-        /// Highest quality with superior realism, detail, and motion
+        /// Best for premium realism, detail, and natural motion.
         /// </summary>
         Seedance25,
         /// <summary>
-        /// Open AI's model. Great for creativity and viral clips.
+        /// Best for creative concepts and longer clips with audio.
         /// </summary>
         Sora2,
         /// <summary>
-        /// Google's model. Highest realism and detail.
+        /// Best for romantic interactions and expressive action, with realistic detail.
         /// </summary>
         Veo31,
         /// <summary>
@@ -93,11 +103,11 @@ namespace MagicHour
         /// </summary>
         Veo31Audio,
         /// <summary>
-        /// Veo quality at a more accessible cost.
+        /// Balanced realism and audio at a lower cost than Veo 3.1.
         /// </summary>
         Veo31Lite,
         /// <summary>
-        /// Strong physics, camera moves, and motion.
+        /// Best for physical motion, action, and camera movement.
         /// </summary>
         Wan22,
     }
@@ -115,6 +125,7 @@ namespace MagicHour
             return value switch
             {
                 TextToVideoCreateVideoRequestModel.Default => "default",
+                TextToVideoCreateVideoRequestModel.GeminiOmni11 => "gemini-omni-1.1",
                 TextToVideoCreateVideoRequestModel.Kling16 => "kling-1.6",
                 TextToVideoCreateVideoRequestModel.Kling25 => "kling-2.5",
                 TextToVideoCreateVideoRequestModel.Kling25Audio => "kling-2.5-audio",
@@ -122,6 +133,7 @@ namespace MagicHour
                 TextToVideoCreateVideoRequestModel.Kling30 => "kling-3.0",
                 TextToVideoCreateVideoRequestModel.Ltx2 => "ltx-2",
                 TextToVideoCreateVideoRequestModel.Ltx23 => "ltx-2.3",
+                TextToVideoCreateVideoRequestModel.Ltx25 => "ltx-2.5",
                 TextToVideoCreateVideoRequestModel.MinimaxH3 => "minimax-h3",
                 TextToVideoCreateVideoRequestModel.Seedance => "seedance",
                 TextToVideoCreateVideoRequestModel.Seedance15 => "seedance-1.5",
@@ -144,6 +156,7 @@ namespace MagicHour
             return value switch
             {
                 "default" => TextToVideoCreateVideoRequestModel.Default,
+                "gemini-omni-1.1" => TextToVideoCreateVideoRequestModel.GeminiOmni11,
                 "kling-1.6" => TextToVideoCreateVideoRequestModel.Kling16,
                 "kling-2.5" => TextToVideoCreateVideoRequestModel.Kling25,
                 "kling-2.5-audio" => TextToVideoCreateVideoRequestModel.Kling25Audio,
@@ -151,6 +164,7 @@ namespace MagicHour
                 "kling-3.0" => TextToVideoCreateVideoRequestModel.Kling30,
                 "ltx-2" => TextToVideoCreateVideoRequestModel.Ltx2,
                 "ltx-2.3" => TextToVideoCreateVideoRequestModel.Ltx23,
+                "ltx-2.5" => TextToVideoCreateVideoRequestModel.Ltx25,
                 "minimax-h3" => TextToVideoCreateVideoRequestModel.MinimaxH3,
                 "seedance" => TextToVideoCreateVideoRequestModel.Seedance,
                 "seedance-1.5" => TextToVideoCreateVideoRequestModel.Seedance15,

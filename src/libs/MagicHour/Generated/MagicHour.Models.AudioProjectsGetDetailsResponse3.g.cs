@@ -4,17 +4,24 @@
 namespace MagicHour
 {
     /// <summary>
-    /// The request is not properly authenticated<br/>
-    /// Example: {"message":"Unauthorized"}
+    ///
     /// </summary>
     public sealed partial class AudioProjectsGetDetailsResponse3
     {
         /// <summary>
-        ///
+        /// Machine-readable error code.<br/>
+        /// - `unauthorized`: Provide a valid API key before retrying.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AudioProjectsGetDetailsResponseCode2JsonConverter))]
+        public global::MagicHour.AudioProjectsGetDetailsResponseCode2 Code { get; set; }
+
+        /// <summary>
+        /// Human-readable error message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AudioProjectsGetDetailsResponseMessageJsonConverter))]
-        public global::MagicHour.AudioProjectsGetDetailsResponseMessage Message { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Message { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +32,22 @@ namespace MagicHour
         /// <summary>
         /// Initializes a new instance of the <see cref="AudioProjectsGetDetailsResponse3" /> class.
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">
+        /// Human-readable error message.
+        /// </param>
+        /// <param name="code">
+        /// Machine-readable error code.<br/>
+        /// - `unauthorized`: Provide a valid API key before retrying.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AudioProjectsGetDetailsResponse3(
-            global::MagicHour.AudioProjectsGetDetailsResponseMessage message)
+            string message,
+            global::MagicHour.AudioProjectsGetDetailsResponseCode2 code)
         {
-            this.Message = message;
+            this.Code = code;
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 
         /// <summary>
