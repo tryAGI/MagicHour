@@ -4,14 +4,21 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Unprocessable Entity
+    ///
     /// </summary>
     public sealed partial class FaceDetectionGetDetailsResponse6
     {
         /// <summary>
-        /// Example: Unable to get face detection details
+        /// Machine-readable error code.<br/>
+        /// - `unprocessable_entity`: Change the request values before retrying.
         /// </summary>
-        /// <example>Unable to get face detection details</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.FaceDetectionGetDetailsResponseCode5JsonConverter))]
+        public global::MagicHour.FaceDetectionGetDetailsResponseCode5 Code { get; set; }
+
+        /// <summary>
+        /// Human-readable error message.
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Message { get; set; }
@@ -26,14 +33,20 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="FaceDetectionGetDetailsResponse6" /> class.
         /// </summary>
         /// <param name="message">
-        /// Example: Unable to get face detection details
+        /// Human-readable error message.
+        /// </param>
+        /// <param name="code">
+        /// Machine-readable error code.<br/>
+        /// - `unprocessable_entity`: Change the request values before retrying.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FaceDetectionGetDetailsResponse6(
-            string message)
+            string message,
+            global::MagicHour.FaceDetectionGetDetailsResponseCode5 code)
         {
+            this.Code = code;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 

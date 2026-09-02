@@ -4,13 +4,23 @@
 namespace MagicHour
 {
     /// <summary>
-    /// The request requires payment<br/>
-    /// Example: {"message":"Payment required"}
+    ///
     /// </summary>
     public sealed partial class ImageBackgroundRemoverCreateImageResponse4
     {
         /// <summary>
-        ///
+        /// Machine-readable error code.<br/>
+        /// - `insufficient_credits`: Purchase credits before retrying.<br/>
+        /// - `subscription_required`: Start a subscription before retrying.<br/>
+        /// - `plan_upgrade_required`: Upgrade the subscription plan before retrying.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.ImageBackgroundRemoverCreateImageResponseCode3JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::MagicHour.ImageBackgroundRemoverCreateImageResponseCode3 Code { get; set; }
+
+        /// <summary>
+        /// Human-readable error message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,13 +35,23 @@ namespace MagicHour
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageBackgroundRemoverCreateImageResponse4" /> class.
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="code">
+        /// Machine-readable error code.<br/>
+        /// - `insufficient_credits`: Purchase credits before retrying.<br/>
+        /// - `subscription_required`: Start a subscription before retrying.<br/>
+        /// - `plan_upgrade_required`: Upgrade the subscription plan before retrying.
+        /// </param>
+        /// <param name="message">
+        /// Human-readable error message.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageBackgroundRemoverCreateImageResponse4(
+            global::MagicHour.ImageBackgroundRemoverCreateImageResponseCode3 code,
             string message)
         {
+            this.Code = code;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 

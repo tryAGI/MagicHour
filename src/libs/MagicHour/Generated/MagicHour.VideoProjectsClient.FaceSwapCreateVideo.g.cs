@@ -54,9 +54,9 @@ namespace MagicHour
         /// 2) Send a request to create a face swap job with the basic fields.  <br/>
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
-        /// - Inputs: see the request schema for endpoint-specific assets  <br/>
-        /// - Resolution: free users default to 480p; higher plans unlock HD and larger sizes  <br/>
-        /// - Extra fields: see the request schema for endpoint-specific options  <br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/face-swap).
@@ -123,9 +123,9 @@ namespace MagicHour
         /// 2) Send a request to create a face swap job with the basic fields.  <br/>
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
-        /// - Inputs: see the request schema for endpoint-specific assets  <br/>
-        /// - Resolution: free users default to 480p; higher plans unlock HD and larger sizes  <br/>
-        /// - Extra fields: see the request schema for endpoint-specific options  <br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/face-swap).
@@ -614,6 +614,43 @@ namespace MagicHour
                                         h => h.Key,
                                         h => h.Value));
                             }
+                            // Internal Server Error
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                global::MagicHour.FaceSwapCreateVideoResponse7? __value_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_500 = global::MagicHour.FaceSwapCreateVideoResponse7.FromJson(__content_500, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_500 = global::MagicHour.FaceSwapCreateVideoResponse7.FromJson(__content_500, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+
+                                throw global::MagicHour.ApiException<global::MagicHour.FaceSwapCreateVideoResponse7>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
+                                    responseObject: __value_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -723,9 +760,9 @@ namespace MagicHour
         /// 2) Send a request to create a face swap job with the basic fields.  <br/>
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
-        /// - Inputs: see the request schema for endpoint-specific assets  <br/>
-        /// - Resolution: free users default to 480p; higher plans unlock HD and larger sizes  <br/>
-        /// - Extra fields: see the request schema for endpoint-specific options  <br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/face-swap).

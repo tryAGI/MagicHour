@@ -4,13 +4,20 @@
 namespace MagicHour
 {
     /// <summary>
-    /// The request is invalid<br/>
-    /// Example: {"message":"Missing request body"}
+    ///
     /// </summary>
     public sealed partial class AudioToVideoCreateVideoResponse2
     {
         /// <summary>
-        ///
+        /// Machine-readable error code.<br/>
+        /// - `invalid_request`: Fix request syntax or validation errors before retrying.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AudioToVideoCreateVideoResponseCodeJsonConverter))]
+        public global::MagicHour.AudioToVideoCreateVideoResponseCode Code { get; set; }
+
+        /// <summary>
+        /// Human-readable error message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,13 +32,21 @@ namespace MagicHour
         /// <summary>
         /// Initializes a new instance of the <see cref="AudioToVideoCreateVideoResponse2" /> class.
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">
+        /// Human-readable error message.
+        /// </param>
+        /// <param name="code">
+        /// Machine-readable error code.<br/>
+        /// - `invalid_request`: Fix request syntax or validation errors before retrying.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AudioToVideoCreateVideoResponse2(
-            string message)
+            string message,
+            global::MagicHour.AudioToVideoCreateVideoResponseCode code)
         {
+            this.Code = code;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 

@@ -27,7 +27,7 @@ namespace MagicHour
         public float? StartSeconds { get; set; }
 
         /// <summary>
-        /// End time of your clip in seconds. Must be greater than `start_seconds`. Minimum duration depends on model: `gemini-omni`: 3s, `ltx-2.3`: 0.5s. Maximum duration depends on model: `gemini-omni`: 10s, `ltx-2.3`: 45s.<br/>
+        /// End time of your clip in seconds. Must be greater than `start_seconds`. Minimum duration depends on model: `gemini-omni-1.1`: 3s, `ltx-2.3`: 0.5s. Maximum duration depends on model: `gemini-omni-1.1`: 10s, `ltx-2.3`: 45s.<br/>
         /// Example: 5
         /// </summary>
         /// <example>5</example>
@@ -36,16 +36,16 @@ namespace MagicHour
         public required float EndSeconds { get; set; }
 
         /// <summary>
-        /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni` for paid. Use `ltx-2.3` for LTX video edit.<br/>
-        /// Example: gemini-omni
+        /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
+        /// Example: gemini-omni-1.1
         /// </summary>
-        /// <example>gemini-omni</example>
+        /// <example>gemini-omni-1.1</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestModelJsonConverter))]
         public global::MagicHour.AiVideoEditorCreateVideoRequestModel? Model { get; set; }
 
         /// <summary>
-        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Google Omni supports 720p only; LTX-2.3 supports 480p, 720p, and 1080p.<br/>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. `gemini-omni-1.1` and deprecated `gemini-omni` support 720p and 1080p; LTX-2.3 supports 480p, 720p, and 1080p.<br/>
         /// Example: 720p
         /// </summary>
         /// <example>720p</example>
@@ -77,7 +77,7 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="AiVideoEditorCreateVideoRequest" /> class.
         /// </summary>
         /// <param name="endSeconds">
-        /// End time of your clip in seconds. Must be greater than `start_seconds`. Minimum duration depends on model: `gemini-omni`: 3s, `ltx-2.3`: 0.5s. Maximum duration depends on model: `gemini-omni`: 10s, `ltx-2.3`: 45s.<br/>
+        /// End time of your clip in seconds. Must be greater than `start_seconds`. Minimum duration depends on model: `gemini-omni-1.1`: 3s, `ltx-2.3`: 0.5s. Maximum duration depends on model: `gemini-omni-1.1`: 10s, `ltx-2.3`: 45s.<br/>
         /// Example: 5
         /// </param>
         /// <param name="style"></param>
@@ -95,11 +95,11 @@ namespace MagicHour
         /// Example: 0
         /// </param>
         /// <param name="model">
-        /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni` for paid. Use `ltx-2.3` for LTX video edit.<br/>
-        /// Example: gemini-omni
+        /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
+        /// Example: gemini-omni-1.1
         /// </param>
         /// <param name="resolution">
-        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Google Omni supports 720p only; LTX-2.3 supports 480p, 720p, and 1080p.<br/>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. `gemini-omni-1.1` and deprecated `gemini-omni` support 720p and 1080p; LTX-2.3 supports 480p, 720p, and 1080p.<br/>
         /// Example: 720p
         /// </param>
 #if NET7_0_OR_GREATER

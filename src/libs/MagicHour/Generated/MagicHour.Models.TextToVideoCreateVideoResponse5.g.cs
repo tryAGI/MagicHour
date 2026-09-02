@@ -4,17 +4,24 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Requested resource is not found<br/>
-    /// Example: {"message":"Not Found"}
+    ///
     /// </summary>
     public sealed partial class TextToVideoCreateVideoResponse5
     {
         /// <summary>
-        ///
+        /// Machine-readable error code.<br/>
+        /// - `not_found`: Check the route or resource identifier.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.TextToVideoCreateVideoResponseCode4JsonConverter))]
+        public global::MagicHour.TextToVideoCreateVideoResponseCode4 Code { get; set; }
+
+        /// <summary>
+        /// Human-readable error message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.TextToVideoCreateVideoResponseMessage2JsonConverter))]
-        public global::MagicHour.TextToVideoCreateVideoResponseMessage2 Message { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Message { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +32,22 @@ namespace MagicHour
         /// <summary>
         /// Initializes a new instance of the <see cref="TextToVideoCreateVideoResponse5" /> class.
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">
+        /// Human-readable error message.
+        /// </param>
+        /// <param name="code">
+        /// Machine-readable error code.<br/>
+        /// - `not_found`: Check the route or resource identifier.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextToVideoCreateVideoResponse5(
-            global::MagicHour.TextToVideoCreateVideoResponseMessage2 message)
+            string message,
+            global::MagicHour.TextToVideoCreateVideoResponseCode4 code)
         {
-            this.Message = message;
+            this.Code = code;
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 
         /// <summary>

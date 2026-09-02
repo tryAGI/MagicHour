@@ -568,6 +568,43 @@ namespace MagicHour
                                         h => h.Key,
                                         h => h.Value));
                             }
+                            // Internal Server Error
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                global::MagicHour.AiTalkingPhotoCreateTalkingPhotoResponse7? __value_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_500 = global::MagicHour.AiTalkingPhotoCreateTalkingPhotoResponse7.FromJson(__content_500, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_500 = global::MagicHour.AiTalkingPhotoCreateTalkingPhotoResponse7.FromJson(__content_500, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+
+                                throw global::MagicHour.ApiException<global::MagicHour.AiTalkingPhotoCreateTalkingPhotoResponse7>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
+                                    responseObject: __value_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -674,11 +711,11 @@ namespace MagicHour
         /// Example: My Talking Photo image
         /// </param>
         /// <param name="startSeconds">
-        /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 180s, prompted 45s.<br/>
+        /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
         /// Example: 0
         /// </param>
         /// <param name="endSeconds">
-        /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 180s, prompted 45s.<br/>
+        /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
         /// Example: 15
         /// </param>
         /// <param name="assets">

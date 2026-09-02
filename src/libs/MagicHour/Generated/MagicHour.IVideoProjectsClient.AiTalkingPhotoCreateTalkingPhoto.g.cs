@@ -86,11 +86,11 @@ namespace MagicHour
         /// Example: My Talking Photo image
         /// </param>
         /// <param name="startSeconds">
-        /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 180s, prompted 45s.<br/>
+        /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
         /// Example: 0
         /// </param>
         /// <param name="endSeconds">
-        /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 180s, prompted 45s.<br/>
+        /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
         /// Example: 15
         /// </param>
         /// <param name="assets">
