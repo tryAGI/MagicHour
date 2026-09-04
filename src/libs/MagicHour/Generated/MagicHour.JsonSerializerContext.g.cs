@@ -916,6 +916,7 @@ namespace MagicHour
     {
         private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
+
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
         /// <summary>
@@ -937,6 +938,12 @@ namespace MagicHour
             return Resolver.GetTypeInfo(type, Options);
         }
 
+         static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
+        {
+            options.Converters.Add(new global::MagicHour.JsonConverters.UnixTimestampJsonConverter());
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
+        }
+
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
         {
             var options = new global::System.Text.Json.JsonSerializerOptions
@@ -944,9 +951,7 @@ namespace MagicHour
                 DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
                 TypeInfoResolver = Resolver,
             };
-            options.Converters.Add(new global::MagicHour.JsonConverters.UnixTimestampJsonConverter());
-
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            AddConverters(options);
 
             return options;
         }
