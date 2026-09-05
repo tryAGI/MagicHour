@@ -28,6 +28,10 @@ namespace MagicHour
         /// </summary>
         x1080p,
         /// <summary>
+        /// Supports 360p, 720p, 1080p, 4k.
+        /// </summary>
+        x360p,
+        /// <summary>
         /// Supports 480p, 720p, 1080p.
         /// </summary>
         x480p,
@@ -54,6 +58,7 @@ namespace MagicHour
             return value switch
             {
                 ImageToVideoCreateVideoRequestResolution.x1080p => "1080p",
+                ImageToVideoCreateVideoRequestResolution.x360p => "360p",
                 ImageToVideoCreateVideoRequestResolution.x480p => "480p",
                 ImageToVideoCreateVideoRequestResolution.x4k => "4k",
                 ImageToVideoCreateVideoRequestResolution.x720p => "720p",
@@ -68,6 +73,7 @@ namespace MagicHour
             return value switch
             {
                 "1080p" => ImageToVideoCreateVideoRequestResolution.x1080p,
+                "360p" => ImageToVideoCreateVideoRequestResolution.x360p,
                 "480p" => ImageToVideoCreateVideoRequestResolution.x480p,
                 "4k" => ImageToVideoCreateVideoRequestResolution.x4k,
                 "720p" => ImageToVideoCreateVideoRequestResolution.x720p,
