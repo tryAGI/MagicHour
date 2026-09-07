@@ -56,6 +56,11 @@ namespace MagicHour
 
 
         /// <summary>
+        /// API related to the account that owns the API key.
+        /// </summary>
+        public AccountClient Account { get; }
+
+        /// <summary>
         /// API related to audio projects.
         /// </summary>
         public AudioProjectsClient AudioProjects { get; }
