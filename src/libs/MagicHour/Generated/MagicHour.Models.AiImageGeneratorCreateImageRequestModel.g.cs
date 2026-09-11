@@ -19,6 +19,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
+    /// - `gpt-image-2.5-flare` - from 100 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
+    ///   - Image count allowed: 1, 2, 3, 4<br/>
     /// - `nano-banana` - from 50 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -72,6 +76,10 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
+        GptImage25Flare,
+        /// <summary>
+        ///
+        /// </summary>
         NanoBanana,
         /// <summary>
         ///
@@ -119,6 +127,7 @@ namespace MagicHour
                 AiImageGeneratorCreateImageRequestModel.Flux2Klein => "flux-2-klein",
                 AiImageGeneratorCreateImageRequestModel.FluxSchnell => "flux-schnell",
                 AiImageGeneratorCreateImageRequestModel.GptImage2 => "gpt-image-2",
+                AiImageGeneratorCreateImageRequestModel.GptImage25Flare => "gpt-image-2.5-flare",
                 AiImageGeneratorCreateImageRequestModel.NanoBanana => "nano-banana",
                 AiImageGeneratorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
                 AiImageGeneratorCreateImageRequestModel.NanoBanana2Lite => "nano-banana-2-lite",
@@ -141,6 +150,7 @@ namespace MagicHour
                 "flux-2-klein" => AiImageGeneratorCreateImageRequestModel.Flux2Klein,
                 "flux-schnell" => AiImageGeneratorCreateImageRequestModel.FluxSchnell,
                 "gpt-image-2" => AiImageGeneratorCreateImageRequestModel.GptImage2,
+                "gpt-image-2.5-flare" => AiImageGeneratorCreateImageRequestModel.GptImage25Flare,
                 "nano-banana" => AiImageGeneratorCreateImageRequestModel.NanoBanana,
                 "nano-banana-2" => AiImageGeneratorCreateImageRequestModel.NanoBanana2,
                 "nano-banana-2-lite" => AiImageGeneratorCreateImageRequestModel.NanoBanana2Lite,
