@@ -46,6 +46,12 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request GET \<br/>
+        ///      --url https://api.magichour.ai/v1/account \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;'
+        /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AccountGetResponse> AccountGetAsync(
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -64,6 +70,12 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request GET \<br/>
+        ///      --url https://api.magichour.ai/v1/account \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header 'authorization: Bearer &lt;token&gt;'
+        /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AccountGetResponse>> AccountGetAsResponseAsync(
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)

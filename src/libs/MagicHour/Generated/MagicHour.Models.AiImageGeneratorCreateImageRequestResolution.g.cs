@@ -15,6 +15,7 @@ namespace MagicHour
     /// - `flux-2-klein` - 640px, 1k, 2k<br/>
     /// - `flux-schnell` - 640px, 1k, 2k<br/>
     /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
+    /// - `gpt-image-2.5-flare` - 640px, 1k, 2k, 4k<br/>
     /// - `nano-banana` - 640px, 1k<br/>
     /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
     /// - `nano-banana-2-lite` - 640px, 1k<br/>
