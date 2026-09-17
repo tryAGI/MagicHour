@@ -19,6 +19,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
+    /// - `krea-2` - from 10 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k<br/>
+    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Max additional input images: 1<br/>
     /// - `nano-banana` - from 50 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -74,6 +78,10 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
+        Krea2,
+        /// <summary>
+        ///
+        /// </summary>
         NanoBanana,
         /// <summary>
         ///
@@ -121,6 +129,7 @@ namespace MagicHour
                 AiImageEditorCreateImageRequestModel.Flux2Klein => "flux-2-klein",
                 AiImageEditorCreateImageRequestModel.GptImage2 => "gpt-image-2",
                 AiImageEditorCreateImageRequestModel.GptImage25Flare => "gpt-image-2.5-flare",
+                AiImageEditorCreateImageRequestModel.Krea2 => "krea-2",
                 AiImageEditorCreateImageRequestModel.NanoBanana => "nano-banana",
                 AiImageEditorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
                 AiImageEditorCreateImageRequestModel.NanoBanana2Lite => "nano-banana-2-lite",
@@ -143,6 +152,7 @@ namespace MagicHour
                 "flux-2-klein" => AiImageEditorCreateImageRequestModel.Flux2Klein,
                 "gpt-image-2" => AiImageEditorCreateImageRequestModel.GptImage2,
                 "gpt-image-2.5-flare" => AiImageEditorCreateImageRequestModel.GptImage25Flare,
+                "krea-2" => AiImageEditorCreateImageRequestModel.Krea2,
                 "nano-banana" => AiImageEditorCreateImageRequestModel.NanoBanana,
                 "nano-banana-2" => AiImageEditorCreateImageRequestModel.NanoBanana2,
                 "nano-banana-2-lite" => AiImageEditorCreateImageRequestModel.NanoBanana2Lite,
