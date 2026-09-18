@@ -768,6 +768,7 @@ namespace MagicHour
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
+        /// * **`wan-3.0`**: 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
         /// Example: 5
         /// </param>
         /// <param name="aspectRatio">
@@ -786,6 +787,7 @@ namespace MagicHour
         /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>
         /// * **`veo3.1-lite`**: Supports 9:16, 16:9.<br/>
         /// * **`wan-2.2`**: Supports 9:16, 16:9, 1:1.<br/>
+        /// * **`wan-3.0`**: Supports 16:9, 9:16, 1:1.<br/>
         /// Example: 16:9
         /// </param>
         /// <param name="resolution">
@@ -797,13 +799,14 @@ namespace MagicHour
         /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
-        /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
+        /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
         /// * **`sora-2`**: Supports 720p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
+        /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
         /// Example: 720p
         /// </param>
         /// <param name="model">
@@ -823,6 +826,7 @@ namespace MagicHour
         /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
         /// * `veo3.1-lite`: Balanced realism and audio at a lower cost than Veo 3.1.<br/>
         /// * `wan-2.2`: Best for physical motion, action, and camera movement.<br/>
+        /// * `wan-3.0`: High-quality video with native audio, long clips, and end-frame control.<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
         /// Example: kling-3.0
@@ -844,6 +848,7 @@ namespace MagicHour
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1-lite`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`wan-2.2`**: Not supported<br/>
+        /// * **`wan-3.0`**: Toggle-able: no additional credits for audio<br/>
         /// Example: true
         /// </param>
         /// <param name="style"></param>

@@ -19,6 +19,7 @@ namespace MagicHour
     /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>
     /// * **`veo3.1-lite`**: Supports 9:16, 16:9.<br/>
     /// * **`wan-2.2`**: Supports 9:16, 16:9, 1:1.<br/>
+    /// * **`wan-3.0`**: Supports 16:9, 9:16, 1:1.<br/>
     /// Example: 16:9
     /// </summary>
     public enum TextToVideoCreateVideoRequestAspectRatio

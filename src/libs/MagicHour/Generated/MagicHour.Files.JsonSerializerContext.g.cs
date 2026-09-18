@@ -27,7 +27,22 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListType), TypeInfoPropertyName = "SavedItemsListType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::MagicHour.SavedItemsListResponseItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseItemType), TypeInfoPropertyName = "SavedItemsListResponseItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::MagicHour.SavedItemsListResponseItemAsset>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseItemAsset))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseItemAssetMediaKind), TypeInfoPropertyName = "SavedItemsListResponseItemAssetMediaKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseCode), TypeInfoPropertyName = "SavedItemsListResponseCode2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponse3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseCode2), TypeInfoPropertyName = "SavedItemsListResponseCode22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponse4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseCode3), TypeInfoPropertyName = "SavedItemsListResponseCode32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::MagicHour.VideoAssetsGeneratePresignedUrlResponseItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseItem))]
@@ -75,7 +90,14 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItemType?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlRequestItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListType?), TypeInfoPropertyName = "NullableSavedItemsListType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseItemType?), TypeInfoPropertyName = "NullableSavedItemsListResponseItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseItemAssetMediaKind?), TypeInfoPropertyName = "NullableSavedItemsListResponseItemAssetMediaKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseCode?), TypeInfoPropertyName = "NullableSavedItemsListResponseCode2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseCode2?), TypeInfoPropertyName = "NullableSavedItemsListResponseCode22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.SavedItemsListResponseCode3?), TypeInfoPropertyName = "NullableSavedItemsListResponseCode32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode2?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode3?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode32")]
@@ -96,6 +118,8 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode5?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseCode52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode6?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseCode62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.SavedItemsListResponseItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.SavedItemsListResponseItemAsset>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.VideoAssetsGeneratePresignedUrlResponseItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.FaceDetectionGetDetailsResponseFace>))]
     internal sealed partial class FilesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -167,6 +191,30 @@ namespace MagicHour
                     typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItemType)
 
                     || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItemType?)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListType)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListType?)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseItemType)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseItemType?)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseItemAssetMediaKind)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseItemAssetMediaKind?)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode?)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode2)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode2?)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode3)
+
+                    || typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode3?)
 
                     || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode)
 
@@ -257,6 +305,66 @@ namespace MagicHour
                 if (typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItemType?))
                 {
                     return new global::MagicHour.JsonConverters.VideoAssetsGeneratePresignedUrlRequestItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListType))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListType?))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseItemType))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseItemType?))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseItemAssetMediaKind))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseItemAssetMediaKindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseItemAssetMediaKind?))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseItemAssetMediaKindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode?))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode2))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseCode2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode2?))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseCode2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode3))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseCode3JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.SavedItemsListResponseCode3?))
+                {
+                    return new global::MagicHour.JsonConverters.SavedItemsListResponseCode3NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode))

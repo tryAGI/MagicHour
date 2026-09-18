@@ -20,6 +20,7 @@ namespace MagicHour
     /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
     /// * `veo3.1-lite`: Balanced realism and audio at a lower cost than Veo 3.1.<br/>
     /// * `wan-2.2`: Best for physical motion, action, and camera movement.<br/>
+    /// * `wan-3.0`: High-quality video with native audio, long clips, and end-frame control.<br/>
     /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
     /// Default Value: default<br/>
     /// Example: kling-3.0
@@ -110,6 +111,10 @@ namespace MagicHour
         /// Best for physical motion, action, and camera movement.
         /// </summary>
         Wan22,
+        /// <summary>
+        /// High-quality video with native audio, long clips, and end-frame control.
+        /// </summary>
+        Wan30,
     }
 
     /// <summary>
@@ -145,6 +150,7 @@ namespace MagicHour
                 ImageToVideoCreateVideoRequestModel.Veo31Audio => "veo3.1-audio",
                 ImageToVideoCreateVideoRequestModel.Veo31Lite => "veo3.1-lite",
                 ImageToVideoCreateVideoRequestModel.Wan22 => "wan-2.2",
+                ImageToVideoCreateVideoRequestModel.Wan30 => "wan-3.0",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -176,6 +182,7 @@ namespace MagicHour
                 "veo3.1-audio" => ImageToVideoCreateVideoRequestModel.Veo31Audio,
                 "veo3.1-lite" => ImageToVideoCreateVideoRequestModel.Veo31Lite,
                 "wan-2.2" => ImageToVideoCreateVideoRequestModel.Wan22,
+                "wan-3.0" => ImageToVideoCreateVideoRequestModel.Wan30,
                 _ => null,
             };
         }

@@ -76,7 +76,7 @@ namespace MagicHour
         };
 
         /// <summary>
-        /// API related to uploading assets used for video generation.
+        /// API related to uploading and reusing assets.
         /// </summary>
         public FilesClient Files => new FilesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
