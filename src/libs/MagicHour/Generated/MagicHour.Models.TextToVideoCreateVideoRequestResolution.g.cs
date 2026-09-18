@@ -12,13 +12,14 @@ namespace MagicHour
     /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
-    /// * **`seedance-2.0`**: Supports 480p, 720p.<br/>
+    /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
     /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
     /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
     /// * **`sora-2`**: Supports 720p.<br/>
     /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
     /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
     /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
+    /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
     /// Example: 720p
     /// </summary>
     public enum TextToVideoCreateVideoRequestResolution

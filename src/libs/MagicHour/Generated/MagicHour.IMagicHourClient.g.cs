@@ -66,7 +66,7 @@ namespace MagicHour
         public AudioProjectsClient AudioProjects { get; }
 
         /// <summary>
-        /// API related to uploading assets used for video generation.
+        /// API related to uploading and reusing assets.
         /// </summary>
         public FilesClient Files { get; }
 
