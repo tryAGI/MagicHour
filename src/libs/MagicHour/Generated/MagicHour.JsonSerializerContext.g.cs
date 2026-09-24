@@ -85,6 +85,8 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.TextToVideoCreateVideoRequestResolution), TypeInfoPropertyName = "TextToVideoCreateVideoRequestResolution2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.TextToVideoCreateVideoRequestModel), TypeInfoPropertyName = "TextToVideoCreateVideoRequestModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.TextToVideoCreateVideoRequestStyle))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::MagicHour.TextToVideoCreateVideoRequestReference>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.TextToVideoCreateVideoRequestReference))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoToVideoCreateVideoRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoToVideoCreateVideoRequestFpsResolution), TypeInfoPropertyName = "VideoToVideoCreateVideoRequestFpsResolution2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoToVideoCreateVideoRequestStyle))]
@@ -512,8 +514,6 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponseCode3), TypeInfoPropertyName = "AiMemeGeneratorCreateImageResponseCode32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponse5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponseCode4), TypeInfoPropertyName = "AiMemeGeneratorCreateImageResponseCode42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponse6))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -526,6 +526,8 @@ namespace MagicHour
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponseCode4), TypeInfoPropertyName = "AiMemeGeneratorCreateImageResponseCode42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponse6))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponseCode5), TypeInfoPropertyName = "AiMemeGeneratorCreateImageResponseCode52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponse7))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMemeGeneratorCreateImageResponseCode6), TypeInfoPropertyName = "AiMemeGeneratorCreateImageResponseCode62")]
@@ -935,6 +937,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.CharacterReplaceCreateVideoRequestStylePoint>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.FaceSwapCreateVideoRequestAssetsFaceMapping>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.TextToVideoCreateVideoRequestReference>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.FaceSwapPhotoCreateImageRequestAssetsFaceMapping>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.SavedItemsListResponseItem>))]

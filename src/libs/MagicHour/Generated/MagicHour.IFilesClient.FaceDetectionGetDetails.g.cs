@@ -19,7 +19,7 @@ namespace MagicHour
         /// curl --request GET \<br/>
         ///      --url https://api.magichour.ai/v1/face-detection/id \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.FaceDetectionGetDetailsResponse> FaceDetectionGetDetailsAsync(
             string id,
@@ -40,7 +40,7 @@ namespace MagicHour
         /// curl --request GET \<br/>
         ///      --url https://api.magichour.ai/v1/face-detection/id \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.FaceDetectionGetDetailsResponse>> FaceDetectionGetDetailsAsResponseAsync(
             string id,

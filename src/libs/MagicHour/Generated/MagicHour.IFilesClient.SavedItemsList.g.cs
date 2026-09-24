@@ -19,6 +19,12 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request GET \<br/>
+        ///      --url https://api.magichour.ai/v1/saved-items \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.SavedItemsListResponse> SavedItemsListAsync(
             global::MagicHour.SavedItemsListType? type = default,
             int? limit = default,
@@ -40,6 +46,12 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request GET \<br/>
+        ///      --url https://api.magichour.ai/v1/saved-items \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.SavedItemsListResponse>> SavedItemsListAsResponseAsync(
             global::MagicHour.SavedItemsListType? type = default,
             int? limit = default,

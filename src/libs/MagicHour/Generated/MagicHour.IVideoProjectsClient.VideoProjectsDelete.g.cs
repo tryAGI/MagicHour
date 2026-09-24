@@ -18,7 +18,7 @@ namespace MagicHour
         /// curl --request DELETE \<br/>
         ///      --url https://api.magichour.ai/v1/video-projects/id \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         global::System.Threading.Tasks.Task VideoProjectsDeleteAsync(
             string id,
@@ -38,7 +38,7 @@ namespace MagicHour
         /// curl --request DELETE \<br/>
         ///      --url https://api.magichour.ai/v1/video-projects/id \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse> VideoProjectsDeleteAsResponseAsync(
             string id,
