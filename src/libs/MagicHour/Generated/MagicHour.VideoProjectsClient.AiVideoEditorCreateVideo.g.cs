@@ -69,7 +69,7 @@ namespace MagicHour
         /// curl --request POST \<br/>
         ///      --url https://api.magichour.ai/v1/ai-video-editor \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
@@ -130,7 +130,7 @@ namespace MagicHour
         /// curl --request POST \<br/>
         ///      --url https://api.magichour.ai/v1/ai-video-editor \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
@@ -762,15 +762,15 @@ namespace MagicHour
         /// Example: 0
         /// </param>
         /// <param name="endSeconds">
-        /// End time of your clip in seconds. Must be greater than `start_seconds`. Minimum duration depends on model: `gemini-omni-1.1`: 3s, `ltx-2.3`: 0.5s. Maximum duration depends on model: `gemini-omni-1.1`: 10s, `ltx-2.3`: 45s.<br/>
+        /// End time of your clip in seconds. Must be greater than `start_seconds`. Minimum duration depends on model: `gemini-omni-1.1`: 3s, LTX 2.5: 0.5s. Maximum duration depends on model: `gemini-omni-1.1`: 10s, LTX 2.5: 45s.<br/>
         /// Example: 5
         /// </param>
         /// <param name="model">
-        /// Editing model. Defaults to `ltx-2.3` for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
+        /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
         /// Example: gemini-omni-1.1
         /// </param>
         /// <param name="resolution">
-        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. `gemini-omni-1.1` and deprecated `gemini-omni` support 720p and 1080p; LTX-2.3 supports 480p, 720p, and 1080p.<br/>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. `gemini-omni-1.1` and deprecated `gemini-omni` support 720p and 1080p; LTX 2.5 supports 480p, 720p, and 1080p.<br/>
         /// Example: 720p
         /// </param>
         /// <param name="style"></param>

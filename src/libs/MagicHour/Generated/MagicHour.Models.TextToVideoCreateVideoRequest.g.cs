@@ -19,16 +19,15 @@ namespace MagicHour
 
         /// <summary>
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
-        /// * **`gemini-omni-1.1`**: 3, 4, 5, 6, 7, 8, 9, 10<br/>
+        /// * **`gemini-omni-1.1`**: any integer from 3 to 10<br/>
         /// * **`kling-2.6`**: 5, 10<br/>
-        /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
-        /// * **`ltx-2.3`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
-        /// * **`ltx-2.5`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60<br/>
-        /// * **`minimax-h3`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
-        /// * **`seedance-1.5`**: 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
-        /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
-        /// * **`seedance-2.0-mini`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
-        /// * **`seedance-2.5`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30<br/>
+        /// * **`kling-3.0`**: any integer from 3 to 15<br/>
+        /// * **`ltx-2.5`**: any integer from 1 to 60<br/>
+        /// * **`minimax-h3`**: any integer from 1 to 30<br/>
+        /// * **`seedance-1.5`**: any integer from 4 to 12<br/>
+        /// * **`seedance-2.0`**: any integer from 4 to 15<br/>
+        /// * **`seedance-2.0-mini`**: any integer from 4 to 15<br/>
+        /// * **`seedance-2.5`**: any integer from 4 to 30<br/>
         /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
@@ -46,7 +45,6 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
-        /// * **`ltx-2.3`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`ltx-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`minimax-h3`**: Supports 16:9, 9:16, 1:1.<br/>
         /// * **`seedance-1.5`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -70,13 +68,12 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-        /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
-        /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
+        /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`sora-2`**: Supports 720p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
@@ -95,7 +92,6 @@ namespace MagicHour
         /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
-        /// * `ltx-2.3`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
         /// * `ltx-2.5`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
         /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
         /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
@@ -122,7 +118,6 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Not supported<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
-        /// * **`ltx-2.3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`ltx-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`minimax-h3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-1.5`**: Toggle-able: audio adds extra credits when enabled<br/>
@@ -148,6 +143,12 @@ namespace MagicHour
         public required global::MagicHour.TextToVideoCreateVideoRequestStyle Style { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("references")]
+        public global::System.Collections.Generic.IList<global::MagicHour.TextToVideoCreateVideoRequestReference>? References { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -158,16 +159,15 @@ namespace MagicHour
         /// </summary>
         /// <param name="endSeconds">
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
-        /// * **`gemini-omni-1.1`**: 3, 4, 5, 6, 7, 8, 9, 10<br/>
+        /// * **`gemini-omni-1.1`**: any integer from 3 to 10<br/>
         /// * **`kling-2.6`**: 5, 10<br/>
-        /// * **`kling-3.0`**: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
-        /// * **`ltx-2.3`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
-        /// * **`ltx-2.5`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60<br/>
-        /// * **`minimax-h3`**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30<br/>
-        /// * **`seedance-1.5`**: 4, 5, 6, 7, 8, 9, 10, 11, 12<br/>
-        /// * **`seedance-2.0`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
-        /// * **`seedance-2.0-mini`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15<br/>
-        /// * **`seedance-2.5`**: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30<br/>
+        /// * **`kling-3.0`**: any integer from 3 to 15<br/>
+        /// * **`ltx-2.5`**: any integer from 1 to 60<br/>
+        /// * **`minimax-h3`**: any integer from 1 to 30<br/>
+        /// * **`seedance-1.5`**: any integer from 4 to 12<br/>
+        /// * **`seedance-2.0`**: any integer from 4 to 15<br/>
+        /// * **`seedance-2.0-mini`**: any integer from 4 to 15<br/>
+        /// * **`seedance-2.5`**: any integer from 4 to 30<br/>
         /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
@@ -186,7 +186,6 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
-        /// * **`ltx-2.3`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`ltx-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`minimax-h3`**: Supports 16:9, 9:16, 1:1.<br/>
         /// * **`seedance-1.5`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -205,13 +204,12 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-        /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
-        /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
+        /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`sora-2`**: Supports 720p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
@@ -225,7 +223,6 @@ namespace MagicHour
         /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
-        /// * `ltx-2.3`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
         /// * `ltx-2.5`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
         /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
         /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
@@ -247,7 +244,6 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Not supported<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
-        /// * **`ltx-2.3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`ltx-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`minimax-h3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-1.5`**: Toggle-able: audio adds extra credits when enabled<br/>
@@ -261,6 +257,7 @@ namespace MagicHour
         /// * **`wan-3.0`**: Toggle-able: no additional credits for audio<br/>
         /// Example: true
         /// </param>
+        /// <param name="references"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -271,7 +268,8 @@ namespace MagicHour
             global::MagicHour.TextToVideoCreateVideoRequestAspectRatio? aspectRatio,
             global::MagicHour.TextToVideoCreateVideoRequestResolution? resolution,
             global::MagicHour.TextToVideoCreateVideoRequestModel? model,
-            bool? audio)
+            bool? audio,
+            global::System.Collections.Generic.IList<global::MagicHour.TextToVideoCreateVideoRequestReference>? references)
         {
             this.Name = name;
             this.EndSeconds = endSeconds;
@@ -280,6 +278,7 @@ namespace MagicHour
             this.Model = model;
             this.Audio = audio;
             this.Style = style ?? throw new global::System.ArgumentNullException(nameof(style));
+            this.References = references;
         }
 
         /// <summary>

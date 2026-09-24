@@ -16,7 +16,7 @@ namespace MagicHour
         /// curl --request POST \<br/>
         ///      --url https://api.magichour.ai/v1/ai-face-editor \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
@@ -61,7 +61,7 @@ namespace MagicHour
         /// curl --request POST \<br/>
         ///      --url https://api.magichour.ai/v1/ai-face-editor \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>

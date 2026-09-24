@@ -50,7 +50,7 @@ namespace MagicHour
         /// curl --request GET \<br/>
         ///      --url https://api.magichour.ai/v1/account \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AccountGetResponse> AccountGetAsync(
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
@@ -74,7 +74,7 @@ namespace MagicHour
         /// curl --request GET \<br/>
         ///      --url https://api.magichour.ai/v1/account \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AccountGetResponse>> AccountGetAsResponseAsync(
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,

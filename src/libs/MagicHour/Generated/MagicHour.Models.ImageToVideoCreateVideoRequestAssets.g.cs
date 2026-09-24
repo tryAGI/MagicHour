@@ -25,13 +25,12 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-        /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Not supported<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
-        /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
+        /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`sora-2`**: Not supported<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
@@ -64,13 +63,12 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
-        /// * **`ltx-2.3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Not supported<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
-        /// * **`seedance-2.5`**: Supports 480p, 720p.<br/>
+        /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`sora-2`**: Not supported<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>

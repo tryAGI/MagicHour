@@ -9,7 +9,6 @@ namespace MagicHour
     /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
     /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
     /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
-    /// * `ltx-2.3`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
     /// * `ltx-2.5`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
     /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
     /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
@@ -60,7 +59,7 @@ namespace MagicHour
         /// </summary>
         Ltx2,
         /// <summary>
-        /// Fastest for general scenes, long clips, audio, and rapid iteration.
+        ///
         /// </summary>
         Ltx23,
         /// <summary>
