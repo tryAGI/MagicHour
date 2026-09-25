@@ -63,7 +63,7 @@ namespace MagicHour
         /// curl --request GET \<br/>
         ///      --url https://api.magichour.ai/v1/audio-projects/id \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AudioProjectsGetDetailsResponse> AudioProjectsGetDetailsAsync(
             string id,
@@ -100,7 +100,7 @@ namespace MagicHour
         /// curl --request GET \<br/>
         ///      --url https://api.magichour.ai/v1/audio-projects/id \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AudioProjectsGetDetailsResponse>> AudioProjectsGetDetailsAsResponseAsync(
             string id,

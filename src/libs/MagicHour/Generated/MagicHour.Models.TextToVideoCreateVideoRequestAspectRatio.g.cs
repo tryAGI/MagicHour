@@ -8,7 +8,6 @@ namespace MagicHour
     /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
     /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
-    /// * **`ltx-2.3`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`ltx-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`minimax-h3`**: Supports 16:9, 9:16, 1:1.<br/>
     /// * **`seedance-1.5`**: Supports 9:16, 16:9, 1:1.<br/>

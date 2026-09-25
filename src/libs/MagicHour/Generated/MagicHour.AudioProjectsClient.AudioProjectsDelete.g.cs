@@ -50,7 +50,7 @@ namespace MagicHour
         /// curl --request DELETE \<br/>
         ///      --url https://api.magichour.ai/v1/audio-projects/id \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         public async global::System.Threading.Tasks.Task AudioProjectsDeleteAsync(
             string id,
@@ -77,7 +77,7 @@ namespace MagicHour
         /// curl --request DELETE \<br/>
         ///      --url https://api.magichour.ai/v1/audio-projects/id \<br/>
         ///      --header 'accept: application/json' \<br/>
-        ///      --header 'authorization: Bearer &lt;token&gt;'
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse> AudioProjectsDeleteAsResponseAsync(
             string id,
