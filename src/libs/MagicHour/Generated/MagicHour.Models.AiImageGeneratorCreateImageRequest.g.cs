@@ -119,9 +119,9 @@ namespace MagicHour
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
-        /// Example: auto
+        /// Example: 1k
         /// </summary>
-        /// <example>auto</example>
+        /// <example>1k</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiImageGeneratorCreateImageRequestResolutionJsonConverter))]
         public global::MagicHour.AiImageGeneratorCreateImageRequestResolution? Resolution { get; set; }
@@ -237,7 +237,7 @@ namespace MagicHour
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
-        /// Example: auto
+        /// Example: 1k
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
