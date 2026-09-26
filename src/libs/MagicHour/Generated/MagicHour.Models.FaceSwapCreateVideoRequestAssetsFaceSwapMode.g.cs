@@ -5,8 +5,8 @@ namespace MagicHour
 {
     /// <summary>
     /// Choose how to swap faces:<br/>
-    /// **all-faces** (recommended) — swap all detected faces using one source image (`source_file_path` required)<br/>
-    /// +- **individual-faces** — specify exact mappings using `face_mappings`<br/>
+    /// - **all-faces** (recommended) — swap all detected faces using one source image (`source_file_path` required)<br/>
+    /// - **individual-faces** — specify exact mappings using `face_mappings`<br/>
     /// Default Value: all-faces<br/>
     /// Example: all-faces
     /// </summary>
