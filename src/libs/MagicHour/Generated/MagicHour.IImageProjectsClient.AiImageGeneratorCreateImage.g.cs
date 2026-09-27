@@ -166,7 +166,7 @@ namespace MagicHour
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
-        /// Example: auto
+        /// Example: 1k
         /// </param>
         /// <param name="style">
         /// The art style to use for image generation.
