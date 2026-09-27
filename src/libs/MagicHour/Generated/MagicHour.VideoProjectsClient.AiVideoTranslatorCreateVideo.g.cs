@@ -3,11 +3,11 @@
 
 namespace MagicHour
 {
-    public partial class ImageProjectsClient
+    public partial class VideoProjectsClient
     {
 
 
-        private static readonly global::MagicHour.EndPointSecurityRequirement s_AiImageGeneratorCreateImageSecurityRequirement0 =
+        private static readonly global::MagicHour.EndPointSecurityRequirement s_AiVideoTranslatorCreateVideoSecurityRequirement0 =
             new global::MagicHour.EndPointSecurityRequirement
             {
                 Authorizations = new global::MagicHour.EndPointAuthorizationRequirement[]
@@ -21,61 +21,57 @@ namespace MagicHour
                     },
                 },
             };
-        private static readonly global::MagicHour.EndPointSecurityRequirement[] s_AiImageGeneratorCreateImageSecurityRequirements =
+        private static readonly global::MagicHour.EndPointSecurityRequirement[] s_AiVideoTranslatorCreateVideoSecurityRequirements =
             new global::MagicHour.EndPointSecurityRequirement[]
-            {                s_AiImageGeneratorCreateImageSecurityRequirement0,
+            {                s_AiVideoTranslatorCreateVideoSecurityRequirement0,
             };
-        partial void PrepareAiImageGeneratorCreateImageArguments(
+        partial void PrepareAiVideoTranslatorCreateVideoArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::MagicHour.AiImageGeneratorCreateImageRequest request);
-        partial void PrepareAiImageGeneratorCreateImageRequest(
+            global::MagicHour.AiVideoTranslatorCreateVideoRequest request);
+        partial void PrepareAiVideoTranslatorCreateVideoRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::MagicHour.AiImageGeneratorCreateImageRequest request);
-        partial void ProcessAiImageGeneratorCreateImageResponse(
+            global::MagicHour.AiVideoTranslatorCreateVideoRequest request);
+        partial void ProcessAiVideoTranslatorCreateVideoResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessAiImageGeneratorCreateImageResponseContent(
+        partial void ProcessAiVideoTranslatorCreateVideoResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// AI Image Generator<br/>
-        /// Create an AI image with advanced model selection and quality controls.
+        /// AI Video Translator<br/>
+        /// **What this API does**<br/>
+        /// Create the same Video Translator you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.<br/>
+        ///     <br/>
+        /// **Good for**<br/>
+        /// - Automation and batch processing  <br/>
+        /// - Adding video translator into apps, pipelines, or tools  <br/>
+        /// **How it works (3 steps)**<br/>
+        /// 1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the `file_path`.  <br/>
+        /// 2) Send a request to create a video translator job with the basic fields.  <br/>
+        /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
+        /// **Key options**<br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// **Cost**  <br/>
+        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// For detailed examples, see the [product page](https://magichour.ai/products/ai-video-translator).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
-        /// <remarks>
-        /// curl --request POST \<br/>
-        ///      --url https://api.magichour.ai/v1/ai-image-generator \<br/>
-        ///      --header 'accept: application/json' \<br/>
-        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
-        ///      --header 'content-type: application/json' \<br/>
-        ///      --data '<br/>
-        /// {<br/>
-        ///   "name": "My Ai Image image",<br/>
-        ///   "image_count": 1,<br/>
-        ///   "model": "default",<br/>
-        ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "auto",<br/>
-        ///   "style": {<br/>
-        ///     "prompt": "Cool image",<br/>
-        ///     "tool": "ai-anime-generator"<br/>
-        ///   }<br/>
-        /// }<br/>
-        /// '
-        /// </remarks>
-        public async global::System.Threading.Tasks.Task<global::MagicHour.AiImageGeneratorCreateImageResponse> AiImageGeneratorCreateImageAsync(
+        public async global::System.Threading.Tasks.Task<global::MagicHour.AiVideoTranslatorCreateVideoResponse> AiVideoTranslatorCreateVideoAsync(
 
-            global::MagicHour.AiImageGeneratorCreateImageRequest request,
+            global::MagicHour.AiVideoTranslatorCreateVideoRequest request,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await AiImageGeneratorCreateImageAsResponseAsync(
+            var __response = await AiVideoTranslatorCreateVideoAsResponseAsync(
 
                 request: request,
                 requestOptions: requestOptions,
@@ -85,36 +81,32 @@ namespace MagicHour
             return __response.Body;
         }
         /// <summary>
-        /// AI Image Generator<br/>
-        /// Create an AI image with advanced model selection and quality controls.
+        /// AI Video Translator<br/>
+        /// **What this API does**<br/>
+        /// Create the same Video Translator you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.<br/>
+        ///     <br/>
+        /// **Good for**<br/>
+        /// - Automation and batch processing  <br/>
+        /// - Adding video translator into apps, pipelines, or tools  <br/>
+        /// **How it works (3 steps)**<br/>
+        /// 1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the `file_path`.  <br/>
+        /// 2) Send a request to create a video translator job with the basic fields.  <br/>
+        /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
+        /// **Key options**<br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// **Cost**  <br/>
+        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// For detailed examples, see the [product page](https://magichour.ai/products/ai-video-translator).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
-        /// <remarks>
-        /// curl --request POST \<br/>
-        ///      --url https://api.magichour.ai/v1/ai-image-generator \<br/>
-        ///      --header 'accept: application/json' \<br/>
-        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
-        ///      --header 'content-type: application/json' \<br/>
-        ///      --data '<br/>
-        /// {<br/>
-        ///   "name": "My Ai Image image",<br/>
-        ///   "image_count": 1,<br/>
-        ///   "model": "default",<br/>
-        ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "auto",<br/>
-        ///   "style": {<br/>
-        ///     "prompt": "Cool image",<br/>
-        ///     "tool": "ai-anime-generator"<br/>
-        ///   }<br/>
-        /// }<br/>
-        /// '
-        /// </remarks>
-        public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiImageGeneratorCreateImageResponse>> AiImageGeneratorCreateImageAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiVideoTranslatorCreateVideoResponse>> AiVideoTranslatorCreateVideoAsResponseAsync(
 
-            global::MagicHour.AiImageGeneratorCreateImageRequest request,
+            global::MagicHour.AiVideoTranslatorCreateVideoRequest request,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -122,15 +114,15 @@ namespace MagicHour
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareAiImageGeneratorCreateImageArguments(
+            PrepareAiVideoTranslatorCreateVideoArguments(
                 httpClient: HttpClient,
                 request: request);
 
 
             var __authorizations = global::MagicHour.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_AiImageGeneratorCreateImageSecurityRequirements,
-                operationName: "AiImageGeneratorCreateImageAsync");
+                securityRequirements: s_AiVideoTranslatorCreateVideoSecurityRequirements,
+                operationName: "AiVideoTranslatorCreateVideoAsync");
 
             using var __timeoutCancellationTokenSource = global::MagicHour.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -150,7 +142,7 @@ namespace MagicHour
             {
 
                             var __pathBuilder = new global::MagicHour.PathBuilder(
-                                path: "/v1/ai-image-generator",
+                                path: "/v1/ai-video-translator",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::MagicHour.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -195,7 +187,7 @@ namespace MagicHour
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareAiImageGeneratorCreateImageRequest(
+                PrepareAiVideoTranslatorCreateVideoRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     request: request);
@@ -215,9 +207,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "AiVideoTranslatorCreateVideo",
+                                methodName: "AiVideoTranslatorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-translator\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -249,9 +241,9 @@ namespace MagicHour
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "AiVideoTranslatorCreateVideo",
+                                methodName: "AiVideoTranslatorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-translator\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -290,9 +282,9 @@ namespace MagicHour
                         await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "AiVideoTranslatorCreateVideo",
+                                methodName: "AiVideoTranslatorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-translator\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -330,7 +322,7 @@ namespace MagicHour
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessAiImageGeneratorCreateImageResponse(
+                ProcessAiVideoTranslatorCreateVideoResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -338,9 +330,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "AiVideoTranslatorCreateVideo",
+                                methodName: "AiVideoTranslatorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-translator\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -360,9 +352,9 @@ namespace MagicHour
                     await global::MagicHour.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::MagicHour.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "AiImageGeneratorCreateImage",
-                                methodName: "AiImageGeneratorCreateImageAsync",
-                                pathTemplate: "\"/v1/ai-image-generator\"",
+                                operationId: "AiVideoTranslatorCreateVideo",
+                                methodName: "AiVideoTranslatorCreateVideoAsync",
+                                pathTemplate: "\"/v1/ai-video-translator\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -382,19 +374,19 @@ namespace MagicHour
                             {
                                 string? __content_400 = null;
                                 global::System.Exception? __exception_400 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse2? __value_400 = null;
+                                global::MagicHour.AiVideoTranslatorCreateVideoResponse2? __value_400 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_400 = global::MagicHour.AiImageGeneratorCreateImageResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = global::MagicHour.AiVideoTranslatorCreateVideoResponse2.FromJson(__content_400, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_400 = global::MagicHour.AiImageGeneratorCreateImageResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = global::MagicHour.AiVideoTranslatorCreateVideoResponse2.FromJson(__content_400, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -403,7 +395,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse2>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoTranslatorCreateVideoResponse2>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
@@ -419,19 +411,19 @@ namespace MagicHour
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse3? __value_401 = null;
+                                global::MagicHour.AiVideoTranslatorCreateVideoResponse3? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::MagicHour.AiImageGeneratorCreateImageResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::MagicHour.AiVideoTranslatorCreateVideoResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::MagicHour.AiImageGeneratorCreateImageResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = global::MagicHour.AiVideoTranslatorCreateVideoResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -440,7 +432,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse3>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoTranslatorCreateVideoResponse3>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
@@ -456,19 +448,19 @@ namespace MagicHour
                             {
                                 string? __content_402 = null;
                                 global::System.Exception? __exception_402 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse4? __value_402 = null;
+                                global::MagicHour.AiVideoTranslatorCreateVideoResponse4? __value_402 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_402 = global::MagicHour.AiImageGeneratorCreateImageResponse4.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = global::MagicHour.AiVideoTranslatorCreateVideoResponse4.FromJson(__content_402, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_402 = global::MagicHour.AiImageGeneratorCreateImageResponse4.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = global::MagicHour.AiVideoTranslatorCreateVideoResponse4.FromJson(__content_402, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -477,7 +469,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse4>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoTranslatorCreateVideoResponse4>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_402,
@@ -493,19 +485,19 @@ namespace MagicHour
                             {
                                 string? __content_404 = null;
                                 global::System.Exception? __exception_404 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse5? __value_404 = null;
+                                global::MagicHour.AiVideoTranslatorCreateVideoResponse5? __value_404 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_404 = global::MagicHour.AiImageGeneratorCreateImageResponse5.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = global::MagicHour.AiVideoTranslatorCreateVideoResponse5.FromJson(__content_404, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_404 = global::MagicHour.AiImageGeneratorCreateImageResponse5.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = global::MagicHour.AiVideoTranslatorCreateVideoResponse5.FromJson(__content_404, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -514,7 +506,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse5>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoTranslatorCreateVideoResponse5>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
@@ -530,19 +522,19 @@ namespace MagicHour
                             {
                                 string? __content_422 = null;
                                 global::System.Exception? __exception_422 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse6? __value_422 = null;
+                                global::MagicHour.AiVideoTranslatorCreateVideoResponse6? __value_422 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_422 = global::MagicHour.AiImageGeneratorCreateImageResponse6.FromJson(__content_422, JsonSerializerContext);
+                                        __value_422 = global::MagicHour.AiVideoTranslatorCreateVideoResponse6.FromJson(__content_422, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_422 = global::MagicHour.AiImageGeneratorCreateImageResponse6.FromJson(__content_422, JsonSerializerContext);
+                                        __value_422 = global::MagicHour.AiVideoTranslatorCreateVideoResponse6.FromJson(__content_422, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -551,7 +543,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse6>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoTranslatorCreateVideoResponse6>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_422 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_422,
@@ -567,19 +559,19 @@ namespace MagicHour
                             {
                                 string? __content_500 = null;
                                 global::System.Exception? __exception_500 = null;
-                                global::MagicHour.AiImageGeneratorCreateImageResponse7? __value_500 = null;
+                                global::MagicHour.AiVideoTranslatorCreateVideoResponse7? __value_500 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_500 = global::MagicHour.AiImageGeneratorCreateImageResponse7.FromJson(__content_500, JsonSerializerContext);
+                                        __value_500 = global::MagicHour.AiVideoTranslatorCreateVideoResponse7.FromJson(__content_500, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_500 = global::MagicHour.AiImageGeneratorCreateImageResponse7.FromJson(__content_500, JsonSerializerContext);
+                                        __value_500 = global::MagicHour.AiVideoTranslatorCreateVideoResponse7.FromJson(__content_500, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -588,7 +580,7 @@ namespace MagicHour
                                 }
 
 
-                                throw global::MagicHour.ApiException<global::MagicHour.AiImageGeneratorCreateImageResponse7>.Create(
+                                throw global::MagicHour.ApiException<global::MagicHour.AiVideoTranslatorCreateVideoResponse7>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
@@ -612,7 +604,7 @@ namespace MagicHour
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessAiImageGeneratorCreateImageResponseContent(
+                                ProcessAiVideoTranslatorCreateVideoResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -621,9 +613,9 @@ namespace MagicHour
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::MagicHour.AiImageGeneratorCreateImageResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::MagicHour.AiVideoTranslatorCreateVideoResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiImageGeneratorCreateImageResponse>(
+                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiVideoTranslatorCreateVideoResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::MagicHour.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -653,9 +645,9 @@ namespace MagicHour
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::MagicHour.AiImageGeneratorCreateImageResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::MagicHour.AiVideoTranslatorCreateVideoResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiImageGeneratorCreateImageResponse>(
+                                    return new global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiVideoTranslatorCreateVideoResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::MagicHour.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -696,130 +688,74 @@ namespace MagicHour
             }
         }
         /// <summary>
-        /// AI Image Generator<br/>
-        /// Create an AI image with advanced model selection and quality controls.
+        /// AI Video Translator<br/>
+        /// **What this API does**<br/>
+        /// Create the same Video Translator you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.<br/>
+        ///     <br/>
+        /// **Good for**<br/>
+        /// - Automation and batch processing  <br/>
+        /// - Adding video translator into apps, pipelines, or tools  <br/>
+        /// **How it works (3 steps)**<br/>
+        /// 1) Upload your inputs (video, image, or audio) with [Generate Upload URLs](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls) and copy the `file_path`.  <br/>
+        /// 2) Send a request to create a video translator job with the basic fields.  <br/>
+        /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
+        /// **Key options**<br/>
+        /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
+        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
+        /// **Cost**  <br/>
+        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// For detailed examples, see the [product page](https://magichour.ai/products/ai-video-translator).
         /// </summary>
         /// <param name="name">
-        /// Give your image a custom name for easy identification.<br/>
-        /// Default Value: Ai Image - dateTime<br/>
-        /// Example: My Ai Image image
+        /// Give your video a custom name for easy identification.<br/>
+        /// Default Value: Video Translator - dateTime<br/>
+        /// Example: My Video Translator video
         /// </param>
-        /// <param name="imageCount">
-        /// Number of images to generate. Maximum varies by model.<br/>
-        /// Example: 1
+        /// <param name="startSeconds">
+        /// Start time of your clip (seconds). Must be ≥ 0.<br/>
+        /// Default Value: 0<br/>
+        /// Example: 0
         /// </param>
-        /// <param name="model">
-        /// The AI model to use for image generation. Each model has different capabilities and costs.<br/>
-        /// **Models:**<br/>
-        /// - `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.<br/>
-        /// - `flux-2-klein` - from 5 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
-        /// - `flux-schnell` - from 5 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `gpt-image-2` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `gpt-image-2.5-flare` - from 100 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `krea-2` - from 10 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1<br/>
-        /// - `nano-banana` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-2` - from 100 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 4, 9, 16<br/>
-        /// - `nano-banana-2-lite` - from 50 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `nano-banana-pro` - from 150 credits/image<br/>
-        ///   - Supported resolutions: 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 4, 9, 16<br/>
-        /// - `seedream-v4` - from 40 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `seedream-v5-pro` - from 75 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// - `z-image-turbo` - from 5 credits/image<br/>
-        ///   - Supported resolutions: 640px, 1k, 2k<br/>
-        ///   - Available for tiers: free, creator, pro, business<br/>
-        ///   - Image count allowed: 1, 2, 3, 4<br/>
-        /// **Deprecated Enum Values:**<br/>
-        /// - `seedream` - Use `seedream-v4` instead.<br/>
-        /// Example: default
+        /// <param name="endSeconds">
+        /// End time of your clip (seconds). Must be greater than start_seconds. The clip must be 1-30 seconds long.<br/>
+        /// Example: 15
         /// </param>
-        /// <param name="aspectRatio">
-        /// The aspect ratio of the output image(s). If not specified, defaults to `1:1` (square).<br/>
-        /// Example: 1:1
+        /// <param name="targetLanguage">
+        /// Language to translate the video's speech into.<br/>
+        /// Example: Spanish
         /// </param>
         /// <param name="resolution">
-        /// Maximum resolution (longest edge) for the output image.<br/>
-        /// **Options:**<br/>
-        /// - `640px` — up to 640px<br/>
-        /// - `1k` — up to 1024px<br/>
-        /// - `2k` — up to 2048px<br/>
-        /// - `4k` — up to 4096px<br/>
-        /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
-        /// **Per-model support:**<br/>
-        /// - `flux-2-klein` - 640px, 1k, 2k<br/>
-        /// - `flux-schnell` - 640px, 1k, 2k<br/>
-        /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
-        /// - `gpt-image-2.5-flare` - 640px, 1k, 2k, 4k<br/>
-        /// - `krea-2` - 640px, 1k<br/>
-        /// - `nano-banana` - 640px, 1k<br/>
-        /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
-        /// - `nano-banana-2-lite` - 640px, 1k<br/>
-        /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
-        /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
-        /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
-        /// - `z-image-turbo` - 640px, 1k, 2k<br/>
-        /// Note: Resolution availability depends on the model and your subscription tier.<br/>
-        /// Default Value: auto<br/>
-        /// Example: 1k
+        /// Output video resolution. Defaults to 480p. 720p and 1080p require a paid plan.<br/>
+        /// Example: 720p
         /// </param>
-        /// <param name="style">
-        /// The art style to use for image generation.
+        /// <param name="assets">
+        /// Source video for the translation job.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::MagicHour.AiImageGeneratorCreateImageResponse> AiImageGeneratorCreateImageAsync(
-            int imageCount,
-            global::MagicHour.AiImageGeneratorCreateImageRequestStyle style,
+        public async global::System.Threading.Tasks.Task<global::MagicHour.AiVideoTranslatorCreateVideoResponse> AiVideoTranslatorCreateVideoAsync(
+            float endSeconds,
+            global::MagicHour.AiVideoTranslatorCreateVideoRequestTargetLanguage targetLanguage,
+            global::MagicHour.AiVideoTranslatorCreateVideoRequestAssets assets,
             string? name = default,
-            global::MagicHour.AiImageGeneratorCreateImageRequestModel? model = default,
-            global::MagicHour.AiImageGeneratorCreateImageRequestAspectRatio? aspectRatio = default,
-            global::MagicHour.AiImageGeneratorCreateImageRequestResolution? resolution = default,
+            float? startSeconds = default,
+            global::MagicHour.AiVideoTranslatorCreateVideoRequestResolution? resolution = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::MagicHour.AiImageGeneratorCreateImageRequest
+            var __request = new global::MagicHour.AiVideoTranslatorCreateVideoRequest
             {
                 Name = name,
-                ImageCount = imageCount,
-                Model = model,
-                AspectRatio = aspectRatio,
+                StartSeconds = startSeconds,
+                EndSeconds = endSeconds,
+                TargetLanguage = targetLanguage,
                 Resolution = resolution,
-                Style = style,
+                Assets = assets,
             };
 
-            return await AiImageGeneratorCreateImageAsync(
+            return await AiVideoTranslatorCreateVideoAsync(
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);
