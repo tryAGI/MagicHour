@@ -19,7 +19,7 @@ namespace MagicHour
         public global::MagicHour.CharacterReplaceCreateVideoRequestStyleMode? Mode { get; set; }
 
         /// <summary>
-        /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject. Defaults to `auto`.<br/>
+        /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject and is supported by `wan-animate`. Defaults to `auto`.<br/>
         /// Example: auto
         /// </summary>
         /// <example>auto</example>
@@ -28,7 +28,7 @@ namespace MagicHour
         public global::MagicHour.CharacterReplaceCreateVideoRequestStyleSelectionMode? SelectionMode { get; set; }
 
         /// <summary>
-        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted.
+        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("points")]
         public global::System.Collections.Generic.IList<global::MagicHour.CharacterReplaceCreateVideoRequestStylePoint>? Points { get; set; }
@@ -47,11 +47,11 @@ namespace MagicHour
         /// Example: replace
         /// </param>
         /// <param name="selectionMode">
-        /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject. Defaults to `auto`.<br/>
+        /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject and is supported by `wan-animate`. Defaults to `auto`.<br/>
         /// Example: auto
         /// </param>
         /// <param name="points">
-        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted.
+        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`).
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

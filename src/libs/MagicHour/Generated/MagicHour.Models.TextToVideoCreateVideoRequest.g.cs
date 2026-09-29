@@ -28,7 +28,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.0-mini`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.5`**: any integer from 4 to 30<br/>
-        /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
@@ -51,7 +50,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.0-mini`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
-        /// * **`sora-2`**: Supports 9:16, 16:9.<br/>
         /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>
         /// * **`veo3.1-lite`**: Supports 9:16, 16:9.<br/>
         /// * **`wan-2.2`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -74,7 +72,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
-        /// * **`sora-2`**: Supports 720p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
@@ -98,7 +95,6 @@ namespace MagicHour
         /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
         /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
-        /// * `sora-2`: Best for creative concepts and longer clips with audio.<br/>
         /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
         /// * `veo3.1-lite`: Balanced realism and audio at a lower cost than Veo 3.1.<br/>
         /// * `wan-2.2`: Best for physical motion, action, and camera movement.<br/>
@@ -124,7 +120,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.0-mini`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.5`**: Toggle-able: no additional credits for audio<br/>
-        /// * **`sora-2`**: Toggle-able: no additional credits for audio<br/>
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1-lite`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`wan-2.2`**: Not supported<br/>
@@ -168,7 +163,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.0-mini`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.5`**: any integer from 4 to 30<br/>
-        /// * **`sora-2`**: 4, 8, 12, 24, 36, 48, 60<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`veo3.1-lite`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
         /// * **`wan-2.2`**: 3, 4, 5, 6, 7, 8, 9, 10, 15<br/>
@@ -192,7 +186,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.0-mini`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
-        /// * **`sora-2`**: Supports 9:16, 16:9.<br/>
         /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>
         /// * **`veo3.1-lite`**: Supports 9:16, 16:9.<br/>
         /// * **`wan-2.2`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -210,7 +203,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
-        /// * **`sora-2`**: Supports 720p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
@@ -229,7 +221,6 @@ namespace MagicHour
         /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
         /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
-        /// * `sora-2`: Best for creative concepts and longer clips with audio.<br/>
         /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
         /// * `veo3.1-lite`: Balanced realism and audio at a lower cost than Veo 3.1.<br/>
         /// * `wan-2.2`: Best for physical motion, action, and camera movement.<br/>
@@ -250,7 +241,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.0-mini`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.5`**: Toggle-able: no additional credits for audio<br/>
-        /// * **`sora-2`**: Toggle-able: no additional credits for audio<br/>
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`veo3.1-lite`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`wan-2.2`**: Not supported<br/>

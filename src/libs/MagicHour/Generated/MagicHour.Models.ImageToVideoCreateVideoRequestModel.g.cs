@@ -15,7 +15,6 @@ namespace MagicHour
     /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
     /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
     /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
-    /// * `sora-2`: Best for creative concepts and longer clips with audio.<br/>
     /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
     /// * `veo3.1-lite`: Balanced realism and audio at a lower cost than Veo 3.1.<br/>
     /// * `wan-2.2`: Best for physical motion, action, and camera movement.<br/>
@@ -91,7 +90,7 @@ namespace MagicHour
         /// </summary>
         Seedance25,
         /// <summary>
-        /// Best for creative concepts and longer clips with audio.
+        ///
         /// </summary>
         Sora2,
         /// <summary>

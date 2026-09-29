@@ -36,7 +36,19 @@ namespace MagicHour
         public required float EndSeconds { get; set; }
 
         /// <summary>
-        /// Output video resolution. Defaults to 480p, the lowest resolution available on your plan.<br/>
+        /// Model to use. Defaults to `wan-animate`.<br/>
+        /// * **`wan-animate`**: 480p, 720p. Supports `points` subject selection.<br/>
+        /// * **`kling-3.0`**: 720p, 1080p. Clips of 3–10 seconds in `replace` mode or 3–30 seconds in `animate` mode. Picks the main person automatically, so `points` are rejected.<br/>
+        /// Default Value: wan-animate<br/>
+        /// Example: wan-animate
+        /// </summary>
+        /// <example>wan-animate</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("model")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.CharacterReplaceCreateVideoRequestModelJsonConverter))]
+        public global::MagicHour.CharacterReplaceCreateVideoRequestModel? Model { get; set; }
+
+        /// <summary>
+        /// Output video resolution. Must be supported by `model`. Defaults to the lowest resolution available on your plan for that model.<br/>
         /// Example: 720p
         /// </summary>
         /// <example>720p</example>
@@ -85,8 +97,15 @@ namespace MagicHour
         /// Default Value: 0<br/>
         /// Example: 0
         /// </param>
+        /// <param name="model">
+        /// Model to use. Defaults to `wan-animate`.<br/>
+        /// * **`wan-animate`**: 480p, 720p. Supports `points` subject selection.<br/>
+        /// * **`kling-3.0`**: 720p, 1080p. Clips of 3–10 seconds in `replace` mode or 3–30 seconds in `animate` mode. Picks the main person automatically, so `points` are rejected.<br/>
+        /// Default Value: wan-animate<br/>
+        /// Example: wan-animate
+        /// </param>
         /// <param name="resolution">
-        /// Output video resolution. Defaults to 480p, the lowest resolution available on your plan.<br/>
+        /// Output video resolution. Must be supported by `model`. Defaults to the lowest resolution available on your plan for that model.<br/>
         /// Example: 720p
         /// </param>
         /// <param name="style">
@@ -101,12 +120,14 @@ namespace MagicHour
             global::MagicHour.CharacterReplaceCreateVideoRequestAssets assets,
             string? name,
             float? startSeconds,
+            global::MagicHour.CharacterReplaceCreateVideoRequestModel? model,
             global::MagicHour.CharacterReplaceCreateVideoRequestResolution? resolution,
             global::MagicHour.CharacterReplaceCreateVideoRequestStyle? style)
         {
             this.Name = name;
             this.StartSeconds = startSeconds;
             this.EndSeconds = endSeconds;
+            this.Model = model;
             this.Resolution = resolution;
             this.Assets = assets ?? throw new global::System.ArgumentNullException(nameof(assets));
             this.Style = style;

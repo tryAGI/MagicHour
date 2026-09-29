@@ -14,7 +14,6 @@ namespace MagicHour
     /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
     /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
     /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
-    /// * **`sora-2`**: Supports 720p.<br/>
     /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
     /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
     /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
