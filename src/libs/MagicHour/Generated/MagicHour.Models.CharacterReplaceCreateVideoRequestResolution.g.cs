@@ -4,11 +4,15 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Output video resolution. Defaults to 480p, the lowest resolution available on your plan.<br/>
+    /// Output video resolution. Must be supported by `model`. Defaults to the lowest resolution available on your plan for that model.<br/>
     /// Example: 720p
     /// </summary>
     public enum CharacterReplaceCreateVideoRequestResolution
     {
+        /// <summary>
+        ///
+        /// </summary>
+        x1080p,
         /// <summary>
         ///
         /// </summary>
@@ -31,6 +35,7 @@ namespace MagicHour
         {
             return value switch
             {
+                CharacterReplaceCreateVideoRequestResolution.x1080p => "1080p",
                 CharacterReplaceCreateVideoRequestResolution.x480p => "480p",
                 CharacterReplaceCreateVideoRequestResolution.x720p => "720p",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -43,6 +48,7 @@ namespace MagicHour
         {
             return value switch
             {
+                "1080p" => CharacterReplaceCreateVideoRequestResolution.x1080p,
                 "480p" => CharacterReplaceCreateVideoRequestResolution.x480p,
                 "720p" => CharacterReplaceCreateVideoRequestResolution.x720p,
                 _ => null,

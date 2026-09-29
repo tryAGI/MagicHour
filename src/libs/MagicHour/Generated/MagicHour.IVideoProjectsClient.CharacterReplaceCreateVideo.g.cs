@@ -39,6 +39,7 @@ namespace MagicHour
         ///   "name": "My Character Replace video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 15,<br/>
+        ///   "model": "wan-animate",<br/>
         ///   "resolution": "720p",<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
@@ -91,6 +92,7 @@ namespace MagicHour
         ///   "name": "My Character Replace video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 15,<br/>
+        ///   "model": "wan-animate",<br/>
         ///   "resolution": "720p",<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
@@ -142,8 +144,15 @@ namespace MagicHour
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
         /// Example: 15
         /// </param>
+        /// <param name="model">
+        /// Model to use. Defaults to `wan-animate`.<br/>
+        /// * **`wan-animate`**: 480p, 720p. Supports `points` subject selection.<br/>
+        /// * **`kling-3.0`**: 720p, 1080p. Clips of 3–10 seconds in `replace` mode or 3–30 seconds in `animate` mode. Picks the main person automatically, so `points` are rejected.<br/>
+        /// Default Value: wan-animate<br/>
+        /// Example: wan-animate
+        /// </param>
         /// <param name="resolution">
-        /// Output video resolution. Defaults to 480p, the lowest resolution available on your plan.<br/>
+        /// Output video resolution. Must be supported by `model`. Defaults to the lowest resolution available on your plan for that model.<br/>
         /// Example: 720p
         /// </param>
         /// <param name="assets">
@@ -161,6 +170,7 @@ namespace MagicHour
             global::MagicHour.CharacterReplaceCreateVideoRequestAssets assets,
             string? name = default,
             float? startSeconds = default,
+            global::MagicHour.CharacterReplaceCreateVideoRequestModel? model = default,
             global::MagicHour.CharacterReplaceCreateVideoRequestResolution? resolution = default,
             global::MagicHour.CharacterReplaceCreateVideoRequestStyle? style = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,

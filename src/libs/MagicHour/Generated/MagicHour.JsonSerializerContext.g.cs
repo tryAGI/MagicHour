@@ -53,6 +53,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyleTemplate), TypeInfoPropertyName = "AutoSubtitleGeneratorCreateVideoRequestStyleTemplate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyleCustomConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequestModel), TypeInfoPropertyName = "CharacterReplaceCreateVideoRequestModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequestResolution), TypeInfoPropertyName = "CharacterReplaceCreateVideoRequestResolution2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequestStyle))]
@@ -508,7 +509,6 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageResponseCode), TypeInfoPropertyName = "AiImageUpscalerCreateImageResponseCode2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageResponse3))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -519,6 +519,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageResponseCode2), TypeInfoPropertyName = "AiImageUpscalerCreateImageResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageUpscalerCreateImageResponseCode3), TypeInfoPropertyName = "AiImageUpscalerCreateImageResponseCode32")]
@@ -685,6 +686,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AnimationCreateVideoRequestAssetsAudioSource?), TypeInfoPropertyName = "NullableAnimationCreateVideoRequestAssetsAudioSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioToVideoCreateVideoRequestResolution?), TypeInfoPropertyName = "NullableAudioToVideoCreateVideoRequestResolution2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyleTemplate?), TypeInfoPropertyName = "NullableAutoSubtitleGeneratorCreateVideoRequestStyleTemplate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequestModel?), TypeInfoPropertyName = "NullableCharacterReplaceCreateVideoRequestModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequestResolution?), TypeInfoPropertyName = "NullableCharacterReplaceCreateVideoRequestResolution2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequestStyleMode?), TypeInfoPropertyName = "NullableCharacterReplaceCreateVideoRequestStyleMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CharacterReplaceCreateVideoRequestStyleSelectionMode?), TypeInfoPropertyName = "NullableCharacterReplaceCreateVideoRequestStyleSelectionMode2")]
@@ -1071,6 +1073,10 @@ namespace MagicHour
                     || typeToConvert == typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyleTemplate)
 
                     || typeToConvert == typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyleTemplate?)
+
+                    || typeToConvert == typeof(global::MagicHour.CharacterReplaceCreateVideoRequestModel)
+
+                    || typeToConvert == typeof(global::MagicHour.CharacterReplaceCreateVideoRequestModel?)
 
                     || typeToConvert == typeof(global::MagicHour.CharacterReplaceCreateVideoRequestResolution)
 
@@ -2255,6 +2261,16 @@ namespace MagicHour
                 if (typeToConvert == typeof(global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyleTemplate?))
                 {
                     return new global::MagicHour.JsonConverters.AutoSubtitleGeneratorCreateVideoRequestStyleTemplateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.CharacterReplaceCreateVideoRequestModel))
+                {
+                    return new global::MagicHour.JsonConverters.CharacterReplaceCreateVideoRequestModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.CharacterReplaceCreateVideoRequestModel?))
+                {
+                    return new global::MagicHour.JsonConverters.CharacterReplaceCreateVideoRequestModelNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::MagicHour.CharacterReplaceCreateVideoRequestResolution))

@@ -28,6 +28,25 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-video-translator \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Video Translator video",<br/>
+        ///   "start_seconds": 0,<br/>
+        ///   "end_seconds": 15,<br/>
+        ///   "target_language": "Spanish",<br/>
+        ///   "resolution": "720p",<br/>
+        ///   "assets": {<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AiVideoTranslatorCreateVideoResponse> AiVideoTranslatorCreateVideoAsync(
 
             global::MagicHour.AiVideoTranslatorCreateVideoRequest request,
@@ -57,6 +76,25 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-video-translator \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Video Translator video",<br/>
+        ///   "start_seconds": 0,<br/>
+        ///   "end_seconds": 15,<br/>
+        ///   "target_language": "Spanish",<br/>
+        ///   "resolution": "720p",<br/>
+        ///   "assets": {<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiVideoTranslatorCreateVideoResponse>> AiVideoTranslatorCreateVideoAsResponseAsync(
 
             global::MagicHour.AiVideoTranslatorCreateVideoRequest request,

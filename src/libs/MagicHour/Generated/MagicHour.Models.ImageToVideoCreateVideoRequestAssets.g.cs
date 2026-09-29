@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Provide the assets for image-to-video. Sora 2 only supports images with an aspect ratio of `9:16` or `16:9`.
+    /// Provide the assets for image-to-video.
     /// </summary>
     public sealed partial class ImageToVideoCreateVideoRequestAssets
     {
@@ -31,7 +31,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
-        /// * **`sora-2`**: Not supported<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`wan-2.2`**: Not supported<br/>
@@ -69,7 +68,6 @@ namespace MagicHour
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
-        /// * **`sora-2`**: Not supported<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`wan-2.2`**: Not supported<br/>

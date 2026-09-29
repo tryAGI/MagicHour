@@ -61,7 +61,7 @@ namespace MagicHour
         ///   "image_count": 1,<br/>
         ///   "model": "default",<br/>
         ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "auto",<br/>
+        ///   "resolution": "1k",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Cool image",<br/>
         ///     "tool": "ai-anime-generator"<br/>
@@ -104,7 +104,7 @@ namespace MagicHour
         ///   "image_count": 1,<br/>
         ///   "model": "default",<br/>
         ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "auto",<br/>
+        ///   "resolution": "1k",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Cool image",<br/>
         ///     "tool": "ai-anime-generator"<br/>
