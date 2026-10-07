@@ -43,6 +43,10 @@ namespace MagicHour
     ///   - Supported resolutions: 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Image count allowed: 1, 4, 9, 16<br/>
+    /// - `qwen-image-2.1` - from 10 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
+    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Image count allowed: 1, 2, 3, 4<br/>
     /// - `seedream-v4` - from 40 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -104,6 +108,10 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
+        QwenImage21,
+        /// <summary>
+        ///
+        /// </summary>
         Seedream,
         /// <summary>
         ///
@@ -141,6 +149,7 @@ namespace MagicHour
                 AiImageGeneratorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
                 AiImageGeneratorCreateImageRequestModel.NanoBanana2Lite => "nano-banana-2-lite",
                 AiImageGeneratorCreateImageRequestModel.NanoBananaPro => "nano-banana-pro",
+                AiImageGeneratorCreateImageRequestModel.QwenImage21 => "qwen-image-2.1",
                 AiImageGeneratorCreateImageRequestModel.Seedream => "seedream",
                 AiImageGeneratorCreateImageRequestModel.SeedreamV4 => "seedream-v4",
                 AiImageGeneratorCreateImageRequestModel.SeedreamV5Pro => "seedream-v5-pro",
@@ -165,6 +174,7 @@ namespace MagicHour
                 "nano-banana-2" => AiImageGeneratorCreateImageRequestModel.NanoBanana2,
                 "nano-banana-2-lite" => AiImageGeneratorCreateImageRequestModel.NanoBanana2Lite,
                 "nano-banana-pro" => AiImageGeneratorCreateImageRequestModel.NanoBananaPro,
+                "qwen-image-2.1" => AiImageGeneratorCreateImageRequestModel.QwenImage21,
                 "seedream" => AiImageGeneratorCreateImageRequestModel.Seedream,
                 "seedream-v4" => AiImageGeneratorCreateImageRequestModel.SeedreamV4,
                 "seedream-v5-pro" => AiImageGeneratorCreateImageRequestModel.SeedreamV5Pro,

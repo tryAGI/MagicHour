@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Magic Hour provides an API (beta) that can be integrated into your own application to generate videos and images using AI. <br/>
+    /// Magic Hour provides a REST API (beta) for generating and editing video, images, and audio using AI.<br/>
     /// Webhook documentation can be found [here](https://docs.magichour.ai/webhook-reference).<br/>
     /// If you have any questions, please reach out to us via [discord](https://discord.gg/JX5rgsZaJp).<br/>
     /// # Authentication<br/>
@@ -14,7 +14,7 @@ namespace MagicHour
     /// | Key | Value |<br/>
     /// |-|-|<br/>
     /// | Authorization | Bearer mhk_live_apikey |<br/>
-    /// &gt; **Warning**: any API call that renders a video will utilize credits in your account.<br/>
+    /// &gt; **Warning**: API generation and editing requests consume account credits. Cost varies by tool, model, and settings; see [API pricing](https://magichour.ai/api#api-cost-calculator).<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>

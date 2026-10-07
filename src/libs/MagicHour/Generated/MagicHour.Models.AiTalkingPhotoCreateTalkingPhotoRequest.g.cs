@@ -9,11 +9,11 @@ namespace MagicHour
     public sealed partial class AiTalkingPhotoCreateTalkingPhotoRequest
     {
         /// <summary>
-        /// Give your image a custom name for easy identification.<br/>
+        /// Give your video a custom name for easy identification.<br/>
         /// Default Value: Talking Photo - dateTime<br/>
-        /// Example: My Talking Photo image
+        /// Example: My Talking Photo video
         /// </summary>
-        /// <example>My Talking Photo image</example>
+        /// <example>My Talking Photo video</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }
 
@@ -77,9 +77,9 @@ namespace MagicHour
         /// Provide the assets for creating a talking photo
         /// </param>
         /// <param name="name">
-        /// Give your image a custom name for easy identification.<br/>
+        /// Give your video a custom name for easy identification.<br/>
         /// Default Value: Talking Photo - dateTime<br/>
-        /// Example: My Talking Photo image
+        /// Example: My Talking Photo video
         /// </param>
         /// <param name="style">
         /// Attributes used to dictate the style of the output

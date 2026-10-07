@@ -43,7 +43,7 @@ namespace MagicHour
 
         /// <summary>
         /// AI Talking Photo<br/>
-        /// Create a talking photo from an image and audio or text input.
+        /// Create a talking photo video from an image and an audio file.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -89,7 +89,7 @@ namespace MagicHour
         }
         /// <summary>
         /// AI Talking Photo<br/>
-        /// Create a talking photo from an image and audio or text input.
+        /// Create a talking photo video from an image and an audio file.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -703,12 +703,12 @@ namespace MagicHour
         }
         /// <summary>
         /// AI Talking Photo<br/>
-        /// Create a talking photo from an image and audio or text input.
+        /// Create a talking photo video from an image and an audio file.
         /// </summary>
         /// <param name="name">
-        /// Give your image a custom name for easy identification.<br/>
+        /// Give your video a custom name for easy identification.<br/>
         /// Default Value: Talking Photo - dateTime<br/>
-        /// Example: My Talking Photo image
+        /// Example: My Talking Photo video
         /// </param>
         /// <param name="startSeconds">
         /// The start time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>

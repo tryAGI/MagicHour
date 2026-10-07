@@ -21,6 +21,7 @@ namespace MagicHour
     /// - `nano-banana-2` - 640px, 1k, 2k, 4k<br/>
     /// - `nano-banana-2-lite` - 640px, 1k<br/>
     /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
+    /// - `qwen-image-2.1` - 640px, 1k, 2k<br/>
     /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
     /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
     /// - `z-image-turbo` - 640px, 1k, 2k<br/>

@@ -134,6 +134,10 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Max additional input images: 2<br/>
+        /// - `qwen-image-2.1` - from 10 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Max additional input images: 2<br/>
         /// - `seedream-v4` - from 40 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
@@ -170,6 +174,7 @@ namespace MagicHour
         /// - `nano-banana-2-lite` - 640px, 1k<br/>
         /// - `nano-banana-pro` - 1k, 2k, 4k<br/>
         /// - `qwen-edit` - 640px, 1k, 2k<br/>
+        /// - `qwen-image-2.1` - 640px, 1k, 2k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
