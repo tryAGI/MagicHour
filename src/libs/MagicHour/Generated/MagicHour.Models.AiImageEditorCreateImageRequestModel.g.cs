@@ -43,6 +43,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Max additional input images: 2<br/>
+    /// - `qwen-image-2.1` - from 10 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
+    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Max additional input images: 2<br/>
     /// - `seedream-v4` - from 40 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -102,6 +106,10 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
+        QwenImage21,
+        /// <summary>
+        ///
+        /// </summary>
         SeedreamV4,
         /// <summary>
         ///
@@ -135,6 +143,7 @@ namespace MagicHour
                 AiImageEditorCreateImageRequestModel.NanoBanana2Lite => "nano-banana-2-lite",
                 AiImageEditorCreateImageRequestModel.NanoBananaPro => "nano-banana-pro",
                 AiImageEditorCreateImageRequestModel.QwenEdit => "qwen-edit",
+                AiImageEditorCreateImageRequestModel.QwenImage21 => "qwen-image-2.1",
                 AiImageEditorCreateImageRequestModel.SeedreamV4 => "seedream-v4",
                 AiImageEditorCreateImageRequestModel.SeedreamV45 => "seedream-v4.5",
                 AiImageEditorCreateImageRequestModel.SeedreamV5Pro => "seedream-v5-pro",
@@ -158,6 +167,7 @@ namespace MagicHour
                 "nano-banana-2-lite" => AiImageEditorCreateImageRequestModel.NanoBanana2Lite,
                 "nano-banana-pro" => AiImageEditorCreateImageRequestModel.NanoBananaPro,
                 "qwen-edit" => AiImageEditorCreateImageRequestModel.QwenEdit,
+                "qwen-image-2.1" => AiImageEditorCreateImageRequestModel.QwenImage21,
                 "seedream-v4" => AiImageEditorCreateImageRequestModel.SeedreamV4,
                 "seedream-v4.5" => AiImageEditorCreateImageRequestModel.SeedreamV45,
                 "seedream-v5-pro" => AiImageEditorCreateImageRequestModel.SeedreamV5Pro,
