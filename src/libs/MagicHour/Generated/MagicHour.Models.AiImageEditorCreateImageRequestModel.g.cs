@@ -35,6 +35,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
+    /// - `nano-banana-2.1` - from 50 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
+    ///   - Max additional input images: 9<br/>
     /// - `nano-banana-pro` - from 150 credits/image<br/>
     ///   - Supported resolutions: 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -98,6 +102,10 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
+        NanoBanana21,
+        /// <summary>
+        ///
+        /// </summary>
         NanoBananaPro,
         /// <summary>
         ///
@@ -141,6 +149,7 @@ namespace MagicHour
                 AiImageEditorCreateImageRequestModel.NanoBanana => "nano-banana",
                 AiImageEditorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
                 AiImageEditorCreateImageRequestModel.NanoBanana2Lite => "nano-banana-2-lite",
+                AiImageEditorCreateImageRequestModel.NanoBanana21 => "nano-banana-2.1",
                 AiImageEditorCreateImageRequestModel.NanoBananaPro => "nano-banana-pro",
                 AiImageEditorCreateImageRequestModel.QwenEdit => "qwen-edit",
                 AiImageEditorCreateImageRequestModel.QwenImage21 => "qwen-image-2.1",
@@ -165,6 +174,7 @@ namespace MagicHour
                 "nano-banana" => AiImageEditorCreateImageRequestModel.NanoBanana,
                 "nano-banana-2" => AiImageEditorCreateImageRequestModel.NanoBanana2,
                 "nano-banana-2-lite" => AiImageEditorCreateImageRequestModel.NanoBanana2Lite,
+                "nano-banana-2.1" => AiImageEditorCreateImageRequestModel.NanoBanana21,
                 "nano-banana-pro" => AiImageEditorCreateImageRequestModel.NanoBananaPro,
                 "qwen-edit" => AiImageEditorCreateImageRequestModel.QwenEdit,
                 "qwen-image-2.1" => AiImageEditorCreateImageRequestModel.QwenImage21,

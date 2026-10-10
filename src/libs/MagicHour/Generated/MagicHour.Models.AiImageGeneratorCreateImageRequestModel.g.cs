@@ -39,6 +39,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
+    /// - `nano-banana-2.1` - from 50 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
+    ///   - Image count allowed: 1, 4, 9, 16<br/>
     /// - `nano-banana-pro` - from 150 credits/image<br/>
     ///   - Supported resolutions: 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -104,6 +108,10 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
+        NanoBanana21,
+        /// <summary>
+        ///
+        /// </summary>
         NanoBananaPro,
         /// <summary>
         ///
@@ -148,6 +156,7 @@ namespace MagicHour
                 AiImageGeneratorCreateImageRequestModel.NanoBanana => "nano-banana",
                 AiImageGeneratorCreateImageRequestModel.NanoBanana2 => "nano-banana-2",
                 AiImageGeneratorCreateImageRequestModel.NanoBanana2Lite => "nano-banana-2-lite",
+                AiImageGeneratorCreateImageRequestModel.NanoBanana21 => "nano-banana-2.1",
                 AiImageGeneratorCreateImageRequestModel.NanoBananaPro => "nano-banana-pro",
                 AiImageGeneratorCreateImageRequestModel.QwenImage21 => "qwen-image-2.1",
                 AiImageGeneratorCreateImageRequestModel.Seedream => "seedream",
@@ -173,6 +182,7 @@ namespace MagicHour
                 "nano-banana" => AiImageGeneratorCreateImageRequestModel.NanoBanana,
                 "nano-banana-2" => AiImageGeneratorCreateImageRequestModel.NanoBanana2,
                 "nano-banana-2-lite" => AiImageGeneratorCreateImageRequestModel.NanoBanana2Lite,
+                "nano-banana-2.1" => AiImageGeneratorCreateImageRequestModel.NanoBanana21,
                 "nano-banana-pro" => AiImageGeneratorCreateImageRequestModel.NanoBananaPro,
                 "qwen-image-2.1" => AiImageGeneratorCreateImageRequestModel.QwenImage21,
                 "seedream" => AiImageGeneratorCreateImageRequestModel.Seedream,
