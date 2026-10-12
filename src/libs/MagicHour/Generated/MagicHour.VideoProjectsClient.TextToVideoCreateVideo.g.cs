@@ -854,7 +854,16 @@ namespace MagicHour
         /// Example: true
         /// </param>
         /// <param name="style"></param>
-        /// <param name="references"></param>
+        /// <param name="references">
+        /// Reference media for video generation. Name references without @ and refer to them as @name in style.prompt. Maximum 10 references total.<br/>
+        /// Supported models and reference media:<br/>
+        /// * **`kling-3.0`**: Supports images, videos.<br/>
+        /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
+        /// * **`wan-3.0`**: Supports images, videos, audio.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
