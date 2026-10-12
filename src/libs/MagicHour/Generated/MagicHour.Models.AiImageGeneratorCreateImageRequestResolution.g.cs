@@ -28,7 +28,7 @@ namespace MagicHour
     /// - `z-image-turbo` - 640px, 1k, 2k<br/>
     /// Note: Resolution availability depends on the model and your subscription tier.<br/>
     /// Default Value: auto<br/>
-    /// Example: 1k
+    /// Example: 640px
     /// </summary>
     public enum AiImageGeneratorCreateImageRequestResolution
     {

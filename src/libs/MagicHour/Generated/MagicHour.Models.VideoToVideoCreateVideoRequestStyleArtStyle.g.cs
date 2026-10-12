@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    ///
+    /// Example: Minecraft
     /// </summary>
     public enum VideoToVideoCreateVideoRequestStyleArtStyle
     {

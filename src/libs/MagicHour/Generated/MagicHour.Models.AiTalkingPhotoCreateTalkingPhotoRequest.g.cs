@@ -28,9 +28,9 @@ namespace MagicHour
 
         /// <summary>
         /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </summary>
-        /// <example>15</example>
+        /// <example>5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_seconds")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required float EndSeconds { get; set; }
@@ -50,9 +50,9 @@ namespace MagicHour
 
         /// <summary>
         /// Constrains the larger dimension (height or width) of the output video. Allows you to set a lower resolution than your plan's maximum if desired. The value is capped by your plan's max resolution.<br/>
-        /// Example: 1024
+        /// Example: 512
         /// </summary>
-        /// <example>1024</example>
+        /// <example>512</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_resolution")]
         public int? MaxResolution { get; set; }
 
@@ -71,7 +71,7 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="assets">
         /// Provide the assets for creating a talking photo
@@ -86,7 +86,7 @@ namespace MagicHour
         /// </param>
         /// <param name="maxResolution">
         /// Constrains the larger dimension (height or width) of the output video. Allows you to set a lower resolution than your plan's maximum if desired. The value is capped by your plan's max resolution.<br/>
-        /// Example: 1024
+        /// Example: 512
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// Output video resolution. Defaults to 480p. 720p and 1080p require a paid plan.<br/>
-    /// Example: 720p
+    /// Example: 480p
     /// </summary>
     public enum AiVideoTranslatorCreateVideoRequestResolution
     {

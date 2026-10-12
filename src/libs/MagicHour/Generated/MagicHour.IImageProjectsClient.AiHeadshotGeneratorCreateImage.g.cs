@@ -22,7 +22,7 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Ai Headshot image",<br/>
         ///   "style": {<br/>
-        ///     "prompt": "string"<br/>
+        ///     "prompt": "Professional studio headshot with soft lighting and a neutral background"<br/>
         ///   },<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
@@ -53,7 +53,7 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Ai Headshot image",<br/>
         ///   "style": {<br/>
-        ///     "prompt": "string"<br/>
+        ///     "prompt": "Professional studio headshot with soft lighting and a neutral background"<br/>
         ///   },<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>

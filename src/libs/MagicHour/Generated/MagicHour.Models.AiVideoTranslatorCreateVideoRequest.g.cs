@@ -28,9 +28,9 @@ namespace MagicHour
 
         /// <summary>
         /// End time of your clip (seconds). Must be greater than start_seconds. The clip must be 1-30 seconds long.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </summary>
-        /// <example>15</example>
+        /// <example>5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_seconds")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required float EndSeconds { get; set; }
@@ -47,9 +47,9 @@ namespace MagicHour
 
         /// <summary>
         /// Output video resolution. Defaults to 480p. 720p and 1080p require a paid plan.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </summary>
-        /// <example>720p</example>
+        /// <example>480p</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiVideoTranslatorCreateVideoRequestResolutionJsonConverter))]
         public global::MagicHour.AiVideoTranslatorCreateVideoRequestResolution? Resolution { get; set; }
@@ -72,7 +72,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds. The clip must be 1-30 seconds long.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="targetLanguage">
         /// Language to translate the video's speech into.<br/>
@@ -93,7 +93,7 @@ namespace MagicHour
         /// </param>
         /// <param name="resolution">
         /// Output video resolution. Defaults to 480p. 720p and 1080p require a paid plan.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

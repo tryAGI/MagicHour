@@ -27,8 +27,10 @@ namespace MagicHour
 
         /// <summary>
         /// A text prompt to guide the generation. Only applicable when generation_mode is `prompted`.<br/>
-        /// This field is ignored for other modes.
+        /// This field is ignored for other modes.<br/>
+        /// Example: A person smiling and speaking naturally to the camera
         /// </summary>
+        /// <example>A person smiling and speaking naturally to the camera</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
         public string? Prompt { get; set; }
 
@@ -55,7 +57,8 @@ namespace MagicHour
         /// </param>
         /// <param name="prompt">
         /// A text prompt to guide the generation. Only applicable when generation_mode is `prompted`.<br/>
-        /// This field is ignored for other modes.
+        /// This field is ignored for other modes.<br/>
+        /// Example: A person smiling and speaking naturally to the camera
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

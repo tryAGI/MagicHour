@@ -4,7 +4,8 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Provide the assets for face swap photo
+    /// Provide the assets for face swap photo<br/>
+    /// Example: {"face_swap_mode":"all-faces","source_file_path":"api-assets/id/1234.png","target_file_path":"api-assets/id/1234.png"}
     /// </summary>
     public sealed partial class FaceSwapPhotoCreateImageRequestAssets
     {

@@ -20,9 +20,9 @@ namespace MagicHour
         /// <summary>
         /// The amount of credits deducted from your account to generate the image. We charge credits right when the request is made. <br/>
         /// If an error occurred while generating the image(s), credits will be refunded and this field will be updated to include the refund.<br/>
-        /// Example: 50
+        /// Example: 5
         /// </summary>
-        /// <example>50</example>
+        /// <example>5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("credits_charged")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int CreditsCharged { get; set; }
@@ -43,7 +43,7 @@ namespace MagicHour
         /// <param name="creditsCharged">
         /// The amount of credits deducted from your account to generate the image. We charge credits right when the request is made. <br/>
         /// If an error occurred while generating the image(s), credits will be refunded and this field will be updated to include the refund.<br/>
-        /// Example: 50
+        /// Example: 5
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

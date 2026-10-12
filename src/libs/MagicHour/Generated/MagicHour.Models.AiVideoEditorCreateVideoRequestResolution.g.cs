@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. `gemini-omni-1.1` and deprecated `gemini-omni` support 720p and 1080p; LTX 2.5 supports 480p, 720p, and 1080p.<br/>
-    /// Example: 720p
+    /// Example: 480p
     /// </summary>
     public enum AiVideoEditorCreateVideoRequestResolution
     {

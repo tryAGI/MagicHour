@@ -4,7 +4,8 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Provide the assets for face swap. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used
+    /// Provide the assets for face swap. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used<br/>
+    /// Example: {"face_swap_mode":"all-faces","image_file_path":"api-assets/id/1234.png","video_source":"file","video_file_path":"api-assets/id/1234.mp4"}
     /// </summary>
     public sealed partial class FaceSwapCreateVideoRequestAssets
     {
@@ -26,9 +27,9 @@ namespace MagicHour
         /// - a direct URL to the video file<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
-        /// Example: image/id/1234.png
+        /// Example: api-assets/id/1234.png
         /// </summary>
-        /// <example>image/id/1234.png</example>
+        /// <example>api-assets/id/1234.png</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("image_file_path")]
         public string? ImageFilePath { get; set; }
 
@@ -93,7 +94,7 @@ namespace MagicHour
         /// - a direct URL to the video file<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
-        /// Example: image/id/1234.png
+        /// Example: api-assets/id/1234.png
         /// </param>
         /// <param name="faceMappings">
         /// This is the array of face mappings used for multiple face swap. The value is required if `face_swap_mode` is `individual-faces`.<br/>

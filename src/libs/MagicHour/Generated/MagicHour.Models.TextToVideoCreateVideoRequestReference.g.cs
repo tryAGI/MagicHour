@@ -9,15 +9,17 @@ namespace MagicHour
     public sealed partial class TextToVideoCreateVideoRequestReference
     {
         /// <summary>
-        ///
+        /// Example: hero
         /// </summary>
+        /// <example>hero</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        ///
+        /// Example: api-assets/id/1234.png
         /// </summary>
+        /// <example>api-assets/id/1234.png</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_path")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FilePath { get; set; }
@@ -31,8 +33,12 @@ namespace MagicHour
         /// <summary>
         /// Initializes a new instance of the <see cref="TextToVideoCreateVideoRequestReference" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="filePath"></param>
+        /// <param name="name">
+        /// Example: hero
+        /// </param>
+        /// <param name="filePath">
+        /// Example: api-assets/id/1234.png
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

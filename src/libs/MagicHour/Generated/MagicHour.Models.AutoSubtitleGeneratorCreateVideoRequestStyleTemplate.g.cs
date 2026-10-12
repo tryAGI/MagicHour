@@ -4,7 +4,8 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Preset subtitle templates. Please visit https://magichour.ai/create/auto-subtitle-generator to see the style of the existing templates.
+    /// Preset subtitle templates. Please visit https://magichour.ai/create/auto-subtitle-generator to see the style of the existing templates.<br/>
+    /// Example: karaoke
     /// </summary>
     public enum AutoSubtitleGeneratorCreateVideoRequestStyleTemplate
     {

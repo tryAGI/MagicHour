@@ -30,8 +30,10 @@ namespace MagicHour
 
         /// <summary>
         /// Style settings for the upscale. Use `mode` (`"preserve"`, `"balanced"`, or `"creative"`). Defaults to `"balanced"`.<br/>
-        /// Default Value: {}
+        /// Default Value: {}<br/>
+        /// Example: {"mode":"preserve"}
         /// </summary>
+        /// <example>{"mode":"preserve"}</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         public global::MagicHour.AiImageUpscalerCreateImageRequestStyle? Style { get; set; }
 
@@ -67,7 +69,8 @@ namespace MagicHour
         /// </param>
         /// <param name="style">
         /// Style settings for the upscale. Use `mode` (`"preserve"`, `"balanced"`, or `"creative"`). Defaults to `"balanced"`.<br/>
-        /// Default Value: {}
+        /// Default Value: {}<br/>
+        /// Example: {"mode":"preserve"}
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

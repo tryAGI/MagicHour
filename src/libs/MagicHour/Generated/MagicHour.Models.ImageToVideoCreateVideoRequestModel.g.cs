@@ -21,7 +21,7 @@ namespace MagicHour
     /// * `wan-3.0`: High-quality video with native audio, long clips, and end-frame control.<br/>
     /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
     /// Default Value: default<br/>
-    /// Example: kling-3.0
+    /// Example: ltx-2.5
     /// </summary>
     public enum ImageToVideoCreateVideoRequestModel
     {

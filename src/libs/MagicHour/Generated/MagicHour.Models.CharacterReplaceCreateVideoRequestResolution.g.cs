@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// Output video resolution. Must be supported by `model`. Defaults to the lowest resolution available on your plan for that model.<br/>
-    /// Example: 720p
+    /// Example: 480p
     /// </summary>
     public enum CharacterReplaceCreateVideoRequestResolution
     {

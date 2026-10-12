@@ -28,9 +28,9 @@ namespace MagicHour
 
         /// <summary>
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </summary>
-        /// <example>15</example>
+        /// <example>5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_seconds")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required float EndSeconds { get; set; }
@@ -49,9 +49,9 @@ namespace MagicHour
 
         /// <summary>
         /// Output video resolution. Must be supported by `model`. Defaults to the lowest resolution available on your plan for that model.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </summary>
-        /// <example>720p</example>
+        /// <example>480p</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.CharacterReplaceCreateVideoRequestResolutionJsonConverter))]
         public global::MagicHour.CharacterReplaceCreateVideoRequestResolution? Resolution { get; set; }
@@ -82,7 +82,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="assets">
         /// Source video and reference character image for the job.
@@ -106,7 +106,7 @@ namespace MagicHour
         /// </param>
         /// <param name="resolution">
         /// Output video resolution. Must be supported by `model`. Defaults to the lowest resolution available on your plan for that model.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
         /// <param name="style">
         /// Optional style controls for replace vs animate mode and subject selection.<br/>

@@ -37,18 +37,18 @@ namespace MagicHour
 
         /// <summary>
         /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
-        /// Example: gemini-omni-1.1
+        /// Example: ltx-2.5
         /// </summary>
-        /// <example>gemini-omni-1.1</example>
+        /// <example>ltx-2.5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestModelJsonConverter))]
         public global::MagicHour.AiVideoEditorCreateVideoRequestModel? Model { get; set; }
 
         /// <summary>
         /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. `gemini-omni-1.1` and deprecated `gemini-omni` support 720p and 1080p; LTX 2.5 supports 480p, 720p, and 1080p.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </summary>
-        /// <example>720p</example>
+        /// <example>480p</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiVideoEditorCreateVideoRequestResolutionJsonConverter))]
         public global::MagicHour.AiVideoEditorCreateVideoRequestResolution? Resolution { get; set; }
@@ -96,11 +96,11 @@ namespace MagicHour
         /// </param>
         /// <param name="model">
         /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
-        /// Example: gemini-omni-1.1
+        /// Example: ltx-2.5
         /// </param>
         /// <param name="resolution">
         /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. `gemini-omni-1.1` and deprecated `gemini-omni` support 720p and 1080p; LTX 2.5 supports 480p, 720p, and 1080p.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

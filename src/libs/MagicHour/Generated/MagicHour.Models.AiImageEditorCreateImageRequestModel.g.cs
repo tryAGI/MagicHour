@@ -63,7 +63,7 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
-    /// Example: default
+    /// Example: flux-2-klein
     /// </summary>
     public enum AiImageEditorCreateImageRequestModel
     {

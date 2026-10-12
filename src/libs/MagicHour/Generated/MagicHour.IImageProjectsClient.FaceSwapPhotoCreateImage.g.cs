@@ -24,12 +24,6 @@ namespace MagicHour
         ///   "assets": {<br/>
         ///     "face_swap_mode": "all-faces",<br/>
         ///     "source_file_path": "api-assets/id/1234.png",<br/>
-        ///     "face_mappings": [<br/>
-        ///       {<br/>
-        ///         "original_face": "api-assets/id/0-0.png",<br/>
-        ///         "new_face": "api-assets/id/1234.png"<br/>
-        ///       }<br/>
-        ///     ],<br/>
         ///     "target_file_path": "api-assets/id/1234.png"<br/>
         ///   }<br/>
         /// }<br/>
@@ -60,12 +54,6 @@ namespace MagicHour
         ///   "assets": {<br/>
         ///     "face_swap_mode": "all-faces",<br/>
         ///     "source_file_path": "api-assets/id/1234.png",<br/>
-        ///     "face_mappings": [<br/>
-        ///       {<br/>
-        ///         "original_face": "api-assets/id/0-0.png",<br/>
-        ///         "new_face": "api-assets/id/1234.png"<br/>
-        ///       }<br/>
-        ///     ],<br/>
         ///     "target_file_path": "api-assets/id/1234.png"<br/>
         ///   }<br/>
         /// }<br/>
@@ -86,7 +74,8 @@ namespace MagicHour
         /// Example: My Face Swap image
         /// </param>
         /// <param name="assets">
-        /// Provide the assets for face swap photo
+        /// Provide the assets for face swap photo<br/>
+        /// Example: {"face_swap_mode":"all-faces","source_file_path":"api-assets/id/1234.png","target_file_path":"api-assets/id/1234.png"}
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

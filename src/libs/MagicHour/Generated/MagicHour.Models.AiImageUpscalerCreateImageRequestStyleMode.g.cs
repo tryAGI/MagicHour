@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// The upscaling mode. `"preserve"` uses the fast pro pipeline (1× credit multiplier). `"balanced"` and `"creative"` use the creative pipeline (2× credit multiplier). `"pro"` is deprecated and maps to `"preserve"`. Defaults to `"balanced"`.<br/>
-    /// Example: balanced
+    /// Example: preserve
     /// </summary>
     public enum AiImageUpscalerCreateImageRequestStyleMode
     {

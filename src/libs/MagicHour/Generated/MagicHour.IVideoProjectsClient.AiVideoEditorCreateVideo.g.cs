@@ -39,8 +39,8 @@ namespace MagicHour
         ///   "name": "My Video Editor video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 5,<br/>
-        ///   "model": "gemini-omni-1.1",<br/>
-        ///   "resolution": "720p",<br/>
+        ///   "model": "ltx-2.5",<br/>
+        ///   "resolution": "480p",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Change the car color to blue"<br/>
         ///   },<br/>
@@ -90,8 +90,8 @@ namespace MagicHour
         ///   "name": "My Video Editor video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 5,<br/>
-        ///   "model": "gemini-omni-1.1",<br/>
-        ///   "resolution": "720p",<br/>
+        ///   "model": "ltx-2.5",<br/>
+        ///   "resolution": "480p",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Change the car color to blue"<br/>
         ///   },<br/>
@@ -142,11 +142,11 @@ namespace MagicHour
         /// </param>
         /// <param name="model">
         /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
-        /// Example: gemini-omni-1.1
+        /// Example: ltx-2.5
         /// </param>
         /// <param name="resolution">
         /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. `gemini-omni-1.1` and deprecated `gemini-omni` support 720p and 1080p; LTX 2.5 supports 480p, 720p, and 1080p.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
         /// <param name="style"></param>
         /// <param name="assets">

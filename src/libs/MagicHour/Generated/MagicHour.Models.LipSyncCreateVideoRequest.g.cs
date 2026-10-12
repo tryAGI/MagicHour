@@ -28,9 +28,9 @@ namespace MagicHour
 
         /// <summary>
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </summary>
-        /// <example>15</example>
+        /// <example>5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_seconds")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required float EndSeconds { get; set; }
@@ -44,8 +44,10 @@ namespace MagicHour
         public double? MaxFpsLimit { get; set; }
 
         /// <summary>
-        /// Provide the assets for lip-sync. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used
+        /// Provide the assets for lip-sync. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used<br/>
+        /// Example: {"audio_file_path":"api-assets/id/1234.mp3","video_source":"file","video_file_path":"api-assets/id/1234.mp4"}
         /// </summary>
+        /// <example>{"audio_file_path":"api-assets/id/1234.mp3","video_source":"file","video_file_path":"api-assets/id/1234.mp4"}</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("assets")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::MagicHour.LipSyncCreateVideoRequestAssets Assets { get; set; }
@@ -71,10 +73,11 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="assets">
-        /// Provide the assets for lip-sync. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used
+        /// Provide the assets for lip-sync. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used<br/>
+        /// Example: {"audio_file_path":"api-assets/id/1234.mp3","video_source":"file","video_file_path":"api-assets/id/1234.mp4"}
         /// </param>
         /// <param name="name">
         /// Give your video a custom name for easy identification.<br/>
