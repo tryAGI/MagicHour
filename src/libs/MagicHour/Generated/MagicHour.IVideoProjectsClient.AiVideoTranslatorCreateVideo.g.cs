@@ -38,9 +38,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Video Translator video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "target_language": "Spanish",<br/>
-        ///   "resolution": "720p",<br/>
+        ///   "resolution": "480p",<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   }<br/>
@@ -86,9 +86,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Video Translator video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "target_language": "Spanish",<br/>
-        ///   "resolution": "720p",<br/>
+        ///   "resolution": "480p",<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   }<br/>
@@ -132,7 +132,7 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds. The clip must be 1-30 seconds long.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="targetLanguage">
         /// Language to translate the video's speech into.<br/>
@@ -140,7 +140,7 @@ namespace MagicHour
         /// </param>
         /// <param name="resolution">
         /// Output video resolution. Defaults to 480p. 720p and 1080p require a paid plan.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
         /// <param name="assets">
         /// Source video for the translation job.

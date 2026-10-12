@@ -4,7 +4,8 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Provide the assets for animation.
+    /// Provide the assets for animation.<br/>
+    /// Example: {"audio_source":"file","audio_file_path":"api-assets/id/1234.mp3","image_file_path":"api-assets/id/1234.png"}
     /// </summary>
     public sealed partial class AnimationCreateVideoRequestAssets
     {

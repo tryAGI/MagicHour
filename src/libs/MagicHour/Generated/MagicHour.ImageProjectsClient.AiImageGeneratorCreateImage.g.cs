@@ -59,9 +59,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Ai Image image",<br/>
         ///   "image_count": 1,<br/>
-        ///   "model": "default",<br/>
+        ///   "model": "z-image-turbo",<br/>
         ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "1k",<br/>
+        ///   "resolution": "640px",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Cool image",<br/>
         ///     "tool": "ai-anime-generator"<br/>
@@ -102,9 +102,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Ai Image image",<br/>
         ///   "image_count": 1,<br/>
-        ///   "model": "default",<br/>
+        ///   "model": "z-image-turbo",<br/>
         ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "1k",<br/>
+        ///   "resolution": "640px",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Cool image",<br/>
         ///     "tool": "ai-anime-generator"<br/>
@@ -770,7 +770,7 @@ namespace MagicHour
         ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// **Deprecated Enum Values:**<br/>
         /// - `seedream` - Use `seedream-v4` instead.<br/>
-        /// Example: default
+        /// Example: z-image-turbo
         /// </param>
         /// <param name="aspectRatio">
         /// The aspect ratio of the output image(s). If not specified, defaults to `1:1` (square).<br/>
@@ -801,7 +801,7 @@ namespace MagicHour
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </param>
         /// <param name="style">
         /// The art style to use for image generation.

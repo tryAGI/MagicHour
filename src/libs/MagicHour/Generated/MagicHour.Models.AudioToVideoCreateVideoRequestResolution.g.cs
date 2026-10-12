@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// Output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-    /// Example: 720p
+    /// Example: 480p
     /// </summary>
     public enum AudioToVideoCreateVideoRequestResolution
     {

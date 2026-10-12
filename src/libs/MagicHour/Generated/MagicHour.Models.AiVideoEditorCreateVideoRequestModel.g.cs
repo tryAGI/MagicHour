@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.1` for paid. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
-    /// Example: gemini-omni-1.1
+    /// Example: ltx-2.5
     /// </summary>
     public enum AiVideoEditorCreateVideoRequestModel
     {

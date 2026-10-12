@@ -19,8 +19,10 @@ namespace MagicHour
         public required global::MagicHour.AnimationCreateVideoRequestStyleArtStyle ArtStyle { get; set; }
 
         /// <summary>
-        /// Describe custom art style. This field is required if `art_style` is `Custom`
+        /// Describe custom art style. This field is required if `art_style` is `Custom`<br/>
+        /// Example: Watercolor painting with soft pastel colors
         /// </summary>
+        /// <example>Watercolor painting with soft pastel colors</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("art_style_custom")]
         public string? ArtStyleCustom { get; set; }
 
@@ -95,7 +97,8 @@ namespace MagicHour
         /// Example: 5
         /// </param>
         /// <param name="artStyleCustom">
-        /// Describe custom art style. This field is required if `art_style` is `Custom`
+        /// Describe custom art style. This field is required if `art_style` is `Custom`<br/>
+        /// Example: Watercolor painting with soft pastel colors
         /// </param>
         /// <param name="prompt">
         /// The prompt used for the video. Prompt is required if `prompt_type` is `custom`. Otherwise this value is ignored<br/>

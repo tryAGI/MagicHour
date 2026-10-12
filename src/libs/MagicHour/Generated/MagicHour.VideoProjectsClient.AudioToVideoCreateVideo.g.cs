@@ -75,8 +75,8 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Audio To Video video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
-        ///   "resolution": "720p",<br/>
+        ///   "end_seconds": 5,<br/>
+        ///   "resolution": "480p",<br/>
         ///   "assets": {<br/>
         ///     "audio_file_path": "api-assets/id/1234.mp3",<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
@@ -136,8 +136,8 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Audio To Video video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
-        ///   "resolution": "720p",<br/>
+        ///   "end_seconds": 5,<br/>
+        ///   "resolution": "480p",<br/>
         ///   "assets": {<br/>
         ///     "audio_file_path": "api-assets/id/1234.mp3",<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
@@ -763,11 +763,11 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="resolution">
         /// Output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
         /// <param name="assets">
         /// Provide the audio file and an optional reference image.

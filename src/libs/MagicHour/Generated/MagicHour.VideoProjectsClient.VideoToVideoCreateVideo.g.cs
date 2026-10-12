@@ -75,19 +75,18 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Video To Video video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "fps_resolution": "HALF",<br/>
         ///   "style": {<br/>
         ///     "art_style": "Minecraft",<br/>
         ///     "version": "default",<br/>
         ///     "prompt_type": "default",<br/>
-        ///     "prompt": "string",<br/>
+        ///     "prompt": "A cinematic scene with warm lighting",<br/>
         ///     "model": "default"<br/>
         ///   },<br/>
         ///   "assets": {<br/>
         ///     "video_source": "file",<br/>
-        ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
-        ///     "youtube_url": "string"<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   }<br/>
         /// }<br/>
         /// '
@@ -141,19 +140,18 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Video To Video video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "fps_resolution": "HALF",<br/>
         ///   "style": {<br/>
         ///     "art_style": "Minecraft",<br/>
         ///     "version": "default",<br/>
         ///     "prompt_type": "default",<br/>
-        ///     "prompt": "string",<br/>
+        ///     "prompt": "A cinematic scene with warm lighting",<br/>
         ///     "model": "default"<br/>
         ///   },<br/>
         ///   "assets": {<br/>
         ///     "video_source": "file",<br/>
-        ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
-        ///     "youtube_url": "string"<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   }<br/>
         /// }<br/>
         /// '
@@ -772,7 +770,7 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="fpsResolution">
         /// Determines whether the resulting video will have the same frame per second as the original video, or half.<br/>
@@ -783,7 +781,8 @@ namespace MagicHour
         /// </param>
         /// <param name="style"></param>
         /// <param name="assets">
-        /// Provide the assets for video-to-video. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used
+        /// Provide the assets for video-to-video. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used<br/>
+        /// Example: {"video_source":"file","video_file_path":"api-assets/id/1234.mp4"}
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

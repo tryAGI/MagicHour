@@ -28,18 +28,18 @@ namespace MagicHour
 
         /// <summary>
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </summary>
-        /// <example>15</example>
+        /// <example>5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_seconds")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required float EndSeconds { get; set; }
 
         /// <summary>
         /// Output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </summary>
-        /// <example>720p</example>
+        /// <example>480p</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AudioToVideoCreateVideoRequestResolutionJsonConverter))]
         public global::MagicHour.AudioToVideoCreateVideoRequestResolution? Resolution { get; set; }
@@ -68,7 +68,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="assets">
         /// Provide the audio file and an optional reference image.
@@ -85,7 +85,7 @@ namespace MagicHour
         /// </param>
         /// <param name="resolution">
         /// Output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
         /// <param name="style">
         /// Attributes used to dictate the style of the output

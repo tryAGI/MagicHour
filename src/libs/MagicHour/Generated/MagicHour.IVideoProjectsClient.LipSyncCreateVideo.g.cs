@@ -38,13 +38,12 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Lip Sync video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "max_fps_limit": 12,<br/>
         ///   "assets": {<br/>
         ///     "audio_file_path": "api-assets/id/1234.mp3",<br/>
         ///     "video_source": "file",<br/>
-        ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
-        ///     "youtube_url": "string"<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   },<br/>
         ///   "style": {<br/>
         ///     "generation_mode": "lite"<br/>
@@ -91,13 +90,12 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Lip Sync video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "max_fps_limit": 12,<br/>
         ///   "assets": {<br/>
         ///     "audio_file_path": "api-assets/id/1234.mp3",<br/>
         ///     "video_source": "file",<br/>
-        ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
-        ///     "youtube_url": "string"<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   },<br/>
         ///   "style": {<br/>
         ///     "generation_mode": "lite"<br/>
@@ -141,14 +139,15 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="maxFpsLimit">
         /// Defines the maximum FPS (frames per second) for the output video. If the input video's FPS is lower than this limit, the output video will retain the input FPS. This is useful for reducing unnecessary frame usage in scenarios where high FPS is not required.<br/>
         /// Example: 12
         /// </param>
         /// <param name="assets">
-        /// Provide the assets for lip-sync. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used
+        /// Provide the assets for lip-sync. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used<br/>
+        /// Example: {"audio_file_path":"api-assets/id/1234.mp3","video_source":"file","video_file_path":"api-assets/id/1234.mp4"}
         /// </param>
         /// <param name="style">
         /// Attributes used to dictate the style of the output

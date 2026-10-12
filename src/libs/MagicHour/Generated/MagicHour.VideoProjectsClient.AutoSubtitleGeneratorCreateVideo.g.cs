@@ -59,7 +59,7 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Auto Subtitle video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   },<br/>
@@ -113,7 +113,7 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Auto Subtitle video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   },<br/>
@@ -732,7 +732,7 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="assets">
         /// Provide the assets for auto subtitle generator

@@ -38,22 +38,15 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Face Swap video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "style": {<br/>
         ///     "version": "default"<br/>
         ///   },<br/>
         ///   "assets": {<br/>
         ///     "face_swap_mode": "all-faces",<br/>
-        ///     "image_file_path": "image/id/1234.png",<br/>
-        ///     "face_mappings": [<br/>
-        ///       {<br/>
-        ///         "original_face": "api-assets/id/0-0.png",<br/>
-        ///         "new_face": "api-assets/id/1234.png"<br/>
-        ///       }<br/>
-        ///     ],<br/>
+        ///     "image_file_path": "api-assets/id/1234.png",<br/>
         ///     "video_source": "file",<br/>
-        ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
-        ///     "youtube_url": "string"<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   }<br/>
         /// }<br/>
         /// '
@@ -97,22 +90,15 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Face Swap video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "style": {<br/>
         ///     "version": "default"<br/>
         ///   },<br/>
         ///   "assets": {<br/>
         ///     "face_swap_mode": "all-faces",<br/>
-        ///     "image_file_path": "image/id/1234.png",<br/>
-        ///     "face_mappings": [<br/>
-        ///       {<br/>
-        ///         "original_face": "api-assets/id/0-0.png",<br/>
-        ///         "new_face": "api-assets/id/1234.png"<br/>
-        ///       }<br/>
-        ///     ],<br/>
+        ///     "image_file_path": "api-assets/id/1234.png",<br/>
         ///     "video_source": "file",<br/>
-        ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
-        ///     "youtube_url": "string"<br/>
+        ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   }<br/>
         /// }<br/>
         /// '
@@ -153,14 +139,15 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="style">
         /// Style of the face swap video.<br/>
         /// Example: {"version":"default"}
         /// </param>
         /// <param name="assets">
-        /// Provide the assets for face swap. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used
+        /// Provide the assets for face swap. For video, The `video_source` field determines whether `video_file_path` or `youtube_url` field is used<br/>
+        /// Example: {"face_swap_mode":"all-faces","image_file_path":"api-assets/id/1234.png","video_source":"file","video_file_path":"api-assets/id/1234.mp4"}
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

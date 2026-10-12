@@ -59,16 +59,16 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Talking Photo video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png",<br/>
         ///     "audio_file_path": "api-assets/id/1234.mp3"<br/>
         ///   },<br/>
         ///   "style": {<br/>
         ///     "generation_mode": "realistic",<br/>
-        ///     "prompt": "string"<br/>
+        ///     "prompt": "A person smiling and speaking naturally to the camera"<br/>
         ///   },<br/>
-        ///   "max_resolution": 1024<br/>
+        ///   "max_resolution": 512<br/>
         /// }<br/>
         /// '
         /// </remarks>
@@ -105,16 +105,16 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Talking Photo video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png",<br/>
         ///     "audio_file_path": "api-assets/id/1234.mp3"<br/>
         ///   },<br/>
         ///   "style": {<br/>
         ///     "generation_mode": "realistic",<br/>
-        ///     "prompt": "string"<br/>
+        ///     "prompt": "A person smiling and speaking naturally to the camera"<br/>
         ///   },<br/>
-        ///   "max_resolution": 1024<br/>
+        ///   "max_resolution": 512<br/>
         /// }<br/>
         /// '
         /// </remarks>
@@ -716,7 +716,7 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// The end time of the input audio in seconds. Maximum clip length depends on style.generation_mode: realistic 300s, prompted 45s.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="assets">
         /// Provide the assets for creating a talking photo
@@ -726,7 +726,7 @@ namespace MagicHour
         /// </param>
         /// <param name="maxResolution">
         /// Constrains the larger dimension (height or width) of the output video. Allows you to set a lower resolution than your plan's maximum if desired. The value is capped by your plan's max resolution.<br/>
-        /// Example: 1024
+        /// Example: 512
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

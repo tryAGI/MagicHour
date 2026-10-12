@@ -18,7 +18,7 @@ namespace MagicHour
     /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
     /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
     /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
-    /// Example: 720p
+    /// Example: 480p
     /// </summary>
     public enum TextToVideoCreateVideoRequestResolution
     {

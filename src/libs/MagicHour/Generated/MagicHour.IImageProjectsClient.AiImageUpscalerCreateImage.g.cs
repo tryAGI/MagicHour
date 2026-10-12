@@ -22,7 +22,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Image Upscaler image",<br/>
         ///   "scale_factor": 2,<br/>
-        ///   "style": {},<br/>
+        ///   "style": {<br/>
+        ///     "mode": "preserve"<br/>
+        ///   },<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
         ///   }<br/>
@@ -52,7 +54,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Image Upscaler image",<br/>
         ///   "scale_factor": 2,<br/>
-        ///   "style": {},<br/>
+        ///   "style": {<br/>
+        ///     "mode": "preserve"<br/>
+        ///   },<br/>
         ///   "assets": {<br/>
         ///     "image_file_path": "api-assets/id/1234.png"<br/>
         ///   }<br/>
@@ -81,7 +85,8 @@ namespace MagicHour
         /// </param>
         /// <param name="style">
         /// Style settings for the upscale. Use `mode` (`"preserve"`, `"balanced"`, or `"creative"`). Defaults to `"balanced"`.<br/>
-        /// Default Value: {}
+        /// Default Value: {}<br/>
+        /// Example: {"mode":"preserve"}
         /// </param>
         /// <param name="assets">
         /// Provide the assets for upscaling

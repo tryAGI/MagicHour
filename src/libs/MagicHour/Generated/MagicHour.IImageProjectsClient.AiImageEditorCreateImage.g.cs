@@ -22,9 +22,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Ai Image Editor image",<br/>
         ///   "image_count": 1,<br/>
-        ///   "model": "default",<br/>
+        ///   "model": "flux-2-klein",<br/>
         ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "1k",<br/>
+        ///   "resolution": "640px",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Give me sunglasses"<br/>
         ///   },<br/>
@@ -60,9 +60,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Ai Image Editor image",<br/>
         ///   "image_count": 1,<br/>
-        ///   "model": "default",<br/>
+        ///   "model": "flux-2-klein",<br/>
         ///   "aspect_ratio": "1:1",<br/>
-        ///   "resolution": "1k",<br/>
+        ///   "resolution": "640px",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Give me sunglasses"<br/>
         ///   },<br/>
@@ -154,7 +154,7 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
-        /// Example: default
+        /// Example: flux-2-klein
         /// </param>
         /// <param name="aspectRatio">
         /// The aspect ratio of the output image(s). If not specified, defaults to `auto`.<br/>
@@ -184,7 +184,7 @@ namespace MagicHour
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </param>
         /// <param name="style"></param>
         /// <param name="assets">

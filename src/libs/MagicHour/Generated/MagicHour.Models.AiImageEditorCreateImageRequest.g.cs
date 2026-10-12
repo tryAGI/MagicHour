@@ -86,9 +86,9 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
-        /// Example: default
+        /// Example: flux-2-klein
         /// </summary>
-        /// <example>default</example>
+        /// <example>flux-2-klein</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiImageEditorCreateImageRequestModelJsonConverter))]
         public global::MagicHour.AiImageEditorCreateImageRequestModel? Model { get; set; }
@@ -126,9 +126,9 @@ namespace MagicHour
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </summary>
-        /// <example>1k</example>
+        /// <example>640px</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiImageEditorCreateImageRequestResolutionJsonConverter))]
         public global::MagicHour.AiImageEditorCreateImageRequestResolution? Resolution { get; set; }
@@ -230,7 +230,7 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
-        /// Example: default
+        /// Example: flux-2-klein
         /// </param>
         /// <param name="aspectRatio">
         /// The aspect ratio of the output image(s). If not specified, defaults to `auto`.<br/>
@@ -260,7 +260,7 @@ namespace MagicHour
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

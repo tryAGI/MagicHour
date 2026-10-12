@@ -65,7 +65,7 @@ namespace MagicHour
     ///   - Image count allowed: 1, 2, 3, 4<br/>
     /// **Deprecated Enum Values:**<br/>
     /// - `seedream` - Use `seedream-v4` instead.<br/>
-    /// Example: default
+    /// Example: z-image-turbo
     /// </summary>
     public enum AiImageGeneratorCreateImageRequestModel
     {

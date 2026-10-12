@@ -9,8 +9,10 @@ namespace MagicHour
     public sealed partial class AiHeadshotGeneratorCreateImageRequestStyle
     {
         /// <summary>
-        /// Prompt used to guide the style of your headshot. We recommend omitting the prompt unless you want to customize your headshot. You can visit [AI headshot generator](https://magichour.ai/create/ai-headshot-generator) to view an example of a good prompt used for our 'Professional' style.
+        /// Prompt used to guide the style of your headshot. We recommend omitting the prompt unless you want to customize your headshot. You can visit [AI headshot generator](https://magichour.ai/create/ai-headshot-generator) to view an example of a good prompt used for our 'Professional' style.<br/>
+        /// Example: Professional studio headshot with soft lighting and a neutral background
         /// </summary>
+        /// <example>Professional studio headshot with soft lighting and a neutral background</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
         public string? Prompt { get; set; }
 
@@ -24,7 +26,8 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="AiHeadshotGeneratorCreateImageRequestStyle" /> class.
         /// </summary>
         /// <param name="prompt">
-        /// Prompt used to guide the style of your headshot. We recommend omitting the prompt unless you want to customize your headshot. You can visit [AI headshot generator](https://magichour.ai/create/ai-headshot-generator) to view an example of a good prompt used for our 'Professional' style.
+        /// Prompt used to guide the style of your headshot. We recommend omitting the prompt unless you want to customize your headshot. You can visit [AI headshot generator](https://magichour.ai/create/ai-headshot-generator) to view an example of a good prompt used for our 'Professional' style.<br/>
+        /// Example: Professional studio headshot with soft lighting and a neutral background
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

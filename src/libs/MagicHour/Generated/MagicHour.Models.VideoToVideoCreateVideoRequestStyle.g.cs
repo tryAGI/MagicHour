@@ -9,8 +9,9 @@ namespace MagicHour
     public sealed partial class VideoToVideoCreateVideoRequestStyle
     {
         /// <summary>
-        ///
+        /// Example: Minecraft
         /// </summary>
+        /// <example>Minecraft</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("art_style")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.VideoToVideoCreateVideoRequestStyleArtStyleJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -19,7 +20,7 @@ namespace MagicHour
         /// <summary>
         /// * `v1` - more detail, closer prompt adherence, and frame-by-frame previews.<br/>
         /// * `v2` - faster, more consistent, and less noisy.<br/>
-        /// * `default` - use the default version for the selected art style.<br/>
+        /// * `default` - use the selected art style's default version. Some art styles default to v3, which is unavailable through this API. For `Studio Ghibli`, explicitly set `version` to `v2` to use its supported preset.<br/>
         /// Default Value: default<br/>
         /// Example: default
         /// </summary>
@@ -41,8 +42,10 @@ namespace MagicHour
         public global::MagicHour.VideoToVideoCreateVideoRequestStylePromptType? PromptType { get; set; }
 
         /// <summary>
-        /// The prompt used for the video. Prompt is required if `prompt_type` is `custom` or `append_default`. If `prompt_type` is `default`, then the `prompt` value passed will be ignored.
+        /// The prompt used for the video. Prompt is required if `prompt_type` is `custom` or `append_default`. If `prompt_type` is `default`, then the `prompt` value passed will be ignored.<br/>
+        /// Example: A cinematic scene with warm lighting
         /// </summary>
+        /// <example>A cinematic scene with warm lighting</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
         public string? Prompt { get; set; }
 
@@ -68,11 +71,13 @@ namespace MagicHour
         /// <summary>
         /// Initializes a new instance of the <see cref="VideoToVideoCreateVideoRequestStyle" /> class.
         /// </summary>
-        /// <param name="artStyle"></param>
+        /// <param name="artStyle">
+        /// Example: Minecraft
+        /// </param>
         /// <param name="version">
         /// * `v1` - more detail, closer prompt adherence, and frame-by-frame previews.<br/>
         /// * `v2` - faster, more consistent, and less noisy.<br/>
-        /// * `default` - use the default version for the selected art style.<br/>
+        /// * `default` - use the selected art style's default version. Some art styles default to v3, which is unavailable through this API. For `Studio Ghibli`, explicitly set `version` to `v2` to use its supported preset.<br/>
         /// Default Value: default<br/>
         /// Example: default
         /// </param>
@@ -84,7 +89,8 @@ namespace MagicHour
         /// Example: default
         /// </param>
         /// <param name="prompt">
-        /// The prompt used for the video. Prompt is required if `prompt_type` is `custom` or `append_default`. If `prompt_type` is `default`, then the `prompt` value passed will be ignored.
+        /// The prompt used for the video. Prompt is required if `prompt_type` is `custom` or `append_default`. If `prompt_type` is `default`, then the `prompt` value passed will be ignored.<br/>
+        /// Example: A cinematic scene with warm lighting
         /// </param>
         /// <param name="model">
         /// * `Dreamshaper` - a good all-around model that works for both animations as well as realism.<br/>

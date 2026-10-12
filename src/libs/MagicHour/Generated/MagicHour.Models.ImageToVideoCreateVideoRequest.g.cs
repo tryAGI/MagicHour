@@ -57,9 +57,9 @@ namespace MagicHour
         /// * `wan-3.0`: High-quality video with native audio, long clips, and end-frame control.<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
-        /// Example: kling-3.0
+        /// Example: ltx-2.5
         /// </summary>
-        /// <example>kling-3.0</example>
+        /// <example>ltx-2.5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.ImageToVideoCreateVideoRequestModelJsonConverter))]
         public global::MagicHour.ImageToVideoCreateVideoRequestModel? Model { get; set; }
@@ -79,9 +79,9 @@ namespace MagicHour
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </summary>
-        /// <example>720p</example>
+        /// <example>480p</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.ImageToVideoCreateVideoRequestResolutionJsonConverter))]
         public global::MagicHour.ImageToVideoCreateVideoRequestResolution? Resolution { get; set; }
@@ -173,7 +173,7 @@ namespace MagicHour
         /// * `wan-3.0`: High-quality video with native audio, long clips, and end-frame control.<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
-        /// Example: kling-3.0
+        /// Example: ltx-2.5
         /// </param>
         /// <param name="resolution">
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
@@ -190,7 +190,7 @@ namespace MagicHour
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>

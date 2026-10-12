@@ -88,9 +88,9 @@ namespace MagicHour
         ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// **Deprecated Enum Values:**<br/>
         /// - `seedream` - Use `seedream-v4` instead.<br/>
-        /// Example: default
+        /// Example: z-image-turbo
         /// </summary>
-        /// <example>default</example>
+        /// <example>z-image-turbo</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiImageGeneratorCreateImageRequestModelJsonConverter))]
         public global::MagicHour.AiImageGeneratorCreateImageRequestModel? Model { get; set; }
@@ -129,9 +129,9 @@ namespace MagicHour
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </summary>
-        /// <example>1k</example>
+        /// <example>640px</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiImageGeneratorCreateImageRequestResolutionJsonConverter))]
         public global::MagicHour.AiImageGeneratorCreateImageRequestResolution? Resolution { get; set; }
@@ -226,7 +226,7 @@ namespace MagicHour
         ///   - Image count allowed: 1, 2, 3, 4<br/>
         /// **Deprecated Enum Values:**<br/>
         /// - `seedream` - Use `seedream-v4` instead.<br/>
-        /// Example: default
+        /// Example: z-image-turbo
         /// </param>
         /// <param name="aspectRatio">
         /// The aspect ratio of the output image(s). If not specified, defaults to `1:1` (square).<br/>
@@ -257,7 +257,7 @@ namespace MagicHour
         /// - `z-image-turbo` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Default Value: auto<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

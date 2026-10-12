@@ -28,18 +28,18 @@ namespace MagicHour
 
         /// <summary>
         /// This value determines the duration of the output video.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </summary>
-        /// <example>15</example>
+        /// <example>5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_seconds")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required float EndSeconds { get; set; }
 
         /// <summary>
         /// The height of the final output video. The maximum height depends on your subscription. Please refer to our [pricing page](https://magichour.ai/pricing) for more details<br/>
-        /// Example: 960
+        /// Example: 512
         /// </summary>
-        /// <example>960</example>
+        /// <example>512</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("height")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Height { get; set; }
@@ -61,8 +61,10 @@ namespace MagicHour
         public required global::MagicHour.AnimationCreateVideoRequestStyle Style { get; set; }
 
         /// <summary>
-        /// Provide the assets for animation.
+        /// Provide the assets for animation.<br/>
+        /// Example: {"audio_source":"file","audio_file_path":"api-assets/id/1234.mp3","image_file_path":"api-assets/id/1234.png"}
         /// </summary>
+        /// <example>{"audio_source":"file","audio_file_path":"api-assets/id/1234.mp3","image_file_path":"api-assets/id/1234.png"}</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("assets")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::MagicHour.AnimationCreateVideoRequestAssets Assets { get; set; }
@@ -82,11 +84,11 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// This value determines the duration of the output video.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="height">
         /// The height of the final output video. The maximum height depends on your subscription. Please refer to our [pricing page](https://magichour.ai/pricing) for more details<br/>
-        /// Example: 960
+        /// Example: 512
         /// </param>
         /// <param name="width">
         /// The width of the final output video. The maximum width depends on your subscription. Please refer to our [pricing page](https://magichour.ai/pricing) for more details<br/>
@@ -96,7 +98,8 @@ namespace MagicHour
         /// Defines the style of the output video
         /// </param>
         /// <param name="assets">
-        /// Provide the assets for animation.
+        /// Provide the assets for animation.<br/>
+        /// Example: {"audio_source":"file","audio_file_path":"api-assets/id/1234.mp3","image_file_path":"api-assets/id/1234.png"}
         /// </param>
         /// <param name="name">
         /// Give your video a custom name for easy identification.<br/>

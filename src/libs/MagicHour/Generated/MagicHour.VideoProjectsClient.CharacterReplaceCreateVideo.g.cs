@@ -75,9 +75,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Character Replace video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "model": "wan-animate",<br/>
-        ///   "resolution": "720p",<br/>
+        ///   "resolution": "480p",<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
         ///     "image_file_path": "api-assets/id/5678.png"<br/>
@@ -138,9 +138,9 @@ namespace MagicHour
         /// {<br/>
         ///   "name": "My Character Replace video",<br/>
         ///   "start_seconds": 0,<br/>
-        ///   "end_seconds": 15,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "model": "wan-animate",<br/>
-        ///   "resolution": "720p",<br/>
+        ///   "resolution": "480p",<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4",<br/>
         ///     "image_file_path": "api-assets/id/5678.png"<br/>
@@ -767,7 +767,7 @@ namespace MagicHour
         /// </param>
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
-        /// Example: 15
+        /// Example: 5
         /// </param>
         /// <param name="model">
         /// Model to use. Defaults to `wan-animate`.<br/>
@@ -778,7 +778,7 @@ namespace MagicHour
         /// </param>
         /// <param name="resolution">
         /// Output video resolution. Must be supported by `model`. Defaults to the lowest resolution available on your plan for that model.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
         /// <param name="assets">
         /// Source video and reference character image for the job.

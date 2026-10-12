@@ -58,7 +58,7 @@ namespace MagicHour
         ///      --data '<br/>
         /// {<br/>
         ///   "name": "My Body Swap image",<br/>
-        ///   "resolution": "1k",<br/>
+        ///   "resolution": "640px",<br/>
         ///   "assets": {<br/>
         ///     "person_file_path": "api-assets/id/1234.png",<br/>
         ///     "scene_file_path": "api-assets/id/5678.png"<br/>
@@ -98,7 +98,7 @@ namespace MagicHour
         ///      --data '<br/>
         /// {<br/>
         ///   "name": "My Body Swap image",<br/>
-        ///   "resolution": "1k",<br/>
+        ///   "resolution": "640px",<br/>
         ///   "assets": {<br/>
         ///     "person_file_path": "api-assets/id/1234.png",<br/>
         ///     "scene_file_path": "api-assets/id/5678.png"<br/>
@@ -700,7 +700,7 @@ namespace MagicHour
         /// </param>
         /// <param name="resolution">
         /// Output resolution. Determines credits charged for the run.<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </param>
         /// <param name="assets">
         /// Person image and scene image for body swap

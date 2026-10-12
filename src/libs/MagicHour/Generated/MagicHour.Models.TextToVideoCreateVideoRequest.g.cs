@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    ///
+    /// Example: {"name":"My Text To Video video","end_seconds":5,"aspect_ratio":"16:9","resolution":"480p","model":"ltx-2.5","audio":true,"style":{"prompt":"a dog running"}}
     /// </summary>
     public sealed partial class TextToVideoCreateVideoRequest
     {
@@ -76,9 +76,9 @@ namespace MagicHour
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </summary>
-        /// <example>720p</example>
+        /// <example>480p</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.TextToVideoCreateVideoRequestResolutionJsonConverter))]
         public global::MagicHour.TextToVideoCreateVideoRequestResolution? Resolution { get; set; }
@@ -101,9 +101,9 @@ namespace MagicHour
         /// * `wan-3.0`: High-quality video with native audio, long clips, and end-frame control.<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
-        /// Example: kling-3.0
+        /// Example: ltx-2.5
         /// </summary>
-        /// <example>kling-3.0</example>
+        /// <example>ltx-2.5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.TextToVideoCreateVideoRequestModelJsonConverter))]
         public global::MagicHour.TextToVideoCreateVideoRequestModel? Model { get; set; }
@@ -214,7 +214,7 @@ namespace MagicHour
         /// * **`veo3.1-lite`**: Supports 720p, 1080p.<br/>
         /// * **`wan-2.2`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
-        /// Example: 720p
+        /// Example: 480p
         /// </param>
         /// <param name="model">
         /// The AI model to use for video generation.<br/>
@@ -234,7 +234,7 @@ namespace MagicHour
         /// * `wan-3.0`: High-quality video with native audio, long clips, and end-frame control.<br/>
         /// If you specify the deprecated model value that includes the `-audio` suffix, this will be the same as included `audio` as `true`.<br/>
         /// Default Value: default<br/>
-        /// Example: kling-3.0
+        /// Example: ltx-2.5
         /// </param>
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>

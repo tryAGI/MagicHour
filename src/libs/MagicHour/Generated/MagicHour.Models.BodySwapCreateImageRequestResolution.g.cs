@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// Output resolution. Determines credits charged for the run.<br/>
-    /// Example: 1k
+    /// Example: 640px
     /// </summary>
     public enum BodySwapCreateImageRequestResolution
     {

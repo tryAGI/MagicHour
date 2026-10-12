@@ -19,9 +19,9 @@ namespace MagicHour
 
         /// <summary>
         /// Output resolution. Determines credits charged for the run.<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </summary>
-        /// <example>1k</example>
+        /// <example>640px</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.BodySwapCreateImageRequestResolutionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -45,7 +45,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="resolution">
         /// Output resolution. Determines credits charged for the run.<br/>
-        /// Example: 1k
+        /// Example: 640px
         /// </param>
         /// <param name="assets">
         /// Person image and scene image for body swap

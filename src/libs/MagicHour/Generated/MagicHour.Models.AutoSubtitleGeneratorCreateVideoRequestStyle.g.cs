@@ -17,8 +17,10 @@ namespace MagicHour
     public sealed partial class AutoSubtitleGeneratorCreateVideoRequestStyle
     {
         /// <summary>
-        /// Preset subtitle templates. Please visit https://magichour.ai/create/auto-subtitle-generator to see the style of the existing templates.
+        /// Preset subtitle templates. Please visit https://magichour.ai/create/auto-subtitle-generator to see the style of the existing templates.<br/>
+        /// Example: karaoke
         /// </summary>
+        /// <example>karaoke</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("template")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AutoSubtitleGeneratorCreateVideoRequestStyleTemplateJsonConverter))]
         public global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyleTemplate? Template { get; set; }
@@ -39,7 +41,8 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="AutoSubtitleGeneratorCreateVideoRequestStyle" /> class.
         /// </summary>
         /// <param name="template">
-        /// Preset subtitle templates. Please visit https://magichour.ai/create/auto-subtitle-generator to see the style of the existing templates.
+        /// Preset subtitle templates. Please visit https://magichour.ai/create/auto-subtitle-generator to see the style of the existing templates.<br/>
+        /// Example: karaoke
         /// </param>
         /// <param name="customConfig">
         /// Custom subtitle configuration.
