@@ -138,7 +138,14 @@ namespace MagicHour
         public required global::MagicHour.TextToVideoCreateVideoRequestStyle Style { get; set; }
 
         /// <summary>
-        ///
+        /// Reference media for video generation. Name references without @ and refer to them as @name in style.prompt. Maximum 10 references total.<br/>
+        /// Supported models and reference media:<br/>
+        /// * **`kling-3.0`**: Supports images, videos.<br/>
+        /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
+        /// * **`wan-3.0`**: Supports images, videos, audio.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("references")]
         public global::System.Collections.Generic.IList<global::MagicHour.TextToVideoCreateVideoRequestReference>? References { get; set; }
@@ -247,7 +254,16 @@ namespace MagicHour
         /// * **`wan-3.0`**: Toggle-able: no additional credits for audio<br/>
         /// Example: true
         /// </param>
-        /// <param name="references"></param>
+        /// <param name="references">
+        /// Reference media for video generation. Name references without @ and refer to them as @name in style.prompt. Maximum 10 references total.<br/>
+        /// Supported models and reference media:<br/>
+        /// * **`kling-3.0`**: Supports images, videos.<br/>
+        /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
+        /// * **`wan-3.0`**: Supports images, videos, audio.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

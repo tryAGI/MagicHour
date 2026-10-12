@@ -57,7 +57,7 @@ namespace MagicHour
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
-        ///   "name": "My Talking Photo image",<br/>
+        ///   "name": "My Talking Photo video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 15,<br/>
         ///   "assets": {<br/>
@@ -103,7 +103,7 @@ namespace MagicHour
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
-        ///   "name": "My Talking Photo image",<br/>
+        ///   "name": "My Talking Photo video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 15,<br/>
         ///   "assets": {<br/>
