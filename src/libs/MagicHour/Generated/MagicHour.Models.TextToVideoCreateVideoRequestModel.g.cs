@@ -13,6 +13,7 @@ namespace MagicHour
     /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
     /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
     /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
+    /// * `seedance-2.0-fast`: Fast reference-led clips with consistent motion and audio.<br/>
     /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
     /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
     /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
@@ -82,6 +83,10 @@ namespace MagicHour
         /// </summary>
         Seedance20,
         /// <summary>
+        /// Fast reference-led clips with consistent motion and audio.
+        /// </summary>
+        Seedance20Fast,
+        /// <summary>
         /// Faster reference-led clips with consistent motion and audio.
         /// </summary>
         Seedance20Mini,
@@ -141,6 +146,7 @@ namespace MagicHour
                 TextToVideoCreateVideoRequestModel.Seedance => "seedance",
                 TextToVideoCreateVideoRequestModel.Seedance15 => "seedance-1.5",
                 TextToVideoCreateVideoRequestModel.Seedance20 => "seedance-2.0",
+                TextToVideoCreateVideoRequestModel.Seedance20Fast => "seedance-2.0-fast",
                 TextToVideoCreateVideoRequestModel.Seedance20Mini => "seedance-2.0-mini",
                 TextToVideoCreateVideoRequestModel.Seedance25 => "seedance-2.5",
                 TextToVideoCreateVideoRequestModel.Sora2 => "sora-2",
@@ -173,6 +179,7 @@ namespace MagicHour
                 "seedance" => TextToVideoCreateVideoRequestModel.Seedance,
                 "seedance-1.5" => TextToVideoCreateVideoRequestModel.Seedance15,
                 "seedance-2.0" => TextToVideoCreateVideoRequestModel.Seedance20,
+                "seedance-2.0-fast" => TextToVideoCreateVideoRequestModel.Seedance20Fast,
                 "seedance-2.0-mini" => TextToVideoCreateVideoRequestModel.Seedance20Mini,
                 "seedance-2.5" => TextToVideoCreateVideoRequestModel.Seedance25,
                 "sora-2" => TextToVideoCreateVideoRequestModel.Sora2,

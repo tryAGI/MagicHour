@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Example: {"name":"My Text To Video video","end_seconds":5,"aspect_ratio":"16:9","resolution":"480p","model":"ltx-2.5","audio":true,"style":{"prompt":"a dog running"}}
+    /// Example: {"end_seconds":5,"aspect_ratio":"16:9","style":{"prompt":"a dog running"}}
     /// </summary>
     public sealed partial class TextToVideoCreateVideoRequest
     {
@@ -26,6 +26,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: any integer from 1 to 30<br/>
         /// * **`seedance-1.5`**: any integer from 4 to 12<br/>
         /// * **`seedance-2.0`**: any integer from 4 to 15<br/>
+        /// * **`seedance-2.0-fast`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.0-mini`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.5`**: any integer from 4 to 30<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
@@ -40,7 +41,7 @@ namespace MagicHour
         public required float EndSeconds { get; set; }
 
         /// <summary>
-        /// Determines the aspect ratio of the output video.<br/>
+        /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
         /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -48,6 +49,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Supports 16:9, 9:16, 1:1.<br/>
         /// * **`seedance-1.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.0`**: Supports 9:16, 16:9, 1:1.<br/>
+        /// * **`seedance-2.0-fast`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.0-mini`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>
@@ -70,6 +72,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
+        /// * **`seedance-2.0-fast`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
@@ -93,6 +96,7 @@ namespace MagicHour
         /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
         /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
         /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
+        /// * `seedance-2.0-fast`: Fast reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
         /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
@@ -118,6 +122,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-1.5`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`seedance-2.0-fast`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.0-mini`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
@@ -143,6 +148,7 @@ namespace MagicHour
         /// * **`kling-3.0`**: Supports images, videos.<br/>
         /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.0-fast`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
         /// * **`wan-3.0`**: Supports images, videos, audio.
@@ -168,6 +174,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: any integer from 1 to 30<br/>
         /// * **`seedance-1.5`**: any integer from 4 to 12<br/>
         /// * **`seedance-2.0`**: any integer from 4 to 15<br/>
+        /// * **`seedance-2.0-fast`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.0-mini`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.5`**: any integer from 4 to 30<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
@@ -183,7 +190,7 @@ namespace MagicHour
         /// Example: My Text To Video video
         /// </param>
         /// <param name="aspectRatio">
-        /// Determines the aspect ratio of the output video.<br/>
+        /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
         /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -191,6 +198,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Supports 16:9, 9:16, 1:1.<br/>
         /// * **`seedance-1.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.0`**: Supports 9:16, 16:9, 1:1.<br/>
+        /// * **`seedance-2.0-fast`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.0-mini`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`seedance-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>
@@ -208,6 +216,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
+        /// * **`seedance-2.0-fast`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
@@ -226,6 +235,7 @@ namespace MagicHour
         /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
         /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
         /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
+        /// * `seedance-2.0-fast`: Fast reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
         /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
@@ -246,6 +256,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-1.5`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`seedance-2.0-fast`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.0-mini`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
@@ -260,6 +271,7 @@ namespace MagicHour
         /// * **`kling-3.0`**: Supports images, videos.<br/>
         /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
+        /// * **`seedance-2.0-fast`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
         /// * **`wan-3.0`**: Supports images, videos, audio.

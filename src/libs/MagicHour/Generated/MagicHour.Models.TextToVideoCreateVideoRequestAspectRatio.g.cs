@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Determines the aspect ratio of the output video.<br/>
+    /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
     /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
     /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -12,6 +12,7 @@ namespace MagicHour
     /// * **`minimax-h3`**: Supports 16:9, 9:16, 1:1.<br/>
     /// * **`seedance-1.5`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`seedance-2.0`**: Supports 9:16, 16:9, 1:1.<br/>
+    /// * **`seedance-2.0-fast`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`seedance-2.0-mini`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`seedance-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`veo3.1`**: Supports 9:16, 16:9.<br/>

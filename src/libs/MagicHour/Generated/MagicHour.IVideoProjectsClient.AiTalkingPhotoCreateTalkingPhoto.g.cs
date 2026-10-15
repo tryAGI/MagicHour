@@ -99,9 +99,9 @@ namespace MagicHour
         /// <param name="style">
         /// Attributes used to dictate the style of the output
         /// </param>
-        /// <param name="maxResolution">
-        /// Constrains the larger dimension (height or width) of the output video. Allows you to set a lower resolution than your plan's maximum if desired. The value is capped by your plan's max resolution.<br/>
-        /// Example: 512
+        /// <param name="resolution">
+        /// Output preset. Overrides `max_resolution`. Defaults to 480p in prompted mode; realistic mode uses the mapped plan maximum.<br/>
+        /// Example: 480p
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -112,7 +112,7 @@ namespace MagicHour
             global::MagicHour.AiTalkingPhotoCreateTalkingPhotoRequestAssets assets,
             string? name = default,
             global::MagicHour.AiTalkingPhotoCreateTalkingPhotoRequestStyle? style = default,
-            int? maxResolution = default,
+            global::MagicHour.AiTalkingPhotoCreateTalkingPhotoRequestResolution? resolution = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
