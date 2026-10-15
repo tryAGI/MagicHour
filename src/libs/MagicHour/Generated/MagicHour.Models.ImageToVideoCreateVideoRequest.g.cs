@@ -26,6 +26,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: any integer from 1 to 30<br/>
         /// * **`seedance-1.5`**: any integer from 4 to 12<br/>
         /// * **`seedance-2.0`**: any integer from 4 to 15<br/>
+        /// * **`seedance-2.0-fast`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.0-mini`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.5`**: any integer from 4 to 30<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
@@ -49,6 +50,7 @@ namespace MagicHour
         /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
         /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
         /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
+        /// * `seedance-2.0-fast`: Fast reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
         /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
@@ -73,6 +75,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
+        /// * **`seedance-2.0-fast`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
@@ -96,6 +99,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-1.5`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`seedance-2.0-fast`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.0-mini`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
@@ -139,6 +143,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: any integer from 1 to 30<br/>
         /// * **`seedance-1.5`**: any integer from 4 to 12<br/>
         /// * **`seedance-2.0`**: any integer from 4 to 15<br/>
+        /// * **`seedance-2.0-fast`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.0-mini`**: any integer from 4 to 15<br/>
         /// * **`seedance-2.5`**: any integer from 4 to 30<br/>
         /// * **`veo3.1`**: 4, 6, 8, 16, 24, 32, 40, 48, 56<br/>
@@ -165,6 +170,7 @@ namespace MagicHour
         /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
         /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
         /// * `seedance-2.0`: Best for reference-led clips with precise subject control.<br/>
+        /// * `seedance-2.0-fast`: Fast reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.0-mini`: Faster reference-led clips with consistent motion and audio.<br/>
         /// * `seedance-2.5`: Best for premium realism, detail, and natural motion.<br/>
         /// * `veo3.1`: Best for romantic interactions and expressive action, with realistic detail.<br/>
@@ -184,6 +190,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-2.0`**: Supports 480p, 720p, 1080p, 4k.<br/>
+        /// * **`seedance-2.0-fast`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.0-mini`**: Supports 480p, 720p.<br/>
         /// * **`seedance-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`veo3.1`**: Supports 720p, 1080p.<br/>
@@ -202,6 +209,7 @@ namespace MagicHour
         /// * **`minimax-h3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-1.5`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`seedance-2.0`**: Toggle-able: no additional credits for audio<br/>
+        /// * **`seedance-2.0-fast`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.0-mini`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`veo3.1`**: Toggle-able: audio adds extra credits when enabled<br/>
