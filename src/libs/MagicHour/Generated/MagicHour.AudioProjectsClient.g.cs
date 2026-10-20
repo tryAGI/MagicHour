@@ -35,14 +35,14 @@ namespace MagicHour
         /// <inheritdoc/>
         public global::MagicHour.AutoSDKClientOptions Options { get; }
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::MagicHour.AudioProjectsSourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext>? JsonSerializerContextProvider { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
-            get => JsonSerializerContextProvider.Value;
+            get => JsonSerializerContextProvider?.Value ?? global::MagicHour.AudioProjectsSourceGenerationContext.Default;
             set => JsonSerializerContextProvider = new(() => value);
         }
 
