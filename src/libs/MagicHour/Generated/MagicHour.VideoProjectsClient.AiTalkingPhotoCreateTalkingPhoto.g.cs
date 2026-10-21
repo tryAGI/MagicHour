@@ -68,7 +68,7 @@ namespace MagicHour
         ///     "generation_mode": "realistic",<br/>
         ///     "prompt": "A person smiling and speaking naturally to the camera"<br/>
         ///   },<br/>
-        ///   "max_resolution": 512<br/>
+        ///   "resolution": "480p"<br/>
         /// }<br/>
         /// '
         /// </remarks>
@@ -114,7 +114,7 @@ namespace MagicHour
         ///     "generation_mode": "realistic",<br/>
         ///     "prompt": "A person smiling and speaking naturally to the camera"<br/>
         ///   },<br/>
-        ///   "max_resolution": 512<br/>
+        ///   "resolution": "480p"<br/>
         /// }<br/>
         /// '
         /// </remarks>

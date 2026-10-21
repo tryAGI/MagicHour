@@ -49,6 +49,24 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-ugc-ad \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "assets": {<br/>
+        ///     "image_file_path": "api-assets/id/image.jpg"<br/>
+        ///   },<br/>
+        ///   "script": "Meet your new everyday essential.",<br/>
+        ///   "end_seconds": 4,<br/>
+        ///   "model": "kling-3.0",<br/>
+        ///   "resolution": "480p"<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AiUgcAdCreateVideoResponse> AiUgcAdCreateVideoAsync(
 
             global::MagicHour.AiUgcAdCreateVideoRequest request,
@@ -72,6 +90,24 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-ugc-ad \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "assets": {<br/>
+        ///     "image_file_path": "api-assets/id/image.jpg"<br/>
+        ///   },<br/>
+        ///   "script": "Meet your new everyday essential.",<br/>
+        ///   "end_seconds": 4,<br/>
+        ///   "model": "kling-3.0",<br/>
+        ///   "resolution": "480p"<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiUgcAdCreateVideoResponse>> AiUgcAdCreateVideoAsResponseAsync(
 
             global::MagicHour.AiUgcAdCreateVideoRequest request,
@@ -663,7 +699,7 @@ namespace MagicHour
         /// <param name="script">
         /// The words the actor should speak. Character limits apply after trimming:<br/>
         /// * kling-3.0: 2500 characters.<br/>
-        /// * ltx-2.5: 1981 characters.<br/>
+        /// * ltx-2.5: 1804 characters.<br/>
         /// * veo3.1: 2500 characters.<br/>
         /// LTX's dialogue wrapper counts toward its model prompt limit.<br/>
         /// Example: Meet your new everyday essential.
