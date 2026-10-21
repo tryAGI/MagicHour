@@ -145,12 +145,14 @@ namespace MagicHour
         /// <summary>
         /// Reference media for video generation. Name references without @ and refer to them as @name in style.prompt. Maximum 10 references total.<br/>
         /// Supported models and reference media:<br/>
+        /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 13 references.<br/>
         /// * **`kling-3.0`**: Supports images, videos.<br/>
         /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0-fast`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
+        /// * **`veo3.1`**: Supports images. Up to 3 references. Requires `end_seconds` of 8.<br/>
         /// * **`wan-3.0`**: Supports images, videos, audio.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("references")]
@@ -268,12 +270,14 @@ namespace MagicHour
         /// <param name="references">
         /// Reference media for video generation. Name references without @ and refer to them as @name in style.prompt. Maximum 10 references total.<br/>
         /// Supported models and reference media:<br/>
+        /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 13 references.<br/>
         /// * **`kling-3.0`**: Supports images, videos.<br/>
         /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0-fast`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
+        /// * **`veo3.1`**: Supports images. Up to 3 references. Requires `end_seconds` of 8.<br/>
         /// * **`wan-3.0`**: Supports images, videos, audio.
         /// </param>
 #if NET7_0_OR_GREATER

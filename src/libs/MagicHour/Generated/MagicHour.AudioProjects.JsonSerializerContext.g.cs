@@ -16,12 +16,14 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioRequestStyle))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioRequestStyleVoiceName), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioRequestStyleVoiceName2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioRequestStyle))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioRequestAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioRequestStyle))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioRequestStyle))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioRequestStyleVoiceName), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioRequestStyleVoiceName2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioProjectsGetDetailsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioProjectsGetDetailsResponseStatus), TypeInfoPropertyName = "AudioProjectsGetDetailsResponseStatus2")]
@@ -48,19 +50,19 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioProjectsDeleteResponseCode4), TypeInfoPropertyName = "AudioProjectsDeleteResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioProjectsDeleteResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioProjectsDeleteResponseCode5), TypeInfoPropertyName = "AudioProjectsDeleteResponseCode52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode32")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse6))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse7))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode), TypeInfoPropertyName = "AiMusicGeneratorCreateAudioResponseCode2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponse3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode2), TypeInfoPropertyName = "AiMusicGeneratorCreateAudioResponseCode22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponse4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode3), TypeInfoPropertyName = "AiMusicGeneratorCreateAudioResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponse5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode4), TypeInfoPropertyName = "AiMusicGeneratorCreateAudioResponseCode42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponse6))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode5), TypeInfoPropertyName = "AiMusicGeneratorCreateAudioResponseCode52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponse7))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode6), TypeInfoPropertyName = "AiMusicGeneratorCreateAudioResponseCode62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode), TypeInfoPropertyName = "AiVoiceClonerCreateAudioResponseCode2_3")]
@@ -74,6 +76,19 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode5), TypeInfoPropertyName = "AiVoiceClonerCreateAudioResponseCode52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponse7))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode6), TypeInfoPropertyName = "AiVoiceClonerCreateAudioResponseCode62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse6))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponse7))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6), TypeInfoPropertyName = "AiVoiceGeneratorCreateAudioResponseCode62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioRequestStyleVoiceName?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioRequestStyleVoiceName2")]
@@ -89,18 +104,24 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioProjectsDeleteResponseCode3?), TypeInfoPropertyName = "NullableAudioProjectsDeleteResponseCode32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioProjectsDeleteResponseCode4?), TypeInfoPropertyName = "NullableAudioProjectsDeleteResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AudioProjectsDeleteResponseCode5?), TypeInfoPropertyName = "NullableAudioProjectsDeleteResponseCode52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode32")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode?), TypeInfoPropertyName = "NullableAiMusicGeneratorCreateAudioResponseCode2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode2?), TypeInfoPropertyName = "NullableAiMusicGeneratorCreateAudioResponseCode22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode3?), TypeInfoPropertyName = "NullableAiMusicGeneratorCreateAudioResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode4?), TypeInfoPropertyName = "NullableAiMusicGeneratorCreateAudioResponseCode42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode5?), TypeInfoPropertyName = "NullableAiMusicGeneratorCreateAudioResponseCode52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode6?), TypeInfoPropertyName = "NullableAiMusicGeneratorCreateAudioResponseCode62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode2?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode3?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode4?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode5?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode6?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::MagicHour.AudioProjectsGetDetailsResponseDownload>))]
     internal sealed partial class AudioProjectsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
@@ -219,29 +240,29 @@ namespace MagicHour
 
                     || typeToConvert == typeof(global::MagicHour.AudioProjectsDeleteResponseCode5?)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode?)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode?)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode2)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2?)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode2?)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode3)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3?)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode3?)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode4)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4?)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode4?)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode5)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5?)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode5?)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode6)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6?)
+                    || typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode6?)
 
                     || typeToConvert == typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode)
 
@@ -265,7 +286,31 @@ namespace MagicHour
 
                     || typeToConvert == typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode6)
 
-                    || typeToConvert == typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode6?);
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode6?)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode?)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2?)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3?)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4?)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5?)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6)
+
+                    || typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -392,64 +437,64 @@ namespace MagicHour
                     return new global::MagicHour.JsonConverters.AudioProjectsDeleteResponseCode5NullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCodeJsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCodeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode?))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode?))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCodeNullableJsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCodeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode2))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode2JsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode2JsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2?))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode2?))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode2NullableJsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode2NullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode3))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode3JsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode3JsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3?))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode3?))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode3NullableJsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode3NullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode4))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode4JsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode4JsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4?))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode4?))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode4NullableJsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode4NullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode5))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode5JsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode5JsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5?))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode5?))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode5NullableJsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode5NullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode6))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode6JsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode6JsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6?))
+                if (typeToConvert == typeof(global::MagicHour.AiMusicGeneratorCreateAudioResponseCode6?))
                 {
-                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode6NullableJsonConverter();
+                    return new global::MagicHour.JsonConverters.AiMusicGeneratorCreateAudioResponseCode6NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode))
@@ -510,6 +555,66 @@ namespace MagicHour
                 if (typeToConvert == typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode6?))
                 {
                     return new global::MagicHour.JsonConverters.AiVoiceClonerCreateAudioResponseCode6NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode?))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2?))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode3JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3?))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode3NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode4JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode4?))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode4NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode5JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode5?))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode5NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode6JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode6?))
+                {
+                    return new global::MagicHour.JsonConverters.AiVoiceGeneratorCreateAudioResponseCode6NullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

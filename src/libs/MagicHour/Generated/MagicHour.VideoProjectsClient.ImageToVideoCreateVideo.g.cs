@@ -55,10 +55,10 @@ namespace MagicHour
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
         /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
-        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Resolution: output size and plan requirements vary by workflow and model. Some workflows derive output size from the input video.<br/>
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
-        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/image-to-video).
         /// </summary>
         /// <param name="request"></param>
@@ -117,10 +117,10 @@ namespace MagicHour
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
         /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
-        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Resolution: output size and plan requirements vary by workflow and model. Some workflows derive output size from the input video.<br/>
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
-        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/image-to-video).
         /// </summary>
         /// <param name="request"></param>
@@ -747,10 +747,10 @@ namespace MagicHour
         /// 3) Check the job status until it's `complete`, then download the result from `downloads`.<br/>
         /// **Key options**<br/>
         /// - Inputs: usually a file, sometimes a YouTube link, depending on project type  <br/>
-        /// - Resolution: free users are limited to 576px; higher plans unlock HD and larger sizes  <br/>
+        /// - Resolution: output size and plan requirements vary by workflow and model. Some workflows derive output size from the input video.<br/>
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
-        /// Credits are only charged for the frames that actually render. You'll see an estimate when the job is queued, and the final total after it's done.<br/>
+        /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/image-to-video).
         /// </summary>
         /// <param name="name">
