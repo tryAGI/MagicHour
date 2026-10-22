@@ -217,7 +217,7 @@ namespace MagicHour
         /// <param name="references">
         /// Reference media for video generation. Name references without @ and refer to them as @name in style.prompt. Maximum 10 references total.<br/>
         /// Supported models and reference media:<br/>
-        /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 13 references.<br/>
+        /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-3.0`**: Supports images, videos.<br/>
         /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
