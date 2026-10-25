@@ -24,7 +24,7 @@ namespace MagicHour
         /// <summary>
         /// This is the image from which the face is extracted. The value is required if `face_swap_mode` is `all-faces`.<br/>
         /// This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -43,7 +43,7 @@ namespace MagicHour
 
         /// <summary>
         /// This is the image where the face from the source image will be placed. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -64,7 +64,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="targetFilePath">
         /// This is the image where the face from the source image will be placed. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -79,7 +79,7 @@ namespace MagicHour
         /// <param name="sourceFilePath">
         /// This is the image from which the face is extracted. The value is required if `face_swap_mode` is `all-faces`.<br/>
         /// This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png

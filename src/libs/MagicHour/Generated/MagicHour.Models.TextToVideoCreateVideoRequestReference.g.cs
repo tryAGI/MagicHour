@@ -17,6 +17,10 @@ namespace MagicHour
         public required string Name { get; set; }
 
         /// <summary>
+        /// This value is either<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
+        /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
+        /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
         /// </summary>
         /// <example>api-assets/id/1234.png</example>
@@ -37,6 +41,10 @@ namespace MagicHour
         /// Example: hero
         /// </param>
         /// <param name="filePath">
+        /// This value is either<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
+        /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
+        /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
         /// </param>
 #if NET7_0_OR_GREATER

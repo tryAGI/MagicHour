@@ -10,7 +10,7 @@ namespace MagicHour
     {
         /// <summary>
         /// The path of the image file. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -36,6 +36,10 @@ namespace MagicHour
         /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`wan-2.2`**: Not supported<br/>
         /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
+        /// This value is either<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
+        /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
+        /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
         /// </summary>
         /// <example>api-assets/id/1234.png</example>
@@ -53,7 +57,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="imageFilePath">
         /// The path of the image file. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -74,6 +78,10 @@ namespace MagicHour
         /// * **`veo3.1-lite`**: Supports 720p, 1080p. Requires a duration of 8 seconds or less.<br/>
         /// * **`wan-2.2`**: Not supported<br/>
         /// * **`wan-3.0`**: Supports 480p, 720p, 1080p.<br/>
+        /// This value is either<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
+        /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
+        /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
         /// </param>
 #if NET7_0_OR_GREATER
