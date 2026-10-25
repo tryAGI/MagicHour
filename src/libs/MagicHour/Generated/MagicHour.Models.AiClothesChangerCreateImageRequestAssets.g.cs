@@ -10,7 +10,7 @@ namespace MagicHour
     {
         /// <summary>
         /// The image with the person. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/model.png
@@ -22,7 +22,7 @@ namespace MagicHour
 
         /// <summary>
         /// The image of the outfit. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/outfit.png
@@ -56,14 +56,14 @@ namespace MagicHour
         /// </summary>
         /// <param name="personFilePath">
         /// The image with the person. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/model.png
         /// </param>
         /// <param name="garmentFilePath">
         /// The image of the outfit. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/outfit.png

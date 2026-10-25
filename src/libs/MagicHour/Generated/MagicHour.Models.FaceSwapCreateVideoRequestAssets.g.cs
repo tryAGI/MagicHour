@@ -24,7 +24,7 @@ namespace MagicHour
         /// <summary>
         /// The path of the input image with the face to be swapped.  The value is required if `face_swap_mode` is `all-faces`.<br/>
         /// This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -53,7 +53,7 @@ namespace MagicHour
 
         /// <summary>
         /// Your video file. Required if `video_source` is `file`. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.mp4
@@ -91,7 +91,7 @@ namespace MagicHour
         /// <param name="imageFilePath">
         /// The path of the input image with the face to be swapped.  The value is required if `face_swap_mode` is `all-faces`.<br/>
         /// This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -102,7 +102,7 @@ namespace MagicHour
         /// </param>
         /// <param name="videoFilePath">
         /// Your video file. Required if `video_source` is `file`. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.mp4

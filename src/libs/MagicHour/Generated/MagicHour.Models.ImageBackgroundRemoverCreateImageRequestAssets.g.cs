@@ -10,7 +10,7 @@ namespace MagicHour
     {
         /// <summary>
         /// The image to remove the background. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -23,7 +23,7 @@ namespace MagicHour
         /// <summary>
         /// The image used as the new background for the image_file_path. This image will be resized to match the image in image_file_path. Please make sure the resolution between the images are similar.<br/>
         /// This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -43,7 +43,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="imageFilePath">
         /// The image to remove the background. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -51,7 +51,7 @@ namespace MagicHour
         /// <param name="backgroundImageFilePath">
         /// The image used as the new background for the image_file_path. This image will be resized to match the image in image_file_path. Please make sure the resolution between the images are similar.<br/>
         /// This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png

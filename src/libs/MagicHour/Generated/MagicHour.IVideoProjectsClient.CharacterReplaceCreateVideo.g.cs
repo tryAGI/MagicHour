@@ -148,6 +148,7 @@ namespace MagicHour
         /// Model to use. Defaults to `wan-animate`.<br/>
         /// * **`wan-animate`**: 480p, 720p. Supports `points` subject selection.<br/>
         /// * **`kling-3.0`**: 720p, 1080p. Clips of 3–10 seconds in `replace` mode or 3–30 seconds in `animate` mode. Picks the main person automatically, so `points` are rejected.<br/>
+        /// * **`minimax-h3`**: 480p, 720p, 1080p. Clips of 1–60 seconds in `replace` mode or 1–60 seconds in `animate` mode. Subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored.<br/>
         /// Default Value: wan-animate<br/>
         /// Example: wan-animate
         /// </param>

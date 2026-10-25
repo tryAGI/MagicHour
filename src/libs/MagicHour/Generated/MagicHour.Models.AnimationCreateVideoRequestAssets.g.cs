@@ -21,7 +21,7 @@ namespace MagicHour
 
         /// <summary>
         /// The path of the input audio. This field is required if `audio_source` is `file`. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.mp3
@@ -38,7 +38,7 @@ namespace MagicHour
 
         /// <summary>
         /// An initial image to use a the first frame of the video. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png
@@ -62,7 +62,7 @@ namespace MagicHour
         /// </param>
         /// <param name="audioFilePath">
         /// The path of the input audio. This field is required if `audio_source` is `file`. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.mp3
@@ -72,7 +72,7 @@ namespace MagicHour
         /// </param>
         /// <param name="imageFilePath">
         /// An initial image to use a the first frame of the video. This value is either<br/>
-        /// - a direct URL to the video file<br/>
+        /// - a direct URL to the file. The URL path must end in a supported file extension.<br/>
         /// - `file_path` field from the response of the [upload urls API](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls).<br/>
         /// See the [file upload guide](https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls#input-file) for details.<br/>
         /// Example: api-assets/id/1234.png

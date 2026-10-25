@@ -19,7 +19,13 @@ namespace MagicHour
         public global::MagicHour.CharacterReplaceCreateVideoRequestStyleMode? Mode { get; set; }
 
         /// <summary>
-        /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject and is supported by `wan-animate`. Defaults to `auto`.<br/>
+        /// Optional direction. Supported by kling-3.0, minimax-h3.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
+        public string? Prompt { get; set; }
+
+        /// <summary>
+        /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject and is supported by `wan-animate`, `minimax-h3`. `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored. Defaults to `auto`.<br/>
         /// Example: auto
         /// </summary>
         /// <example>auto</example>
@@ -28,7 +34,7 @@ namespace MagicHour
         public global::MagicHour.CharacterReplaceCreateVideoRequestStyleSelectionMode? SelectionMode { get; set; }
 
         /// <summary>
-        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`).
+        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`, `minimax-h3`). `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("points")]
         public global::System.Collections.Generic.IList<global::MagicHour.CharacterReplaceCreateVideoRequestStylePoint>? Points { get; set; }
@@ -46,22 +52,27 @@ namespace MagicHour
         /// Processing mode. `replace` swaps the detected subject with your reference character. `animate` transfers motion from the video onto your character image.<br/>
         /// Example: replace
         /// </param>
+        /// <param name="prompt">
+        /// Optional direction. Supported by kling-3.0, minimax-h3.
+        /// </param>
         /// <param name="selectionMode">
-        /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject and is supported by `wan-animate`. Defaults to `auto`.<br/>
+        /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject and is supported by `wan-animate`, `minimax-h3`. `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored. Defaults to `auto`.<br/>
         /// Example: auto
         /// </param>
         /// <param name="points">
-        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`).
+        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`, `minimax-h3`). `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CharacterReplaceCreateVideoRequestStyle(
             global::MagicHour.CharacterReplaceCreateVideoRequestStyleMode? mode,
+            string? prompt,
             global::MagicHour.CharacterReplaceCreateVideoRequestStyleSelectionMode? selectionMode,
             global::System.Collections.Generic.IList<global::MagicHour.CharacterReplaceCreateVideoRequestStylePoint>? points)
         {
             this.Mode = mode;
+            this.Prompt = prompt;
             this.SelectionMode = selectionMode;
             this.Points = points;
         }
