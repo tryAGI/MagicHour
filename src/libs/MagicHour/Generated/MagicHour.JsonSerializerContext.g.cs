@@ -12,6 +12,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::MagicHour.VideoAssetsGeneratePresignedUrlRequestItem>))]
@@ -508,7 +509,6 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageEditorCreateImageResponseCode), TypeInfoPropertyName = "AiImageEditorCreateImageResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageEditorCreateImageResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageEditorCreateImageResponseCode2), TypeInfoPropertyName = "AiImageEditorCreateImageResponseCode22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageEditorCreateImageResponse4))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -519,6 +519,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageEditorCreateImageResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageEditorCreateImageResponseCode3), TypeInfoPropertyName = "AiImageEditorCreateImageResponseCode32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageEditorCreateImageResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiImageEditorCreateImageResponseCode4), TypeInfoPropertyName = "AiImageEditorCreateImageResponseCode42")]
@@ -1018,7 +1019,6 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode3?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode4?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode5?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode6?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode62")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1029,6 +1029,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceClonerCreateAudioResponseCode6?), TypeInfoPropertyName = "NullableAiVoiceClonerCreateAudioResponseCode62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode2?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AiVoiceGeneratorCreateAudioResponseCode3?), TypeInfoPropertyName = "NullableAiVoiceGeneratorCreateAudioResponseCode32")]
