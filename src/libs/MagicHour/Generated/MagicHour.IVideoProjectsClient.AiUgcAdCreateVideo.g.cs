@@ -73,10 +73,10 @@ namespace MagicHour
         /// <param name="assets"></param>
         /// <param name="script">
         /// The words the actor should speak. Character limits apply after trimming:<br/>
-        /// * kling-3.0: 2500 characters.<br/>
+        /// * kling-3.0: 2304 characters.<br/>
         /// * ltx-2.5: 1804 characters.<br/>
         /// * veo3.1: 2500 characters.<br/>
-        /// LTX's dialogue wrapper counts toward its model prompt limit.<br/>
+        /// LTX and Kling dialogue wrappers count toward their model prompt limit.<br/>
         /// Example: Meet your new everyday essential.
         /// </param>
         /// <param name="endSeconds">
