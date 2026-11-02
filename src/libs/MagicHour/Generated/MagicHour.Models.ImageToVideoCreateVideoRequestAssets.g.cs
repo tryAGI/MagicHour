@@ -25,6 +25,7 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
+        /// * **`kling-4.0`**: Supports 720p, 1080p.<br/>
         /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
@@ -67,6 +68,7 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
+        /// * **`kling-4.0`**: Supports 720p, 1080p.<br/>
         /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>

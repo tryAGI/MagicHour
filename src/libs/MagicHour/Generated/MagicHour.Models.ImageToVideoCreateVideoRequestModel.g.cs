@@ -9,6 +9,7 @@ namespace MagicHour
     /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
     /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
     /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
+    /// * `kling-4.0`: Create cinematic videos with image and video references and optional audio.<br/>
     /// * `ltx-2.5`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
     /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
     /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
@@ -54,6 +55,10 @@ namespace MagicHour
         /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.
         /// </summary>
         Kling30,
+        /// <summary>
+        /// Create cinematic videos with image and video references and optional audio.
+        /// </summary>
+        Kling40,
         /// <summary>
         /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.
         /// </summary>
@@ -139,6 +144,7 @@ namespace MagicHour
                 ImageToVideoCreateVideoRequestModel.Kling25Audio => "kling-2.5-audio",
                 ImageToVideoCreateVideoRequestModel.Kling26 => "kling-2.6",
                 ImageToVideoCreateVideoRequestModel.Kling30 => "kling-3.0",
+                ImageToVideoCreateVideoRequestModel.Kling40 => "kling-4.0",
                 ImageToVideoCreateVideoRequestModel.Ltx2 => "ltx-2",
                 ImageToVideoCreateVideoRequestModel.Ltx23 => "ltx-2.3",
                 ImageToVideoCreateVideoRequestModel.Ltx25 => "ltx-2.5",
@@ -172,6 +178,7 @@ namespace MagicHour
                 "kling-2.5-audio" => ImageToVideoCreateVideoRequestModel.Kling25Audio,
                 "kling-2.6" => ImageToVideoCreateVideoRequestModel.Kling26,
                 "kling-3.0" => ImageToVideoCreateVideoRequestModel.Kling30,
+                "kling-4.0" => ImageToVideoCreateVideoRequestModel.Kling40,
                 "ltx-2" => ImageToVideoCreateVideoRequestModel.Ltx2,
                 "ltx-2.3" => ImageToVideoCreateVideoRequestModel.Ltx23,
                 "ltx-2.5" => ImageToVideoCreateVideoRequestModel.Ltx25,

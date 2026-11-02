@@ -12,6 +12,24 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-music-generator \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Music Generator audio",<br/>
+        ///   "duration": 120,<br/>
+        ///   "style": {<br/>
+        ///     "prompt": "Dreamy synthwave with warm bass and soft vocals",<br/>
+        ///     "instrumental": false,<br/>
+        ///     "lyrics": "City lights are fading..."<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AiMusicGeneratorCreateAudioResponse> AiMusicGeneratorCreateAudioAsync(
 
             global::MagicHour.AiMusicGeneratorCreateAudioRequest request,
@@ -25,6 +43,24 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/ai-music-generator \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "name": "My Music Generator audio",<br/>
+        ///   "duration": 120,<br/>
+        ///   "style": {<br/>
+        ///     "prompt": "Dreamy synthwave with warm bass and soft vocals",<br/>
+        ///     "instrumental": false,<br/>
+        ///     "lyrics": "City lights are fading..."<br/>
+        ///   }<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiMusicGeneratorCreateAudioResponse>> AiMusicGeneratorCreateAudioAsResponseAsync(
 
             global::MagicHour.AiMusicGeneratorCreateAudioRequest request,

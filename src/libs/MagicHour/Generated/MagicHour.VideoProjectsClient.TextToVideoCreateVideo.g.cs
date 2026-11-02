@@ -749,6 +749,7 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: any integer from 3 to 10<br/>
         /// * **`kling-2.6`**: 5, 10<br/>
         /// * **`kling-3.0`**: any integer from 3 to 15<br/>
+        /// * **`kling-4.0`**: any integer from 3 to 30<br/>
         /// * **`ltx-2.5`**: any integer from 1 to 60<br/>
         /// * **`minimax-h3`**: any integer from 1 to 30<br/>
         /// * **`seedance-1.5`**: any integer from 4 to 12<br/>
@@ -767,6 +768,7 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
+        /// * **`kling-4.0`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`ltx-2.5`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`minimax-h3`**: Supports 16:9, 9:16, 1:1.<br/>
         /// * **`seedance-1.5`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -785,6 +787,7 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
+        /// * **`kling-4.0`**: Supports 720p, 1080p.<br/>
         /// * **`ltx-2.5`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`minimax-h3`**: Supports 480p, 720p, 1080p.<br/>
         /// * **`seedance-1.5`**: Supports 480p, 720p, 1080p.<br/>
@@ -804,6 +807,7 @@ namespace MagicHour
         /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
+        /// * `kling-4.0`: Create cinematic videos with image and video references and optional audio.<br/>
         /// * `ltx-2.5`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
         /// * `minimax-h3`: Great for reference-driven clips with native audio and longer durations.<br/>
         /// * `seedance-1.5`: Best for smooth, consistent motion with an end frame.<br/>
@@ -825,6 +829,7 @@ namespace MagicHour
         /// * **`gemini-omni-1.1`**: Not supported<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
+        /// * **`kling-4.0`**: Toggle-able: no additional credits for audio<br/>
         /// * **`ltx-2.5`**: Toggle-able: no additional credits for audio<br/>
         /// * **`minimax-h3`**: Toggle-able: no additional credits for audio<br/>
         /// * **`seedance-1.5`**: Toggle-able: audio adds extra credits when enabled<br/>
@@ -844,7 +849,8 @@ namespace MagicHour
         /// Supported models and reference media:<br/>
         /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-3.0`**: Supports images, videos.<br/>
-        /// * **`minimax-h3`**: Supports images, videos, audio.<br/>
+        /// * **`kling-4.0`**: Supports images, videos. Up to 10 references.<br/>
+        /// * **`minimax-h3`**: Supports images, videos, audio. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full.<br/>
         /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0-fast`**: Supports images, videos, audio.<br/>
         /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
