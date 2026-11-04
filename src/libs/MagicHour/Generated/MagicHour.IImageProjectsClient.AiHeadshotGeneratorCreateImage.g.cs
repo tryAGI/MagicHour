@@ -6,7 +6,7 @@ namespace MagicHour
     {
         /// <summary>
         /// AI Headshot Generator<br/>
-        /// Create an AI headshot. Each headshot costs 50 credits.
+        /// Create a 4:5 AI headshot. Each headshot costs 50 credits.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -37,7 +37,7 @@ namespace MagicHour
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// AI Headshot Generator<br/>
-        /// Create an AI headshot. Each headshot costs 50 credits.
+        /// Create a 4:5 AI headshot. Each headshot costs 50 credits.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -68,7 +68,7 @@ namespace MagicHour
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// AI Headshot Generator<br/>
-        /// Create an AI headshot. Each headshot costs 50 credits.
+        /// Create a 4:5 AI headshot. Each headshot costs 50 credits.
         /// </summary>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
