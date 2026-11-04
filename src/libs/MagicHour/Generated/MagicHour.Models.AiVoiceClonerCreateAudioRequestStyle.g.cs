@@ -9,7 +9,7 @@ namespace MagicHour
     public sealed partial class AiVoiceClonerCreateAudioRequestStyle
     {
         /// <summary>
-        /// Text used to generate speech from the cloned voice. The character limit is 1000 characters.<br/>
+        /// Text used to generate speech from the cloned voice. The character limit is 5000 characters.<br/>
         /// Example: Hello, this is my cloned voice.
         /// </summary>
         /// <example>Hello, this is my cloned voice.</example>
@@ -27,7 +27,7 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="AiVoiceClonerCreateAudioRequestStyle" /> class.
         /// </summary>
         /// <param name="prompt">
-        /// Text used to generate speech from the cloned voice. The character limit is 1000 characters.<br/>
+        /// Text used to generate speech from the cloned voice. The character limit is 5000 characters.<br/>
         /// Example: Hello, this is my cloned voice.
         /// </param>
 #if NET7_0_OR_GREATER
