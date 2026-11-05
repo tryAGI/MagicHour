@@ -58,6 +58,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseStatus), TypeInfoPropertyName = "FaceDetectionGetDetailsResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::MagicHour.FaceDetectionGetDetailsResponseFace>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseFace))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode), TypeInfoPropertyName = "FaceDetectionGetDetailsResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponse3))]

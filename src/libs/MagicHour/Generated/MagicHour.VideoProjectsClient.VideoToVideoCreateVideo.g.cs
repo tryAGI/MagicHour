@@ -59,7 +59,12 @@ namespace MagicHour
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
-        /// For detailed examples, see the [product page](https://magichour.ai/products/video-to-video).
+        /// For detailed examples, see the [product page](https://magichour.ai/products/video-to-video).<br/>
+        /// V3 request example (upload both assets first):<br/>
+        /// ```json<br/>
+        /// {"start_seconds":0,"end_seconds":2,"width":1024,"height":704,"fps":30,"fps_resolution":"HALF","style":{"art_style":"Studio Ghibli","version":"v3","model":"default"},"assets":{"video_source":"file","video_file_path":"api-assets/id/video.mp4","initial_image_path":"api-assets/id/reference.png"}}<br/>
+        /// ```<br/>
+        /// V3 supports up to 1,200 output frames for square videos and 800 otherwise.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -124,7 +129,12 @@ namespace MagicHour
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
-        /// For detailed examples, see the [product page](https://magichour.ai/products/video-to-video).
+        /// For detailed examples, see the [product page](https://magichour.ai/products/video-to-video).<br/>
+        /// V3 request example (upload both assets first):<br/>
+        /// ```json<br/>
+        /// {"start_seconds":0,"end_seconds":2,"width":1024,"height":704,"fps":30,"fps_resolution":"HALF","style":{"art_style":"Studio Ghibli","version":"v3","model":"default"},"assets":{"video_source":"file","video_file_path":"api-assets/id/video.mp4","initial_image_path":"api-assets/id/reference.png"}}<br/>
+        /// ```<br/>
+        /// V3 supports up to 1,200 output frames for square videos and 800 otherwise.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -757,7 +767,12 @@ namespace MagicHour
         /// - Extra fields: e.g. `face_swap_mode`, `start_seconds`/`end_seconds`, or a text prompt  <br/>
         /// **Cost**  <br/>
         /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
-        /// For detailed examples, see the [product page](https://magichour.ai/products/video-to-video).
+        /// For detailed examples, see the [product page](https://magichour.ai/products/video-to-video).<br/>
+        /// V3 request example (upload both assets first):<br/>
+        /// ```json<br/>
+        /// {"start_seconds":0,"end_seconds":2,"width":1024,"height":704,"fps":30,"fps_resolution":"HALF","style":{"art_style":"Studio Ghibli","version":"v3","model":"default"},"assets":{"video_source":"file","video_file_path":"api-assets/id/video.mp4","initial_image_path":"api-assets/id/reference.png"}}<br/>
+        /// ```<br/>
+        /// V3 supports up to 1,200 output frames for square videos and 800 otherwise.
         /// </summary>
         /// <param name="name">
         /// Give your video a custom name for easy identification.<br/>
@@ -771,6 +786,19 @@ namespace MagicHour
         /// <param name="endSeconds">
         /// End time of your clip (seconds). Must be greater than start_seconds.<br/>
         /// Example: 5
+        /// </param>
+        /// <param name="height">
+        /// Source video height in integer pixels. Required and positive for v3; ignored for v1/v2.<br/>
+        /// Example: 704
+        /// </param>
+        /// <param name="fps">
+        /// Source video FPS for v3 frame limits and estimated credits. Defaults to 30; final charges settle to rendered frames.<br/>
+        /// Default Value: 30<br/>
+        /// Example: 30
+        /// </param>
+        /// <param name="width">
+        /// Source video width in integer pixels. Required and positive for v3; ignored for v1/v2.<br/>
+        /// Example: 1024
         /// </param>
         /// <param name="fpsResolution">
         /// Determines whether the resulting video will have the same frame per second as the original video, or half.<br/>
@@ -793,6 +821,9 @@ namespace MagicHour
             global::MagicHour.VideoToVideoCreateVideoRequestStyle style,
             global::MagicHour.VideoToVideoCreateVideoRequestAssets assets,
             string? name = default,
+            int? height = default,
+            double? fps = default,
+            int? width = default,
             global::MagicHour.VideoToVideoCreateVideoRequestFpsResolution? fpsResolution = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -802,6 +833,9 @@ namespace MagicHour
                 Name = name,
                 StartSeconds = startSeconds,
                 EndSeconds = endSeconds,
+                Height = height,
+                Fps = fps,
+                Width = width,
                 FpsResolution = fpsResolution,
                 Style = style,
                 Assets = assets,

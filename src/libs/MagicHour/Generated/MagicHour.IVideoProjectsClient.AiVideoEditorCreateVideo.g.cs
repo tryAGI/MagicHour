@@ -145,10 +145,14 @@ namespace MagicHour
         /// Example: ltx-2.5
         /// </param>
         /// <param name="resolution">
-        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.1`: 720p, 1080p; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.1`: 360p, 720p, 1080p, 4k; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
         /// Example: 480p
         /// </param>
         /// <param name="style"></param>
+        /// <param name="references">
+        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 10 references total. Omit for no references.<br/>
+        /// Reference images for gemini-omni-1.1, wan-3.0, gemini-omni.
+        /// </param>
         /// <param name="assets">
         /// Provide the assets for video editing.
         /// </param>
@@ -163,6 +167,7 @@ namespace MagicHour
             float? startSeconds = default,
             global::MagicHour.AiVideoEditorCreateVideoRequestModel? model = default,
             global::MagicHour.AiVideoEditorCreateVideoRequestResolution? resolution = default,
+            global::System.Collections.Generic.IList<global::MagicHour.AiVideoEditorCreateVideoRequestReference>? references = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

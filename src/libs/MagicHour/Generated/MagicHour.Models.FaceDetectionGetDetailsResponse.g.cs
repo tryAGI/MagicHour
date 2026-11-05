@@ -46,6 +46,14 @@ namespace MagicHour
         public required global::System.Collections.Generic.IList<global::MagicHour.FaceDetectionGetDetailsResponseFace> Faces { get; set; }
 
         /// <summary>
+        /// Why the face detection failed. Present only when `status` is `error`; `null` otherwise.<br/>
+        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        /// <example>openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("error")]
+        public global::MagicHour.FaceDetectionGetDetailsResponseError? Error { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -70,6 +78,10 @@ namespace MagicHour
         /// The faces detected in the image or video. The list is populated as faces are detected.<br/>
         /// Example: [{"path":"api-assets/id/0-0.png","url":"https://videos.magichour.ai/api-assets/id/0-0.png"}]
         /// </param>
+        /// <param name="error">
+        /// Why the face detection failed. Present only when `status` is `error`; `null` otherwise.<br/>
+        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -77,12 +89,14 @@ namespace MagicHour
             string id,
             int creditsCharged,
             global::MagicHour.FaceDetectionGetDetailsResponseStatus status,
-            global::System.Collections.Generic.IList<global::MagicHour.FaceDetectionGetDetailsResponseFace> faces)
+            global::System.Collections.Generic.IList<global::MagicHour.FaceDetectionGetDetailsResponseFace> faces,
+            global::MagicHour.FaceDetectionGetDetailsResponseError? error)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CreditsCharged = creditsCharged;
             this.Status = status;
             this.Faces = faces ?? throw new global::System.ArgumentNullException(nameof(faces));
+            this.Error = error;
         }
 
         /// <summary>

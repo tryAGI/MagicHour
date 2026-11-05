@@ -37,6 +37,14 @@ namespace MagicHour
         public string? YoutubeUrl { get; set; }
 
         /// <summary>
+        /// Required for v3: an uploaded reference image path, or a completed image output owned by you. The caller supplies this image; the API does not generate it.<br/>
+        /// Example: api-assets/id/reference.png
+        /// </summary>
+        /// <example>api-assets/id/reference.png</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("initial_image_path")]
+        public string? InitialImagePath { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -59,17 +67,23 @@ namespace MagicHour
         /// <param name="youtubeUrl">
         /// YouTube URL (required if `video_source` is `youtube`).
         /// </param>
+        /// <param name="initialImagePath">
+        /// Required for v3: an uploaded reference image path, or a completed image output owned by you. The caller supplies this image; the API does not generate it.<br/>
+        /// Example: api-assets/id/reference.png
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideoToVideoCreateVideoRequestAssets(
             global::MagicHour.VideoToVideoCreateVideoRequestAssetsVideoSource videoSource,
             string? videoFilePath,
-            string? youtubeUrl)
+            string? youtubeUrl,
+            string? initialImagePath)
         {
             this.VideoSource = videoSource;
             this.VideoFilePath = videoFilePath;
             this.YoutubeUrl = youtubeUrl;
+            this.InitialImagePath = initialImagePath;
         }
 
         /// <summary>

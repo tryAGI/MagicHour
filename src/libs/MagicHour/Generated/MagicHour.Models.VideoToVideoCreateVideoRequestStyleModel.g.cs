@@ -7,6 +7,7 @@ namespace MagicHour
     /// * `Dreamshaper` - a good all-around model that works for both animations as well as realism.<br/>
     /// * `Absolute Reality` - better at realism, but you'll often get similar results with Dreamshaper as well.<br/>
     /// * `Flat 2D Anime` - best for a flat illustration style that's common in most anime.<br/>
+    /// * `Default` - the v3 model.<br/>
     /// * `default` - use the default recommended model for the selected art style.<br/>
     /// Default Value: default<br/>
     /// Example: default
@@ -21,6 +22,10 @@ namespace MagicHour
         ///
         /// </summary>
         AbsoluteReality,
+        /// <summary>
+        ///
+        /// </summary>
+        Default,
         /// <summary>
         ///
         /// </summary>
@@ -44,7 +49,7 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
-        Default,
+        Default2,
     }
 
     /// <summary>
@@ -61,12 +66,13 @@ namespace MagicHour
             {
                 VideoToVideoCreateVideoRequestStyleModel.x3dAnime => "3D Anime",
                 VideoToVideoCreateVideoRequestStyleModel.AbsoluteReality => "Absolute Reality",
+                VideoToVideoCreateVideoRequestStyleModel.Default => "Default",
                 VideoToVideoCreateVideoRequestStyleModel.Dreamshaper => "Dreamshaper",
                 VideoToVideoCreateVideoRequestStyleModel.Flat2dAnime => "Flat 2D Anime",
                 VideoToVideoCreateVideoRequestStyleModel.Kaywaii => "Kaywaii",
                 VideoToVideoCreateVideoRequestStyleModel.SoftAnime => "Soft Anime",
                 VideoToVideoCreateVideoRequestStyleModel.WesternAnime => "Western Anime",
-                VideoToVideoCreateVideoRequestStyleModel.Default => "default",
+                VideoToVideoCreateVideoRequestStyleModel.Default2 => "default",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -79,12 +85,13 @@ namespace MagicHour
             {
                 "3D Anime" => VideoToVideoCreateVideoRequestStyleModel.x3dAnime,
                 "Absolute Reality" => VideoToVideoCreateVideoRequestStyleModel.AbsoluteReality,
+                "Default" => VideoToVideoCreateVideoRequestStyleModel.Default,
                 "Dreamshaper" => VideoToVideoCreateVideoRequestStyleModel.Dreamshaper,
                 "Flat 2D Anime" => VideoToVideoCreateVideoRequestStyleModel.Flat2dAnime,
                 "Kaywaii" => VideoToVideoCreateVideoRequestStyleModel.Kaywaii,
                 "Soft Anime" => VideoToVideoCreateVideoRequestStyleModel.SoftAnime,
                 "Western Anime" => VideoToVideoCreateVideoRequestStyleModel.WesternAnime,
-                "default" => VideoToVideoCreateVideoRequestStyleModel.Default,
+                "default" => VideoToVideoCreateVideoRequestStyleModel.Default2,
                 _ => null,
             };
         }

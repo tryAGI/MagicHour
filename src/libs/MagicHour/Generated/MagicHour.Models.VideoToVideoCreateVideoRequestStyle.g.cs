@@ -20,7 +20,8 @@ namespace MagicHour
         /// <summary>
         /// * `v1` - more detail, closer prompt adherence, and frame-by-frame previews.<br/>
         /// * `v2` - faster, more consistent, and less noisy.<br/>
-        /// * `default` - use the selected art style's default version. Some art styles default to v3, which is unavailable through this API. For `Studio Ghibli`, explicitly set `version` to `v2` to use its supported preset.<br/>
+        /// * `v3` - consistent styling guided by a caller-supplied reference image. Requires assets.initial_image_path and positive width/height.<br/>
+        /// * `default` - use the selected art style's default version, including v3.<br/>
         /// Default Value: default<br/>
         /// Example: default
         /// </summary>
@@ -53,6 +54,7 @@ namespace MagicHour
         /// * `Dreamshaper` - a good all-around model that works for both animations as well as realism.<br/>
         /// * `Absolute Reality` - better at realism, but you'll often get similar results with Dreamshaper as well.<br/>
         /// * `Flat 2D Anime` - best for a flat illustration style that's common in most anime.<br/>
+        /// * `Default` - the v3 model.<br/>
         /// * `default` - use the default recommended model for the selected art style.<br/>
         /// Default Value: default<br/>
         /// Example: default
@@ -77,7 +79,8 @@ namespace MagicHour
         /// <param name="version">
         /// * `v1` - more detail, closer prompt adherence, and frame-by-frame previews.<br/>
         /// * `v2` - faster, more consistent, and less noisy.<br/>
-        /// * `default` - use the selected art style's default version. Some art styles default to v3, which is unavailable through this API. For `Studio Ghibli`, explicitly set `version` to `v2` to use its supported preset.<br/>
+        /// * `v3` - consistent styling guided by a caller-supplied reference image. Requires assets.initial_image_path and positive width/height.<br/>
+        /// * `default` - use the selected art style's default version, including v3.<br/>
         /// Default Value: default<br/>
         /// Example: default
         /// </param>
@@ -96,6 +99,7 @@ namespace MagicHour
         /// * `Dreamshaper` - a good all-around model that works for both animations as well as realism.<br/>
         /// * `Absolute Reality` - better at realism, but you'll often get similar results with Dreamshaper as well.<br/>
         /// * `Flat 2D Anime` - best for a flat illustration style that's common in most anime.<br/>
+        /// * `Default` - the v3 model.<br/>
         /// * `default` - use the default recommended model for the selected art style.<br/>
         /// Default Value: default<br/>
         /// Example: default

@@ -698,7 +698,7 @@ namespace MagicHour
         /// </param>
         /// <param name="style">
         /// The content used to generate speech.<br/>
-        /// Example: {"prompt":"Hello, how are you?","voice_name":"Elon Musk"}
+        /// Example: {"prompt":"Hello, how are you?","voice_name":"Elon Musk","language":"spanish","speed":1.15}
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

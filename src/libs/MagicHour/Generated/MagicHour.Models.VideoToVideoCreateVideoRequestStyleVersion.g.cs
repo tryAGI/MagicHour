@@ -6,7 +6,8 @@ namespace MagicHour
     /// <summary>
     /// * `v1` - more detail, closer prompt adherence, and frame-by-frame previews.<br/>
     /// * `v2` - faster, more consistent, and less noisy.<br/>
-    /// * `default` - use the selected art style's default version. Some art styles default to v3, which is unavailable through this API. For `Studio Ghibli`, explicitly set `version` to `v2` to use its supported preset.<br/>
+    /// * `v3` - consistent styling guided by a caller-supplied reference image. Requires assets.initial_image_path and positive width/height.<br/>
+    /// * `default` - use the selected art style's default version, including v3.<br/>
     /// Default Value: default<br/>
     /// Example: default
     /// </summary>
@@ -24,6 +25,10 @@ namespace MagicHour
         ///
         /// </summary>
         V2,
+        /// <summary>
+        ///
+        /// </summary>
+        V3,
     }
 
     /// <summary>
@@ -41,6 +46,7 @@ namespace MagicHour
                 VideoToVideoCreateVideoRequestStyleVersion.Default => "default",
                 VideoToVideoCreateVideoRequestStyleVersion.V1 => "v1",
                 VideoToVideoCreateVideoRequestStyleVersion.V2 => "v2",
+                VideoToVideoCreateVideoRequestStyleVersion.V3 => "v3",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -54,6 +60,7 @@ namespace MagicHour
                 "default" => VideoToVideoCreateVideoRequestStyleVersion.Default,
                 "v1" => VideoToVideoCreateVideoRequestStyleVersion.V1,
                 "v2" => VideoToVideoCreateVideoRequestStyleVersion.V2,
+                "v3" => VideoToVideoCreateVideoRequestStyleVersion.V3,
                 _ => null,
             };
         }

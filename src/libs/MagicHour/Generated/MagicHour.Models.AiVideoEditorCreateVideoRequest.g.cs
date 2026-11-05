@@ -45,7 +45,7 @@ namespace MagicHour
         public global::MagicHour.AiVideoEditorCreateVideoRequestModel? Model { get; set; }
 
         /// <summary>
-        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.1`: 720p, 1080p; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.1`: 360p, 720p, 1080p, 4k; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
         /// Example: 480p
         /// </summary>
         /// <example>480p</example>
@@ -59,6 +59,13 @@ namespace MagicHour
         [global::System.Text.Json.Serialization.JsonPropertyName("style")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::MagicHour.AiVideoEditorCreateVideoRequestStyle Style { get; set; }
+
+        /// <summary>
+        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 10 references total. Omit for no references.<br/>
+        /// Reference images for gemini-omni-1.1, wan-3.0, gemini-omni.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("references")]
+        public global::System.Collections.Generic.IList<global::MagicHour.AiVideoEditorCreateVideoRequestReference>? References { get; set; }
 
         /// <summary>
         /// Provide the assets for video editing.
@@ -99,8 +106,12 @@ namespace MagicHour
         /// Example: ltx-2.5
         /// </param>
         /// <param name="resolution">
-        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.1`: 720p, 1080p; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.1`: 360p, 720p, 1080p, 4k; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
         /// Example: 480p
+        /// </param>
+        /// <param name="references">
+        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 10 references total. Omit for no references.<br/>
+        /// Reference images for gemini-omni-1.1, wan-3.0, gemini-omni.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -112,7 +123,8 @@ namespace MagicHour
             string? name,
             float? startSeconds,
             global::MagicHour.AiVideoEditorCreateVideoRequestModel? model,
-            global::MagicHour.AiVideoEditorCreateVideoRequestResolution? resolution)
+            global::MagicHour.AiVideoEditorCreateVideoRequestResolution? resolution,
+            global::System.Collections.Generic.IList<global::MagicHour.AiVideoEditorCreateVideoRequestReference>? references)
         {
             this.Name = name;
             this.StartSeconds = startSeconds;
@@ -120,6 +132,7 @@ namespace MagicHour
             this.Model = model;
             this.Resolution = resolution;
             this.Style = style ?? throw new global::System.ArgumentNullException(nameof(style));
+            this.References = references;
             this.Assets = assets ?? throw new global::System.ArgumentNullException(nameof(assets));
         }
 
