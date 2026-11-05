@@ -36,6 +36,31 @@ namespace MagicHour
         public required float EndSeconds { get; set; }
 
         /// <summary>
+        /// Source video height in integer pixels. Required and positive for v3; ignored for v1/v2.<br/>
+        /// Example: 704
+        /// </summary>
+        /// <example>704</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("height")]
+        public int? Height { get; set; }
+
+        /// <summary>
+        /// Source video FPS for v3 frame limits and estimated credits. Defaults to 30; final charges settle to rendered frames.<br/>
+        /// Default Value: 30<br/>
+        /// Example: 30
+        /// </summary>
+        /// <example>30</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fps")]
+        public double? Fps { get; set; }
+
+        /// <summary>
+        /// Source video width in integer pixels. Required and positive for v3; ignored for v1/v2.<br/>
+        /// Example: 1024
+        /// </summary>
+        /// <example>1024</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("width")]
+        public int? Width { get; set; }
+
+        /// <summary>
         /// Determines whether the resulting video will have the same frame per second as the original video, or half.<br/>
         /// * `FULL` - the result video will have the same FPS as the input video<br/>
         /// * `HALF` - the result video will have half the FPS as the input video<br/>
@@ -90,6 +115,19 @@ namespace MagicHour
         /// Default Value: Video To Video - dateTime<br/>
         /// Example: My Video To Video video
         /// </param>
+        /// <param name="height">
+        /// Source video height in integer pixels. Required and positive for v3; ignored for v1/v2.<br/>
+        /// Example: 704
+        /// </param>
+        /// <param name="fps">
+        /// Source video FPS for v3 frame limits and estimated credits. Defaults to 30; final charges settle to rendered frames.<br/>
+        /// Default Value: 30<br/>
+        /// Example: 30
+        /// </param>
+        /// <param name="width">
+        /// Source video width in integer pixels. Required and positive for v3; ignored for v1/v2.<br/>
+        /// Example: 1024
+        /// </param>
         /// <param name="fpsResolution">
         /// Determines whether the resulting video will have the same frame per second as the original video, or half.<br/>
         /// * `FULL` - the result video will have the same FPS as the input video<br/>
@@ -106,11 +144,17 @@ namespace MagicHour
             global::MagicHour.VideoToVideoCreateVideoRequestStyle style,
             global::MagicHour.VideoToVideoCreateVideoRequestAssets assets,
             string? name,
+            int? height,
+            double? fps,
+            int? width,
             global::MagicHour.VideoToVideoCreateVideoRequestFpsResolution? fpsResolution)
         {
             this.Name = name;
             this.StartSeconds = startSeconds;
             this.EndSeconds = endSeconds;
+            this.Height = height;
+            this.Fps = fps;
+            this.Width = width;
             this.FpsResolution = fpsResolution;
             this.Style = style ?? throw new global::System.ArgumentNullException(nameof(style));
             this.Assets = assets ?? throw new global::System.ArgumentNullException(nameof(assets));
