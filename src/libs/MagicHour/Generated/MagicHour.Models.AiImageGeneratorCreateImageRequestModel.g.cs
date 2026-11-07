@@ -55,6 +55,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Image count allowed: 1, 2, 3, 4<br/>
+    /// - `seedream-v4.5` - from 50 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
+    ///   - Image count allowed: 1, 2, 3, 4<br/>
     /// - `seedream-v5-pro` - from 75 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -128,6 +132,10 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
+        SeedreamV45,
+        /// <summary>
+        ///
+        /// </summary>
         SeedreamV5Pro,
         /// <summary>
         ///
@@ -161,6 +169,7 @@ namespace MagicHour
                 AiImageGeneratorCreateImageRequestModel.QwenImage21 => "qwen-image-2.1",
                 AiImageGeneratorCreateImageRequestModel.Seedream => "seedream",
                 AiImageGeneratorCreateImageRequestModel.SeedreamV4 => "seedream-v4",
+                AiImageGeneratorCreateImageRequestModel.SeedreamV45 => "seedream-v4.5",
                 AiImageGeneratorCreateImageRequestModel.SeedreamV5Pro => "seedream-v5-pro",
                 AiImageGeneratorCreateImageRequestModel.ZImageTurbo => "z-image-turbo",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -187,6 +196,7 @@ namespace MagicHour
                 "qwen-image-2.1" => AiImageGeneratorCreateImageRequestModel.QwenImage21,
                 "seedream" => AiImageGeneratorCreateImageRequestModel.Seedream,
                 "seedream-v4" => AiImageGeneratorCreateImageRequestModel.SeedreamV4,
+                "seedream-v4.5" => AiImageGeneratorCreateImageRequestModel.SeedreamV45,
                 "seedream-v5-pro" => AiImageGeneratorCreateImageRequestModel.SeedreamV5Pro,
                 "z-image-turbo" => AiImageGeneratorCreateImageRequestModel.ZImageTurbo,
                 _ => null,
