@@ -2484,10 +2484,6 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
-        JimiHendrix,
-        /// <summary>
-        ///
-        /// </summary>
         Jimin,
         /// <summary>
         ///
@@ -7629,7 +7625,6 @@ namespace MagicHour
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JillValentine => "Jill Valentine",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimCarrey => "Jim Carrey",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimHalpert => "Jim Halpert",
-                AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimiHendrix => "Jimi Hendrix",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.Jimin => "Jimin",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimmyCarter => "Jimmy Carter",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimmyFallon => "Jimmy Fallon",
@@ -9386,7 +9381,6 @@ namespace MagicHour
                 "Jill Valentine" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JillValentine,
                 "Jim Carrey" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimCarrey,
                 "Jim Halpert" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimHalpert,
-                "Jimi Hendrix" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimiHendrix,
                 "Jimin" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.Jimin,
                 "Jimmy Carter" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimmyCarter,
                 "Jimmy Fallon" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JimmyFallon,

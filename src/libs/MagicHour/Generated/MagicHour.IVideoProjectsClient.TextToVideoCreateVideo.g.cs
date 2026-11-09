@@ -220,19 +220,19 @@ namespace MagicHour
         /// </param>
         /// <param name="style"></param>
         /// <param name="references">
-        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 10 references total. Omit for no references.<br/>
+        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 50 references total. Omit for no references.<br/>
         /// Reference media for video generation.<br/>
         /// Supported models and reference media:<br/>
         /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 10 references.<br/>
-        /// * **`kling-3.0`**: Supports images, videos.<br/>
+        /// * **`kling-3.0`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-4.0`**: Supports images, videos. Up to 10 references.<br/>
-        /// * **`minimax-h3`**: Supports images, videos, audio. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full. Audio references must be 2–15 seconds each and are used in full.<br/>
-        /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.0-fast`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
+        /// * **`minimax-h3`**: Supports images, videos, audio. Up to 10 references. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full. Audio references must be 2–15 seconds each and are used in full.<br/>
+        /// * **`seedance-2.0`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.0-fast`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.0-mini`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.5`**: Supports images, videos, audio. Up to 50 references. Maximum 30 images, 10 videos and 10 audio references. The worker trims video references to 30 seconds combined and audio references to 30 seconds combined. Audio references require an image or video reference.<br/>
         /// * **`veo3.1`**: Supports images. Up to 3 references. Requires `end_seconds` of 8.<br/>
-        /// * **`wan-3.0`**: Supports images, videos, audio.
+        /// * **`wan-3.0`**: Supports images, videos, audio. Up to 10 references.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

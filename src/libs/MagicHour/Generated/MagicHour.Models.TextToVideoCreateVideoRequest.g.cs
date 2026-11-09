@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Example: {"end_seconds":5,"aspect_ratio":"16:9","style":{"prompt":"a dog running"}}
+    /// Example: {"end_seconds":4,"aspect_ratio":"16:9","model":"seedance-2.5","resolution":"480p","style":{"prompt":"Animate @hero with the motion of @motion and the sound of @sound."},"references":[{"name":"hero","file_path":"api-assets/id/hero.png"},{"name":"motion","file_path":"api-assets/id/motion.mp4"},{"name":"sound","file_path":"api-assets/id/sound.wav"}]}
     /// </summary>
     public sealed partial class TextToVideoCreateVideoRequest
     {
@@ -148,19 +148,19 @@ namespace MagicHour
         public required global::MagicHour.TextToVideoCreateVideoRequestStyle Style { get; set; }
 
         /// <summary>
-        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 10 references total. Omit for no references.<br/>
+        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 50 references total. Omit for no references.<br/>
         /// Reference media for video generation.<br/>
         /// Supported models and reference media:<br/>
         /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 10 references.<br/>
-        /// * **`kling-3.0`**: Supports images, videos.<br/>
+        /// * **`kling-3.0`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-4.0`**: Supports images, videos. Up to 10 references.<br/>
-        /// * **`minimax-h3`**: Supports images, videos, audio. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full. Audio references must be 2–15 seconds each and are used in full.<br/>
-        /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.0-fast`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
+        /// * **`minimax-h3`**: Supports images, videos, audio. Up to 10 references. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full. Audio references must be 2–15 seconds each and are used in full.<br/>
+        /// * **`seedance-2.0`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.0-fast`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.0-mini`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.5`**: Supports images, videos, audio. Up to 50 references. Maximum 30 images, 10 videos and 10 audio references. The worker trims video references to 30 seconds combined and audio references to 30 seconds combined. Audio references require an image or video reference.<br/>
         /// * **`veo3.1`**: Supports images. Up to 3 references. Requires `end_seconds` of 8.<br/>
-        /// * **`wan-3.0`**: Supports images, videos, audio.
+        /// * **`wan-3.0`**: Supports images, videos, audio. Up to 10 references.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("references")]
         public global::System.Collections.Generic.IList<global::MagicHour.TextToVideoCreateVideoRequestReference>? References { get; set; }
@@ -280,19 +280,19 @@ namespace MagicHour
         /// Example: true
         /// </param>
         /// <param name="references">
-        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 10 references total. Omit for no references.<br/>
+        /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 50 references total. Omit for no references.<br/>
         /// Reference media for video generation.<br/>
         /// Supported models and reference media:<br/>
         /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 10 references.<br/>
-        /// * **`kling-3.0`**: Supports images, videos.<br/>
+        /// * **`kling-3.0`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-4.0`**: Supports images, videos. Up to 10 references.<br/>
-        /// * **`minimax-h3`**: Supports images, videos, audio. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full. Audio references must be 2–15 seconds each and are used in full.<br/>
-        /// * **`seedance-2.0`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.0-fast`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.0-mini`**: Supports images, videos, audio.<br/>
-        /// * **`seedance-2.5`**: Supports images, videos, audio.<br/>
+        /// * **`minimax-h3`**: Supports images, videos, audio. Up to 10 references. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full. Audio references must be 2–15 seconds each and are used in full.<br/>
+        /// * **`seedance-2.0`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.0-fast`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.0-mini`**: Supports images, videos, audio. Up to 10 references.<br/>
+        /// * **`seedance-2.5`**: Supports images, videos, audio. Up to 50 references. Maximum 30 images, 10 videos and 10 audio references. The worker trims video references to 30 seconds combined and audio references to 30 seconds combined. Audio references require an image or video reference.<br/>
         /// * **`veo3.1`**: Supports images. Up to 3 references. Requires `end_seconds` of 8.<br/>
-        /// * **`wan-3.0`**: Supports images, videos, audio.
+        /// * **`wan-3.0`**: Supports images, videos, audio. Up to 10 references.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
