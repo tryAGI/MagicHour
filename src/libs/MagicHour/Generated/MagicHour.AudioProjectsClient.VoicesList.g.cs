@@ -55,6 +55,12 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request GET \<br/>
+        ///      --url https://api.magichour.ai/v1/voices \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
+        /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.VoicesListResponse> VoicesListAsync(
             int? limit = default,
             string? cursor = default,
@@ -82,6 +88,12 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request GET \<br/>
+        ///      --url https://api.magichour.ai/v1/voices \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY"
+        /// </remarks>
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.VoicesListResponse>> VoicesListAsResponseAsync(
             int? limit = default,
             string? cursor = default,

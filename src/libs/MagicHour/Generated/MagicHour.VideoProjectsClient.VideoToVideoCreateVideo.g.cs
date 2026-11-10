@@ -81,6 +81,9 @@ namespace MagicHour
         ///   "name": "My Video To Video video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 5,<br/>
+        ///   "height": 704,<br/>
+        ///   "fps": 30,<br/>
+        ///   "width": 1024,<br/>
         ///   "fps_resolution": "HALF",<br/>
         ///   "style": {<br/>
         ///     "art_style": "Minecraft",<br/>
@@ -151,6 +154,9 @@ namespace MagicHour
         ///   "name": "My Video To Video video",<br/>
         ///   "start_seconds": 0,<br/>
         ///   "end_seconds": 5,<br/>
+        ///   "height": 704,<br/>
+        ///   "fps": 30,<br/>
+        ///   "width": 1024,<br/>
         ///   "fps_resolution": "HALF",<br/>
         ///   "style": {<br/>
         ///     "art_style": "Minecraft",<br/>

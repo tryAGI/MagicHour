@@ -27,6 +27,8 @@ namespace MagicHour
         ///     "audio_file_path": "api-assets/id/1234.mp3"<br/>
         ///   },<br/>
         ///   "style": {<br/>
+        ///     "language": "spanish",<br/>
+        ///     "speed": 1.15,<br/>
         ///     "prompt": "Hello, this is my cloned voice."<br/>
         ///   }<br/>
         /// }<br/>
@@ -60,6 +62,8 @@ namespace MagicHour
         ///     "audio_file_path": "api-assets/id/1234.mp3"<br/>
         ///   },<br/>
         ///   "style": {<br/>
+        ///     "language": "spanish",<br/>
+        ///     "speed": 1.15,<br/>
         ///     "prompt": "Hello, this is my cloned voice."<br/>
         ///   }<br/>
         /// }<br/>
