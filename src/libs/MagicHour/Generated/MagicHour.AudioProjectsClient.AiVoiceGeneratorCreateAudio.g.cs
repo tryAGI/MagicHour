@@ -60,7 +60,9 @@ namespace MagicHour
         ///   "name": "My Voice Generator audio",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Hello, how are you?",<br/>
-        ///     "voice_name": "Elon Musk"<br/>
+        ///     "voice_name": "Elon Musk",<br/>
+        ///     "language": "spanish",<br/>
+        ///     "speed": 1.15<br/>
         ///   }<br/>
         /// }<br/>
         /// '
@@ -99,7 +101,9 @@ namespace MagicHour
         ///   "name": "My Voice Generator audio",<br/>
         ///   "style": {<br/>
         ///     "prompt": "Hello, how are you?",<br/>
-        ///     "voice_name": "Elon Musk"<br/>
+        ///     "voice_name": "Elon Musk",<br/>
+        ///     "language": "spanish",<br/>
+        ///     "speed": 1.15<br/>
         ///   }<br/>
         /// }<br/>
         /// '

@@ -36,11 +36,27 @@ namespace MagicHour
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
-        ///   "end_seconds": 5,<br/>
+        ///   "end_seconds": 4,<br/>
         ///   "aspect_ratio": "16:9",<br/>
+        ///   "model": "seedance-2.5",<br/>
+        ///   "resolution": "480p",<br/>
         ///   "style": {<br/>
-        ///     "prompt": "a dog running"<br/>
-        ///   }<br/>
+        ///     "prompt": "Animate @hero with the motion of @motion and the sound of @sound."<br/>
+        ///   },<br/>
+        ///   "references": [<br/>
+        ///     {<br/>
+        ///       "name": "hero",<br/>
+        ///       "file_path": "api-assets/id/hero.png"<br/>
+        ///     },<br/>
+        ///     {<br/>
+        ///       "name": "motion",<br/>
+        ///       "file_path": "api-assets/id/motion.mp4"<br/>
+        ///     },<br/>
+        ///     {<br/>
+        ///       "name": "sound",<br/>
+        ///       "file_path": "api-assets/id/sound.wav"<br/>
+        ///     }<br/>
+        ///   ]<br/>
         /// }<br/>
         /// '
         /// </remarks>
@@ -81,11 +97,27 @@ namespace MagicHour
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
-        ///   "end_seconds": 5,<br/>
+        ///   "end_seconds": 4,<br/>
         ///   "aspect_ratio": "16:9",<br/>
+        ///   "model": "seedance-2.5",<br/>
+        ///   "resolution": "480p",<br/>
         ///   "style": {<br/>
-        ///     "prompt": "a dog running"<br/>
-        ///   }<br/>
+        ///     "prompt": "Animate @hero with the motion of @motion and the sound of @sound."<br/>
+        ///   },<br/>
+        ///   "references": [<br/>
+        ///     {<br/>
+        ///       "name": "hero",<br/>
+        ///       "file_path": "api-assets/id/hero.png"<br/>
+        ///     },<br/>
+        ///     {<br/>
+        ///       "name": "motion",<br/>
+        ///       "file_path": "api-assets/id/motion.mp4"<br/>
+        ///     },<br/>
+        ///     {<br/>
+        ///       "name": "sound",<br/>
+        ///       "file_path": "api-assets/id/sound.wav"<br/>
+        ///     }<br/>
+        ///   ]<br/>
         /// }<br/>
         /// '
         /// </remarks>
