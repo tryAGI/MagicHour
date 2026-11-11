@@ -22,7 +22,7 @@ namespace MagicHour
 
         /// <summary>
         /// The image to use as the last frame of the video.<br/>
-        /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
+        /// * **`gemini-omni-1.2`**: Supports 360p, 720p, 1080p, 4k. Requires a duration of 10 seconds or less.<br/>
         /// * **`kling-2.6`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
         /// * **`kling-4.0`**: Supports 720p, 1080p.<br/>
@@ -65,7 +65,7 @@ namespace MagicHour
         /// </param>
         /// <param name="endImageFilePath">
         /// The image to use as the last frame of the video.<br/>
-        /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
+        /// * **`gemini-omni-1.2`**: Supports 360p, 720p, 1080p, 4k. Requires a duration of 10 seconds or less.<br/>
         /// * **`kling-2.6`**: Supports 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
         /// * **`kling-4.0`**: Supports 720p, 1080p.<br/>

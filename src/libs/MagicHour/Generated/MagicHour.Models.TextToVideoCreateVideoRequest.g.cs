@@ -19,7 +19,7 @@ namespace MagicHour
 
         /// <summary>
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
-        /// * **`gemini-omni-1.1`**: any integer from 3 to 10<br/>
+        /// * **`gemini-omni-1.2`**: any integer from 3 to 15<br/>
         /// * **`kling-2.6`**: 5, 10<br/>
         /// * **`kling-3.0`**: any integer from 3 to 15<br/>
         /// * **`kling-4.0`**: any integer from 3 to 30<br/>
@@ -43,7 +43,7 @@ namespace MagicHour
 
         /// <summary>
         /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
-        /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
+        /// * **`gemini-omni-1.2`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-4.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -67,7 +67,7 @@ namespace MagicHour
 
         /// <summary>
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-        /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
+        /// * **`gemini-omni-1.2`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
         /// * **`kling-4.0`**: Supports 720p, 1080p.<br/>
@@ -92,7 +92,7 @@ namespace MagicHour
         /// <summary>
         /// The AI model to use for video generation.<br/>
         /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
-        /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
+        /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
         /// * `kling-4.0`: Create cinematic videos with image and video references and optional audio.<br/>
@@ -119,7 +119,7 @@ namespace MagicHour
         /// <summary>
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`gemini-omni-1.1`**: Not supported<br/>
+        /// * **`gemini-omni-1.2`**: Not supported<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`kling-4.0`**: Toggle-able: no additional credits for audio<br/>
@@ -151,7 +151,7 @@ namespace MagicHour
         /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 50 references total. Omit for no references.<br/>
         /// Reference media for video generation.<br/>
         /// Supported models and reference media:<br/>
-        /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 10 references.<br/>
+        /// * **`gemini-omni-1.2`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-3.0`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-4.0`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`minimax-h3`**: Supports images, videos, audio. Up to 10 references. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full. Audio references must be 2–15 seconds each and are used in full.<br/>
@@ -176,7 +176,7 @@ namespace MagicHour
         /// </summary>
         /// <param name="endSeconds">
         /// The total duration of the output video in seconds. Supported durations depend on the chosen model:<br/>
-        /// * **`gemini-omni-1.1`**: any integer from 3 to 10<br/>
+        /// * **`gemini-omni-1.2`**: any integer from 3 to 15<br/>
         /// * **`kling-2.6`**: 5, 10<br/>
         /// * **`kling-3.0`**: any integer from 3 to 15<br/>
         /// * **`kling-4.0`**: any integer from 3 to 30<br/>
@@ -201,7 +201,7 @@ namespace MagicHour
         /// </param>
         /// <param name="aspectRatio">
         /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
-        /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
+        /// * **`gemini-omni-1.2`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-4.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -220,7 +220,7 @@ namespace MagicHour
         /// </param>
         /// <param name="resolution">
         /// Controls the output video resolution. Defaults to `720p` on paid tiers and `480p` on free tiers.<br/>
-        /// * **`gemini-omni-1.1`**: Supports 360p, 720p, 1080p, 4k.<br/>
+        /// * **`gemini-omni-1.2`**: Supports 360p, 720p, 1080p, 4k.<br/>
         /// * **`kling-2.6`**: Supports 720p, 1080p.<br/>
         /// * **`kling-3.0`**: Supports 720p, 1080p, 4k.<br/>
         /// * **`kling-4.0`**: Supports 720p, 1080p.<br/>
@@ -240,7 +240,7 @@ namespace MagicHour
         /// <param name="model">
         /// The AI model to use for video generation.<br/>
         /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
-        /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
+        /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
         /// * `kling-4.0`: Create cinematic videos with image and video references and optional audio.<br/>
@@ -262,7 +262,7 @@ namespace MagicHour
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`gemini-omni-1.1`**: Not supported<br/>
+        /// * **`gemini-omni-1.2`**: Not supported<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`kling-4.0`**: Toggle-able: no additional credits for audio<br/>
@@ -283,7 +283,7 @@ namespace MagicHour
         /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 50 references total. Omit for no references.<br/>
         /// Reference media for video generation.<br/>
         /// Supported models and reference media:<br/>
-        /// * **`gemini-omni-1.1`**: Supports images, videos. Up to 10 references.<br/>
+        /// * **`gemini-omni-1.2`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-3.0`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`kling-4.0`**: Supports images, videos. Up to 10 references.<br/>
         /// * **`minimax-h3`**: Supports images, videos, audio. Up to 10 references. Video references must be 2–15 seconds each and 15 seconds combined, and are used in full. Audio references must be 2–15 seconds each and are used in full.<br/>

@@ -27,7 +27,7 @@ namespace MagicHour
         public float? StartSeconds { get; set; }
 
         /// <summary>
-        /// End time of your clip in seconds. Must be greater than `start_seconds`. Allowed duration depends on model: `gemini-omni-1.1`: 3-10s, `wan-3.0`: 2-15s, `ltx-2.5`: 0.5-60s (30s at 1080p).<br/>
+        /// End time of your clip in seconds. Must be greater than `start_seconds`. Allowed duration depends on model: `gemini-omni-1.2`: 3-15s, `wan-3.0`: 2-15s, `ltx-2.5`: 0.5-60s (30s at 1080p).<br/>
         /// Example: 5
         /// </summary>
         /// <example>5</example>
@@ -36,7 +36,7 @@ namespace MagicHour
         public required float EndSeconds { get; set; }
 
         /// <summary>
-        /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.1` for paid. `wan-3.0` requires a paid tier. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
+        /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.2` for paid. `wan-3.0` requires a paid tier. `gemini-omni` and `gemini-omni-1.1` are deprecated and run on `gemini-omni-1.2`.<br/>
         /// Example: ltx-2.5
         /// </summary>
         /// <example>ltx-2.5</example>
@@ -45,7 +45,7 @@ namespace MagicHour
         public global::MagicHour.AiVideoEditorCreateVideoRequestModel? Model { get; set; }
 
         /// <summary>
-        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.1`: 360p, 720p, 1080p, 4k; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.2`: 360p, 720p, 1080p, 4k; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
         /// Example: 480p
         /// </summary>
         /// <example>480p</example>
@@ -62,7 +62,7 @@ namespace MagicHour
 
         /// <summary>
         /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 10 references total. Omit for no references.<br/>
-        /// Reference images for gemini-omni-1.1, wan-3.0, gemini-omni.
+        /// Reference images for gemini-omni-1.2, wan-3.0.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("references")]
         public global::System.Collections.Generic.IList<global::MagicHour.AiVideoEditorCreateVideoRequestReference>? References { get; set; }
@@ -84,7 +84,7 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="AiVideoEditorCreateVideoRequest" /> class.
         /// </summary>
         /// <param name="endSeconds">
-        /// End time of your clip in seconds. Must be greater than `start_seconds`. Allowed duration depends on model: `gemini-omni-1.1`: 3-10s, `wan-3.0`: 2-15s, `ltx-2.5`: 0.5-60s (30s at 1080p).<br/>
+        /// End time of your clip in seconds. Must be greater than `start_seconds`. Allowed duration depends on model: `gemini-omni-1.2`: 3-15s, `wan-3.0`: 2-15s, `ltx-2.5`: 0.5-60s (30s at 1080p).<br/>
         /// Example: 5
         /// </param>
         /// <param name="style"></param>
@@ -102,16 +102,16 @@ namespace MagicHour
         /// Example: 0
         /// </param>
         /// <param name="model">
-        /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.1` for paid. `wan-3.0` requires a paid tier. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
+        /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.2` for paid. `wan-3.0` requires a paid tier. `gemini-omni` and `gemini-omni-1.1` are deprecated and run on `gemini-omni-1.2`.<br/>
         /// Example: ltx-2.5
         /// </param>
         /// <param name="resolution">
-        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.1`: 360p, 720p, 1080p, 4k; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
+        /// Output resolution. Defaults to `480p` for free tier and `720p` for paid. Supported per model: `gemini-omni-1.2`: 360p, 720p, 1080p, 4k; `wan-3.0`: 480p, 720p, 1080p; `ltx-2.5`: 480p, 720p, 1080p.<br/>
         /// Example: 480p
         /// </param>
         /// <param name="references">
         /// Name references without @ and refer to them as @name in style.prompt. Names must be unique, ignoring case. Maximum 10 references total. Omit for no references.<br/>
-        /// Reference images for gemini-omni-1.1, wan-3.0, gemini-omni.
+        /// Reference images for gemini-omni-1.2, wan-3.0.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

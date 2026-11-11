@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.1` for paid. `wan-3.0` requires a paid tier. `gemini-omni` is deprecated; use `gemini-omni-1.1` instead.<br/>
+    /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.2` for paid. `wan-3.0` requires a paid tier. `gemini-omni` and `gemini-omni-1.1` are deprecated and run on `gemini-omni-1.2`.<br/>
     /// Example: ltx-2.5
     /// </summary>
     public enum AiVideoEditorCreateVideoRequestModel
@@ -17,6 +17,10 @@ namespace MagicHour
         ///
         /// </summary>
         GeminiOmni11,
+        /// <summary>
+        ///
+        /// </summary>
+        GeminiOmni12,
         /// <summary>
         ///
         /// </summary>
@@ -45,6 +49,7 @@ namespace MagicHour
             {
                 AiVideoEditorCreateVideoRequestModel.GeminiOmni => "gemini-omni",
                 AiVideoEditorCreateVideoRequestModel.GeminiOmni11 => "gemini-omni-1.1",
+                AiVideoEditorCreateVideoRequestModel.GeminiOmni12 => "gemini-omni-1.2",
                 AiVideoEditorCreateVideoRequestModel.Ltx23 => "ltx-2.3",
                 AiVideoEditorCreateVideoRequestModel.Ltx25 => "ltx-2.5",
                 AiVideoEditorCreateVideoRequestModel.Wan30 => "wan-3.0",
@@ -60,6 +65,7 @@ namespace MagicHour
             {
                 "gemini-omni" => AiVideoEditorCreateVideoRequestModel.GeminiOmni,
                 "gemini-omni-1.1" => AiVideoEditorCreateVideoRequestModel.GeminiOmni11,
+                "gemini-omni-1.2" => AiVideoEditorCreateVideoRequestModel.GeminiOmni12,
                 "ltx-2.3" => AiVideoEditorCreateVideoRequestModel.Ltx23,
                 "ltx-2.5" => AiVideoEditorCreateVideoRequestModel.Ltx25,
                 "wan-3.0" => AiVideoEditorCreateVideoRequestModel.Wan30,
