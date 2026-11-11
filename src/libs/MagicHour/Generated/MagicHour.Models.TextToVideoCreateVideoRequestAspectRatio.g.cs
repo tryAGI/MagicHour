@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
-    /// * **`gemini-omni-1.1`**: Supports 16:9, 9:16.<br/>
+    /// * **`gemini-omni-1.2`**: Supports 16:9, 9:16.<br/>
     /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
     /// * **`kling-4.0`**: Supports 9:16, 16:9, 1:1.<br/>

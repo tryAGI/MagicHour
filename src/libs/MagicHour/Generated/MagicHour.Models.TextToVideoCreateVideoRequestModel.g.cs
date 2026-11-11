@@ -6,7 +6,7 @@ namespace MagicHour
     /// <summary>
     /// The AI model to use for video generation.<br/>
     /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
-    /// * `gemini-omni-1.1`: Best for precise short clips, first/last frames, and high-resolution output.<br/>
+    /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
     /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
     /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
     /// * `kling-4.0`: Create cinematic videos with image and video references and optional audio.<br/>
@@ -32,9 +32,13 @@ namespace MagicHour
         /// </summary>
         Default,
         /// <summary>
-        /// Best for precise short clips, first/last frames, and high-resolution output.
+        ///
         /// </summary>
         GeminiOmni11,
+        /// <summary>
+        /// Best for precise clips up to 15s, references, and high-resolution output.
+        /// </summary>
+        GeminiOmni12,
         /// <summary>
         ///
         /// </summary>
@@ -139,6 +143,7 @@ namespace MagicHour
             {
                 TextToVideoCreateVideoRequestModel.Default => "default",
                 TextToVideoCreateVideoRequestModel.GeminiOmni11 => "gemini-omni-1.1",
+                TextToVideoCreateVideoRequestModel.GeminiOmni12 => "gemini-omni-1.2",
                 TextToVideoCreateVideoRequestModel.Kling16 => "kling-1.6",
                 TextToVideoCreateVideoRequestModel.Kling25 => "kling-2.5",
                 TextToVideoCreateVideoRequestModel.Kling25Audio => "kling-2.5-audio",
@@ -173,6 +178,7 @@ namespace MagicHour
             {
                 "default" => TextToVideoCreateVideoRequestModel.Default,
                 "gemini-omni-1.1" => TextToVideoCreateVideoRequestModel.GeminiOmni11,
+                "gemini-omni-1.2" => TextToVideoCreateVideoRequestModel.GeminiOmni12,
                 "kling-1.6" => TextToVideoCreateVideoRequestModel.Kling16,
                 "kling-2.5" => TextToVideoCreateVideoRequestModel.Kling25,
                 "kling-2.5-audio" => TextToVideoCreateVideoRequestModel.Kling25Audio,
