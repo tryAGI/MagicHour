@@ -700,7 +700,7 @@ namespace MagicHour
         /// </param>
         /// <param name="maxResolution">
         /// Constrains the larger dimension (height or width) of the output. Omit to use the maximum allowed for your plan (capped at 2048px). Values above your plan maximum are clamped down to your plan's maximum.<br/>
-        /// Example: 1024
+        /// Example: 512
         /// </param>
         /// <param name="assets">
         /// Provide the body and head images for head swap

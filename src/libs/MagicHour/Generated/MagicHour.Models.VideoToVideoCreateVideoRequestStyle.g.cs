@@ -9,9 +9,9 @@ namespace MagicHour
     public sealed partial class VideoToVideoCreateVideoRequestStyle
     {
         /// <summary>
-        /// Example: Minecraft
+        /// Example: 3D Render
         /// </summary>
-        /// <example>Minecraft</example>
+        /// <example>3D Render</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("art_style")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.VideoToVideoCreateVideoRequestStyleArtStyleJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -74,7 +74,7 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="VideoToVideoCreateVideoRequestStyle" /> class.
         /// </summary>
         /// <param name="artStyle">
-        /// Example: Minecraft
+        /// Example: 3D Render
         /// </param>
         /// <param name="version">
         /// * `v1` - more detail, closer prompt adherence, and frame-by-frame previews.<br/>

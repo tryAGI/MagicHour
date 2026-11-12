@@ -88,10 +88,12 @@ namespace MagicHour
         /// Example: 4
         /// </param>
         /// <param name="model">
-        /// Defaults to kling-3.0 on paid plans and ltx-2.5 on free plans.
+        /// Defaults to kling-3.0 on paid plans and ltx-2.5 on free plans.<br/>
+        /// Example: ltx-2.5
         /// </param>
         /// <param name="resolution">
-        /// Defaults to 720p on paid plans and 480p on free plans. Unsupported model/resolution combinations and resolutions unavailable for your plan are rejected.
+        /// Defaults to 720p on paid plans and 480p on free plans. Unsupported model/resolution combinations and resolutions unavailable for your plan are rejected.<br/>
+        /// Example: 480p
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

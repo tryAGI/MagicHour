@@ -73,27 +73,13 @@ namespace MagicHour
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
-        ///   "end_seconds": 4,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "aspect_ratio": "16:9",<br/>
-        ///   "model": "seedance-2.5",<br/>
+        ///   "model": "ltx-2.5",<br/>
         ///   "resolution": "480p",<br/>
         ///   "style": {<br/>
-        ///     "prompt": "Animate @hero with the motion of @motion and the sound of @sound."<br/>
-        ///   },<br/>
-        ///   "references": [<br/>
-        ///     {<br/>
-        ///       "name": "hero",<br/>
-        ///       "file_path": "api-assets/id/hero.png"<br/>
-        ///     },<br/>
-        ///     {<br/>
-        ///       "name": "motion",<br/>
-        ///       "file_path": "api-assets/id/motion.mp4"<br/>
-        ///     },<br/>
-        ///     {<br/>
-        ///       "name": "sound",<br/>
-        ///       "file_path": "api-assets/id/sound.wav"<br/>
-        ///     }<br/>
-        ///   ]<br/>
+        ///     "prompt": "a dog running"<br/>
+        ///   }<br/>
         /// }<br/>
         /// '
         /// </remarks>
@@ -144,27 +130,13 @@ namespace MagicHour
         ///      --header 'content-type: application/json' \<br/>
         ///      --data '<br/>
         /// {<br/>
-        ///   "end_seconds": 4,<br/>
+        ///   "end_seconds": 5,<br/>
         ///   "aspect_ratio": "16:9",<br/>
-        ///   "model": "seedance-2.5",<br/>
+        ///   "model": "ltx-2.5",<br/>
         ///   "resolution": "480p",<br/>
         ///   "style": {<br/>
-        ///     "prompt": "Animate @hero with the motion of @motion and the sound of @sound."<br/>
-        ///   },<br/>
-        ///   "references": [<br/>
-        ///     {<br/>
-        ///       "name": "hero",<br/>
-        ///       "file_path": "api-assets/id/hero.png"<br/>
-        ///     },<br/>
-        ///     {<br/>
-        ///       "name": "motion",<br/>
-        ///       "file_path": "api-assets/id/motion.mp4"<br/>
-        ///     },<br/>
-        ///     {<br/>
-        ///       "name": "sound",<br/>
-        ///       "file_path": "api-assets/id/sound.wav"<br/>
-        ///     }<br/>
-        ///   ]<br/>
+        ///     "prompt": "a dog running"<br/>
+        ///   }<br/>
         /// }<br/>
         /// '
         /// </remarks>
@@ -796,7 +768,7 @@ namespace MagicHour
         /// Example: 5
         /// </param>
         /// <param name="aspectRatio">
-        /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
+        /// Determines the aspect ratio of the output video.<br/>
         /// * **`gemini-omni-1.2`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -835,7 +807,7 @@ namespace MagicHour
         /// </param>
         /// <param name="model">
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
+        /// * `default`: automatically selects a model based on subscription tier, resolution and duration.<br/>
         /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
@@ -858,7 +830,7 @@ namespace MagicHour
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`gemini-omni-1.2`**: Not supported<br/>
+        /// * **`gemini-omni-1.2`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`kling-4.0`**: Toggle-able: no additional credits for audio<br/>

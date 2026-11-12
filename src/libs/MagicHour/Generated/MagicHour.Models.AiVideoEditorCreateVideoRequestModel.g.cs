@@ -4,13 +4,17 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Editing model. Defaults to LTX 2.5 for free tier and `gemini-omni-1.2` for paid. `wan-3.0` requires a paid tier. `gemini-omni` and `gemini-omni-1.1` are deprecated and run on `gemini-omni-1.2`.<br/>
+    /// The AI model to use for video editing. Defaults to `ltx-2.5` on free tiers and `gemini-omni-1.2` on paid tiers.<br/>
+    /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output. Requires a paid tier.<br/>
+    /// * `wan-3.0`: High-quality video with native audio, long clips, and end-frame control. Requires a paid tier.<br/>
+    /// * `ltx-2.5`: Fastest for general scenes, long clips, audio, and rapid iteration.<br/>
+    /// * `kling-4.0`: Create cinematic videos with image and video references and optional audio. Requires a paid tier.<br/>
     /// Example: ltx-2.5
     /// </summary>
     public enum AiVideoEditorCreateVideoRequestModel
     {
         /// <summary>
-        ///
+        /// Best for precise clips up to 15s, references, and high-resolution output. Requires a paid tier.
         /// </summary>
         GeminiOmni,
         /// <summary>
@@ -18,19 +22,23 @@ namespace MagicHour
         /// </summary>
         GeminiOmni11,
         /// <summary>
-        ///
+        /// Best for precise clips up to 15s, references, and high-resolution output. Requires a paid tier.
         /// </summary>
         GeminiOmni12,
+        /// <summary>
+        /// Create cinematic videos with image and video references and optional audio. Requires a paid tier.
+        /// </summary>
+        Kling40,
         /// <summary>
         ///
         /// </summary>
         Ltx23,
         /// <summary>
-        ///
+        /// Fastest for general scenes, long clips, audio, and rapid iteration.
         /// </summary>
         Ltx25,
         /// <summary>
-        ///
+        /// High-quality video with native audio, long clips, and end-frame control. Requires a paid tier.
         /// </summary>
         Wan30,
     }
@@ -50,6 +58,7 @@ namespace MagicHour
                 AiVideoEditorCreateVideoRequestModel.GeminiOmni => "gemini-omni",
                 AiVideoEditorCreateVideoRequestModel.GeminiOmni11 => "gemini-omni-1.1",
                 AiVideoEditorCreateVideoRequestModel.GeminiOmni12 => "gemini-omni-1.2",
+                AiVideoEditorCreateVideoRequestModel.Kling40 => "kling-4.0",
                 AiVideoEditorCreateVideoRequestModel.Ltx23 => "ltx-2.3",
                 AiVideoEditorCreateVideoRequestModel.Ltx25 => "ltx-2.5",
                 AiVideoEditorCreateVideoRequestModel.Wan30 => "wan-3.0",
@@ -66,6 +75,7 @@ namespace MagicHour
                 "gemini-omni" => AiVideoEditorCreateVideoRequestModel.GeminiOmni,
                 "gemini-omni-1.1" => AiVideoEditorCreateVideoRequestModel.GeminiOmni11,
                 "gemini-omni-1.2" => AiVideoEditorCreateVideoRequestModel.GeminiOmni12,
+                "kling-4.0" => AiVideoEditorCreateVideoRequestModel.Kling40,
                 "ltx-2.3" => AiVideoEditorCreateVideoRequestModel.Ltx23,
                 "ltx-2.5" => AiVideoEditorCreateVideoRequestModel.Ltx25,
                 "wan-3.0" => AiVideoEditorCreateVideoRequestModel.Wan30,

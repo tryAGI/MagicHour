@@ -4,7 +4,8 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Defaults to kling-3.0 on paid plans and ltx-2.5 on free plans.
+    /// Defaults to kling-3.0 on paid plans and ltx-2.5 on free plans.<br/>
+    /// Example: ltx-2.5
     /// </summary>
     public enum AiUgcAdCreateVideoRequestModel
     {

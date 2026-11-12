@@ -4,7 +4,8 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Defaults to 720p on paid plans and 480p on free plans. Unsupported model/resolution combinations and resolutions unavailable for your plan are rejected.
+    /// Defaults to 720p on paid plans and 480p on free plans. Unsupported model/resolution combinations and resolutions unavailable for your plan are rejected.<br/>
+    /// Example: 480p
     /// </summary>
     public enum AiUgcAdCreateVideoRequestResolution
     {

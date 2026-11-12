@@ -42,15 +42,19 @@ namespace MagicHour
         public required double EndSeconds { get; set; }
 
         /// <summary>
-        /// Defaults to kling-3.0 on paid plans and ltx-2.5 on free plans.
+        /// Defaults to kling-3.0 on paid plans and ltx-2.5 on free plans.<br/>
+        /// Example: ltx-2.5
         /// </summary>
+        /// <example>ltx-2.5</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiUgcAdCreateVideoRequestModelJsonConverter))]
         public global::MagicHour.AiUgcAdCreateVideoRequestModel? Model { get; set; }
 
         /// <summary>
-        /// Defaults to 720p on paid plans and 480p on free plans. Unsupported model/resolution combinations and resolutions unavailable for your plan are rejected.
+        /// Defaults to 720p on paid plans and 480p on free plans. Unsupported model/resolution combinations and resolutions unavailable for your plan are rejected.<br/>
+        /// Example: 480p
         /// </summary>
+        /// <example>480p</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("resolution")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::MagicHour.JsonConverters.AiUgcAdCreateVideoRequestResolutionJsonConverter))]
         public global::MagicHour.AiUgcAdCreateVideoRequestResolution? Resolution { get; set; }
@@ -82,10 +86,12 @@ namespace MagicHour
         /// Example: 4
         /// </param>
         /// <param name="model">
-        /// Defaults to kling-3.0 on paid plans and ltx-2.5 on free plans.
+        /// Defaults to kling-3.0 on paid plans and ltx-2.5 on free plans.<br/>
+        /// Example: ltx-2.5
         /// </param>
         /// <param name="resolution">
-        /// Defaults to 720p on paid plans and 480p on free plans. Unsupported model/resolution combinations and resolutions unavailable for your plan are rejected.
+        /// Defaults to 720p on paid plans and 480p on free plans. Unsupported model/resolution combinations and resolutions unavailable for your plan are rejected.<br/>
+        /// Example: 480p
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

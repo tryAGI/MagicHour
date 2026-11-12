@@ -43,7 +43,7 @@ namespace MagicHour
 
         /// <summary>
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
+        /// * `default`: automatically selects a model based on subscription tier, resolution and duration.<br/>
         /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
@@ -95,7 +95,7 @@ namespace MagicHour
         /// <summary>
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`gemini-omni-1.2`**: Not supported<br/>
+        /// * **`gemini-omni-1.2`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`kling-4.0`**: Toggle-able: no additional credits for audio<br/>
@@ -167,7 +167,7 @@ namespace MagicHour
         /// </param>
         /// <param name="model">
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
+        /// * `default`: automatically selects a model based on subscription tier, resolution and duration.<br/>
         /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
@@ -209,7 +209,7 @@ namespace MagicHour
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`gemini-omni-1.2`**: Not supported<br/>
+        /// * **`gemini-omni-1.2`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`kling-4.0`**: Toggle-able: no additional credits for audio<br/>

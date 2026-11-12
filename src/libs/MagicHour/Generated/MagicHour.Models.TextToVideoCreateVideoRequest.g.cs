@@ -4,7 +4,7 @@
 namespace MagicHour
 {
     /// <summary>
-    /// Example: {"end_seconds":4,"aspect_ratio":"16:9","model":"seedance-2.5","resolution":"480p","style":{"prompt":"Animate @hero with the motion of @motion and the sound of @sound."},"references":[{"name":"hero","file_path":"api-assets/id/hero.png"},{"name":"motion","file_path":"api-assets/id/motion.mp4"},{"name":"sound","file_path":"api-assets/id/sound.wav"}]}
+    /// Example: {"end_seconds":5,"aspect_ratio":"16:9","model":"ltx-2.5","resolution":"480p","style":{"prompt":"a dog running"}}
     /// </summary>
     public sealed partial class TextToVideoCreateVideoRequest
     {
@@ -42,7 +42,7 @@ namespace MagicHour
         public required float EndSeconds { get; set; }
 
         /// <summary>
-        /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
+        /// Determines the aspect ratio of the output video.<br/>
         /// * **`gemini-omni-1.2`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -91,7 +91,7 @@ namespace MagicHour
 
         /// <summary>
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
+        /// * `default`: automatically selects a model based on subscription tier, resolution and duration.<br/>
         /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
@@ -119,7 +119,7 @@ namespace MagicHour
         /// <summary>
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`gemini-omni-1.2`**: Not supported<br/>
+        /// * **`gemini-omni-1.2`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`kling-4.0`**: Toggle-able: no additional credits for audio<br/>
@@ -200,7 +200,7 @@ namespace MagicHour
         /// Example: My Text To Video video
         /// </param>
         /// <param name="aspectRatio">
-        /// Provide `aspect_ratio` to set the video’s aspect ratio. Determines the aspect ratio of the output video.<br/>
+        /// Determines the aspect ratio of the output video.<br/>
         /// * **`gemini-omni-1.2`**: Supports 16:9, 9:16.<br/>
         /// * **`kling-2.6`**: Supports 9:16, 16:9, 1:1.<br/>
         /// * **`kling-3.0`**: Supports 9:16, 16:9, 1:1.<br/>
@@ -239,7 +239,7 @@ namespace MagicHour
         /// </param>
         /// <param name="model">
         /// The AI model to use for video generation.<br/>
-        /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
+        /// * `default`: automatically selects a model based on subscription tier, resolution and duration.<br/>
         /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
         /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
         /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
@@ -262,7 +262,7 @@ namespace MagicHour
         /// <param name="audio">
         /// Whether to include audio in the video. Defaults to `false` if not specified.<br/>
         /// Audio support varies by model:<br/>
-        /// * **`gemini-omni-1.2`**: Not supported<br/>
+        /// * **`gemini-omni-1.2`**: Toggle-able: no additional credits for audio<br/>
         /// * **`kling-2.6`**: Not supported<br/>
         /// * **`kling-3.0`**: Toggle-able: audio adds extra credits when enabled<br/>
         /// * **`kling-4.0`**: Toggle-able: no additional credits for audio<br/>
