@@ -404,10 +404,6 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
-        BadBunny,
-        /// <summary>
-        ///
-        /// </summary>
         BakugoKatsuki,
         /// <summary>
         ///
@@ -7105,7 +7101,6 @@ namespace MagicHour
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BtsJungkook => "BTS Jungkook",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BabarAzam => "Babar Azam",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BabyYodaGrogu => "Baby Yoda (Grogu)",
-                AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BadBunny => "Bad Bunny",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BakugoKatsuki => "Bakugo Katsuki",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BamMargera => "Bam Margera",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BarackObama => "Barack Obama",
@@ -8861,7 +8856,6 @@ namespace MagicHour
                 "BTS Jungkook" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BtsJungkook,
                 "Babar Azam" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BabarAzam,
                 "Baby Yoda (Grogu)" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BabyYodaGrogu,
-                "Bad Bunny" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BadBunny,
                 "Bakugo Katsuki" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BakugoKatsuki,
                 "Bam Margera" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BamMargera,
                 "Barack Obama" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.BarackObama,

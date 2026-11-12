@@ -5,7 +5,7 @@ namespace MagicHour
 {
     /// <summary>
     /// The AI model to use for video generation.<br/>
-    /// * `default`: uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.<br/>
+    /// * `default`: automatically selects a model based on subscription tier, resolution and duration.<br/>
     /// * `gemini-omni-1.2`: Best for precise clips up to 15s, references, and high-resolution output.<br/>
     /// * `kling-2.6`: Best for action, motion blur, and controlled camera moves.<br/>
     /// * `kling-3.0`: Best for cinematic stories, references, and optional audio.<br/>
@@ -28,7 +28,7 @@ namespace MagicHour
     public enum ImageToVideoCreateVideoRequestModel
     {
         /// <summary>
-        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.
+        /// automatically selects a model based on subscription tier, resolution and duration.
         /// </summary>
         Default,
         /// <summary>
@@ -56,7 +56,7 @@ namespace MagicHour
         /// </summary>
         Kling26,
         /// <summary>
-        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.
+        /// Best for cinematic stories, references, and optional audio.
         /// </summary>
         Kling30,
         /// <summary>
@@ -64,7 +64,7 @@ namespace MagicHour
         /// </summary>
         Kling40,
         /// <summary>
-        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.
+        /// Fastest for general scenes, long clips, audio, and rapid iteration.
         /// </summary>
         Ltx2,
         /// <summary>
@@ -72,7 +72,7 @@ namespace MagicHour
         /// </summary>
         Ltx23,
         /// <summary>
-        /// uses our currently recommended model for general use. For paid tiers, defaults to `kling-3.0`. For free tiers, it defaults to `ltx-2.5`.
+        /// Fastest for general scenes, long clips, audio, and rapid iteration.
         /// </summary>
         Ltx25,
         /// <summary>

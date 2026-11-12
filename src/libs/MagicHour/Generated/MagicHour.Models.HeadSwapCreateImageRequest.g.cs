@@ -19,9 +19,9 @@ namespace MagicHour
 
         /// <summary>
         /// Constrains the larger dimension (height or width) of the output. Omit to use the maximum allowed for your plan (capped at 2048px). Values above your plan maximum are clamped down to your plan's maximum.<br/>
-        /// Example: 1024
+        /// Example: 512
         /// </summary>
-        /// <example>1024</example>
+        /// <example>512</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_resolution")]
         public int? MaxResolution { get; set; }
 
@@ -51,7 +51,7 @@ namespace MagicHour
         /// </param>
         /// <param name="maxResolution">
         /// Constrains the larger dimension (height or width) of the output. Omit to use the maximum allowed for your plan (capped at 2048px). Values above your plan maximum are clamped down to your plan's maximum.<br/>
-        /// Example: 1024
+        /// Example: 512
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

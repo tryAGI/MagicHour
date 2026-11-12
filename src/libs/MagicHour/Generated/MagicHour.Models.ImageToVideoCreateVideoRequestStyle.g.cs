@@ -9,7 +9,23 @@ namespace MagicHour
     public sealed partial class ImageToVideoCreateVideoRequestStyle
     {
         /// <summary>
-        /// The prompt used for the video.<br/>
+        /// The prompt used for the video. Maximum length depends on the model that runs, in characters:<br/>
+        /// * **`gemini-omni-1.2`**: 2500 characters.<br/>
+        /// * **`kling-2.6`**: 2500 characters.<br/>
+        /// * **`kling-3.0`**: 2500 characters.<br/>
+        /// * **`kling-4.0`**: 10000 characters.<br/>
+        /// * **`ltx-2.5`**: 2000 characters.<br/>
+        /// * **`minimax-h3`**: 20000 characters.<br/>
+        /// * **`seedance-1.5`**: 2000 characters.<br/>
+        /// * **`seedance-2.0`**: 2000 characters.<br/>
+        /// * **`seedance-2.0-fast`**: 2000 characters.<br/>
+        /// * **`seedance-2.0-mini`**: 2000 characters.<br/>
+        /// * **`seedance-2.5`**: 2000 characters.<br/>
+        /// * **`veo3.1`**: 2500 characters.<br/>
+        /// * **`veo3.1-lite`**: 2500 characters.<br/>
+        /// * **`wan-2.2`**: 10000 characters.<br/>
+        /// * **`wan-3.0`**: 10000 characters.<br/>
+        /// For `default`, the limit of the automatically selected model applies. Selection depends on subscription tier, resolution and duration. Specify an explicit model to use a known prompt limit. Prompts exceeding the effective model's limit are rejected, not truncated.<br/>
         /// Example: a dog running
         /// </summary>
         /// <example>a dog running</example>
@@ -26,7 +42,23 @@ namespace MagicHour
         /// Initializes a new instance of the <see cref="ImageToVideoCreateVideoRequestStyle" /> class.
         /// </summary>
         /// <param name="prompt">
-        /// The prompt used for the video.<br/>
+        /// The prompt used for the video. Maximum length depends on the model that runs, in characters:<br/>
+        /// * **`gemini-omni-1.2`**: 2500 characters.<br/>
+        /// * **`kling-2.6`**: 2500 characters.<br/>
+        /// * **`kling-3.0`**: 2500 characters.<br/>
+        /// * **`kling-4.0`**: 10000 characters.<br/>
+        /// * **`ltx-2.5`**: 2000 characters.<br/>
+        /// * **`minimax-h3`**: 20000 characters.<br/>
+        /// * **`seedance-1.5`**: 2000 characters.<br/>
+        /// * **`seedance-2.0`**: 2000 characters.<br/>
+        /// * **`seedance-2.0-fast`**: 2000 characters.<br/>
+        /// * **`seedance-2.0-mini`**: 2000 characters.<br/>
+        /// * **`seedance-2.5`**: 2000 characters.<br/>
+        /// * **`veo3.1`**: 2500 characters.<br/>
+        /// * **`veo3.1-lite`**: 2500 characters.<br/>
+        /// * **`wan-2.2`**: 10000 characters.<br/>
+        /// * **`wan-3.0`**: 10000 characters.<br/>
+        /// For `default`, the limit of the automatically selected model applies. Selection depends on subscription tier, resolution and duration. Specify an explicit model to use a known prompt limit. Prompts exceeding the effective model's limit are rejected, not truncated.<br/>
         /// Example: a dog running
         /// </param>
 #if NET7_0_OR_GREATER
