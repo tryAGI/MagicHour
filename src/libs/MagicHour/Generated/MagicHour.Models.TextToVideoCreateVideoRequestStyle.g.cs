@@ -10,17 +10,17 @@ namespace MagicHour
     {
         /// <summary>
         /// The prompt used for the video. Maximum length depends on the model that runs, in characters:<br/>
-        /// * **`gemini-omni-1.2`**: 2500 characters.<br/>
+        /// * **`gemini-omni-1.2`**: 4000 characters.<br/>
         /// * **`kling-2.6`**: 2500 characters.<br/>
         /// * **`kling-3.0`**: 2500 characters.<br/>
         /// * **`kling-4.0`**: 10000 characters.<br/>
-        /// * **`ltx-2.5`**: 2000 characters.<br/>
+        /// * **`ltx-2.5`**: 4000 characters.<br/>
         /// * **`minimax-h3`**: 20000 characters.<br/>
-        /// * **`seedance-1.5`**: 2000 characters.<br/>
-        /// * **`seedance-2.0`**: 2000 characters.<br/>
-        /// * **`seedance-2.0-fast`**: 2000 characters.<br/>
-        /// * **`seedance-2.0-mini`**: 2000 characters.<br/>
-        /// * **`seedance-2.5`**: 2000 characters.<br/>
+        /// * **`seedance-1.5`**: 4000 characters.<br/>
+        /// * **`seedance-2.0`**: 4000 characters.<br/>
+        /// * **`seedance-2.0-fast`**: 4000 characters.<br/>
+        /// * **`seedance-2.0-mini`**: 4000 characters.<br/>
+        /// * **`seedance-2.5`**: 4000 characters.<br/>
         /// * **`veo3.1`**: 2500 characters.<br/>
         /// * **`veo3.1-lite`**: 2500 characters.<br/>
         /// * **`wan-2.2`**: 10000 characters.<br/>
@@ -44,17 +44,17 @@ namespace MagicHour
         /// </summary>
         /// <param name="prompt">
         /// The prompt used for the video. Maximum length depends on the model that runs, in characters:<br/>
-        /// * **`gemini-omni-1.2`**: 2500 characters.<br/>
+        /// * **`gemini-omni-1.2`**: 4000 characters.<br/>
         /// * **`kling-2.6`**: 2500 characters.<br/>
         /// * **`kling-3.0`**: 2500 characters.<br/>
         /// * **`kling-4.0`**: 10000 characters.<br/>
-        /// * **`ltx-2.5`**: 2000 characters.<br/>
+        /// * **`ltx-2.5`**: 4000 characters.<br/>
         /// * **`minimax-h3`**: 20000 characters.<br/>
-        /// * **`seedance-1.5`**: 2000 characters.<br/>
-        /// * **`seedance-2.0`**: 2000 characters.<br/>
-        /// * **`seedance-2.0-fast`**: 2000 characters.<br/>
-        /// * **`seedance-2.0-mini`**: 2000 characters.<br/>
-        /// * **`seedance-2.5`**: 2000 characters.<br/>
+        /// * **`seedance-1.5`**: 4000 characters.<br/>
+        /// * **`seedance-2.0`**: 4000 characters.<br/>
+        /// * **`seedance-2.0-fast`**: 4000 characters.<br/>
+        /// * **`seedance-2.0-mini`**: 4000 characters.<br/>
+        /// * **`seedance-2.5`**: 4000 characters.<br/>
         /// * **`veo3.1`**: 2500 characters.<br/>
         /// * **`veo3.1-lite`**: 2500 characters.<br/>
         /// * **`wan-2.2`**: 10000 characters.<br/>

@@ -55,6 +55,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
     ///   - Max additional input images: 9<br/>
+    /// - `seedream-v5-flash` - from 30 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
+    ///   - Available for tiers: creator, pro, business<br/>
+    ///   - Max additional input images: 9<br/>
     /// - `seedream-v5-pro` - from 75 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -122,6 +126,10 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
+        SeedreamV5Flash,
+        /// <summary>
+        ///
+        /// </summary>
         SeedreamV5Pro,
     }
 
@@ -151,6 +159,7 @@ namespace MagicHour
                 AiImageEditorCreateImageRequestModel.QwenImage21 => "qwen-image-2.1",
                 AiImageEditorCreateImageRequestModel.SeedreamV4 => "seedream-v4",
                 AiImageEditorCreateImageRequestModel.SeedreamV45 => "seedream-v4.5",
+                AiImageEditorCreateImageRequestModel.SeedreamV5Flash => "seedream-v5-flash",
                 AiImageEditorCreateImageRequestModel.SeedreamV5Pro => "seedream-v5-pro",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -176,6 +185,7 @@ namespace MagicHour
                 "qwen-image-2.1" => AiImageEditorCreateImageRequestModel.QwenImage21,
                 "seedream-v4" => AiImageEditorCreateImageRequestModel.SeedreamV4,
                 "seedream-v4.5" => AiImageEditorCreateImageRequestModel.SeedreamV45,
+                "seedream-v5-flash" => AiImageEditorCreateImageRequestModel.SeedreamV5Flash,
                 "seedream-v5-pro" => AiImageEditorCreateImageRequestModel.SeedreamV5Pro,
                 _ => null,
             };

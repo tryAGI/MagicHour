@@ -78,6 +78,10 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
+        /// - `seedream-v5-flash` - from 30 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
         /// - `seedream-v5-pro` - from 75 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
@@ -119,6 +123,7 @@ namespace MagicHour
         /// - `qwen-image-2.1` - 640px, 1k, 2k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+        /// - `seedream-v5-flash` - 640px, 1k, 2k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Example: 640px
@@ -217,6 +222,10 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
         ///   - Max additional input images: 9<br/>
+        /// - `seedream-v5-flash` - from 30 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: creator, pro, business<br/>
+        ///   - Max additional input images: 9<br/>
         /// - `seedream-v5-pro` - from 75 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
@@ -248,6 +257,7 @@ namespace MagicHour
         /// - `qwen-image-2.1` - 640px, 1k, 2k<br/>
         /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
         /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+        /// - `seedream-v5-flash` - 640px, 1k, 2k<br/>
         /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
         /// Note: Resolution availability depends on the model and your subscription tier.<br/>
         /// Example: 640px

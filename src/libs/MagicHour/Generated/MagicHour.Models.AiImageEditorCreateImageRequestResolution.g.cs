@@ -24,6 +24,7 @@ namespace MagicHour
     /// - `qwen-image-2.1` - 640px, 1k, 2k<br/>
     /// - `seedream-v4` - 640px, 1k, 2k, 4k<br/>
     /// - `seedream-v4.5` - 640px, 1k, 2k, 4k<br/>
+    /// - `seedream-v5-flash` - 640px, 1k, 2k<br/>
     /// - `seedream-v5-pro` - 640px, 1k, 2k<br/>
     /// Note: Resolution availability depends on the model and your subscription tier.<br/>
     /// Example: 640px
