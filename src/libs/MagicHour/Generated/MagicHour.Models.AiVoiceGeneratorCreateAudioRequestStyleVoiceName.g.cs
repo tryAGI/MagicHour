@@ -2384,10 +2384,6 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
-        JayZ,
-        /// <summary>
-        ///
-        /// </summary>
         JaysonTatum,
         /// <summary>
         ///
@@ -7596,7 +7592,6 @@ namespace MagicHour
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JasonSegel => "Jason Segel",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JasonStatham => "Jason Statham",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JasonVoorhees => "Jason Voorhees",
-                AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JayZ => "Jay-Z",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JaysonTatum => "Jayson Tatum",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JeffBezos => "Jeff Bezos",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JeffGoldblum => "Jeff Goldblum",
@@ -9351,7 +9346,6 @@ namespace MagicHour
                 "Jason Segel" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JasonSegel,
                 "Jason Statham" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JasonStatham,
                 "Jason Voorhees" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JasonVoorhees,
-                "Jay-Z" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JayZ,
                 "Jayson Tatum" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JaysonTatum,
                 "Jeff Bezos" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JeffBezos,
                 "Jeff Goldblum" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.JeffGoldblum,
