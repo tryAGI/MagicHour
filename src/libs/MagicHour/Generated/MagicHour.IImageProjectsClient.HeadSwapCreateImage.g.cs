@@ -21,7 +21,7 @@ namespace MagicHour
         ///      --data '<br/>
         /// {<br/>
         ///   "name": "My Head Swap image",<br/>
-        ///   "max_resolution": 1024,<br/>
+        ///   "max_resolution": 512,<br/>
         ///   "assets": {<br/>
         ///     "body_file_path": "api-assets/id/1234.png",<br/>
         ///     "head_file_path": "api-assets/id/5678.png"<br/>
@@ -51,7 +51,7 @@ namespace MagicHour
         ///      --data '<br/>
         /// {<br/>
         ///   "name": "My Head Swap image",<br/>
-        ///   "max_resolution": 1024,<br/>
+        ///   "max_resolution": 512,<br/>
         ///   "assets": {<br/>
         ///     "body_file_path": "api-assets/id/1234.png",<br/>
         ///     "head_file_path": "api-assets/id/5678.png"<br/>

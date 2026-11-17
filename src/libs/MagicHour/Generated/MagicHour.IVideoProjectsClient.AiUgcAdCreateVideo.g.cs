@@ -25,7 +25,7 @@ namespace MagicHour
         ///   },<br/>
         ///   "script": "Meet your new everyday essential.",<br/>
         ///   "end_seconds": 4,<br/>
-        ///   "model": "kling-3.0",<br/>
+        ///   "model": "ltx-2.5",<br/>
         ///   "resolution": "480p"<br/>
         /// }<br/>
         /// '
@@ -56,7 +56,7 @@ namespace MagicHour
         ///   },<br/>
         ///   "script": "Meet your new everyday essential.",<br/>
         ///   "end_seconds": 4,<br/>
-        ///   "model": "kling-3.0",<br/>
+        ///   "model": "ltx-2.5",<br/>
         ///   "resolution": "480p"<br/>
         /// }<br/>
         /// '

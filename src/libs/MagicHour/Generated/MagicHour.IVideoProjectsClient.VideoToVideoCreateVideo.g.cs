@@ -49,7 +49,7 @@ namespace MagicHour
         ///   "width": 1024,<br/>
         ///   "fps_resolution": "HALF",<br/>
         ///   "style": {<br/>
-        ///     "art_style": "Minecraft",<br/>
+        ///     "art_style": "3D Render",<br/>
         ///     "version": "default",<br/>
         ///     "prompt_type": "default",<br/>
         ///     "prompt": "A cinematic scene with warm lighting",<br/>
@@ -112,7 +112,7 @@ namespace MagicHour
         ///   "width": 1024,<br/>
         ///   "fps_resolution": "HALF",<br/>
         ///   "style": {<br/>
-        ///     "art_style": "Minecraft",<br/>
+        ///     "art_style": "3D Render",<br/>
         ///     "version": "default",<br/>
         ///     "prompt_type": "default",<br/>
         ///     "prompt": "A cinematic scene with warm lighting",<br/>

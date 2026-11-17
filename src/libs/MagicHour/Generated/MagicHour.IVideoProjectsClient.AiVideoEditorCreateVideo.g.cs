@@ -44,12 +44,6 @@ namespace MagicHour
         ///   "style": {<br/>
         ///     "prompt": "Change the car color to blue"<br/>
         ///   },<br/>
-        ///   "references": [<br/>
-        ///     {<br/>
-        ///       "name": "hero",<br/>
-        ///       "file_path": "api-assets/id/1234.png"<br/>
-        ///     }<br/>
-        ///   ],<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   }<br/>
@@ -101,12 +95,6 @@ namespace MagicHour
         ///   "style": {<br/>
         ///     "prompt": "Change the car color to blue"<br/>
         ///   },<br/>
-        ///   "references": [<br/>
-        ///     {<br/>
-        ///       "name": "hero",<br/>
-        ///       "file_path": "api-assets/id/1234.png"<br/>
-        ///     }<br/>
-        ///   ],<br/>
         ///   "assets": {<br/>
         ///     "video_file_path": "api-assets/id/1234.mp4"<br/>
         ///   }<br/>
