@@ -27,7 +27,7 @@ namespace MagicHour
         public required int PositionY { get; set; }
 
         /// <summary>
-        /// Timestamp on the source video timeline in seconds. Uses the same clock as `start_seconds` and `end_seconds`.<br/>
+        /// Timestamp on the source video timeline in seconds. Uses the same clock as `start_seconds` and `end_seconds`. For MiniMax H3 manual replacement, `start_seconds &lt;= time_seconds &lt; end_seconds`.<br/>
         /// Example: 2.5F
         /// </summary>
         /// <example>2.5F</example>
@@ -53,7 +53,7 @@ namespace MagicHour
         /// Example: 180
         /// </param>
         /// <param name="timeSeconds">
-        /// Timestamp on the source video timeline in seconds. Uses the same clock as `start_seconds` and `end_seconds`.<br/>
+        /// Timestamp on the source video timeline in seconds. Uses the same clock as `start_seconds` and `end_seconds`. For MiniMax H3 manual replacement, `start_seconds &lt;= time_seconds &lt; end_seconds`.<br/>
         /// Example: 2.5F
         /// </param>
 #if NET7_0_OR_GREATER

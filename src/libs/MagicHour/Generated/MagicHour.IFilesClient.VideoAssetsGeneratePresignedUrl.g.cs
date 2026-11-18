@@ -17,8 +17,8 @@ namespace MagicHour
         /// Once you receive an upload URL, send a `PUT` request to upload the file directly.<br/>
         /// Example:<br/>
         /// ```<br/>
-        /// curl -X PUT --data '@/path/to/file/video.mp4' \<br/>
-        ///   https://videos.magichour.ai/api-assets/id/video.mp4?&lt;auth params from the API response&gt;<br/>
+        /// curl -X PUT --data-binary '@/path/to/file/video.mp4' \<br/>
+        ///   "https://videos.magichour.ai/api-assets/id/video.mp4?&lt;auth params from the API response&gt;"<br/>
         /// ```
         /// </summary>
         /// <param name="request"></param>
@@ -64,8 +64,8 @@ namespace MagicHour
         /// Once you receive an upload URL, send a `PUT` request to upload the file directly.<br/>
         /// Example:<br/>
         /// ```<br/>
-        /// curl -X PUT --data '@/path/to/file/video.mp4' \<br/>
-        ///   https://videos.magichour.ai/api-assets/id/video.mp4?&lt;auth params from the API response&gt;<br/>
+        /// curl -X PUT --data-binary '@/path/to/file/video.mp4' \<br/>
+        ///   "https://videos.magichour.ai/api-assets/id/video.mp4?&lt;auth params from the API response&gt;"<br/>
         /// ```
         /// </summary>
         /// <param name="request"></param>
@@ -111,8 +111,8 @@ namespace MagicHour
         /// Once you receive an upload URL, send a `PUT` request to upload the file directly.<br/>
         /// Example:<br/>
         /// ```<br/>
-        /// curl -X PUT --data '@/path/to/file/video.mp4' \<br/>
-        ///   https://videos.magichour.ai/api-assets/id/video.mp4?&lt;auth params from the API response&gt;<br/>
+        /// curl -X PUT --data-binary '@/path/to/file/video.mp4' \<br/>
+        ///   "https://videos.magichour.ai/api-assets/id/video.mp4?&lt;auth params from the API response&gt;"<br/>
         /// ```
         /// </summary>
         /// <param name="items">
