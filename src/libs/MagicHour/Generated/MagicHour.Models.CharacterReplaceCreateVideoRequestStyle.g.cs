@@ -19,7 +19,7 @@ namespace MagicHour
         public global::MagicHour.CharacterReplaceCreateVideoRequestStyleMode? Mode { get; set; }
 
         /// <summary>
-        /// Optional direction. Supported by kling-3.0, minimax-h3.
+        /// Optional direction. Supported by kling-3.0, minimax-h3. For MiniMax H3 in replace mode, ignored and not saved when `selection_mode` is `point`; applies only to automatic person selection.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
         public string? Prompt { get; set; }
@@ -34,7 +34,7 @@ namespace MagicHour
         public global::MagicHour.CharacterReplaceCreateVideoRequestStyleSelectionMode? SelectionMode { get; set; }
 
         /// <summary>
-        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`, `minimax-h3`). `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored.
+        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`, `minimax-h3`). `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored. MiniMax H3 manual replacement accepts 1 to 10 points; each must satisfy `start_seconds &lt;= time_seconds &lt; end_seconds`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("points")]
         public global::System.Collections.Generic.IList<global::MagicHour.CharacterReplaceCreateVideoRequestStylePoint>? Points { get; set; }
@@ -53,14 +53,14 @@ namespace MagicHour
         /// Example: replace
         /// </param>
         /// <param name="prompt">
-        /// Optional direction. Supported by kling-3.0, minimax-h3.
+        /// Optional direction. Supported by kling-3.0, minimax-h3. For MiniMax H3 in replace mode, ignored and not saved when `selection_mode` is `point`; applies only to automatic person selection.
         /// </param>
         /// <param name="selectionMode">
         /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject and is supported by `wan-animate`, `minimax-h3`. `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored. Defaults to `auto`.<br/>
         /// Example: auto
         /// </param>
         /// <param name="points">
-        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`, `minimax-h3`). `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored.
+        /// On-frame markers for manual subject selection. Required when `selection_mode` is `point`. Ignored when `selection_mode` is `auto` or omitted. Rejected for models without subject selection (supported by `wan-animate`, `minimax-h3`). `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored. MiniMax H3 manual replacement accepts 1 to 10 points; each must satisfy `start_seconds &lt;= time_seconds &lt; end_seconds`.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
