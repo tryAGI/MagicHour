@@ -19,7 +19,7 @@ namespace MagicHour
         public global::MagicHour.CharacterReplaceCreateVideoRequestStyleMode? Mode { get; set; }
 
         /// <summary>
-        /// Optional direction. Supported by kling-3.0, minimax-h3. For MiniMax H3 in replace mode, ignored and not saved when `selection_mode` is `point`; applies only to automatic person selection.
+        /// Optional direction. Supported by kling-3.0, kling-4.0, minimax-h3. For MiniMax H3 in replace mode, ignored and not saved when `selection_mode` is `point`; applies only to automatic person selection.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
         public string? Prompt { get; set; }
@@ -53,7 +53,7 @@ namespace MagicHour
         /// Example: replace
         /// </param>
         /// <param name="prompt">
-        /// Optional direction. Supported by kling-3.0, minimax-h3. For MiniMax H3 in replace mode, ignored and not saved when `selection_mode` is `point`; applies only to automatic person selection.
+        /// Optional direction. Supported by kling-3.0, kling-4.0, minimax-h3. For MiniMax H3 in replace mode, ignored and not saved when `selection_mode` is `point`; applies only to automatic person selection.
         /// </param>
         /// <param name="selectionMode">
         /// How to locate the subject in the source video. `auto` detects a person automatically. `point` uses your `points` to mark the subject and is supported by `wan-animate`, `minimax-h3`. `minimax-h3` subject `points` are `replace`-only; `animate` with `selection_mode` `point` returns 422, and with `auto` or no `selection_mode` the points are ignored. Defaults to `auto`.<br/>
