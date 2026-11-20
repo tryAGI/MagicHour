@@ -1576,10 +1576,6 @@ namespace MagicHour
         /// <summary>
         ///
         /// </summary>
-        EricClapton,
-        /// <summary>
-        ///
-        /// </summary>
         ErlingHaaland,
         /// <summary>
         ///
@@ -7390,7 +7386,6 @@ namespace MagicHour
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.EnriqueIglesias => "Enrique Iglesias",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.ErenJaeger => "Eren Jaeger",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.EricCartman => "Eric Cartman",
-                AiVoiceGeneratorCreateAudioRequestStyleVoiceName.EricClapton => "Eric Clapton",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.ErlingHaaland => "Erling Haaland",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.ErnieHudson => "Ernie Hudson",
                 AiVoiceGeneratorCreateAudioRequestStyleVoiceName.ErzaScarlet => "Erza Scarlet",
@@ -9144,7 +9139,6 @@ namespace MagicHour
                 "Enrique Iglesias" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.EnriqueIglesias,
                 "Eren Jaeger" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.ErenJaeger,
                 "Eric Cartman" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.EricCartman,
-                "Eric Clapton" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.EricClapton,
                 "Erling Haaland" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.ErlingHaaland,
                 "Ernie Hudson" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.ErnieHudson,
                 "Erza Scarlet" => AiVoiceGeneratorCreateAudioRequestStyleVoiceName.ErzaScarlet,
