@@ -11,6 +11,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Image count allowed: 1<br/>
+    /// - `flux-3-klein` - from 5 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
+    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Image count allowed: 1, 2, 3, 4<br/>
     /// - `flux-schnell` - from 5 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
@@ -81,6 +85,10 @@ namespace MagicHour
         ///
         /// </summary>
         Flux2Klein,
+        /// <summary>
+        ///
+        /// </summary>
+        Flux3Klein,
         /// <summary>
         ///
         /// </summary>
@@ -161,6 +169,7 @@ namespace MagicHour
             {
                 AiImageGeneratorCreateImageRequestModel.Default => "default",
                 AiImageGeneratorCreateImageRequestModel.Flux2Klein => "flux-2-klein",
+                AiImageGeneratorCreateImageRequestModel.Flux3Klein => "flux-3-klein",
                 AiImageGeneratorCreateImageRequestModel.FluxSchnell => "flux-schnell",
                 AiImageGeneratorCreateImageRequestModel.GptImage2 => "gpt-image-2",
                 AiImageGeneratorCreateImageRequestModel.GptImage25Flare => "gpt-image-2.5-flare",
@@ -189,6 +198,7 @@ namespace MagicHour
             {
                 "default" => AiImageGeneratorCreateImageRequestModel.Default,
                 "flux-2-klein" => AiImageGeneratorCreateImageRequestModel.Flux2Klein,
+                "flux-3-klein" => AiImageGeneratorCreateImageRequestModel.Flux3Klein,
                 "flux-schnell" => AiImageGeneratorCreateImageRequestModel.FluxSchnell,
                 "gpt-image-2" => AiImageGeneratorCreateImageRequestModel.GptImage2,
                 "gpt-image-2.5-flare" => AiImageGeneratorCreateImageRequestModel.GptImage25Flare,
