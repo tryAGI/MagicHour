@@ -11,6 +11,10 @@ namespace MagicHour
     ///   - Supported resolutions: 640px, 1k, 2k<br/>
     ///   - Available for tiers: free, creator, pro, business<br/>
     ///   - Max additional input images: 5<br/>
+    /// - `flux-3-klein` - from 5 credits/image<br/>
+    ///   - Supported resolutions: 640px, 1k, 2k<br/>
+    ///   - Available for tiers: free, creator, pro, business<br/>
+    ///   - Max additional input images: 1<br/>
     /// - `gpt-image-2` - from 50 credits/image<br/>
     ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
     ///   - Available for tiers: creator, pro, business<br/>
@@ -75,6 +79,10 @@ namespace MagicHour
         ///
         /// </summary>
         Flux2Klein,
+        /// <summary>
+        ///
+        /// </summary>
+        Flux3Klein,
         /// <summary>
         ///
         /// </summary>
@@ -147,6 +155,7 @@ namespace MagicHour
             {
                 AiImageEditorCreateImageRequestModel.Default => "default",
                 AiImageEditorCreateImageRequestModel.Flux2Klein => "flux-2-klein",
+                AiImageEditorCreateImageRequestModel.Flux3Klein => "flux-3-klein",
                 AiImageEditorCreateImageRequestModel.GptImage2 => "gpt-image-2",
                 AiImageEditorCreateImageRequestModel.GptImage25Flare => "gpt-image-2.5-flare",
                 AiImageEditorCreateImageRequestModel.Krea2 => "krea-2",
@@ -173,6 +182,7 @@ namespace MagicHour
             {
                 "default" => AiImageEditorCreateImageRequestModel.Default,
                 "flux-2-klein" => AiImageEditorCreateImageRequestModel.Flux2Klein,
+                "flux-3-klein" => AiImageEditorCreateImageRequestModel.Flux3Klein,
                 "gpt-image-2" => AiImageEditorCreateImageRequestModel.GptImage2,
                 "gpt-image-2.5-flare" => AiImageEditorCreateImageRequestModel.GptImage25Flare,
                 "krea-2" => AiImageEditorCreateImageRequestModel.Krea2,

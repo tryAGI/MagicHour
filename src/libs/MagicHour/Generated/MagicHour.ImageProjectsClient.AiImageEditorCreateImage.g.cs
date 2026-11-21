@@ -727,6 +727,10 @@ namespace MagicHour
         ///   - Supported resolutions: 640px, 1k, 2k<br/>
         ///   - Available for tiers: free, creator, pro, business<br/>
         ///   - Max additional input images: 5<br/>
+        /// - `flux-3-klein` - from 5 credits/image<br/>
+        ///   - Supported resolutions: 640px, 1k, 2k<br/>
+        ///   - Available for tiers: free, creator, pro, business<br/>
+        ///   - Max additional input images: 1<br/>
         /// - `gpt-image-2` - from 50 credits/image<br/>
         ///   - Supported resolutions: 640px, 1k, 2k, 4k<br/>
         ///   - Available for tiers: creator, pro, business<br/>
@@ -795,6 +799,7 @@ namespace MagicHour
         /// - `auto` — **Deprecated.** Mapped server-side from your subscription tier to the best matching resolution the model supports<br/>
         /// **Per-model support:**<br/>
         /// - `flux-2-klein` - 640px, 1k, 2k<br/>
+        /// - `flux-3-klein` - 640px, 1k, 2k<br/>
         /// - `gpt-image-2` - 640px, 1k, 2k, 4k<br/>
         /// - `gpt-image-2.5-flare` - 640px, 1k, 2k, 4k<br/>
         /// - `krea-2` - 640px, 1k<br/>
