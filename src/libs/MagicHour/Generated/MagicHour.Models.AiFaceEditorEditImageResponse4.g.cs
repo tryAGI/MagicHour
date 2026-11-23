@@ -27,6 +27,12 @@ namespace MagicHour
         public required string Message { get; set; }
 
         /// <summary>
+        /// Credits missing from the account balance for this request. Only present for `insufficient_credits`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credit_shortfall")]
+        public double? CreditShortfall { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -44,15 +50,20 @@ namespace MagicHour
         /// <param name="message">
         /// Human-readable error message.
         /// </param>
+        /// <param name="creditShortfall">
+        /// Credits missing from the account balance for this request. Only present for `insufficient_credits`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AiFaceEditorEditImageResponse4(
             global::MagicHour.AiFaceEditorEditImageResponseCode3 code,
-            string message)
+            string message,
+            double? creditShortfall)
         {
             this.Code = code;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
+            this.CreditShortfall = creditShortfall;
         }
 
         /// <summary>
