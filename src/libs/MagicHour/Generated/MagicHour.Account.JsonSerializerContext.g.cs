@@ -14,9 +14,11 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateRequestType), TypeInfoPropertyName = "CheckoutCreateRequestType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseTier), TypeInfoPropertyName = "AccountGetResponseTier2")]
@@ -30,8 +32,14 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseCode), TypeInfoPropertyName = "AccountGetResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseCode2), TypeInfoPropertyName = "AccountGetResponseCode22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateResponse2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateResponseCode), TypeInfoPropertyName = "CheckoutCreateResponseCode2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateResponse3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateResponseCode2), TypeInfoPropertyName = "CheckoutCreateResponseCode22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateRequestType?), TypeInfoPropertyName = "NullableCheckoutCreateRequestType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseTier?), TypeInfoPropertyName = "NullableAccountGetResponseTier2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseSubscriptionStatus?), TypeInfoPropertyName = "NullableAccountGetResponseSubscriptionStatus2")]
@@ -39,6 +47,8 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseCode?), TypeInfoPropertyName = "NullableAccountGetResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseCode2?), TypeInfoPropertyName = "NullableAccountGetResponseCode22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateResponseCode?), TypeInfoPropertyName = "NullableCheckoutCreateResponseCode2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateResponseCode2?), TypeInfoPropertyName = "NullableCheckoutCreateResponseCode22")]
     internal sealed partial class AccountSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -108,7 +118,11 @@ namespace MagicHour
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::MagicHour.AccountGetResponseTier)
+                    typeToConvert == typeof(global::MagicHour.CheckoutCreateRequestType)
+
+                    || typeToConvert == typeof(global::MagicHour.CheckoutCreateRequestType?)
+
+                    || typeToConvert == typeof(global::MagicHour.AccountGetResponseTier)
 
                     || typeToConvert == typeof(global::MagicHour.AccountGetResponseTier?)
 
@@ -126,13 +140,31 @@ namespace MagicHour
 
                     || typeToConvert == typeof(global::MagicHour.AccountGetResponseCode2)
 
-                    || typeToConvert == typeof(global::MagicHour.AccountGetResponseCode2?);
+                    || typeToConvert == typeof(global::MagicHour.AccountGetResponseCode2?)
+
+                    || typeToConvert == typeof(global::MagicHour.CheckoutCreateResponseCode)
+
+                    || typeToConvert == typeof(global::MagicHour.CheckoutCreateResponseCode?)
+
+                    || typeToConvert == typeof(global::MagicHour.CheckoutCreateResponseCode2)
+
+                    || typeToConvert == typeof(global::MagicHour.CheckoutCreateResponseCode2?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::MagicHour.CheckoutCreateRequestType))
+                {
+                    return new global::MagicHour.JsonConverters.CheckoutCreateRequestTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.CheckoutCreateRequestType?))
+                {
+                    return new global::MagicHour.JsonConverters.CheckoutCreateRequestTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::MagicHour.AccountGetResponseTier))
                 {
                     return new global::MagicHour.JsonConverters.AccountGetResponseTierJsonConverter();
@@ -181,6 +213,26 @@ namespace MagicHour
                 if (typeToConvert == typeof(global::MagicHour.AccountGetResponseCode2?))
                 {
                     return new global::MagicHour.JsonConverters.AccountGetResponseCode2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.CheckoutCreateResponseCode))
+                {
+                    return new global::MagicHour.JsonConverters.CheckoutCreateResponseCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.CheckoutCreateResponseCode?))
+                {
+                    return new global::MagicHour.JsonConverters.CheckoutCreateResponseCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.CheckoutCreateResponseCode2))
+                {
+                    return new global::MagicHour.JsonConverters.CheckoutCreateResponseCode2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.CheckoutCreateResponseCode2?))
+                {
+                    return new global::MagicHour.JsonConverters.CheckoutCreateResponseCode2NullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }
