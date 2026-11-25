@@ -12,6 +12,20 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/account/checkout \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "type": "credit_pack",<br/>
+        ///   "pack_count": 3,<br/>
+        ///   "credit_shortfall": 150<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.CheckoutCreateResponse> CheckoutCreateAsync(
 
             global::MagicHour.CheckoutCreateRequest request,
@@ -25,6 +39,20 @@ namespace MagicHour
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::MagicHour.ApiException"></exception>
+        /// <remarks>
+        /// curl --request POST \<br/>
+        ///      --url https://api.magichour.ai/v1/account/checkout \<br/>
+        ///      --header 'accept: application/json' \<br/>
+        ///      --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \<br/>
+        ///      --header 'content-type: application/json' \<br/>
+        ///      --data '<br/>
+        /// {<br/>
+        ///   "type": "credit_pack",<br/>
+        ///   "pack_count": 3,<br/>
+        ///   "credit_shortfall": 150<br/>
+        /// }<br/>
+        /// '
+        /// </remarks>
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.CheckoutCreateResponse>> CheckoutCreateAsResponseAsync(
 
             global::MagicHour.CheckoutCreateRequest request,
