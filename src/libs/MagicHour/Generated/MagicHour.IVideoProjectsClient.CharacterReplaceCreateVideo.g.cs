@@ -24,6 +24,10 @@ namespace MagicHour
         /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/character-replace).
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -55,6 +59,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.CharacterReplaceCreateVideoResponse> CharacterReplaceCreateVideoAsync(
 
             global::MagicHour.CharacterReplaceCreateVideoRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -77,6 +82,10 @@ namespace MagicHour
         /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/character-replace).
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -108,6 +117,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.CharacterReplaceCreateVideoResponse>> CharacterReplaceCreateVideoAsResponseAsync(
 
             global::MagicHour.CharacterReplaceCreateVideoRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -130,6 +140,10 @@ namespace MagicHour
         /// Credits are charged when the job is queued (`credits_charged` in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.<br/>
         /// For detailed examples, see the [product page](https://magichour.ai/products/character-replace).
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="name">
         /// Give your video a custom name for easy identification.<br/>
         /// Default Value: Character Replace - dateTime<br/>
@@ -170,6 +184,7 @@ namespace MagicHour
         global::System.Threading.Tasks.Task<global::MagicHour.CharacterReplaceCreateVideoResponse> CharacterReplaceCreateVideoAsync(
             float endSeconds,
             global::MagicHour.CharacterReplaceCreateVideoRequestAssets assets,
+            string? idempotencyKey = default,
             string? name = default,
             float? startSeconds = default,
             global::MagicHour.CharacterReplaceCreateVideoRequestModel? model = default,

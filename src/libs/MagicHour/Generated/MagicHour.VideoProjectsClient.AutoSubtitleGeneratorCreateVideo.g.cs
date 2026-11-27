@@ -27,10 +27,12 @@ namespace MagicHour
             };
         partial void PrepareAutoSubtitleGeneratorCreateVideoArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref string? idempotencyKey,
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequest request);
         partial void PrepareAutoSubtitleGeneratorCreateVideoRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            string? idempotencyKey,
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequest request);
         partial void ProcessAutoSubtitleGeneratorCreateVideoResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -45,6 +47,10 @@ namespace MagicHour
         /// Auto Subtitle Generator<br/>
         /// Automatically generate subtitles for your video in multiple languages.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -83,12 +89,14 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSubtitleGeneratorCreateVideoResponse> AutoSubtitleGeneratorCreateVideoAsync(
 
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await AutoSubtitleGeneratorCreateVideoAsResponseAsync(
 
                 request: request,
+                idempotencyKey: idempotencyKey,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -99,6 +107,10 @@ namespace MagicHour
         /// Auto Subtitle Generator<br/>
         /// Automatically generate subtitles for your video in multiple languages.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -137,6 +149,7 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AutoSubtitleGeneratorCreateVideoResponse>> AutoSubtitleGeneratorCreateVideoAsResponseAsync(
 
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -146,6 +159,7 @@ namespace MagicHour
                 client: HttpClient);
             PrepareAutoSubtitleGeneratorCreateVideoArguments(
                 httpClient: HttpClient,
+                idempotencyKey: ref idempotencyKey,
                 request: request);
 
 
@@ -203,6 +217,12 @@ namespace MagicHour
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            var __idempotencyKey = global::System.String.IsNullOrWhiteSpace(idempotencyKey)
+                ? CreateIdempotencyKey()
+                : idempotencyKey;
+            __httpRequest.Headers.TryAddWithoutValidation("Idempotency-Key", __idempotencyKey);
+
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
                                 content: __httpRequestContentBody,
@@ -220,6 +240,7 @@ namespace MagicHour
                 PrepareAutoSubtitleGeneratorCreateVideoRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    idempotencyKey: idempotencyKey,
                     request: request);
 
                 return __httpRequest;
@@ -721,6 +742,10 @@ namespace MagicHour
         /// Auto Subtitle Generator<br/>
         /// Automatically generate subtitles for your video in multiple languages.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="name">
         /// Give your video a custom name for easy identification.<br/>
         /// Default Value: Auto Subtitle - dateTime<br/>
@@ -756,6 +781,7 @@ namespace MagicHour
             float endSeconds,
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestAssets assets,
             global::MagicHour.AutoSubtitleGeneratorCreateVideoRequestStyle style,
+            string? idempotencyKey = default,
             string? name = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -770,6 +796,7 @@ namespace MagicHour
             };
 
             return await AutoSubtitleGeneratorCreateVideoAsync(
+                idempotencyKey: idempotencyKey,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);
