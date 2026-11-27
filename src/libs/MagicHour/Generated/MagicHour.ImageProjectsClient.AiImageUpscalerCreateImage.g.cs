@@ -27,10 +27,12 @@ namespace MagicHour
             };
         partial void PrepareAiImageUpscalerCreateImageArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref string? idempotencyKey,
             global::MagicHour.AiImageUpscalerCreateImageRequest request);
         partial void PrepareAiImageUpscalerCreateImageRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            string? idempotencyKey,
             global::MagicHour.AiImageUpscalerCreateImageRequest request);
         partial void ProcessAiImageUpscalerCreateImageResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -45,6 +47,10 @@ namespace MagicHour
         /// AI Image Upscaler<br/>
         /// Upscale your image using AI. Each 2x upscale costs 50 credits for balanced/creative modes, and 25 credits for preserve. 4x upscale costs 200 and 100 credits respectively.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -71,12 +77,14 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AiImageUpscalerCreateImageResponse> AiImageUpscalerCreateImageAsync(
 
             global::MagicHour.AiImageUpscalerCreateImageRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await AiImageUpscalerCreateImageAsResponseAsync(
 
                 request: request,
+                idempotencyKey: idempotencyKey,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -87,6 +95,10 @@ namespace MagicHour
         /// AI Image Upscaler<br/>
         /// Upscale your image using AI. Each 2x upscale costs 50 credits for balanced/creative modes, and 25 credits for preserve. 4x upscale costs 200 and 100 credits respectively.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -113,6 +125,7 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiImageUpscalerCreateImageResponse>> AiImageUpscalerCreateImageAsResponseAsync(
 
             global::MagicHour.AiImageUpscalerCreateImageRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -122,6 +135,7 @@ namespace MagicHour
                 client: HttpClient);
             PrepareAiImageUpscalerCreateImageArguments(
                 httpClient: HttpClient,
+                idempotencyKey: ref idempotencyKey,
                 request: request);
 
 
@@ -179,6 +193,12 @@ namespace MagicHour
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            var __idempotencyKey = global::System.String.IsNullOrWhiteSpace(idempotencyKey)
+                ? CreateIdempotencyKey()
+                : idempotencyKey;
+            __httpRequest.Headers.TryAddWithoutValidation("Idempotency-Key", __idempotencyKey);
+
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
                                 content: __httpRequestContentBody,
@@ -196,6 +216,7 @@ namespace MagicHour
                 PrepareAiImageUpscalerCreateImageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    idempotencyKey: idempotencyKey,
                     request: request);
 
                 return __httpRequest;
@@ -697,6 +718,10 @@ namespace MagicHour
         /// AI Image Upscaler<br/>
         /// Upscale your image using AI. Each 2x upscale costs 50 credits for balanced/creative modes, and 25 credits for preserve. 4x upscale costs 200 and 100 credits respectively.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
         /// Default Value: Image Upscaler - dateTime<br/>
@@ -722,6 +747,7 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AiImageUpscalerCreateImageResponse> AiImageUpscalerCreateImageAsync(
             double scaleFactor,
             global::MagicHour.AiImageUpscalerCreateImageRequestAssets assets,
+            string? idempotencyKey = default,
             string? name = default,
             global::MagicHour.AiImageUpscalerCreateImageRequestStyle? style = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
@@ -736,6 +762,7 @@ namespace MagicHour
             };
 
             return await AiImageUpscalerCreateImageAsync(
+                idempotencyKey: idempotencyKey,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);

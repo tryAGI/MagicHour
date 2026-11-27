@@ -27,10 +27,12 @@ namespace MagicHour
             };
         partial void PrepareAiUgcAdCreateVideoArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref string? idempotencyKey,
             global::MagicHour.AiUgcAdCreateVideoRequest request);
         partial void PrepareAiUgcAdCreateVideoRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            string? idempotencyKey,
             global::MagicHour.AiUgcAdCreateVideoRequest request);
         partial void ProcessAiUgcAdCreateVideoResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -45,6 +47,10 @@ namespace MagicHour
         /// AI UGC Ad Generator<br/>
         /// Create a spoken UGC video from a prepared image and script. Returns a project ID; poll GET /v1/video-projects/{id} for status and downloads. To compose an image, generate the image separately with the Image Editor API and supply its download URL.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -70,12 +76,14 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AiUgcAdCreateVideoResponse> AiUgcAdCreateVideoAsync(
 
             global::MagicHour.AiUgcAdCreateVideoRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await AiUgcAdCreateVideoAsResponseAsync(
 
                 request: request,
+                idempotencyKey: idempotencyKey,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -86,6 +94,10 @@ namespace MagicHour
         /// AI UGC Ad Generator<br/>
         /// Create a spoken UGC video from a prepared image and script. Returns a project ID; poll GET /v1/video-projects/{id} for status and downloads. To compose an image, generate the image separately with the Image Editor API and supply its download URL.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -111,6 +123,7 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiUgcAdCreateVideoResponse>> AiUgcAdCreateVideoAsResponseAsync(
 
             global::MagicHour.AiUgcAdCreateVideoRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -120,6 +133,7 @@ namespace MagicHour
                 client: HttpClient);
             PrepareAiUgcAdCreateVideoArguments(
                 httpClient: HttpClient,
+                idempotencyKey: ref idempotencyKey,
                 request: request);
 
 
@@ -177,6 +191,12 @@ namespace MagicHour
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            var __idempotencyKey = global::System.String.IsNullOrWhiteSpace(idempotencyKey)
+                ? CreateIdempotencyKey()
+                : idempotencyKey;
+            __httpRequest.Headers.TryAddWithoutValidation("Idempotency-Key", __idempotencyKey);
+
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
                                 content: __httpRequestContentBody,
@@ -194,6 +214,7 @@ namespace MagicHour
                 PrepareAiUgcAdCreateVideoRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    idempotencyKey: idempotencyKey,
                     request: request);
 
                 return __httpRequest;
@@ -695,6 +716,10 @@ namespace MagicHour
         /// AI UGC Ad Generator<br/>
         /// Create a spoken UGC video from a prepared image and script. Returns a project ID; poll GET /v1/video-projects/{id} for status and downloads. To compose an image, generate the image separately with the Image Editor API and supply its download URL.
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="assets"></param>
         /// <param name="script">
         /// The words the actor should speak. Character limits apply after trimming:<br/>
@@ -727,6 +752,7 @@ namespace MagicHour
             global::MagicHour.AiUgcAdCreateVideoRequestAssets assets,
             string script,
             double endSeconds,
+            string? idempotencyKey = default,
             global::MagicHour.AiUgcAdCreateVideoRequestModel? model = default,
             global::MagicHour.AiUgcAdCreateVideoRequestResolution? resolution = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
@@ -742,6 +768,7 @@ namespace MagicHour
             };
 
             return await AiUgcAdCreateVideoAsync(
+                idempotencyKey: idempotencyKey,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);

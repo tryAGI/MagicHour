@@ -27,10 +27,12 @@ namespace MagicHour
             };
         partial void PrepareAiVoiceClonerCreateAudioArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref string? idempotencyKey,
             global::MagicHour.AiVoiceClonerCreateAudioRequest request);
         partial void PrepareAiVoiceClonerCreateAudioRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            string? idempotencyKey,
             global::MagicHour.AiVoiceClonerCreateAudioRequest request);
         partial void ProcessAiVoiceClonerCreateAudioResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -47,6 +49,10 @@ namespace MagicHour
         /// * Each character costs 0.1 credits. <br/>
         /// * The cost is rounded up to the nearest whole number
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -74,12 +80,14 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AiVoiceClonerCreateAudioResponse> AiVoiceClonerCreateAudioAsync(
 
             global::MagicHour.AiVoiceClonerCreateAudioRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await AiVoiceClonerCreateAudioAsResponseAsync(
 
                 request: request,
+                idempotencyKey: idempotencyKey,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -92,6 +100,10 @@ namespace MagicHour
         /// * Each character costs 0.1 credits. <br/>
         /// * The cost is rounded up to the nearest whole number
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -119,6 +131,7 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.AiVoiceClonerCreateAudioResponse>> AiVoiceClonerCreateAudioAsResponseAsync(
 
             global::MagicHour.AiVoiceClonerCreateAudioRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -128,6 +141,7 @@ namespace MagicHour
                 client: HttpClient);
             PrepareAiVoiceClonerCreateAudioArguments(
                 httpClient: HttpClient,
+                idempotencyKey: ref idempotencyKey,
                 request: request);
 
 
@@ -185,6 +199,12 @@ namespace MagicHour
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            var __idempotencyKey = global::System.String.IsNullOrWhiteSpace(idempotencyKey)
+                ? CreateIdempotencyKey()
+                : idempotencyKey;
+            __httpRequest.Headers.TryAddWithoutValidation("Idempotency-Key", __idempotencyKey);
+
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
                                 content: __httpRequestContentBody,
@@ -202,6 +222,7 @@ namespace MagicHour
                 PrepareAiVoiceClonerCreateAudioRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    idempotencyKey: idempotencyKey,
                     request: request);
 
                 return __httpRequest;
@@ -705,6 +726,10 @@ namespace MagicHour
         /// * Each character costs 0.1 credits. <br/>
         /// * The cost is rounded up to the nearest whole number
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="name">
         /// Give your audio a custom name for easy identification.<br/>
         /// Default Value: Voice Cloner - dateTime<br/>
@@ -720,6 +745,7 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AiVoiceClonerCreateAudioResponse> AiVoiceClonerCreateAudioAsync(
             global::MagicHour.AiVoiceClonerCreateAudioRequestAssets assets,
             global::MagicHour.AiVoiceClonerCreateAudioRequestStyle style,
+            string? idempotencyKey = default,
             string? name = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -732,6 +758,7 @@ namespace MagicHour
             };
 
             return await AiVoiceClonerCreateAudioAsync(
+                idempotencyKey: idempotencyKey,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);

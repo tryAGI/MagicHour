@@ -27,10 +27,12 @@ namespace MagicHour
             };
         partial void PrepareBodySwapCreateImageArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref string? idempotencyKey,
             global::MagicHour.BodySwapCreateImageRequest request);
         partial void PrepareBodySwapCreateImageRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            string? idempotencyKey,
             global::MagicHour.BodySwapCreateImageRequest request);
         partial void ProcessBodySwapCreateImageResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -45,6 +47,10 @@ namespace MagicHour
         /// Body Swap<br/>
         /// Swap a person into a scene image using Nano Banana 2 Lite (640px/1k) or Nano Banana 2.1 (2k/4k). Credits depend on `resolution` (from 50 credits at 640px upward).
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -69,12 +75,14 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.BodySwapCreateImageResponse> BodySwapCreateImageAsync(
 
             global::MagicHour.BodySwapCreateImageRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await BodySwapCreateImageAsResponseAsync(
 
                 request: request,
+                idempotencyKey: idempotencyKey,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -85,6 +93,10 @@ namespace MagicHour
         /// Body Swap<br/>
         /// Swap a person into a scene image using Nano Banana 2 Lite (640px/1k) or Nano Banana 2.1 (2k/4k). Credits depend on `resolution` (from 50 credits at 640px upward).
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -109,6 +121,7 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.AutoSDKHttpResponse<global::MagicHour.BodySwapCreateImageResponse>> BodySwapCreateImageAsResponseAsync(
 
             global::MagicHour.BodySwapCreateImageRequest request,
+            string? idempotencyKey = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -118,6 +131,7 @@ namespace MagicHour
                 client: HttpClient);
             PrepareBodySwapCreateImageArguments(
                 httpClient: HttpClient,
+                idempotencyKey: ref idempotencyKey,
                 request: request);
 
 
@@ -175,6 +189,12 @@ namespace MagicHour
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+
+            var __idempotencyKey = global::System.String.IsNullOrWhiteSpace(idempotencyKey)
+                ? CreateIdempotencyKey()
+                : idempotencyKey;
+            __httpRequest.Headers.TryAddWithoutValidation("Idempotency-Key", __idempotencyKey);
+
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
                                 content: __httpRequestContentBody,
@@ -192,6 +212,7 @@ namespace MagicHour
                 PrepareBodySwapCreateImageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    idempotencyKey: idempotencyKey,
                     request: request);
 
                 return __httpRequest;
@@ -693,6 +714,10 @@ namespace MagicHour
         /// Body Swap<br/>
         /// Swap a person into a scene image using Nano Banana 2 Lite (640px/1k) or Nano Banana 2.1 (2k/4k). Credits depend on `resolution` (from 50 credits at 640px upward).
         /// </summary>
+        /// <param name="idempotencyKey">
+        /// A unique string for this request, such as a UUID. Sending the same key again within 24 hours returns the original project instead of creating and charging for a new one. A key applies across all video, image, and audio endpoints on your account, so use a new key for every project.<br/>
+        /// Example: 5f3c1b9e-8a41-4a0e-9d3e-2f6a1c7b9e10
+        /// </param>
         /// <param name="name">
         /// Give your image a custom name for easy identification.<br/>
         /// Default Value: Body Swap - dateTime<br/>
@@ -711,6 +736,7 @@ namespace MagicHour
         public async global::System.Threading.Tasks.Task<global::MagicHour.BodySwapCreateImageResponse> BodySwapCreateImageAsync(
             global::MagicHour.BodySwapCreateImageRequestResolution resolution,
             global::MagicHour.BodySwapCreateImageRequestAssets assets,
+            string? idempotencyKey = default,
             string? name = default,
             global::MagicHour.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -723,6 +749,7 @@ namespace MagicHour
             };
 
             return await BodySwapCreateImageAsync(
+                idempotencyKey: idempotencyKey,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);
