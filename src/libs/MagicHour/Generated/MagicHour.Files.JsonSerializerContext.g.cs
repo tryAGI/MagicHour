@@ -48,6 +48,9 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode2), TypeInfoPropertyName = "VideoAssetsGeneratePresignedUrlResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode3), TypeInfoPropertyName = "VideoAssetsGeneratePresignedUrlResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextAction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionType), TypeInfoPropertyName = "VideoAssetsGeneratePresignedUrlResponseNextActionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionReason), TypeInfoPropertyName = "VideoAssetsGeneratePresignedUrlResponseNextActionReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode4), TypeInfoPropertyName = "VideoAssetsGeneratePresignedUrlResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponse6))]
@@ -65,6 +68,9 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode2), TypeInfoPropertyName = "FaceDetectionGetDetailsResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode3), TypeInfoPropertyName = "FaceDetectionGetDetailsResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextAction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionType), TypeInfoPropertyName = "FaceDetectionGetDetailsResponseNextActionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionReason), TypeInfoPropertyName = "FaceDetectionGetDetailsResponseNextActionReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode4), TypeInfoPropertyName = "FaceDetectionGetDetailsResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponse6))]
@@ -78,6 +84,9 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode2), TypeInfoPropertyName = "FaceDetectionDetectFacesResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode3), TypeInfoPropertyName = "FaceDetectionDetectFacesResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextAction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionType), TypeInfoPropertyName = "FaceDetectionDetectFacesResponseNextActionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionReason), TypeInfoPropertyName = "FaceDetectionDetectFacesResponseNextActionReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode4), TypeInfoPropertyName = "FaceDetectionDetectFacesResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponse6))]
@@ -98,6 +107,8 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode2?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode3?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionType?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseNextActionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionReason?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseNextActionReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode4?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode5?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode6?), TypeInfoPropertyName = "NullableVideoAssetsGeneratePresignedUrlResponseCode62")]
@@ -105,12 +116,16 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode?), TypeInfoPropertyName = "NullableFaceDetectionGetDetailsResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode2?), TypeInfoPropertyName = "NullableFaceDetectionGetDetailsResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode3?), TypeInfoPropertyName = "NullableFaceDetectionGetDetailsResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionType?), TypeInfoPropertyName = "NullableFaceDetectionGetDetailsResponseNextActionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionReason?), TypeInfoPropertyName = "NullableFaceDetectionGetDetailsResponseNextActionReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode4?), TypeInfoPropertyName = "NullableFaceDetectionGetDetailsResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode5?), TypeInfoPropertyName = "NullableFaceDetectionGetDetailsResponseCode52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode6?), TypeInfoPropertyName = "NullableFaceDetectionGetDetailsResponseCode62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode2?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode3?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseCode32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionType?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseNextActionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionReason?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseNextActionReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode4?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseCode42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode5?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseCode52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode6?), TypeInfoPropertyName = "NullableFaceDetectionDetectFacesResponseCode62")]
@@ -228,6 +243,14 @@ namespace MagicHour
 
                     || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode3?)
 
+                    || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionType)
+
+                    || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionType?)
+
+                    || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionReason)
+
+                    || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionReason?)
+
                     || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode4)
 
                     || typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode4?)
@@ -256,6 +279,14 @@ namespace MagicHour
 
                     || typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode3?)
 
+                    || typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionType)
+
+                    || typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionType?)
+
+                    || typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionReason)
+
+                    || typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionReason?)
+
                     || typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode4)
 
                     || typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode4?)
@@ -279,6 +310,14 @@ namespace MagicHour
                     || typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode3)
 
                     || typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode3?)
+
+                    || typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionType)
+
+                    || typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionType?)
+
+                    || typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionReason)
+
+                    || typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionReason?)
 
                     || typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode4)
 
@@ -397,6 +436,26 @@ namespace MagicHour
                     return new global::MagicHour.JsonConverters.VideoAssetsGeneratePresignedUrlResponseCode3NullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionType))
+                {
+                    return new global::MagicHour.JsonConverters.VideoAssetsGeneratePresignedUrlResponseNextActionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionType?))
+                {
+                    return new global::MagicHour.JsonConverters.VideoAssetsGeneratePresignedUrlResponseNextActionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionReason))
+                {
+                    return new global::MagicHour.JsonConverters.VideoAssetsGeneratePresignedUrlResponseNextActionReasonJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseNextActionReason?))
+                {
+                    return new global::MagicHour.JsonConverters.VideoAssetsGeneratePresignedUrlResponseNextActionReasonNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::MagicHour.VideoAssetsGeneratePresignedUrlResponseCode4))
                 {
                     return new global::MagicHour.JsonConverters.VideoAssetsGeneratePresignedUrlResponseCode4JsonConverter();
@@ -467,6 +526,26 @@ namespace MagicHour
                     return new global::MagicHour.JsonConverters.FaceDetectionGetDetailsResponseCode3NullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionType))
+                {
+                    return new global::MagicHour.JsonConverters.FaceDetectionGetDetailsResponseNextActionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionType?))
+                {
+                    return new global::MagicHour.JsonConverters.FaceDetectionGetDetailsResponseNextActionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionReason))
+                {
+                    return new global::MagicHour.JsonConverters.FaceDetectionGetDetailsResponseNextActionReasonJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseNextActionReason?))
+                {
+                    return new global::MagicHour.JsonConverters.FaceDetectionGetDetailsResponseNextActionReasonNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::MagicHour.FaceDetectionGetDetailsResponseCode4))
                 {
                     return new global::MagicHour.JsonConverters.FaceDetectionGetDetailsResponseCode4JsonConverter();
@@ -525,6 +604,26 @@ namespace MagicHour
                 if (typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode3?))
                 {
                     return new global::MagicHour.JsonConverters.FaceDetectionDetectFacesResponseCode3NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionType))
+                {
+                    return new global::MagicHour.JsonConverters.FaceDetectionDetectFacesResponseNextActionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionType?))
+                {
+                    return new global::MagicHour.JsonConverters.FaceDetectionDetectFacesResponseNextActionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionReason))
+                {
+                    return new global::MagicHour.JsonConverters.FaceDetectionDetectFacesResponseNextActionReasonJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseNextActionReason?))
+                {
+                    return new global::MagicHour.JsonConverters.FaceDetectionDetectFacesResponseNextActionReasonNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::MagicHour.FaceDetectionDetectFacesResponseCode4))

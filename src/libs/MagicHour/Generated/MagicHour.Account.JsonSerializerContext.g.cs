@@ -28,6 +28,8 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseSubscriptionDiscount))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseSubscriptionBillingInterval), TypeInfoPropertyName = "AccountGetResponseSubscriptionBillingInterval2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseAutoReload))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseAutoReloadStatus), TypeInfoPropertyName = "AccountGetResponseAutoReloadStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseCode), TypeInfoPropertyName = "AccountGetResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponse3))]
@@ -45,6 +47,7 @@ namespace MagicHour
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseSubscriptionStatus?), TypeInfoPropertyName = "NullableAccountGetResponseSubscriptionStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseSubscriptionBillingInterval?), TypeInfoPropertyName = "NullableAccountGetResponseSubscriptionBillingInterval2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseAutoReloadStatus?), TypeInfoPropertyName = "NullableAccountGetResponseAutoReloadStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseCode?), TypeInfoPropertyName = "NullableAccountGetResponseCode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.AccountGetResponseCode2?), TypeInfoPropertyName = "NullableAccountGetResponseCode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::MagicHour.CheckoutCreateResponseCode?), TypeInfoPropertyName = "NullableCheckoutCreateResponseCode2_3")]
@@ -134,6 +137,10 @@ namespace MagicHour
 
                     || typeToConvert == typeof(global::MagicHour.AccountGetResponseSubscriptionBillingInterval?)
 
+                    || typeToConvert == typeof(global::MagicHour.AccountGetResponseAutoReloadStatus)
+
+                    || typeToConvert == typeof(global::MagicHour.AccountGetResponseAutoReloadStatus?)
+
                     || typeToConvert == typeof(global::MagicHour.AccountGetResponseCode)
 
                     || typeToConvert == typeof(global::MagicHour.AccountGetResponseCode?)
@@ -193,6 +200,16 @@ namespace MagicHour
                 if (typeToConvert == typeof(global::MagicHour.AccountGetResponseSubscriptionBillingInterval?))
                 {
                     return new global::MagicHour.JsonConverters.AccountGetResponseSubscriptionBillingIntervalNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AccountGetResponseAutoReloadStatus))
+                {
+                    return new global::MagicHour.JsonConverters.AccountGetResponseAutoReloadStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::MagicHour.AccountGetResponseAutoReloadStatus?))
+                {
+                    return new global::MagicHour.JsonConverters.AccountGetResponseAutoReloadStatusNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::MagicHour.AccountGetResponseCode))
