@@ -33,6 +33,24 @@ namespace MagicHour
         public double? CreditShortfall { get; set; }
 
         /// <summary>
+        /// Account balance when the request was checked. Only present for `insufficient_credits`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credits_available")]
+        public double? CreditsAvailable { get; set; }
+
+        /// <summary>
+        /// Credits the request costs. Resubmit the same request once the account balance from `GET /v1/account` reaches this. Only present for `insufficient_credits`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credits_required")]
+        public double? CreditsRequired { get; set; }
+
+        /// <summary>
+        /// What the account owner can do about the rejection, when the API knows more than the error code says. Currently only present for `insufficient_credits` on image-to-video requests from an account with Auto Reload on. `check_balance`: a refill is processing; resubmit the same request once the account balance covers it.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("next_action")]
+        public global::MagicHour.TextToVideoCreateVideoResponseNextAction? NextAction { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -53,17 +71,32 @@ namespace MagicHour
         /// <param name="creditShortfall">
         /// Credits missing from the account balance for this request. Only present for `insufficient_credits`.
         /// </param>
+        /// <param name="creditsAvailable">
+        /// Account balance when the request was checked. Only present for `insufficient_credits`.
+        /// </param>
+        /// <param name="creditsRequired">
+        /// Credits the request costs. Resubmit the same request once the account balance from `GET /v1/account` reaches this. Only present for `insufficient_credits`.
+        /// </param>
+        /// <param name="nextAction">
+        /// What the account owner can do about the rejection, when the API knows more than the error code says. Currently only present for `insufficient_credits` on image-to-video requests from an account with Auto Reload on. `check_balance`: a refill is processing; resubmit the same request once the account balance covers it.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextToVideoCreateVideoResponse4(
             global::MagicHour.TextToVideoCreateVideoResponseCode3 code,
             string message,
-            double? creditShortfall)
+            double? creditShortfall,
+            double? creditsAvailable,
+            double? creditsRequired,
+            global::MagicHour.TextToVideoCreateVideoResponseNextAction? nextAction)
         {
             this.Code = code;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.CreditShortfall = creditShortfall;
+            this.CreditsAvailable = creditsAvailable;
+            this.CreditsRequired = creditsRequired;
+            this.NextAction = nextAction;
         }
 
         /// <summary>

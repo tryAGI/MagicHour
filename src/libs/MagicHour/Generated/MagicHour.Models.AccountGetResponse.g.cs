@@ -52,6 +52,13 @@ namespace MagicHour
         public global::MagicHour.AccountGetResponseSubscription? Subscription { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("auto_reload")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::MagicHour.AccountGetResponseAutoReload AutoReload { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -72,6 +79,7 @@ namespace MagicHour
         /// Credits currently available to spend. Includes subscription credits and any purchased credit packs.<br/>
         /// Example: 12500
         /// </param>
+        /// <param name="autoReload"></param>
         /// <param name="email">
         /// Email address of the account.<br/>
         /// Example: user@example.com
@@ -87,6 +95,7 @@ namespace MagicHour
             string id,
             global::MagicHour.AccountGetResponseTier tier,
             int credits,
+            global::MagicHour.AccountGetResponseAutoReload autoReload,
             string? email,
             global::MagicHour.AccountGetResponseSubscription? subscription)
         {
@@ -95,6 +104,7 @@ namespace MagicHour
             this.Tier = tier;
             this.Credits = credits;
             this.Subscription = subscription;
+            this.AutoReload = autoReload ?? throw new global::System.ArgumentNullException(nameof(autoReload));
         }
 
         /// <summary>
